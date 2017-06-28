@@ -1,0 +1,3562 @@
+<!DOCTYPE html>
+<!-- saved from url=(0040)https://book.douban.com/subject/1788421/ -->
+<html lang="zh-cmn-Hans" class="ua-windows ua-webkit book-new-nav"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script type="text/javascript" defer="" async="" src="./UNIX环境高级编程 (豆瓣)_files/piwik.js.下载"></script><script type="text/javascript" src="./UNIX环境高级编程 (豆瓣)_files/ad.js.下载" async="true"></script>
+  
+  <title>UNIX环境高级编程 (豆瓣)</title>
+  
+<script type="text/javascript" async="" src="./UNIX环境高级编程 (豆瓣)_files/vds.js.下载"></script><script>!function(e){var o=function(o,n,t){var c,i,r=new Date;n=n||30,t=t||"/",r.setTime(r.getTime()+24*n*60*60*1e3),c="; expires="+r.toGMTString();for(i in o)e.cookie=i+"="+o[i]+c+"; path="+t},n=function(o){var n,t,c,i=o+"=",r=e.cookie.split(";");for(t=0,c=r.length;t<c;t++)if(n=r[t].replace(/^\s+|\s+$/g,""),0==n.indexOf(i))return n.substring(i.length,n.length).replace(/\"/g,"");return null},t=e.write,c={"douban.com":1,"douban.fm":1,"google.com":1,"google.cn":1,"googleapis.com":1,"gmaptiles.co.kr":1,"gstatic.com":1,"gstatic.cn":1,"google-analytics.com":1,"googleadservices.com":1},i=function(e,o){var n=new Image;n.onload=function(){},n.src="https://www.douban.com/j/except_report?kind=ra022&reason="+encodeURIComponent(e)+"&environment="+encodeURIComponent(o)},r=function(o){try{t.call(e,o)}catch(e){t(o)}},a=/<script.*?src\=["']?([^"'\s>]+)/gi,g=/http:\/\/(.+?)\.([^\/]+).+/i;e.writeln=e.write=function(e){var t,l=a.exec(e);return l&&(t=g.exec(l[1]))?c[t[2]]?void r(e):void("tqs"!==n("hj")&&(i(l[1],location.href),o({hj:"tqs"},1),setTimeout(function(){location.replace(location.href)},50))):void r(e)}}(document);
+</script>
+
+  
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="Sun, 6 Mar 2005 01:00:00 GMT">
+  
+<meta http-equiv="mobile-agent" content="format=html5; url=https://m.douban.com/book/subject/1788421/">
+<meta name="keywords" content="UNIX环境高级编程,W.Richard Stevens,Stephen A.Rago,人民邮电出版社,2006年,简介,作者,书评,论坛,推荐,二手">
+<meta name="description" content="图书UNIX环境高级编程 介绍、书评、论坛及推荐 ">
+
+  <script>var _head_start = new Date();</script>
+  
+  <link href="./UNIX环境高级编程 (豆瓣)_files/master.css" rel="stylesheet" type="text/css">
+
+  <style type="text/css"></style>
+  <script src="./UNIX环境高级编程 (豆瓣)_files/jquery.js.下载"></script>
+  <script src="./UNIX环境高级编程 (豆瓣)_files/master.js.下载"></script>
+  
+
+  
+  <link rel="stylesheet" href="./UNIX环境高级编程 (豆瓣)_files/subject.css">
+  <script src="./UNIX环境高级编程 (豆瓣)_files/jquery.snippet.js.下载"></script>
+  <script src="./UNIX环境高级编程 (豆瓣)_files/dialog.js.下载"></script>
+    <link rel="alternate" href="https://book.douban.com/feed/subject/1788421/reviews" type="application/rss+xml" title="RSS">
+  <style type="text/css"> h2 {color: #007722;} </style>
+  <script type="text/javascript">
+    var _vds = _vds || [];
+    (function(){ _vds.push(['setAccountId', '22c937bbd8ebd703f2d8e9445f7dfd03']);
+        _vds.push(['setCS1','user_id','0']);
+            (function() {var vds = document.createElement('script');
+                vds.type='text/javascript';
+                vds.async = true;
+                vds.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'dn-growing.qbox.me/vds.js';
+                var s = document.getElementsByTagName('script')[0];
+                s.parentNode.insertBefore(vds, s);
+            })();
+    })();
+</script>
+
+  
+  <script type="text/javascript">
+    var _vwo_code=(function(){
+      var account_id=249272,
+          settings_tolerance=2000,
+          library_tolerance=2500,
+          use_existing_jquery=false,
+          // DO NOT EDIT BELOW THIS LINE
+          f=false,d=document;return{use_existing_jquery:function(){return use_existing_jquery;},library_tolerance:function(){return library_tolerance;},finish:function(){if(!f){f=true;var a=d.getElementById('_vis_opt_path_hides');if(a)a.parentNode.removeChild(a);}},finished:function(){return f;},load:function(a){var b=d.createElement('script');b.src=a;b.type='text/javascript';b.innerText;b.onerror=function(){_vwo_code.finish();};d.getElementsByTagName('head')[0].appendChild(b);},init:function(){settings_timer=setTimeout('_vwo_code.finish()',settings_tolerance);var a=d.createElement('style'),b='body{opacity:0 !important;filter:alpha(opacity=0) !important;background:none !important;}',h=d.getElementsByTagName('head')[0];a.setAttribute('id','_vis_opt_path_hides');a.setAttribute('type','text/css');if(a.styleSheet)a.styleSheet.cssText=b;else a.appendChild(d.createTextNode(b));h.appendChild(a);this.load('//dev.visualwebsiteoptimizer.com/j.php?a='+account_id+'&u='+encodeURIComponent(d.URL)+'&r='+Math.random());return settings_timer;}};}());_vwo_settings_timer=_vwo_code.init();
+  </script><script src="./UNIX环境高级编程 (豆瓣)_files/j.php" type="text/javascript"></script>
+
+
+  <script>  </script>
+  <link rel="stylesheet" href="./UNIX环境高级编程 (豆瓣)_files/417fd20d295ec794.css">
+
+  <link rel="shortcut icon" href="https://img3.doubanio.com/favicon.ico" type="image/x-icon">
+<style type="text/css" id="css-share-button">      .bn-sharing {padding-right:10px;background-image: url(//img3.doubanio.com/pics/a1.png) !important; background-repeat: no-repeat !important; background-position: 100% -19px !important;*display:inline-block;}      a.bn-sharing:hover {text-decoration:underline;}      .bn-sharing-on {background-position:100% 4px !important;position:relative !important;z-index:1 !important;}      #db-div-sharing {position:absolute;width:100px;*margin-top:-2px;}      #db-div-sharing .bd {border:1px solid #aaa;background:#fff;padding:10px 0 0 10px;}      #db-div-sharing .bd li {line-height:17px;margin-bottom:10px;}      #db-div-sharing .hd {position:absolute;height:24px;*line-height:21px;overflow:hidden;right:0;top:-24px;padding:0 5px;border:1px solid #aaa;border-bottom:none;background:#fff;}      .rec-sin,      .rec-qzone,      .rec-tx,      .rec-wx,      .rec-qqim {padding-left:20px;background:url(https://img3.doubanio.com/f/shire/d15ffd71f3f10a7210448fec5a68eaec66e7f7d0/pics/ic_shares.png) no-repeat 0 0;}      .rec-qzone {background-position:0 -32px;}      .rec-qqim {background-position:0 -64px;}      .rec-tx {background-position:0 -96px;}      .rec-wx {background-position:0 -128px;}   </style><script src="./UNIX环境高级编程 (豆瓣)_files/ga.js.下载" async="true"></script></head>
+<body>
+  
+    <script>var _body_start = new Date();</script>
+    
+  
+  
+  
+
+
+
+
+
+
+<div id="db-global-nav" class="global-nav">
+  <div class="bd">
+    
+
+
+
+
+
+<div class="top-nav-info">
+      
+      <a href="https://www.douban.com/accounts/login?source=book" class="nav-login" rel="nofollow">登录</a>
+      <a href="https://www.douban.com/accounts/register?source=book" class="nav-register" rel="nofollow">注册</a>
+</div>
+
+
+    <div class="top-nav-doubanapp">
+        
+        <a href="https://www.douban.com/doubanapp/app?channel=top-nav" class="lnk-doubanapp">下载豆瓣客户端</a>
+        <div id="top-nav-appintro" class="more-items">
+            <p class="appintro-title">豆瓣</p>
+            <p class="slogan">我们的精神角落</p>
+            <p class="qrcode">
+                扫码直接下载
+            </p>
+            <div class="download">
+                <a href="https://www.douban.com/doubanapp/redirect?channel=top-nav&amp;direct_dl=1&amp;download=iOS">iPhone</a>
+                <span>·</span>
+                <a href="https://www.douban.com/doubanapp/redirect?channel=top-nav&amp;direct_dl=1&amp;download=Android" class="download-android">Android</a>
+            </div>
+        </div>
+        <div id="doubanapp-tip" style="display: block;">
+            <a href="https://www.douban.com/doubanapp/app?channel=qipao" class="tip-link">豆瓣 4.0 全新发布</a>
+            <a href="javascript: void 0;" class="tip-close">×</a>
+        </div>
+    </div>
+
+    <div class="global-nav-items">
+      <ul>
+          
+            
+            <li class="">
+            <a href="https://www.douban.com/" target="_blank" data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-main&quot;,&quot;uid&quot;:&quot;0&quot;}">
+              豆瓣
+            </a>
+            </li>
+          
+            
+            <li class="on">
+            <a href="https://book.douban.com/" data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-book&quot;,&quot;uid&quot;:&quot;0&quot;}">
+              读书
+            </a>
+            </li>
+          
+            
+            <li class="">
+            <a href="https://movie.douban.com/" target="_blank" data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-movie&quot;,&quot;uid&quot;:&quot;0&quot;}">
+              电影
+            </a>
+            </li>
+          
+            
+            <li class="">
+            <a href="https://music.douban.com/" target="_blank" data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-music&quot;,&quot;uid&quot;:&quot;0&quot;}">
+              音乐
+            </a>
+            </li>
+          
+            
+            <li class="">
+            <a href="https://www.douban.com/location/" target="_blank" data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-location&quot;,&quot;uid&quot;:&quot;0&quot;}">
+              同城
+            </a>
+            </li>
+          
+            
+            <li class="">
+            <a href="https://www.douban.com/group/" target="_blank" data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-group&quot;,&quot;uid&quot;:&quot;0&quot;}">
+              小组
+            </a>
+            </li>
+          
+            
+            <li class="">
+            <a href="https://read.douban.com/?dcs=top-nav&amp;dcm=douban" target="_blank" data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-read&quot;,&quot;uid&quot;:&quot;0&quot;}">
+              阅读
+            </a>
+            </li>
+          
+            
+            <li class="">
+            <a href="https://douban.fm/?from_=shire_top_nav" target="_blank" data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-fm&quot;,&quot;uid&quot;:&quot;0&quot;}">
+              FM
+            </a>
+            </li>
+          
+            
+            <li class="">
+            <a href="https://dongxi.douban.com/?dcs=top-nav&amp;dcm=douban" target="_blank" data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-commodity&quot;,&quot;uid&quot;:&quot;0&quot;}">
+              东西
+            </a>
+            </li>
+          
+            
+            <li class=" market-tip">
+            <a href="https://market.douban.com/?utm_campaign=douban_top_nav&amp;utm_source=douban&amp;utm_medium=pc_web" target="_blank" data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-market&quot;,&quot;uid&quot;:&quot;0&quot;}">
+              <img src="./UNIX环境高级编程 (豆瓣)_files/new-market-tip.png">
+              市集
+            </a>
+            </li>
+          
+            <li>
+              <a href="https://book.douban.com/subject/1788421/#more" class="bn-more"><span>更多</span></a>
+              <div class="more-items">
+                <table cellpadding="0" cellspacing="0">
+                    
+                    <tbody><tr><td><a href="https://moment.douban.com/" target="_blank" data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-moment&quot;,&quot;uid&quot;:&quot;0&quot;}">一刻</a></td></tr>
+                    
+                    <tr><td><a href="https://ypy.douban.com/" target="_blank" data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-ypy&quot;,&quot;uid&quot;:&quot;0&quot;}">豆瓣摄影</a></td></tr>
+                </tbody></table>
+              </div>
+            </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+  
+  
+
+
+
+
+
+
+
+
+<div id="db-nav-book" class="nav">
+  <div class="nav-wrap">
+    <div class="nav-primary">
+      <div class="nav-logo">
+        <a href="https://book.douban.com/">豆瓣读书</a>
+      </div>
+      <div class="nav-search">
+        <form action="https://book.douban.com/subject_search" method="get">
+          <fieldset>
+            <legend>搜索：</legend>
+            <label for="inp-query" style="display: none;">书名、作者、ISBN</label>
+            <div class="inp">
+              <input id="inp-query" name="search_text" size="22" maxlength="60" value="" placeholder="书名、作者、ISBN" autocomplete="off" dir="ltr">
+            </div>
+            <div class="inp-btn">
+              <input type="submit" value="搜索">
+            </div>
+            <input type="hidden" name="cat" value="1001">
+          </fieldset>
+        </form>
+        <style>
+            .nav-search,
+            .nav .nav-primary {
+                overflow: visible !important;
+            }
+
+            .nav-search {
+                margin-left: 145px;
+            }
+        </style>
+      </div>
+    </div>
+  </div>
+  <div class="nav-secondary">
+    
+    <ul class="nav-items">
+      <li class="nav-item-first"><a href="https://book.douban.com/tag/">分类浏览</a></li>
+      
+      <li class="book-cart ">
+        <a href="https://book.douban.com/cart">购书单</a>
+      </li>
+      <li>
+        <a href="https://read.douban.com/ebooks/?dcs=book-nav&amp;dcm=douban" target="_blank">电子图书</a>
+      </li>
+      <li>
+        <a href="https://market.douban.com/book?platform=web&amp;channel=book_nav">纸书</a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+  
+  <script type="text/template" id="suggest-item">
+    <li class="item"><a href="#">{{= item}}</a></li>
+  </script>
+  
+  
+
+
+
+    <div id="wrapper">
+        
+    <div id="dale_book_subject_top_icon" data-id=""></div>
+<h1>
+    <span property="v:itemreviewed">UNIX环境高级编程</span>
+    <div class="clear"></div>
+</h1>
+
+        
+  <div id="content">
+    
+    <div class="grid-16-8 clearfix">
+      
+      <div class="article">
+
+
+
+<div class="indent">
+  <div class="subjectwrap clearfix">
+    
+
+
+
+<div class="subject clearfix">
+<div id="mainpic" class="">
+
+  
+
+  <a class="nbg" href="./UNIX环境高级编程 (豆瓣)_files/s4436543.jpg" title="UNIX环境高级编程">
+    <img src="./UNIX环境高级编程 (豆瓣)_files/s4436543.jpg" title="点击看大图" alt="UNIX环境高级编程" rel="v:photo" style="width: 107px">
+  </a>
+
+
+
+</div>
+
+
+
+
+
+<div id="info" class="">
+
+
+    
+    
+  
+    <span>
+      <span class="pl"> 作者</span>:
+        
+        
+        <a class="" href="https://book.douban.com/search/W.Richard%20Stevens">W.Richard Stevens</a>
+        
+           /
+        
+        <a class="" href="https://book.douban.com/search/Stephen%20A.Rago">Stephen A.Rago</a>
+    </span><br>
+
+    
+    
+  
+    <span class="pl">出版社:</span> 人民邮电出版社<br>
+
+    
+    
+  
+    <span class="pl">副标题:</span> 第2版<br>
+
+    
+    
+  
+
+    
+    
+  
+    <span>
+      <span class="pl"> 译者</span>:
+        
+        
+        <a class="" href="https://book.douban.com/search/%E5%B0%A4%E6%99%8B%E5%85%83">尤晋元</a>
+        
+           /
+        
+        <a class="" href="https://book.douban.com/search/%E5%BC%A0%E4%BA%9A%E8%8B%B1">张亚英</a>
+        
+           /
+        
+        <a class="" href="https://book.douban.com/search/%E6%88%9A%E6%AD%A3%E4%BC%9F">戚正伟</a>
+    </span><br>
+
+    
+    
+  
+    <span class="pl">出版年:</span> 2006年<br>
+
+    
+    
+  
+    <span class="pl">页数:</span> 758<br>
+
+    
+    
+  
+    <span class="pl">定价:</span> 99.00元<br>
+
+    
+    
+  
+    <span class="pl">装帧:</span> 平装<br>
+
+    
+    
+  
+
+    
+    
+  
+    
+      
+      <span class="pl">ISBN:</span> 9787115147318<br>
+
+
+</div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+<div id="interest_sectl" class="">
+  <div class="rating_wrap clearbox" rel="v:rating">
+    <div class="rating_logo">豆瓣评分</div>
+    <div class="rating_self clearfix" typeof="v:Rating">
+      <strong class="ll rating_num " property="v:average"> 9.4 </strong>
+      <span property="v:best" content="10.0"></span>
+      <div class="rating_right ">
+          <div class="ll bigstar50"></div>
+            <div class="rating_sum">
+                <span class="">
+                <a href="https://book.douban.com/subject/1788421/collections" class="rating_people"><span property="v:votes">2014</span>人评价</a>
+                </span>
+            </div>
+
+
+      </div>
+    </div>
+            
+            
+<span class="stars5 starstop" title="力荐">
+    5星
+</span>
+
+            
+<div class="power" style="width:63px"></div>
+
+            <span class="rating_per">75.4%</span>
+            <br>
+            
+            
+<span class="stars4 starstop" title="推荐">
+    4星
+</span>
+
+            
+<div class="power" style="width:17px"></div>
+
+            <span class="rating_per">20.9%</span>
+            <br>
+            
+            
+<span class="stars3 starstop" title="还行">
+    3星
+</span>
+
+            
+<div class="power" style="width:2px"></div>
+
+            <span class="rating_per">3.5%</span>
+            <br>
+            
+            
+<span class="stars2 starstop" title="较差">
+    2星
+</span>
+
+            
+<div class="power" style="width:0px"></div>
+
+            <span class="rating_per">0.0%</span>
+            <br>
+            
+            
+<span class="stars1 starstop" title="很差">
+    1星
+</span>
+
+            
+<div class="power" style="width:0px"></div>
+
+            <span class="rating_per">0.1%</span>
+            <br>
+    </div>
+</div>
+
+  </div>
+  
+
+
+
+
+
+  
+    
+    <div id="interest_sect_level" class="clearfix">
+        <a href="https://book.douban.com/subject/1788421/#" rel="nofollow" class="j a_show_login colbutt ll" name="pbtn-1788421-wish">
+          <span>
+            
+<form method="POST" action="https://www.douban.com/register?reason=collectwish" class="miniform">
+    <input type="submit" class="minisubmit j " value="想读" title="">
+</form>
+
+          </span>
+        </a>
+        <a href="https://book.douban.com/subject/1788421/#" rel="nofollow" class="j a_show_login colbutt ll" name="pbtn-1788421-do">
+          <span>
+            
+<form method="POST" action="https://www.douban.com/register?reason=collectdo" class="miniform">
+    <input type="submit" class="minisubmit j " value="在读" title="">
+</form>
+
+          </span>
+        </a>
+        <a href="https://book.douban.com/subject/1788421/#" rel="nofollow" class="j a_show_login colbutt ll" name="pbtn-1788421-collect">
+          <span>
+            
+<form method="POST" action="https://www.douban.com/register?reason=collectcollect" class="miniform">
+    <input type="submit" class="minisubmit j " value="读过" title="">
+</form>
+
+          </span>
+        </a>
+      <div class="ll j a_stars">
+        
+    
+    评价:
+    <span id="rating"> <span id="stars" data-solid="https://img3.doubanio.com/f/shire/5a2327c04c0c231bced131ddf3f4467eb80c1c86/pics/rating_icons/star_onmouseover.png" data-hollow="https://img3.doubanio.com/f/shire/2520c01967207a1735171056ec588c8c1257e5f8/pics/rating_icons/star_hollow_hover.png" data-solid-2x="https://img3.doubanio.com/f/shire/7258904022439076d57303c3b06ad195bf1dc41a/pics/rating_icons/star_onmouseover@2x.png" data-hollow-2x="https://img3.doubanio.com/f/shire/95cc2fa733221bb8edd28ad56a7145a5ad33383e/pics/rating_icons/star_hollow_hover@2x.png">
+
+            <a href="https://www.douban.com/register?reason=rate" class="j a_show_login" name="pbtn-1788421-1">
+        <img src="./UNIX环境高级编程 (豆瓣)_files/star_hollow_hover.png" id="star1" width="16" height="16"></a>
+            <a href="https://www.douban.com/register?reason=rate" class="j a_show_login" name="pbtn-1788421-2">
+        <img src="./UNIX环境高级编程 (豆瓣)_files/star_hollow_hover.png" id="star2" width="16" height="16"></a>
+            <a href="https://www.douban.com/register?reason=rate" class="j a_show_login" name="pbtn-1788421-3">
+        <img src="./UNIX环境高级编程 (豆瓣)_files/star_hollow_hover.png" id="star3" width="16" height="16"></a>
+            <a href="https://www.douban.com/register?reason=rate" class="j a_show_login" name="pbtn-1788421-4">
+        <img src="./UNIX环境高级编程 (豆瓣)_files/star_hollow_hover.png" id="star4" width="16" height="16"></a>
+            <a href="https://www.douban.com/register?reason=rate" class="j a_show_login" name="pbtn-1788421-5">
+        <img src="./UNIX环境高级编程 (豆瓣)_files/star_hollow_hover.png" id="star5" width="16" height="16"></a>
+    </span><span id="rateword" class="pl"></span>
+    <input id="n_rating" type="hidden" value="">
+    </span>
+
+      </div>
+      
+
+    </div>
+
+
+
+  
+  <div class="gtleft">
+    <ul class="ul_subject_menu bicelink color_gray pt6 clearfix">
+        <li>
+          <img src="./UNIX环境高级编程 (豆瓣)_files/add-review.gif">&nbsp;<a href="https://www.douban.com/register?reason=annotate" class="j a_show_login" rel="nofollow">写笔记</a>
+        </li>
+
+          <li>
+            <img src="./UNIX环境高级编程 (豆瓣)_files/add-review.gif">&nbsp;<a class="j a_show_login" href="https://www.douban.com/register?reason=review" rel="nofollow">写书评</a>
+          </li>
+
+      <li>
+
+  <span class="rr">
+  
+
+    <img src="./UNIX环境高级编程 (豆瓣)_files/add-cart.gif">
+      <a class="j a_show_login" href="http://http//www.douban.com/register?reason=addbook2cart" rel="nofollow">加入购书单</a>
+  <span class="hidden">已在<a href="https://book.douban.com/cart">购书单</a></span>
+</span><br class="clearfix">
+</li>
+
+
+        
+        
+    
+    <li class="rec" id="C-1788421">
+        <a href="https://book.douban.com/subject/1788421/#" data-url="https://book.douban.com/subject/1788421/" data-desc="" data-title="书籍《UNIX环境高级编程》 (来自豆瓣) " data-pic="https://img3.doubanio.com/lpic/s4436543.jpg" class="bn-sharing ">分享到</a> &nbsp;&nbsp;
+    </li>
+    <link type="text/css" rel="stylesheet" href="./UNIX环境高级编程 (豆瓣)_files/dialog.css"><script type="text/javascript" src="./UNIX环境高级编程 (豆瓣)_files/dialog.js.下载" async="true"></script><script>
+    var __cache_url = __cache_url || {};
+    (function(u){
+        if(__cache_url[u]) return;
+        __cache_url[u] = true;
+        window.DoubanShareIcons = 'https://img3.doubanio.com/f/shire/d15ffd71f3f10a7210448fec5a68eaec66e7f7d0/pics/ic_shares.png';
+        var initShareButton = function() {
+          $.ajax({url:u,dataType:'script',cache:true});
+        };
+        if (typeof Do == 'function' && 'ready' in Do) {
+          Do('https://img3.doubanio.com/f/shire/8377b9498330a2e6f056d863987cc7a37eb4d486/css/ui/dialog.css',
+            'https://img3.doubanio.com/f/shire/3d185ca912c999ee7f464749201139ebf8eb6972/js/ui/dialog.js',
+            initShareButton);
+        } else if(typeof Douban == 'object' && 'loader' in Douban) {
+          Douban.loader.batch(
+            'https://img3.doubanio.com/f/shire/8377b9498330a2e6f056d863987cc7a37eb4d486/css/ui/dialog.css',
+            'https://img3.doubanio.com/f/shire/3d185ca912c999ee7f464749201139ebf8eb6972/js/ui/dialog.js'
+          ).done(initShareButton);
+        }
+    })('https://img3.doubanio.com/f/shire/6e6a5f21daeec19bbb41bf48c07fccaa4dad4d98/js/lib/sharebutton.js');
+    </script>
+
+    </ul>
+  </div>
+
+
+    
+
+
+
+
+
+
+
+<div class="rec-sec">
+
+    <span class="rec">
+
+<a href="https://www.douban.com/accounts/register?reason=collect" class="j a_show_login lnk-sharing lnk-douban-sharing">推荐</a>
+</span>
+</div>
+
+
+<script>
+  //bind events for collection button.
+  $('.collect_btn', '#interest_sect_level').each(function(){
+      Douban.init_collect_btn(this);
+  });
+</script>
+
+
+
+
+
+
+
+
+</div>
+
+<br clear="all">
+<div id="collect_form_1788421"></div>
+<div class="related_info">
+  
+  
+  
+  
+  
+
+
+
+
+
+
+  
+
+  <h2>
+    <span class="">内容简介</span>
+      &nbsp;·&nbsp;·&nbsp;·&nbsp;·&nbsp;·&nbsp;·
+
+  </h2>
+
+
+
+<div class="indent" id="link-report">
+    
+      <div class="">
+        <style type="text/css" media="screen">
+.intro p{text-indent:2em;}
+</style>
+<div class="intro">
+    <p>本书是被誉为UNIX编程“圣经”的Advanced Programming in the UNIX Environment一书的更新版。在本书第1版出版后的十几年中，UNIX行业已经有了巨大的变化，特别是影响UNIX编程接口的有关标准变化很大。本书在保持了前一版风格的基础上，根据最新的标准对内容进行了修订和增补，反映了最新的技术发展。书中除了介绍UNIX文件和目录、标准I/O库、系统数据文件和信息、进程环境、进程控制、进程关系、信号、线程、线程控制、守护进程、各种I/O、进程间通信、网络IPC、伪终端等方面的内容，还在此基础上介绍了多个应用示例，包括如何创建数据库函数库以及如何与网络打印机通信等。此外，还在附录中给出了函数原型和部分习题的答案。
+</p>    <p>    本书内容权威，概念清晰，阐述精辟，对于所有层次UNIX程序员都是一本不可或缺的参考书。</p></div>
+
+      </div>
+    
+<style>
+    #link-report .report { text-align: right; font-size: 12px; visibility: hidden; }
+    #link-report .report a { color: #BBB; }
+    #link-report .report a:hover { color: #FFF; background-color: #BBB; }
+</style>
+<script>
+    Do = (typeof Do === 'undefined')? $ : Do;
+    Do(function(){
+    $("body").delegate("#link-report", 'mouseenter mouseleave', function(e){
+      switch (e.type) {
+        case "mouseenter":
+          $(this).find(".report").css('visibility', 'visible');
+          break;
+        case "mouseleave":
+          $(this).find(".report").css('visibility', 'hidden');
+          break;
+      }
+    });
+    $("#link-report").delegate(".report a", 'click', function(e){
+        e.preventDefault();
+        var auditUrl = "https://www.douban.com/misc/audit_report?url=",
+        opt = "";
+        var obj = $(e.target).closest('#link-report');
+        var id = obj.length != 0 ? obj.data("id") : undefined;
+        var params = (opt&&id) ? '?'.concat(opt, '=', id) : '';
+        var url = auditUrl.concat("https://book.douban.com/subject/1788421/", params);
+        window.location.href = url;
+    });
+
+    $("#link-report").append('<div class="report"><a rel="nofollow" href="#">举报</a></div>');
+  });
+</script>
+
+<div class="report" style="visibility: hidden;"><a rel="nofollow" href="https://book.douban.com/subject/1788421/#">举报</a></div></div>
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+  
+
+  <h2>
+    <span class="">作者简介</span>
+      &nbsp;·&nbsp;·&nbsp;·&nbsp;·&nbsp;·&nbsp;·
+
+  </h2>
+
+
+
+      <div class="indent ">
+          
+            <div class="">
+            <style type="text/css" media="screen">
+.intro p{text-indent:2em;}
+</style>
+<div class="intro">
+    <p>W.Richard Stevens，备受赞誉的技术作家，生前著有多种经典的传世之作，包括《UNIX网络编程》（两卷本）、《TCP/IP详解》（三卷本）和本书第1版。 尤晋元，上海交通大学计算机科学及工程系教 授、博士生导师。在科研方面，主要从事操作系统和分布对象计算技术方面的研究；在教学方面，长期承担操作系统及分布计算等课程的教学工作。主编和翻译了多本操作系统教材和参考书，包括《UNIX操作系统教程》、《UNIX高级编程技术》、《UNIX环境高级编程》和《操作系统：设计与实现》等。</p></div>
+
+            </div>
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+
+  
+
+
+
+
+
+
+<div id="db-tags-section" class="blank20">
+  
+  
+
+  <h2>
+    <span class="">豆瓣成员常用的标签(共351个)</span>
+      &nbsp;·&nbsp;·&nbsp;·&nbsp;·&nbsp;·&nbsp;·
+
+  </h2>
+
+
+  <div class="indent">    <span class="">
+        <a class="  tag" href="https://book.douban.com/tag/unix">unix</a> &nbsp;    </span>
+    <span class="">
+        <a class="  tag" href="https://book.douban.com/tag/%E7%BC%96%E7%A8%8B">编程</a> &nbsp;    </span>
+    <span class="">
+        <a class="  tag" href="https://book.douban.com/tag/Linux">Linux</a> &nbsp;    </span>
+    <span class="">
+        <a class="  tag" href="https://book.douban.com/tag/%E8%AE%A1%E7%AE%97%E6%9C%BA">计算机</a> &nbsp;    </span>
+    <span class="">
+        <a class="  tag" href="https://book.douban.com/tag/%E7%BB%8F%E5%85%B8">经典</a> &nbsp;    </span>
+    <span class="">
+        <a class="  tag" href="https://book.douban.com/tag/programming">programming</a> &nbsp;    </span>
+    <span class="">
+        <a class="  tag" href="https://book.douban.com/tag/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1">程序设计</a> &nbsp;    </span>
+    <span class="">
+        <a class="  tag" href="https://book.douban.com/tag/C">C</a> &nbsp;    </span>
+  </div>
+</div>
+
+
+
+  
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="rec-ebook-section" class="block5 subject_show">
+  
+
+  
+  
+
+  <h2>
+    <span class="">喜欢读"UNIX环境高级编程"的人也喜欢的电子书</span>
+      &nbsp;·&nbsp;·&nbsp;·&nbsp;·&nbsp;·&nbsp;·
+
+  </h2>
+
+
+  <div class="tips-mod">
+    支持 Web、iPhone、iPad、Android 阅读器
+  </div>
+  <div class="content clearfix">
+      
+      <dl>
+        <dt>
+          <a href="https://read.douban.com/ebook/1637944/?dcs=subject-rec&amp;dcm=douban&amp;dct=1788421" target="_blank">
+            <span class="cover-outer">
+              <img width="67px" height="100px" src="./UNIX环境高级编程 (豆瓣)_files/1637944.jpg">
+            </span>
+          </a>
+        </dt>
+        <dd>
+          <div class="title">
+              <a href="https://read.douban.com/ebook/1637944/" target="_blank">程序员的自我修养</a>
+          </div>
+          <div class="price">
+              18.00元
+          </div>
+        </dd>
+      </dl>
+      
+      <dl>
+        <dt>
+          <a href="https://read.douban.com/ebook/198648/?dcs=subject-rec&amp;dcm=douban&amp;dct=1788421" target="_blank">
+            <span class="cover-outer">
+              <img width="67px" height="100px" src="./UNIX环境高级编程 (豆瓣)_files/198648.jpg">
+            </span>
+          </a>
+        </dt>
+        <dd>
+          <div class="title">
+              <a href="https://read.douban.com/ebook/198648/" target="_blank">CoffeeScript小书</a>
+          </div>
+          <div class="price">
+              1.99元
+          </div>
+        </dd>
+      </dl>
+      
+      <dl>
+        <dt>
+          <a href="https://read.douban.com/ebook/1499455/?dcs=subject-rec&amp;dcm=douban&amp;dct=1788421" target="_blank">
+            <span class="cover-outer">
+              <img width="67px" height="100px" src="./UNIX环境高级编程 (豆瓣)_files/1499455.jpg">
+            </span>
+          </a>
+        </dt>
+        <dd>
+          <div class="title">
+              <a href="https://read.douban.com/ebook/1499455/" target="_blank">Python源码剖析</a>
+          </div>
+          <div class="price">
+              19.20元
+          </div>
+        </dd>
+      </dl>
+      
+      <dl>
+        <dt>
+          <a href="https://read.douban.com/ebook/500486/?dcs=subject-rec&amp;dcm=douban&amp;dct=1788421" target="_blank">
+            <span class="cover-outer">
+              <img width="67px" height="100px" src="./UNIX环境高级编程 (豆瓣)_files/500486.jpg">
+            </span>
+          </a>
+        </dt>
+        <dd>
+          <div class="title">
+              <a href="https://read.douban.com/ebook/500486/" target="_blank">打造Facebook</a>
+          </div>
+          <div class="price">
+              15.00元
+          </div>
+        </dd>
+      </dl>
+      
+      <dl>
+        <dt>
+          <a href="https://read.douban.com/ebook/1531222/?dcs=subject-rec&amp;dcm=douban&amp;dct=1788421" target="_blank">
+            <span class="cover-outer">
+              <img width="67px" height="100px" src="./UNIX环境高级编程 (豆瓣)_files/1531222.jpg">
+            </span>
+          </a>
+        </dt>
+        <dd>
+          <div class="title">
+              <a href="https://read.douban.com/ebook/1531222/" target="_blank">MacTalk·人生元编程</a>
+          </div>
+          <div class="price">
+              2.99元
+          </div>
+        </dd>
+      </dl>
+  </div>
+</div>
+
+<div id="db-rec-section" class="block5 subject_show knnlike">
+  
+  
+  
+
+  <h2>
+    <span class="">喜欢读"UNIX环境高级编程"的人也喜欢</span>
+      &nbsp;·&nbsp;·&nbsp;·&nbsp;·&nbsp;·&nbsp;·
+
+  </h2>
+
+
+  <div class="content clearfix">
+      
+      <dl class="">
+        <dt>
+            <a href="https://book.douban.com/subject/1500149/" onclick="moreurl(this, {&#39;total&#39;: 10, &#39;clicked&#39;: &#39;1500149&#39;, &#39;pos&#39;: 0, &#39;identifier&#39;: &#39;book-rec-books&#39;})"><img class="m_sub_img" src="./UNIX环境高级编程 (豆瓣)_files/s1613283.jpg"></a>
+        </dt>
+        <dd>
+          <a href="https://book.douban.com/subject/1500149/" onclick="moreurl(this, {&#39;total&#39;: 10, &#39;clicked&#39;: &#39;1500149&#39;, &#39;pos&#39;: 0, &#39;identifier&#39;: &#39;book-rec-books&#39;})" class="">
+            UNIX网络编程
+          </a>
+        </dd>
+      </dl>
+      
+      <dl class="">
+        <dt>
+            <a href="https://book.douban.com/subject/1088054/" onclick="moreurl(this, {&#39;total&#39;: 10, &#39;clicked&#39;: &#39;1088054&#39;, &#39;pos&#39;: 1, &#39;identifier&#39;: &#39;book-rec-books&#39;})"><img class="m_sub_img" src="./UNIX环境高级编程 (豆瓣)_files/s1543906.jpg"></a>
+        </dt>
+        <dd>
+          <a href="https://book.douban.com/subject/1088054/" onclick="moreurl(this, {&#39;total&#39;: 10, &#39;clicked&#39;: &#39;1088054&#39;, &#39;pos&#39;: 1, &#39;identifier&#39;: &#39;book-rec-books&#39;})" class="">
+            TCP/IP详解 卷1：协议
+          </a>
+        </dd>
+      </dl>
+      
+      <dl class="">
+        <dt>
+            <a href="https://book.douban.com/subject/1467587/" onclick="moreurl(this, {&#39;total&#39;: 10, &#39;clicked&#39;: &#39;1467587&#39;, &#39;pos&#39;: 2, &#39;identifier&#39;: &#39;book-rec-books&#39;})"><img class="m_sub_img" src="./UNIX环境高级编程 (豆瓣)_files/s1631790.jpg"></a>
+        </dt>
+        <dd>
+          <a href="https://book.douban.com/subject/1467587/" onclick="moreurl(this, {&#39;total&#39;: 10, &#39;clicked&#39;: &#39;1467587&#39;, &#39;pos&#39;: 2, &#39;identifier&#39;: &#39;book-rec-books&#39;})" class="">
+            UNIX编程艺术
+          </a>
+        </dd>
+      </dl>
+      
+      <dl class="">
+        <dt>
+            <a href="https://book.douban.com/subject/2377310/" onclick="moreurl(this, {&#39;total&#39;: 10, &#39;clicked&#39;: &#39;2377310&#39;, &#39;pos&#39;: 3, &#39;identifier&#39;: &#39;book-rec-books&#39;})"><img class="m_sub_img" src="./UNIX环境高级编程 (豆瓣)_files/s5886086.jpg"></a>
+        </dt>
+        <dd>
+          <a href="https://book.douban.com/subject/2377310/" onclick="moreurl(this, {&#39;total&#39;: 10, &#39;clicked&#39;: &#39;2377310&#39;, &#39;pos&#39;: 3, &#39;identifier&#39;: &#39;book-rec-books&#39;})" class="">
+            C专家编程
+          </a>
+        </dd>
+      </dl>
+      
+      <dl class="">
+        <dt>
+            <a href="https://book.douban.com/subject/1139336/" onclick="moreurl(this, {&#39;total&#39;: 10, &#39;clicked&#39;: &#39;1139336&#39;, &#39;pos&#39;: 4, &#39;identifier&#39;: &#39;book-rec-books&#39;})"><img class="m_sub_img" src="./UNIX环境高级编程 (豆瓣)_files/s1106934.jpg"></a>
+        </dt>
+        <dd>
+          <a href="https://book.douban.com/subject/1139336/" onclick="moreurl(this, {&#39;total&#39;: 10, &#39;clicked&#39;: &#39;1139336&#39;, &#39;pos&#39;: 4, &#39;identifier&#39;: &#39;book-rec-books&#39;})" class="">
+            C程序设计语言
+          </a>
+        </dd>
+      </dl>
+        <dl class="clear"></dl>
+      
+      <dl class="">
+        <dt>
+            <a href="https://book.douban.com/subject/1885170/" onclick="moreurl(this, {&#39;total&#39;: 10, &#39;clicked&#39;: &#39;1885170&#39;, &#39;pos&#39;: 5, &#39;identifier&#39;: &#39;book-rec-books&#39;})"><img class="m_sub_img" src="./UNIX环境高级编程 (豆瓣)_files/s1959967.jpg"></a>
+        </dt>
+        <dd>
+          <a href="https://book.douban.com/subject/1885170/" onclick="moreurl(this, {&#39;total&#39;: 10, &#39;clicked&#39;: &#39;1885170&#39;, &#39;pos&#39;: 5, &#39;identifier&#39;: &#39;book-rec-books&#39;})" class="">
+            算法导论（原书第2版）
+          </a>
+        </dd>
+      </dl>
+      
+      <dl class="">
+        <dt>
+            <a href="https://book.douban.com/subject/1230413/" onclick="moreurl(this, {&#39;total&#39;: 10, &#39;clicked&#39;: &#39;1230413&#39;, &#39;pos&#39;: 6, &#39;identifier&#39;: &#39;book-rec-books&#39;})"><img class="m_sub_img" src="./UNIX环境高级编程 (豆瓣)_files/s1470003.jpg"></a>
+        </dt>
+        <dd>
+          <a href="https://book.douban.com/subject/1230413/" onclick="moreurl(this, {&#39;total&#39;: 10, &#39;clicked&#39;: &#39;1230413&#39;, &#39;pos&#39;: 6, &#39;identifier&#39;: &#39;book-rec-books&#39;})" class="">
+            深入理解计算机系统
+          </a>
+        </dd>
+      </dl>
+      
+      <dl class="">
+        <dt>
+            <a href="https://book.douban.com/subject/4859464/" onclick="moreurl(this, {&#39;total&#39;: 10, &#39;clicked&#39;: &#39;4859464&#39;, &#39;pos&#39;: 7, &#39;identifier&#39;: &#39;book-rec-books&#39;})"><img class="m_sub_img" src="./UNIX环境高级编程 (豆瓣)_files/s4437258.jpg"></a>
+        </dt>
+        <dd>
+          <a href="https://book.douban.com/subject/4859464/" onclick="moreurl(this, {&#39;total&#39;: 10, &#39;clicked&#39;: &#39;4859464&#39;, &#39;pos&#39;: 7, &#39;identifier&#39;: &#39;book-rec-books&#39;})" class="">
+            UNIX网络编程 卷1：套接字联网API...
+          </a>
+        </dd>
+      </dl>
+      
+      <dl class="">
+        <dt>
+            <a href="https://book.douban.com/subject/1503819/" onclick="moreurl(this, {&#39;total&#39;: 10, &#39;clicked&#39;: &#39;1503819&#39;, &#39;pos&#39;: 8, &#39;identifier&#39;: &#39;book-rec-books&#39;})"><img class="m_sub_img" src="./UNIX环境高级编程 (豆瓣)_files/s11272832.jpg"></a>
+        </dt>
+        <dd>
+          <a href="https://book.douban.com/subject/1503819/" onclick="moreurl(this, {&#39;total&#39;: 10, &#39;clicked&#39;: &#39;1503819&#39;, &#39;pos&#39;: 8, &#39;identifier&#39;: &#39;book-rec-books&#39;})" class="">
+            Linux内核设计与实现
+          </a>
+        </dd>
+      </dl>
+      
+      <dl class="">
+        <dt>
+            <a href="https://book.douban.com/subject/1723151/" onclick="moreurl(this, {&#39;total&#39;: 10, &#39;clicked&#39;: &#39;1723151&#39;, &#39;pos&#39;: 9, &#39;identifier&#39;: &#39;book-rec-books&#39;})"><img class="m_sub_img" src="./UNIX环境高级编程 (豆瓣)_files/s27318527.jpg"></a>
+        </dt>
+        <dd>
+          <a href="https://book.douban.com/subject/1723151/" onclick="moreurl(this, {&#39;total&#39;: 10, &#39;clicked&#39;: &#39;1723151&#39;, &#39;pos&#39;: 9, &#39;identifier&#39;: &#39;book-rec-books&#39;})" class="">
+            Linux设备驱动程序
+          </a>
+        </dd>
+      </dl>
+        <dl class="clear"></dl>
+  </div>
+</div>
+
+  
+
+
+
+
+
+
+    <link rel="stylesheet" href="./UNIX环境高级编程 (豆瓣)_files/comment.css">
+    <div class="mod-hd">
+        
+
+        <a class="redbutt j a_show_login rr" href="https://www.douban.com/register?reason=review" rel="nofollow">
+            <span> 我来说两句 </span>
+        </a>
+
+            
+  
+
+  <h2>
+    <span class="">短评</span>
+      &nbsp;·&nbsp;·&nbsp;·&nbsp;·&nbsp;·&nbsp;·
+      <span class="pl">&nbsp;(
+          <a href="https://book.douban.com/subject/1788421/comments/">全部 372 条</a>
+        ) </span>
+
+  </h2>
+
+
+    </div>
+    <div class="nav-tab">
+        
+    <div class="tabs-wrapper  line">
+        <a class="short-comment-tabs on-tab" href="https://book.douban.com/subject/1788421/hot" data-tab="hot">热门</a>
+        <span>/</span>
+        <a class="short-comment-tabs " href="https://book.douban.com/subject/1788421/new" data-tab="new">最新</a>
+        <span>/</span>
+        <a class="j a_show_login " href="https://book.douban.com/subject/1788421/follows" data-tab="follows">好友</a>
+    </div>
+
+    </div>
+    <div id="comment-list-wrapper" class="indent">
+        
+
+<div class="comment-list hot show">
+        <ul>
+                
+    <li class="comment-item">
+        <h3>
+            <span class="comment-vote">
+                <span id="c-743145783" class="vote-count">0</span>
+                    <a href="javascript:;" id="btn-743145783" class="j a_show_login" data-cid="743145783">有用</a>
+            </span>
+            <span class="comment-info">
+                <a href="https://www.douban.com/people/Zawesome/">袋鼠先生</a>
+                    <span class="user-stars allstar50 rating" title="力荐"></span>
+                <span>2013-11-09</span>
+            </span>
+        </h3>
+        <p class="comment-content">程序员的自我修养</p>
+    </li>
+
+                
+    <li class="comment-item">
+        <h3>
+            <span class="comment-vote">
+                <span id="c-32454630" class="vote-count">3</span>
+                    <a href="javascript:;" id="btn-32454630" class="j a_show_login" data-cid="32454630">有用</a>
+            </span>
+            <span class="comment-info">
+                <a href="https://www.douban.com/people/Solrex/">solrex</a>
+                    <span class="user-stars allstar50 rating" title="力荐"></span>
+                <span>2010-03-21</span>
+            </span>
+        </h3>
+        <p class="comment-content">中文版的读了一半，没读完，又买了本影印版。这个标记为已读算了。</p>
+    </li>
+
+                
+    <li class="comment-item">
+        <h3>
+            <span class="comment-vote">
+                <span id="c-333110419" class="vote-count">0</span>
+                    <a href="javascript:;" id="btn-333110419" class="j a_show_login" data-cid="333110419">有用</a>
+            </span>
+            <span class="comment-info">
+                <a href="https://www.douban.com/people/wlb/">有一道彩虹</a>
+                    <span class="user-stars allstar50 rating" title="力荐"></span>
+                <span>2010-12-29</span>
+            </span>
+        </h3>
+        <p class="comment-content">别被“高级”吓着，任何一个linux开发人员都应该看看</p>
+    </li>
+
+                
+    <li class="comment-item">
+        <h3>
+            <span class="comment-vote">
+                <span id="c-332137052" class="vote-count">0</span>
+                    <a href="javascript:;" id="btn-332137052" class="j a_show_login" data-cid="332137052">有用</a>
+            </span>
+            <span class="comment-info">
+                <a href="https://www.douban.com/people/thuskyblue/">Menghan</a>
+                    <span class="user-stars allstar50 rating" title="力荐"></span>
+                <span>2010-12-27</span>
+            </span>
+        </h3>
+        <p class="comment-content">需要再读</p>
+    </li>
+
+                
+    <li class="comment-item">
+        <h3>
+            <span class="comment-vote">
+                <span id="c-305946917" class="vote-count">0</span>
+                    <a href="javascript:;" id="btn-305946917" class="j a_show_login" data-cid="305946917">有用</a>
+            </span>
+            <span class="comment-info">
+                <a href="https://www.douban.com/people/houkanshan/">灭灭</a>
+                    <span class="user-stars allstar50 rating" title="力荐"></span>
+                <span>2011-07-11</span>
+            </span>
+        </h3>
+        <p class="comment-content">寒假搞定。。。</p>
+    </li>
+
+        </ul>
+</div>
+
+        
+
+<div class="comment-list new noshow">
+        <ul>
+                
+    <li class="comment-item">
+        <h3>
+            <span class="comment-vote">
+                <span id="c-1102424022" class="vote-count">0</span>
+                    <a href="javascript:;" id="btn-1102424022" class="j a_show_login" data-cid="1102424022">有用</a>
+            </span>
+            <span class="comment-info">
+                <a href="https://www.douban.com/people/xyws/">逍遥未遂</a>
+                    <span class="user-stars allstar30 rating" title="还行"></span>
+                <span>2016-10-27</span>
+            </span>
+        </h3>
+        <p class="comment-content">编程</p>
+    </li>
+
+                
+    <li class="comment-item">
+        <h3>
+            <span class="comment-vote">
+                <span id="c-1092105979" class="vote-count">0</span>
+                    <a href="javascript:;" id="btn-1092105979" class="j a_show_login" data-cid="1092105979">有用</a>
+            </span>
+            <span class="comment-info">
+                <a href="https://www.douban.com/people/151930618/">wzy2016</a>
+                    <span class="user-stars allstar50 rating" title="力荐"></span>
+                <span>2016-10-02</span>
+            </span>
+        </h3>
+        <p class="comment-content">精致的可怕。</p>
+    </li>
+
+                
+    <li class="comment-item">
+        <h3>
+            <span class="comment-vote">
+                <span id="c-1079052095" class="vote-count">0</span>
+                    <a href="javascript:;" id="btn-1079052095" class="j a_show_login" data-cid="1079052095">有用</a>
+            </span>
+            <span class="comment-info">
+                <a href="https://www.douban.com/people/122091466/">随风而行</a>
+                    <span class="user-stars allstar50 rating" title="力荐"></span>
+                <span>2016-08-29</span>
+            </span>
+        </h3>
+        <p class="comment-content">UNIX LINUX 系统开发必备</p>
+    </li>
+
+                
+    <li class="comment-item">
+        <h3>
+            <span class="comment-vote">
+                <span id="c-1068677791" class="vote-count">0</span>
+                    <a href="javascript:;" id="btn-1068677791" class="j a_show_login" data-cid="1068677791">有用</a>
+            </span>
+            <span class="comment-info">
+                <a href="https://www.douban.com/people/62834187/">fourier</a>
+                    <span class="user-stars allstar50 rating" title="力荐"></span>
+                <span>2016-08-01</span>
+            </span>
+        </h3>
+        <p class="comment-content">后端必读经典</p>
+    </li>
+
+                
+    <li class="comment-item">
+        <h3>
+            <span class="comment-vote">
+                <span id="c-1058739806" class="vote-count">0</span>
+                    <a href="javascript:;" id="btn-1058739806" class="j a_show_login" data-cid="1058739806">有用</a>
+            </span>
+            <span class="comment-info">
+                <a href="https://www.douban.com/people/3604850/">散装核弹和射线娃娃</a>
+                    <span class="user-stars allstar50 rating" title="力荐"></span>
+                <span>2016-08-14</span>
+            </span>
+        </h3>
+        <p class="comment-content">看的英文版，系统编程打怪指南</p>
+    </li>
+
+        </ul>
+</div>
+
+    </div>
+    <script src="./UNIX环境高级编程 (豆瓣)_files/short_comment_vote.js.下载"></script>
+    <script src="./UNIX环境高级编程 (豆瓣)_files/short_comment_nav.js.下载"></script>
+    <script>
+        (function(){
+            $('.comment-list').delegate('.vote-comment', 'click', function(e) {
+                vote_comment(e);
+            }).delegate('.delete-comment', 'click', function(e) {
+                if (confirm('确定删除吗？')) {
+                    delete_comment(e);
+                }
+            });
+        })();
+    </script>
+
+  
+
+
+
+
+
+
+
+  <div id="reviews" class="ugc-mod">
+      <h2 class="clearfix">
+        书评&nbsp;&nbsp;· · · · · ·&nbsp;    <span class="pl">(<a href="https://book.douban.com/subject/1788421/reviews">共<span property="v:count">41</span>条</a>)</span>
+      </h2>
+      
+      <a class="redbutt rr j a_show_login" href="https://www.douban.com/register?reason=review" rel="nofollow"><span>我来评论这本书</span></a>
+
+
+      <ul id="comment_tab" class="inline-tabs">
+        <li id="t_0" class="on">
+          <a href="javascript:void(0)" onclick="return switch_tab(&#39;t_0&#39;)">热门评论</a>
+        </li>
+        <li id="t_1">
+          <a href="javascript:void(0)" onclick="return switch_tab(&#39;t_1&#39;)">最新评论</a>
+        </li>
+      </ul>
+
+      
+
+      <div id="wt_0" class="">
+          
+    
+      <div class="ctsh main" id="2185542">
+    <div class="tlst">
+        <div class="ilst">
+                
+    <a href="https://www.douban.com/people/sunyj/" title="史提夫孫"><img class="pil" src="./UNIX环境高级编程 (豆瓣)_files/u2020390-8.jpg" alt="史提夫孫"></a>
+
+        </div>
+        <div class="nlst"><h3>
+            <div id="tb-2185542" class="rr"><a id="af-2185542" href="https://book.douban.com/review/2185542/" class="j a_unfolder" style="background:none;">
+            <img src="./UNIX环境高级编程 (豆瓣)_files/blank.gif" class="bn-arrow" width="48" height="19" alt="&gt;" title="展开全文"></a>
+            <a id="au-2185542" href="javascript:void(0);" class="j a_folder" style="background:none;display:none">
+            <img src="./UNIX环境高级编程 (豆瓣)_files/blank.gif" class="bn-arrow" width="48" height="19" alt="&lt;" title="缩进全文"></a>
+            </div>
+            <a title="技术书籍的典范" class="" href="https://book.douban.com/review/2185542/">技术书籍的典范</a>
+        </h3></div>
+        <div class="clst">
+            <span class="ll user">
+                <span class="starb">                    <a href="https://www.douban.com/people/sunyj/" class=" ">史提夫孫</a>                    &nbsp;                </span>
+                <span class="allstar40" title="推荐"></span>
+            </span>
+            <br><br>
+            <div id="review_2185542_short" class="review-short">
+                    <span class="">好书的妙处之一，就是能给你与作者交流的感觉。技术书籍常犯两个毛病，一个是着眼点太低，堆砌细节（比如谭浩强的《C程序设计》），读起来好像听和尚念经，无法交流。再一个就是着眼点太高，兜售哲学（比如ESR的.........</span>
+
+                    <a class="pl" href="https://book.douban.com/review/2185542/">(<span class="">16回应</span>)</a>
+                    <br><br><div class="pl clearfix">
+                    <span class="fleft">
+                        <span class="">2009-08-01 22:44</span> &nbsp; &nbsp;
+                        <span class="">51/56有用</span>
+                    </span>
+                    
+                    <span class="works-link">来自&nbsp;<a onclick="moreurl(this, {from:&#39;works&#39;})" href="https://book.douban.com/subject/1692629/">人民邮电出版社2006版</a></span>
+
+                    </div>
+            </div>
+            <div id="review_2185542_full" class="hidden">
+              <div id="review_2185542_full_content"></div>
+            </div>
+            
+            <script type="text/json" class="data-review-sharing">
+                {"url": "https://book.douban.com/review/2185542/", "text": "\u597d\u4e66\u7684\u5999\u5904\u4e4b\u4e00\uff0c\u5c31\u662f\u80fd\u7ed9\u4f60\u4e0e\u4f5c\u8005\u4ea4\u6d41\u7684\u611f\u89c9\u3002\u6280\u672f\u4e66\u7c4d\u5e38\u72af\u4e24\u4e2a\u6bdb\u75c5\uff0c\u4e00\u4e2a\u662f\u7740\u773c\u70b9\u592a\u4f4e\uff0c\u5806\u780c\u7ec6\u8282\uff08\u6bd4\u5982\u8c2d\u6d69\u5f3a\u7684\u300aC\u7a0b\u5e8f\u8bbe\u8ba1\u300b\uff09\uff0c\u8bfb\u8d77\u6765\u597d\u50cf\u542c\u548c\u5c1a\u5ff5\u7ecf\uff0c\u65e0\u6cd5\u4ea4\u6d41\u3002\u518d\u4e00\u4e2a\u5c31\u662f\u7740\u773c\u70b9\u592a\u9ad8\uff0c\u515c\u552e\u54f2\u5b66\uff08\u6bd4\u5982ESR\u7684.........", "site": "\u8c46\u74e3", "title": "\u6280\u672f\u4e66\u7c4d\u7684\u5178\u8303"}
+            </script>
+        </div>
+    </div>
+        </div>
+    <div class="clear"></div>
+    
+    
+
+    
+
+          
+    
+      <div class="ctsh main" id="1191622">
+    <div class="tlst">
+        <div class="ilst">
+                
+    <a href="https://www.douban.com/people/sandorf/" title="sandorf"><img class="pil" src="./UNIX环境高级编程 (豆瓣)_files/u1488343-2.jpg" alt="sandorf"></a>
+
+        </div>
+        <div class="nlst"><h3>
+            <div id="tb-1191622" class="rr"><a id="af-1191622" href="https://book.douban.com/review/1191622/" class="j a_unfolder" style="background:none;">
+            <img src="./UNIX环境高级编程 (豆瓣)_files/blank.gif" class="bn-arrow" width="48" height="19" alt="&gt;" title="展开全文"></a>
+            <a id="au-1191622" href="javascript:void(0);" class="j a_folder" style="background:none;display:none">
+            <img src="./UNIX环境高级编程 (豆瓣)_files/blank.gif" class="bn-arrow" width="48" height="19" alt="&lt;" title="缩进全文"></a>
+            </div>
+            <a title="不仅仅是编程" class="" href="https://book.douban.com/review/1191622/">不仅仅是编程</a>
+        </h3></div>
+        <div class="clst">
+            <span class="ll user">
+                <span class="starb">                    <a href="https://www.douban.com/people/sandorf/" class=" ">sandorf</a>                    &nbsp;                </span>
+                <span class="allstar40" title="推荐"></span>
+            </span>
+            <br><br>
+            <div id="review_1191622_short" class="review-short">
+                    <span class="">Rich Stevens显然不是Dennis Richie, Brian Kernighan那个贝尔实验室圈子的人。他对Unix的深入了解，是自己翻烂手册、钻研系统得到的。这个切入点，和我们多数用户是一样的。所以，我们想知道的东西，也许正是Ste.........</span>
+
+                    <a class="pl" href="https://book.douban.com/review/1191622/">(<span class="">15回应</span>)</a>
+                    <br><br><div class="pl clearfix">
+                    <span class="fleft">
+                        <span class="">2007-08-10 10:28</span> &nbsp; &nbsp;
+                        <span class="">45/53有用</span>
+                    </span>
+                    
+                    <span class="works-link">来自&nbsp;<a onclick="moreurl(this, {from:&#39;works&#39;})" href="https://book.douban.com/subject/1692629/">人民邮电出版社2006版</a></span>
+
+                    </div>
+            </div>
+            <div id="review_1191622_full" class="hidden">
+              <div id="review_1191622_full_content"></div>
+            </div>
+            
+            <script type="text/json" class="data-review-sharing">
+                {"url": "https://book.douban.com/review/1191622/", "text": "Rich Stevens\u663e\u7136\u4e0d\u662fDennis Richie, Brian Kernighan\u90a3\u4e2a\u8d1d\u5c14\u5b9e\u9a8c\u5ba4\u5708\u5b50\u7684\u4eba\u3002\u4ed6\u5bf9Unix\u7684\u6df1\u5165\u4e86\u89e3\uff0c\u662f\u81ea\u5df1\u7ffb\u70c2\u624b\u518c\u3001\u94bb\u7814\u7cfb\u7edf\u5f97\u5230\u7684\u3002\u8fd9\u4e2a\u5207\u5165\u70b9\uff0c\u548c\u6211\u4eec\u591a\u6570\u7528\u6237\u662f\u4e00\u6837\u7684\u3002\u6240\u4ee5\uff0c\u6211\u4eec\u60f3\u77e5\u9053\u7684\u4e1c\u897f\uff0c\u4e5f\u8bb8\u6b63\u662fSte.........", "site": "\u8c46\u74e3", "title": "\u4e0d\u4ec5\u4ec5\u662f\u7f16\u7a0b"}
+            </script>
+        </div>
+    </div>
+        </div>
+    <div class="clear"></div>
+    
+    
+
+    
+
+          
+    
+      <div class="ctsh main" id="2705715">
+    <div class="tlst">
+        <div class="ilst">
+                
+    <a href="https://www.douban.com/people/21903565/" title="炎伯"><img class="pil" src="./UNIX环境高级编程 (豆瓣)_files/u21903565-4.jpg" alt="炎伯"></a>
+
+        </div>
+        <div class="nlst"><h3>
+            <div id="tb-2705715" class="rr"><a id="af-2705715" href="https://book.douban.com/review/2705715/" class="j a_unfolder" style="background:none;">
+            <img src="./UNIX环境高级编程 (豆瓣)_files/blank.gif" class="bn-arrow" width="48" height="19" alt="&gt;" title="展开全文"></a>
+            <a id="au-2705715" href="javascript:void(0);" class="j a_folder" style="background:none;display:none">
+            <img src="./UNIX环境高级编程 (豆瓣)_files/blank.gif" class="bn-arrow" width="48" height="19" alt="&lt;" title="缩进全文"></a>
+            </div>
+            <a title="适合老手查阅和补充知识，不建议新手入门时翻阅" class="" href="https://book.douban.com/review/2705715/">适合老手查阅和补充知识，不建议新手入门时翻阅</a>
+        </h3></div>
+        <div class="clst">
+            <span class="ll user">
+                <span class="starb">                    <a href="https://www.douban.com/people/21903565/" class=" ">炎伯</a>                    &nbsp;                </span>
+                <span class="allstar30" title="还行"></span>
+            </span>
+            <br><br>
+            <div id="review_2705715_short" class="review-short">
+                    <span class="">适合老手查阅和补充知识，不建议新手入门时翻阅。原因是本书针对的是unix标准接口，而实际上各家遵循unix标准并不是那么完整，所以你会发现对书上的代码进行验证时往往得不到期望的结果；再有，本书的例程也比较.........</span>
+
+                    <a class="pl" href="https://book.douban.com/review/2705715/">(<span class="">19回应</span>)</a>
+                    <br><br><div class="pl clearfix">
+                    <span class="fleft">
+                        <span class="">2009-11-05 15:42</span> &nbsp; &nbsp;
+                        <span class="">21/29有用</span>
+                    </span>
+
+                    </div>
+            </div>
+            <div id="review_2705715_full" class="hidden">
+              <div id="review_2705715_full_content"></div>
+            </div>
+            
+            <script type="text/json" class="data-review-sharing">
+                {"url": "https://book.douban.com/review/2705715/", "text": "\u9002\u5408\u8001\u624b\u67e5\u9605\u548c\u8865\u5145\u77e5\u8bc6\uff0c\u4e0d\u5efa\u8bae\u65b0\u624b\u5165\u95e8\u65f6\u7ffb\u9605\u3002\u539f\u56e0\u662f\u672c\u4e66\u9488\u5bf9\u7684\u662funix\u6807\u51c6\u63a5\u53e3\uff0c\u800c\u5b9e\u9645\u4e0a\u5404\u5bb6\u9075\u5faaunix\u6807\u51c6\u5e76\u4e0d\u662f\u90a3\u4e48\u5b8c\u6574\uff0c\u6240\u4ee5\u4f60\u4f1a\u53d1\u73b0\u5bf9\u4e66\u4e0a\u7684\u4ee3\u7801\u8fdb\u884c\u9a8c\u8bc1\u65f6\u5f80\u5f80\u5f97\u4e0d\u5230\u671f\u671b\u7684\u7ed3\u679c\uff1b\u518d\u6709\uff0c\u672c\u4e66\u7684\u4f8b\u7a0b\u4e5f\u6bd4\u8f83.........", "site": "\u8c46\u74e3", "title": "\u9002\u5408\u8001\u624b\u67e5\u9605\u548c\u8865\u5145\u77e5\u8bc6\uff0c\u4e0d\u5efa\u8bae\u65b0\u624b\u5165\u95e8\u65f6\u7ffb\u9605"}
+            </script>
+        </div>
+    </div>
+        </div>
+    <div class="clear"></div>
+    
+    
+
+    
+
+          
+    
+      <div class="ctsh main" id="5362028">
+    <div class="tlst">
+        <div class="ilst">
+                
+    <a href="https://www.douban.com/people/engrossment/" title="杰良"><img class="pil" src="./UNIX环境高级编程 (豆瓣)_files/u39292447-5.jpg" alt="杰良"></a>
+
+        </div>
+        <div class="nlst"><h3>
+            <div id="tb-5362028" class="rr"><a id="af-5362028" href="https://book.douban.com/review/5362028/" class="j a_unfolder" style="background:none;">
+            <img src="./UNIX环境高级编程 (豆瓣)_files/blank.gif" class="bn-arrow" width="48" height="19" alt="&gt;" title="展开全文"></a>
+            <a id="au-5362028" href="javascript:void(0);" class="j a_folder" style="background:none;display:none">
+            <img src="./UNIX环境高级编程 (豆瓣)_files/blank.gif" class="bn-arrow" width="48" height="19" alt="&lt;" title="缩进全文"></a>
+            </div>
+            <a title="意犹未尽" class="" href="https://book.douban.com/review/5362028/">意犹未尽</a>
+        </h3></div>
+        <div class="clst">
+            <span class="ll user">
+                <span class="starb">                    <a href="https://www.douban.com/people/engrossment/" class=" ">杰良</a>                    (继往开来)&nbsp;                </span>
+                <span class="allstar50" title="力荐"></span>
+            </span>
+            <br><br>
+            <div id="review_5362028_short" class="review-short">
+                    <span class="">	以前学习C语言的时候，就只知道编写一些简单的程序，至多也只是调用那么几个C库函数，从来没有考虑过自己的程序与所在的操作系统的关系。这一点跟开发嵌入式的单片机程序很像，因为那程序是裸跑的，单片机上没有.........</span>
+
+                    <a class="pl" href="https://book.douban.com/review/5362028/">(<span class="">7回应</span>)</a>
+                    <br><br><div class="pl clearfix">
+                    <span class="fleft">
+                        <span class="">2012-03-26 21:50</span> &nbsp; &nbsp;
+                        <span class="">20/21有用</span>
+                    </span>
+
+                    </div>
+            </div>
+            <div id="review_5362028_full" class="hidden">
+              <div id="review_5362028_full_content"></div>
+            </div>
+            
+            <script type="text/json" class="data-review-sharing">
+                {"url": "https://book.douban.com/review/5362028/", "text": "\t\u4ee5\u524d\u5b66\u4e60C\u8bed\u8a00\u7684\u65f6\u5019\uff0c\u5c31\u53ea\u77e5\u9053\u7f16\u5199\u4e00\u4e9b\u7b80\u5355\u7684\u7a0b\u5e8f\uff0c\u81f3\u591a\u4e5f\u53ea\u662f\u8c03\u7528\u90a3\u4e48\u51e0\u4e2aC\u5e93\u51fd\u6570\uff0c\u4ece\u6765\u6ca1\u6709\u8003\u8651\u8fc7\u81ea\u5df1\u7684\u7a0b\u5e8f\u4e0e\u6240\u5728\u7684\u64cd\u4f5c\u7cfb\u7edf\u7684\u5173\u7cfb\u3002\u8fd9\u4e00\u70b9\u8ddf\u5f00\u53d1\u5d4c\u5165\u5f0f\u7684\u5355\u7247\u673a\u7a0b\u5e8f\u5f88\u50cf\uff0c\u56e0\u4e3a\u90a3\u7a0b\u5e8f\u662f\u88f8\u8dd1\u7684\uff0c\u5355\u7247\u673a\u4e0a\u6ca1\u6709.........", "site": "\u8c46\u74e3", "title": "\u610f\u72b9\u672a\u5c3d"}
+            </script>
+        </div>
+    </div>
+        </div>
+    <div class="clear"></div>
+    
+    
+
+    
+
+          
+    
+      <div class="ctsh main" id="1013257">
+    <div class="tlst">
+        <div class="ilst">
+                
+    <a href="https://www.douban.com/people/leon.lee/" title="刀巴"><img class="pil" src="./UNIX环境高级编程 (豆瓣)_files/u1056633-1.jpg" alt="刀巴"></a>
+
+        </div>
+        <div class="nlst"><h3>
+            <div id="tb-1013257" class="rr"><a id="af-1013257" href="https://book.douban.com/review/1013257/" class="j a_unfolder" style="background:none;">
+            <img src="./UNIX环境高级编程 (豆瓣)_files/blank.gif" class="bn-arrow" width="48" height="19" alt="&gt;" title="展开全文"></a>
+            <a id="au-1013257" href="javascript:void(0);" class="j a_folder" style="background:none;display:none">
+            <img src="./UNIX环境高级编程 (豆瓣)_files/blank.gif" class="bn-arrow" width="48" height="19" alt="&lt;" title="缩进全文"></a>
+            </div>
+            <a title="UNIX编程必备的参考书－－圣经" class="" href="https://book.douban.com/review/1013257/">UNIX编程必备的参考书－－圣经</a>
+        </h3></div>
+        <div class="clst">
+            <span class="ll user">
+                <span class="starb">                    <a href="https://www.douban.com/people/leon.lee/" class=" ">刀巴</a>                    (签名党)&nbsp;                </span>
+                <span class="allstar50" title="力荐"></span>
+            </span>
+            <br><br>
+            <div id="review_1013257_short" class="review-short">
+                    <span class="">虽然作者不幸离开了我们，虽然是本讲述Unix而不是Linux编程环境的书，虽然是一本有点历史的书。但是任何希望对Unix/Linux系统有进一步的了解的人不能不读这本书。 纷繁复杂的Unix系统，在作者手下，若庖丁解牛，.........</span>
+
+                    <a class="pl" href="https://book.douban.com/review/1013257/">(<span class="">3回应</span>)</a>
+                    <br><br><div class="pl clearfix">
+                    <span class="fleft">
+                        <span class="">2005-12-02 14:59</span> &nbsp; &nbsp;
+                        <span class="">12/14有用</span>
+                    </span>
+                    
+                    <span class="works-link">来自&nbsp;<a onclick="moreurl(this, {from:&#39;works&#39;})" href="https://book.douban.com/subject/1092099/">机械工业出版社2000版</a></span>
+
+                    </div>
+            </div>
+            <div id="review_1013257_full" class="hidden">
+              <div id="review_1013257_full_content"></div>
+            </div>
+            
+            <script type="text/json" class="data-review-sharing">
+                {"url": "https://book.douban.com/review/1013257/", "text": "\u867d\u7136\u4f5c\u8005\u4e0d\u5e78\u79bb\u5f00\u4e86\u6211\u4eec\uff0c\u867d\u7136\u662f\u672c\u8bb2\u8ff0Unix\u800c\u4e0d\u662fLinux\u7f16\u7a0b\u73af\u5883\u7684\u4e66\uff0c\u867d\u7136\u662f\u4e00\u672c\u6709\u70b9\u5386\u53f2\u7684\u4e66\u3002\u4f46\u662f\u4efb\u4f55\u5e0c\u671b\u5bf9Unix/Linux\u7cfb\u7edf\u6709\u8fdb\u4e00\u6b65\u7684\u4e86\u89e3\u7684\u4eba\u4e0d\u80fd\u4e0d\u8bfb\u8fd9\u672c\u4e66\u3002 \u7eb7\u7e41\u590d\u6742\u7684Unix\u7cfb\u7edf\uff0c\u5728\u4f5c\u8005\u624b\u4e0b\uff0c\u82e5\u5e96\u4e01\u89e3\u725b\uff0c.........", "site": "\u8c46\u74e3", "title": "UNIX\u7f16\u7a0b\u5fc5\u5907\u7684\u53c2\u8003\u4e66\uff0d\uff0d\u5723\u7ecf"}
+            </script>
+        </div>
+    </div>
+        </div>
+    <div class="clear"></div>
+    
+    
+
+    
+
+          
+    
+      <div class="ctsh main" id="1586415">
+    <div class="tlst">
+        <div class="ilst">
+                
+    <a href="https://www.douban.com/people/gussing/" title="五仁波切糕"><img class="pil" src="./UNIX环境高级编程 (豆瓣)_files/u1243123-1.jpg" alt="五仁波切糕"></a>
+
+        </div>
+        <div class="nlst"><h3>
+            <div id="tb-1586415" class="rr"><a id="af-1586415" href="https://book.douban.com/review/1586415/" class="j a_unfolder" style="background:none;">
+            <img src="./UNIX环境高级编程 (豆瓣)_files/blank.gif" class="bn-arrow" width="48" height="19" alt="&gt;" title="展开全文"></a>
+            <a id="au-1586415" href="javascript:void(0);" class="j a_folder" style="background:none;display:none">
+            <img src="./UNIX环境高级编程 (豆瓣)_files/blank.gif" class="bn-arrow" width="48" height="19" alt="&lt;" title="缩进全文"></a>
+            </div>
+            <a title="这翻译水平" class="" href="https://book.douban.com/review/1586415/">这翻译水平</a>
+        </h3></div>
+        <div class="clst">
+            <span class="ll user">
+                <span class="starb">                    <a href="https://www.douban.com/people/gussing/" class=" ">五仁波切糕</a>                    &nbsp;                </span>
+                <span class="allstar40" title="推荐"></span>
+            </span>
+            <br><br>
+            <div id="review_1586415_short" class="review-short">
+                    <span class="">肯定不是同一个人翻译完的，有几章还可以，有几章勉强能看，有几章翻译的跟垃圾一样。。。这书算是被翻烂了，建议大家买英文版的......</span>
+
+                    <a class="pl" href="https://book.douban.com/review/1586415/">(<span class="">2回应</span>)</a>
+                    <br><br><div class="pl clearfix">
+                    <span class="fleft">
+                        <span class="">2008-12-16 12:41</span> &nbsp; &nbsp;
+                        <span class="">7/12有用</span>
+                    </span>
+
+                    </div>
+            </div>
+            <div id="review_1586415_full" class="hidden">
+              <div id="review_1586415_full_content"></div>
+            </div>
+            
+            <script type="text/json" class="data-review-sharing">
+                {"url": "https://book.douban.com/review/1586415/", "text": "\u80af\u5b9a\u4e0d\u662f\u540c\u4e00\u4e2a\u4eba\u7ffb\u8bd1\u5b8c\u7684\uff0c\u6709\u51e0\u7ae0\u8fd8\u53ef\u4ee5\uff0c\u6709\u51e0\u7ae0\u52c9\u5f3a\u80fd\u770b\uff0c\u6709\u51e0\u7ae0\u7ffb\u8bd1\u7684\u8ddf\u5783\u573e\u4e00\u6837\u3002\u3002\u3002\u8fd9\u4e66\u7b97\u662f\u88ab\u7ffb\u70c2\u4e86\uff0c\u5efa\u8bae\u5927\u5bb6\u4e70\u82f1\u6587\u7248\u7684......", "site": "\u8c46\u74e3", "title": "\u8fd9\u7ffb\u8bd1\u6c34\u5e73"}
+            </script>
+        </div>
+    </div>
+        </div>
+    <div class="clear"></div>
+    
+    
+
+    
+
+
+          <p class="pl" align="right">&gt; <a href="https://book.douban.com/subject/1788421/reviews">更多书评(共41条)</a></p>
+      </div>
+
+      <div id="wt_1" class="hidden">
+          
+    
+      <div class="ctsh main" id="7713359">
+    <div class="tlst">
+        <div class="ilst">
+                
+    <a href="https://www.douban.com/people/125204241/" title="yuexiangallan"><img class="pil" src="./UNIX环境高级编程 (豆瓣)_files/user_normal.jpg" alt="yuexiangallan"></a>
+
+        </div>
+        <div class="nlst"><h3>
+            <div id="tb-7713359" class="rr"><a id="af-7713359" href="https://book.douban.com/review/7713359/" class="j a_unfolder" style="background:none;">
+            <img src="./UNIX环境高级编程 (豆瓣)_files/blank.gif" class="bn-arrow" width="48" height="19" alt="&gt;" title="展开全文"></a>
+            <a id="au-7713359" href="javascript:void(0);" class="j a_folder" style="background:none;display:none">
+            <img src="./UNIX环境高级编程 (豆瓣)_files/blank.gif" class="bn-arrow" width="48" height="19" alt="&lt;" title="缩进全文"></a>
+            </div>
+            <a title="学习linux编程的必备书" class="" href="https://book.douban.com/review/7713359/">学习linux编程的必备书</a>
+        </h3></div>
+        <div class="clst">
+            <span class="ll user">
+                <span class="starb">                    <a href="https://www.douban.com/people/125204241/" class=" ">yuexiangallan</a>                    &nbsp;                </span>
+                <span class="allstar50" title="力荐"></span>
+            </span>
+            <br><br>
+            <div id="review_7713359_short" class="review-short">
+                    <span class="">书里面讲解了大量的用户态的接口函数，也讲解了linux的一些原理，对理解linux和用户态编程有非常大的好处。 用户态编程一定要转变思路，不能一味闷头自己编程，要接住linux基本功能，接住开源世界来满足自己的需求......</span>
+
+                    <br><br><div class="pl clearfix">
+                    <span class="fleft">
+                        <span class="">2015-12-30 22:48</span> &nbsp; &nbsp;
+                    </span>
+
+                    </div>
+            </div>
+            <div id="review_7713359_full" class="hidden">
+              <div id="review_7713359_full_content"></div>
+            </div>
+            
+            <script type="text/json" class="data-review-sharing">
+                {"url": "https://book.douban.com/review/7713359/", "text": "\u4e66\u91cc\u9762\u8bb2\u89e3\u4e86\u5927\u91cf\u7684\u7528\u6237\u6001\u7684\u63a5\u53e3\u51fd\u6570\uff0c\u4e5f\u8bb2\u89e3\u4e86linux\u7684\u4e00\u4e9b\u539f\u7406\uff0c\u5bf9\u7406\u89e3linux\u548c\u7528\u6237\u6001\u7f16\u7a0b\u6709\u975e\u5e38\u5927\u7684\u597d\u5904\u3002 \u7528\u6237\u6001\u7f16\u7a0b\u4e00\u5b9a\u8981\u8f6c\u53d8\u601d\u8def\uff0c\u4e0d\u80fd\u4e00\u5473\u95f7\u5934\u81ea\u5df1\u7f16\u7a0b\uff0c\u8981\u63a5\u4f4flinux\u57fa\u672c\u529f\u80fd\uff0c\u63a5\u4f4f\u5f00\u6e90\u4e16\u754c\u6765\u6ee1\u8db3\u81ea\u5df1\u7684\u9700\u6c42......", "site": "\u8c46\u74e3", "title": "\u5b66\u4e60linux\u7f16\u7a0b\u7684\u5fc5\u5907\u4e66"}
+            </script>
+        </div>
+    </div>
+        </div>
+    <div class="clear"></div>
+    
+    
+
+    
+
+          
+    
+      <div class="ctsh main" id="7689957">
+    <div class="tlst">
+        <div class="ilst">
+                
+    <a href="https://www.douban.com/people/wangguibao/" title="王贵豹"><img class="pil" src="./UNIX环境高级编程 (豆瓣)_files/u54556864-6.jpg" alt="王贵豹"></a>
+
+        </div>
+        <div class="nlst"><h3>
+            <div id="tb-7689957" class="rr"><a id="af-7689957" href="https://book.douban.com/review/7689957/" class="j a_unfolder" style="background:none;">
+            <img src="./UNIX环境高级编程 (豆瓣)_files/blank.gif" class="bn-arrow" width="48" height="19" alt="&gt;" title="展开全文"></a>
+            <a id="au-7689957" href="javascript:void(0);" class="j a_folder" style="background:none;display:none">
+            <img src="./UNIX环境高级编程 (豆瓣)_files/blank.gif" class="bn-arrow" width="48" height="19" alt="&lt;" title="缩进全文"></a>
+            </div>
+            <a title="UNIX编程环境初探和参考用的好书" class="" href="https://book.douban.com/review/7689957/">UNIX编程环境初探和参考用的好书</a>
+        </h3></div>
+        <div class="clst">
+            <span class="ll user">
+                <span class="starb">                    <a href="https://www.douban.com/people/wangguibao/" class=" ">王贵豹</a>                    &nbsp;                </span>
+                <span class="allstar40" title="推荐"></span>
+            </span>
+            <br><br>
+            <div id="review_7689957_short" class="review-short">
+                    <span class="">UNIX编程环境设计到技术方向非常多，没有一个线索指引的话，很难一窥全貌；APUE就是这样一本书，按着作者设定好的章节，可以一步一步窥探UNIX系统的全貌。在一个Linux环境上，一边读书，一边实验思考，一件挺好玩.........</span>
+
+                    <br><br><div class="pl clearfix">
+                    <span class="fleft">
+                        <span class="">2015-12-13 22:16</span> &nbsp; &nbsp;
+                        <span class="">1/1有用</span>
+                    </span>
+                    
+                    <span class="works-link">来自&nbsp;<a onclick="moreurl(this, {from:&#39;works&#39;})" href="https://book.douban.com/subject/2284230/">Addison-Wesley Professional2005版</a></span>
+
+                    </div>
+            </div>
+            <div id="review_7689957_full" class="hidden">
+              <div id="review_7689957_full_content"></div>
+            </div>
+            
+            <script type="text/json" class="data-review-sharing">
+                {"url": "https://book.douban.com/review/7689957/", "text": "UNIX\u7f16\u7a0b\u73af\u5883\u8bbe\u8ba1\u5230\u6280\u672f\u65b9\u5411\u975e\u5e38\u591a\uff0c\u6ca1\u6709\u4e00\u4e2a\u7ebf\u7d22\u6307\u5f15\u7684\u8bdd\uff0c\u5f88\u96be\u4e00\u7aa5\u5168\u8c8c\uff1bAPUE\u5c31\u662f\u8fd9\u6837\u4e00\u672c\u4e66\uff0c\u6309\u7740\u4f5c\u8005\u8bbe\u5b9a\u597d\u7684\u7ae0\u8282\uff0c\u53ef\u4ee5\u4e00\u6b65\u4e00\u6b65\u7aa5\u63a2UNIX\u7cfb\u7edf\u7684\u5168\u8c8c\u3002\u5728\u4e00\u4e2aLinux\u73af\u5883\u4e0a\uff0c\u4e00\u8fb9\u8bfb\u4e66\uff0c\u4e00\u8fb9\u5b9e\u9a8c\u601d\u8003\uff0c\u4e00\u4ef6\u633a\u597d\u73a9.........", "site": "\u8c46\u74e3", "title": "UNIX\u7f16\u7a0b\u73af\u5883\u521d\u63a2\u548c\u53c2\u8003\u7528\u7684\u597d\u4e66"}
+            </script>
+        </div>
+    </div>
+        </div>
+    <div class="clear"></div>
+    
+    
+
+    
+
+          
+    
+      <div class="ctsh main" id="7565786">
+    <div class="tlst">
+        <div class="ilst">
+                
+    <a href="https://www.douban.com/people/ichenq/" title="花臉巴兒"><img class="pil" src="./UNIX环境高级编程 (豆瓣)_files/u4502802-34.jpg" alt="花臉巴兒"></a>
+
+        </div>
+        <div class="nlst"><h3>
+            <div id="tb-7565786" class="rr"><a id="af-7565786" href="https://book.douban.com/review/7565786/" class="j a_unfolder" style="background:none;">
+            <img src="./UNIX环境高级编程 (豆瓣)_files/blank.gif" class="bn-arrow" width="48" height="19" alt="&gt;" title="展开全文"></a>
+            <a id="au-7565786" href="javascript:void(0);" class="j a_folder" style="background:none;display:none">
+            <img src="./UNIX环境高级编程 (豆瓣)_files/blank.gif" class="bn-arrow" width="48" height="19" alt="&lt;" title="缩进全文"></a>
+            </div>
+            <a title="关于翻译" class="" href="https://book.douban.com/review/7565786/">关于翻译</a>
+        </h3></div>
+        <div class="clst">
+            <span class="ll user">
+                <span class="starb">                    <a href="https://www.douban.com/people/ichenq/" class=" ">花臉巴兒</a>                    (冷笑变做故事的作者)&nbsp;                </span>
+                <span class="allstar40" title="推荐"></span>
+            </span>
+            <br><br>
+            <div id="review_7565786_short" class="review-short">
+                    <span class="">1， 4.5节 p80   “进程每次打开、创建或删除一个文件时，内核就进行文件访问权限测试，而这种测试可能涉及文件的所有者（st_uid和st_gid）、进程的有效ID(有效用户ID和有效组ID)以及进程的附属组ID（若支持的话.........</span>
+
+                    <br><br><div class="pl clearfix">
+                    <span class="fleft">
+                        <span class="">2015-08-10 18:51</span> &nbsp; &nbsp;
+                        <span class="">1/1有用</span>
+                    </span>
+                    
+                    <span class="works-link">来自&nbsp;<a onclick="moreurl(this, {from:&#39;works&#39;})" href="https://book.douban.com/subject/25900403/">人民邮电出版社2014版</a></span>
+
+                    </div>
+            </div>
+            <div id="review_7565786_full" class="hidden">
+              <div id="review_7565786_full_content"></div>
+            </div>
+            
+            <script type="text/json" class="data-review-sharing">
+                {"url": "https://book.douban.com/review/7565786/", "text": "1\uff0c 4.5\u8282 p80   \u201c\u8fdb\u7a0b\u6bcf\u6b21\u6253\u5f00\u3001\u521b\u5efa\u6216\u5220\u9664\u4e00\u4e2a\u6587\u4ef6\u65f6\uff0c\u5185\u6838\u5c31\u8fdb\u884c\u6587\u4ef6\u8bbf\u95ee\u6743\u9650\u6d4b\u8bd5\uff0c\u800c\u8fd9\u79cd\u6d4b\u8bd5\u53ef\u80fd\u6d89\u53ca\u6587\u4ef6\u7684\u6240\u6709\u8005\uff08st_uid\u548cst_gid\uff09\u3001\u8fdb\u7a0b\u7684\u6709\u6548ID(\u6709\u6548\u7528\u6237ID\u548c\u6709\u6548\u7ec4ID)\u4ee5\u53ca\u8fdb\u7a0b\u7684\u9644\u5c5e\u7ec4ID\uff08\u82e5\u652f\u6301\u7684\u8bdd.........", "site": "\u8c46\u74e3", "title": "\u5173\u4e8e\u7ffb\u8bd1"}
+            </script>
+        </div>
+    </div>
+        </div>
+    <div class="clear"></div>
+    
+    
+
+    
+
+          
+    
+      <div class="ctsh main" id="6635471">
+    <div class="tlst">
+        <div class="ilst">
+                
+    <a href="https://www.douban.com/people/87337194/" title="易水"><img class="pil" src="./UNIX环境高级编程 (豆瓣)_files/u87337194-6.jpg" alt="易水"></a>
+
+        </div>
+        <div class="nlst"><h3>
+            <div id="tb-6635471" class="rr"><a id="af-6635471" href="https://book.douban.com/review/6635471/" class="j a_unfolder" style="background:none;">
+            <img src="./UNIX环境高级编程 (豆瓣)_files/blank.gif" class="bn-arrow" width="48" height="19" alt="&gt;" title="展开全文"></a>
+            <a id="au-6635471" href="javascript:void(0);" class="j a_folder" style="background:none;display:none">
+            <img src="./UNIX环境高级编程 (豆瓣)_files/blank.gif" class="bn-arrow" width="48" height="19" alt="&lt;" title="缩进全文"></a>
+            </div>
+            <a title="不错" class="" href="https://book.douban.com/review/6635471/">不错</a>
+        </h3></div>
+        <div class="clst">
+            <span class="ll user">
+                <span class="starb">                    <a href="https://www.douban.com/people/87337194/" class=" ">易水</a>                    &nbsp;                </span>
+                <span class="allstar40" title="推荐"></span>
+            </span>
+            <br><br>
+            <div id="review_6635471_short" class="review-short">
+                    <span class="">所谓的apue，名不虚传，让你对unix系统级编程有较好的认识，堆系统级api有全面讲解，是学习unix的好书。建议初学者和有经验的都可以看看，其中也贯穿一些unix设计的思想。也是一本工具书。我编程开发的经验思想很.........</span>
+
+                    <br><br><div class="pl clearfix">
+                    <span class="fleft">
+                        <span class="">2014-04-16 01:11</span> &nbsp; &nbsp;
+                    </span>
+
+                    </div>
+            </div>
+            <div id="review_6635471_full" class="hidden">
+              <div id="review_6635471_full_content"></div>
+            </div>
+            
+            <script type="text/json" class="data-review-sharing">
+                {"url": "https://book.douban.com/review/6635471/", "text": "\u6240\u8c13\u7684apue\uff0c\u540d\u4e0d\u865a\u4f20\uff0c\u8ba9\u4f60\u5bf9unix\u7cfb\u7edf\u7ea7\u7f16\u7a0b\u6709\u8f83\u597d\u7684\u8ba4\u8bc6\uff0c\u5806\u7cfb\u7edf\u7ea7api\u6709\u5168\u9762\u8bb2\u89e3\uff0c\u662f\u5b66\u4e60unix\u7684\u597d\u4e66\u3002\u5efa\u8bae\u521d\u5b66\u8005\u548c\u6709\u7ecf\u9a8c\u7684\u90fd\u53ef\u4ee5\u770b\u770b\uff0c\u5176\u4e2d\u4e5f\u8d2f\u7a7f\u4e00\u4e9bunix\u8bbe\u8ba1\u7684\u601d\u60f3\u3002\u4e5f\u662f\u4e00\u672c\u5de5\u5177\u4e66\u3002\u6211\u7f16\u7a0b\u5f00\u53d1\u7684\u7ecf\u9a8c\u601d\u60f3\u5f88.........", "site": "\u8c46\u74e3", "title": "\u4e0d\u9519"}
+            </script>
+        </div>
+    </div>
+        </div>
+    <div class="clear"></div>
+    
+    
+
+    
+
+          
+    
+      <div class="ctsh main" id="6468716">
+    <div class="tlst">
+        <div class="ilst">
+                
+    <a href="https://www.douban.com/people/35809567/" title="Yosemite"><img class="pil" src="./UNIX环境高级编程 (豆瓣)_files/u35809567-4.jpg" alt="Yosemite"></a>
+
+        </div>
+        <div class="nlst"><h3>
+            <div id="tb-6468716" class="rr"><a id="af-6468716" href="https://book.douban.com/review/6468716/" class="j a_unfolder" style="background:none;">
+            <img src="./UNIX环境高级编程 (豆瓣)_files/blank.gif" class="bn-arrow" width="48" height="19" alt="&gt;" title="展开全文"></a>
+            <a id="au-6468716" href="javascript:void(0);" class="j a_folder" style="background:none;display:none">
+            <img src="./UNIX环境高级编程 (豆瓣)_files/blank.gif" class="bn-arrow" width="48" height="19" alt="&lt;" title="缩进全文"></a>
+            </div>
+            <a title="字字珠玑" class="" href="https://book.douban.com/review/6468716/">字字珠玑</a>
+        </h3></div>
+        <div class="clst">
+            <span class="ll user">
+                <span class="starb">                    <a href="https://www.douban.com/people/35809567/" class=" ">Yosemite</a>                    &nbsp;                </span>
+                <span class="allstar50" title="力荐"></span>
+            </span>
+            <br><br>
+            <div id="review_6468716_short" class="review-short">
+                    <span class="">这本书是操作系统课用的教材。第一遍看是被逼无奈，只觉得云里雾里。最大的感受就是这TM写的神马玩意？这书也能得9点几分？于是乎考完试就放下再也没管过了。  直到几个月前再次翻阅时，感受却已经大不相同。  所.........</span>
+
+                    <br><br><div class="pl clearfix">
+                    <span class="fleft">
+                        <span class="">2013-12-19 21:40</span> &nbsp; &nbsp;
+                        <span class="">4/4有用</span>
+                    </span>
+
+                    </div>
+            </div>
+            <div id="review_6468716_full" class="hidden">
+              <div id="review_6468716_full_content"></div>
+            </div>
+            
+            <script type="text/json" class="data-review-sharing">
+                {"url": "https://book.douban.com/review/6468716/", "text": "\u8fd9\u672c\u4e66\u662f\u64cd\u4f5c\u7cfb\u7edf\u8bfe\u7528\u7684\u6559\u6750\u3002\u7b2c\u4e00\u904d\u770b\u662f\u88ab\u903c\u65e0\u5948\uff0c\u53ea\u89c9\u5f97\u4e91\u91cc\u96fe\u91cc\u3002\u6700\u5927\u7684\u611f\u53d7\u5c31\u662f\u8fd9TM\u5199\u7684\u795e\u9a6c\u73a9\u610f\uff1f\u8fd9\u4e66\u4e5f\u80fd\u5f979\u70b9\u51e0\u5206\uff1f\u4e8e\u662f\u4e4e\u8003\u5b8c\u8bd5\u5c31\u653e\u4e0b\u518d\u4e5f\u6ca1\u7ba1\u8fc7\u4e86\u3002  \u76f4\u5230\u51e0\u4e2a\u6708\u524d\u518d\u6b21\u7ffb\u9605\u65f6\uff0c\u611f\u53d7\u5374\u5df2\u7ecf\u5927\u4e0d\u76f8\u540c\u3002  \u6240.........", "site": "\u8c46\u74e3", "title": "\u5b57\u5b57\u73e0\u7391"}
+            </script>
+        </div>
+    </div>
+        </div>
+    <div class="clear"></div>
+    
+    
+
+    
+
+          
+    
+      <div class="ctsh main" id="5996141">
+    <div class="tlst">
+        <div class="ilst">
+                
+    <a href="https://www.douban.com/people/6115229/" title="Zilla"><img class="pil" src="./UNIX环境高级编程 (豆瓣)_files/u6115229-2.jpg" alt="Zilla"></a>
+
+        </div>
+        <div class="nlst"><h3>
+            <div id="tb-5996141" class="rr"><a id="af-5996141" href="https://book.douban.com/review/5996141/" class="j a_unfolder" style="background:none;">
+            <img src="./UNIX环境高级编程 (豆瓣)_files/blank.gif" class="bn-arrow" width="48" height="19" alt="&gt;" title="展开全文"></a>
+            <a id="au-5996141" href="javascript:void(0);" class="j a_folder" style="background:none;display:none">
+            <img src="./UNIX环境高级编程 (豆瓣)_files/blank.gif" class="bn-arrow" width="48" height="19" alt="&lt;" title="缩进全文"></a>
+            </div>
+            <a title="勘误" class="" href="https://book.douban.com/review/5996141/">勘误</a>
+        </h3></div>
+        <div class="clst">
+            <span class="ll user">
+                <span class="starb">                    <a href="https://www.douban.com/people/6115229/" class=" ">Zilla</a>                    &nbsp;                </span>
+                <span class="allstar40" title="推荐"></span>
+            </span>
+            <br><br>
+            <div id="review_5996141_short" class="review-short">
+                    <span class="">翻译问题： P342 系统进程依赖于操作系统实现。 The system processes you see will depend on the operating system implementation.......</span>
+
+                    <br><br><div class="pl clearfix">
+                    <span class="fleft">
+                        <span class="">2013-05-29 20:11</span> &nbsp; &nbsp;
+                    </span>
+
+                    </div>
+            </div>
+            <div id="review_5996141_full" class="hidden">
+              <div id="review_5996141_full_content"></div>
+            </div>
+            
+            <script type="text/json" class="data-review-sharing">
+                {"url": "https://book.douban.com/review/5996141/", "text": "\u7ffb\u8bd1\u95ee\u9898\uff1a P342 \u7cfb\u7edf\u8fdb\u7a0b\u4f9d\u8d56\u4e8e\u64cd\u4f5c\u7cfb\u7edf\u5b9e\u73b0\u3002 The system processes you see will depend on the operating system implementation.......", "site": "\u8c46\u74e3", "title": "\u52d8\u8bef"}
+            </script>
+        </div>
+    </div>
+        </div>
+    <div class="clear"></div>
+    
+    
+
+    
+
+
+          <p class="pl trr">&gt; <a href="https://book.douban.com/subject/1788421/reviews?sort=time">更多书评(共41条)</a></p>
+      </div>
+
+      <script type="text/javascript">
+          function switch_tab(tab_id){
+              hide_tab_id = $("#comment_tab .on")[0].id;
+              if (hide_tab_id==tab_id) {
+                  return false;
+              }
+              $("#"+tab_id).addClass("on");
+              $("#"+hide_tab_id).removeClass("on");
+              $("#w"+hide_tab_id).hide();
+              $("#w"+tab_id).show();
+          }
+
+        $('.ctsh').delegate('.clst', 'hover', function(e) {
+          $(this).find('.report')[e.type === 'mouseenter' ? 'show' : 'hide']()
+        })
+      </script>
+  </div>
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+<div class="ugc-mod reading-notes">
+  <div class="hd">
+    <h2>
+      读书笔记&nbsp;&nbsp;· · · · · ·&nbsp;
+          <span class="pl">(<a href="https://book.douban.com/subject/1788421/annotation">共<span property="v:count">87</span>篇</a>)</span>
+
+    </h2>
+
+      <a class="redbutt rr j a_show_login" href="https://www.douban.com/register?reason=annotate" rel="nofollow"><span>我来写笔记</span></a>
+  </div>
+  
+
+    <div class="bd">
+      <ul class="inline-tabs">
+        <li class="on"><a href="https://book.douban.com/subject/1788421/#rank" id="by_rank">按有用程度</a></li>
+        <li><a href="https://book.douban.com/subject/1788421/#page" id="by_page">按页码先后</a></li>
+        <li><a href="https://book.douban.com/subject/1788421/#time" id="by_time">最新笔记</a></li>
+      </ul>
+      
+  <ul class="comments by_rank">
+      
+      <li class="ctsh clearfix" data-cid="15103265">
+        <div class="ilst">
+          <a href="https://www.douban.com/people/timebug/"><img src="./UNIX环境高级编程 (豆瓣)_files/u45075937-18.jpg" alt="timebug" class=""></a>
+        </div>
+        <div class="con">
+          <div class="nlst">
+            <h3>
+              <div class="note-toggle rr">
+                <a href="https://book.douban.com/annotation/15103265/" class="note-unfolder">展开</a>
+                <a href="javascript:void(0);" class="note-folder">收起</a>
+              </div>
+              <a href="https://book.douban.com/annotation/15103265/" class="">第234页</a></h3>
+          </div>
+          <div class="clst">
+            <p class="user"><a href="https://www.douban.com/people/timebug/" class=" " title="timebug">timebug</a>
+                (绝对清晰，是风格上唯一的美。)
+              
+                <span class="allstar50" title="力荐"></span>
+            </p>
+            <div class="reading-note" data-cid="15103265">
+              <div class="short">
+                
+                  <span class="">文中提到：
+
+
+大多数UNIX调试程序都使用core文件以检查进程终止时的状态。
+
+
+如书上表10-1所示，当进程接收到例如SIGABRT(异常终止)、SIGBUS(硬件故障)、SIGSEGV(无效内存引用)等信号的时候会产生相应的core文件，该core文件复制了进程的存储镜像。
+
+在运行程序的时候，我们会经常遇到Segmentation fault，也就是段错误，表示该进程进行了一次无效的内存访问。对于此类情况，我们很难发现问题具体是出现在程序的哪一行，如...</span>
+                  &nbsp;&nbsp;<a href="https://book.douban.com/annotation/15103265/">(<span class="">1回应</span>)</a>
+                <p class="pl">
+                  <span class="">2011-10-30 13:28</span>
+                </p>
+              </div>
+              <div class="all hidden" style="display:none">
+                文中提到：<div style="padding-bottom:1em;"></div><blockquote><q>
+大多数UNIX调试程序都使用core文件以检查进程终止时的状态。
+</q></blockquote><div style="padding-bottom:1em;"></div>如书上表10-1所示，当进程接收到例如SIGABRT(异常终止)、SIGBUS(硬件故障)、SIGSEGV(无效内存引用)等信号的时候会产生相应的core文件，该core文件复制了进程的存储镜像。<div style="padding-bottom:1em;"></div>在运行程序的时候，我们会经常遇到Segmentation fault，也就是段错误，表示该进程进行了一次无效的内存访问。对于此类情况，我们很难发现问题具体是出现在程序的哪一行，如果是一小段程序，我们可以直接用gdb一步一步跟踪调试，但是如果程序规模很大，这样做显然就不实现了。<div style="padding-bottom:1em;"></div>回过头来，我们发现对于此类错误，程序会接收到SIGSEGV(无效内存引用)信号，而该信号在终止程序的同时，会在当前目录产生一个相应的core文件。因此，我们可以让gdb根据该core文件分析中断的位置，也就是出现该错误的位置。<div style="padding-bottom:1em;"></div>首先，我们应该现查看当前系统是否开启了core文件支持(以GNU/Linux为例)：<div style="padding-bottom:1em;"></div><div class="sh_rand01 snippet-wrap"><pre class="source true html sh_html sh_sourceCode"><ol class="snippet-num"><li>~ $ ulimit -c</li><li>0</li><li>~ $ ulimit -c unlimited</li><li>~ $ ulimit -c</li><li>unlimited</li></ol></pre></div><div style="padding-bottom:1em;"></div>0表示未开启，大于0的表示默认core文件的大小，如果超过此大小，则截断，这会造成core文件的信息不完整，因此我们这里将其设置为unlimited，也就是无限大。<div style="padding-bottom:1em;"></div>接下来，我们写一段C代码来测试：<div style="padding-bottom:1em;"></div><div class="sh_rand01 snippet-wrap"><pre class="source true c sh_c sh_sourceCode"><ol class="snippet-num"><li><span class="sh_preproc">#include</span> <span class="sh_string">&lt;stdio.h&gt;</span></li><li><span style="display:none;">&nbsp;</span></li><li><span class="sh_type">char</span> <span class="sh_symbol">*</span>str<span class="sh_symbol">;</span> </li><li><span style="display:none;">&nbsp;</span></li><li><span class="sh_type">void</span> <span class="sh_function">core_test</span><span class="sh_symbol">()</span></li><li><span class="sh_cbracket">{</span></li><li>    <span class="sh_function">printf</span><span class="sh_symbol">(</span><span class="sh_string">"%c</span><span class="sh_specialchar">\n</span><span class="sh_string">"</span><span class="sh_symbol">,*</span>str<span class="sh_symbol">);</span></li><li><span class="sh_cbracket">}</span></li><li><span style="display:none;">&nbsp;</span></li><li><span class="sh_type">int</span> <span class="sh_function">main</span><span class="sh_symbol">(</span><span class="sh_type">int</span> argc<span class="sh_symbol">,</span> <span class="sh_type">char</span> <span class="sh_symbol">*</span>argv<span class="sh_symbol">[])</span></li><li><span class="sh_cbracket">{</span></li><li>    <span class="sh_function">core_test</span><span class="sh_symbol">();</span></li><li>    <span class="sh_keyword">return</span> <span class="sh_number">0</span><span class="sh_symbol">;</span></li><li><span class="sh_cbracket">}</span></li></ol></pre></div><div style="padding-bottom:1em;"></div>然后，依次进行编译(无警告无错误)，运行(段错误)，并结合产生的core文件调试：<div style="padding-bottom:1em;"></div><div class="sh_rand01 snippet-wrap"><pre class="source true html sh_html sh_sourceCode"><ol class="snippet-num"><li>~ $ gcc -o test test.c -g</li><li>~ $ ./test</li><li>Segmentation fault (core dumped)</li><li>~ $ file core</li><li>core: ELF 32-bit LSB core file Intel 80386, version 1 (SYSV), SVR4-style, from './test'</li><li>~ $ gdb test core</li><li>GNU gdb (Gentoo 7.3.1 p1) 7.3.1</li><li>Copyright (C) 2011 Free Software Foundation, Inc.</li><li>...</li><li>Core was generated by `./test'.</li><li>Program terminated with signal 11, Segmentation fault.</li><li>#0  0x08048574 in core_test () at test.c:7</li><li>7	        printf("%c\n",*str);</li><li>(gdb) where</li><li>#0  0x08048574 in core_test () at test.c:7</li><li>#1  0x0804859d in main (argc=1, argv=0xbfed0214) at test.c:12</li><li>(gdb) quit</li></ol></pre></div><div style="padding-bottom:1em;"></div>很明显，问题是出在这里：
+<div class="sh_rand01 snippet-wrap"><pre class="source true html sh_html sh_sourceCode"><ol class="snippet-num"><li>#0  0x08048574 in core_test () at test.c:7</li><li>7	        printf("%c\n",*str);</li></ol></pre></div><div style="padding-bottom:1em;"></div>字符指针str未经初始化就试图(解除引用)访问它所指向的内存空间，导致出现无效的内存访问。其中where命令用来查看当前调用栈信息。
+                  <div class="col-rec-con clearfix">
+                    
+
+
+
+
+
+
+
+<div class="rec-sec">
+
+    <span class="rec">
+
+<a href="https://www.douban.com/accounts/register?reason=collect" class="j a_show_login lnk-sharing lnk-douban-sharing">推荐</a>
+</span>
+</div>
+
+                      <a href="javascript:;" id="n-15103265" class="j a_show_login colbutt ll add-col"><span>收藏</span></a>
+                  </div>
+                <div class="pl col-time">
+                  <a href="https://book.douban.com/annotation/15103265/#comments">1回应</a>&nbsp;&nbsp;
+                  2011-10-30 13:28
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li class="ctsh clearfix" data-cid="28640506">
+        <div class="ilst">
+          <a href="https://www.douban.com/people/AllenZZhao/"><img src="./UNIX环境高级编程 (豆瓣)_files/user_normal.jpg" alt="[已注销]" class=""></a>
+        </div>
+        <div class="con">
+          <div class="nlst">
+            <h3>
+              <div class="note-toggle rr">
+                <a href="https://book.douban.com/annotation/28640506/" class="note-unfolder">展开</a>
+                <a href="javascript:void(0);" class="note-folder">收起</a>
+              </div>
+              <a href="https://book.douban.com/annotation/28640506/" class="">第182页</a></h3>
+          </div>
+          <div class="clst">
+            <p class="user"><a href="https://www.douban.com/people/AllenZZhao/" class=" " title="[已注销]">[已注销]</a>
+              
+            </p>
+            <div class="reading-note" data-cid="28640506">
+              <div class="short">
+                
+                  <span class="">感觉linux中很重要的部分就是进程的理解吧，之前没接触过这些东西，现在该好好看看了。
+首先讲到 子进程会继承父进程的一些资源。
+好吧，有点晚了，明天起来继续看。</span>
+                <p class="pl">
+                  <span class="">2013-09-20 00:07</span>
+                    &nbsp;&nbsp;<span class="">1人收藏</span>
+                </p>
+              </div>
+              <div class="all hidden" style="display:none">
+                感觉linux中很重要的部分就是进程的理解吧，之前没接触过这些东西，现在该好好看看了。<div style="padding-bottom:1em;"></div>首先讲到 子进程会继承父进程的一些资源。<div style="padding-bottom:1em;"></div>好吧，有点晚了，明天起来继续看。
+                  <div class="col-rec-con clearfix">
+                    
+
+
+
+
+
+
+
+<div class="rec-sec">
+
+    <span class="rec">
+
+<a href="https://www.douban.com/accounts/register?reason=collect" class="j a_show_login lnk-sharing lnk-douban-sharing">推荐</a>
+</span>
+</div>
+
+                      <a href="javascript:;" id="n-28640506" class="j a_show_login colbutt ll add-col"><span>收藏</span></a>
+                      &nbsp;&nbsp;1人收藏
+                  </div>
+                <div class="pl col-time">
+                  <a href="https://book.douban.com/annotation/28640506/#comments">回应</a>&nbsp;&nbsp;
+                  2013-09-20 00:07
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li class="ctsh clearfix" data-cid="27834849">
+        <div class="ilst">
+          <a href="https://www.douban.com/people/zere/"><img src="./UNIX环境高级编程 (豆瓣)_files/u50349850-46.jpg" alt="jasonz" class=""></a>
+        </div>
+        <div class="con">
+          <div class="nlst">
+            <h3>
+              <div class="note-toggle rr">
+                <a href="https://book.douban.com/annotation/27834849/" class="note-unfolder">展开</a>
+                <a href="javascript:void(0);" class="note-folder">收起</a>
+              </div>
+              <a href="https://book.douban.com/annotation/27834849/" class="">第51页</a></h3>
+          </div>
+          <div class="clst">
+            <p class="user"><a href="https://www.douban.com/people/zere/" class=" " title="jasonz">jasonz</a>
+              
+            </p>
+            <div class="reading-note" data-cid="27834849">
+              <div class="short">
+                
+                  <span class=""><span class="code-holder">/代码内容已省略/</span>
+
+不等价于
+<span class="code-holder">/代码内容已省略/</span>
+
+原因：
+1. 对于单个进程而言，可以等价。
+2. 多个进程同时操作同一个文件，会产生问题。即后操作的进程会覆盖掉前一个进程的数据。
+3. 原子操作。使用 O_APPEND 能够避免这个问题。
+
+
+和
+<span class="code-holder">/代码内容已省略/</span>
+
+等价于
+<span class="code-holder">/代码内容已省略/...</span></span>
+                <p class="pl">
+                  <span class="">2013-07-29 15:11</span>
+                    &nbsp;&nbsp;<span class="">1人收藏</span>
+                </p>
+              </div>
+              <div class="all hidden" style="display:none">
+                <div class="sh_rand01 snippet-wrap"><pre class="source true c sh_c sh_sourceCode"><ol class="snippet-num"><li><span class="sh_function">open</span><span class="sh_symbol">(</span><span class="sh_keyword">const</span> <span class="sh_type">char</span> <span class="sh_symbol">*</span>pathname<span class="sh_symbol">,</span> O_RDWR <span class="sh_symbol">|</span> O_APPEND<span class="sh_symbol">);</span></li></ol></pre></div><div style="padding-bottom:1em;"></div>不等价于
+<div class="sh_rand01 snippet-wrap"><pre class="source true c sh_c sh_sourceCode"><ol class="snippet-num"><li><span class="sh_function">lseek</span><span class="sh_symbol">(</span><span class="sh_type">int</span> filedes<span class="sh_symbol">,</span> <span class="sh_number">0</span><span class="sh_symbol">,</span> SEEK_END<span class="sh_symbol">);</span></li></ol></pre></div><div style="padding-bottom:1em;"></div>原因：<div style="padding-bottom:1em;"></div>1. 对于单个进程而言，可以等价。<div style="padding-bottom:1em;"></div>2. 多个进程同时操作同一个文件，会产生问题。即后操作的进程会覆盖掉前一个进程的数据。<div style="padding-bottom:1em;"></div>3. 原子操作。使用 O_APPEND 能够避免这个问题。<div style="padding-bottom:1em;"></div>和
+<div class="sh_rand01 snippet-wrap"><pre class="source true c sh_c sh_sourceCode"><ol class="snippet-num"><li><span class="sh_function">open</span><span class="sh_symbol">(</span><span class="sh_keyword">const</span> <span class="sh_type">char</span> <span class="sh_symbol">*</span>pathname<span class="sh_symbol">,</span> O_RDWR <span class="sh_symbol">|</span> O_CREAT <span class="sh_symbol">|</span> O_TRUNC<span class="sh_symbol">,</span> <span class="sh_usertype">mode_t</span><span class="sh_normal"> </span>mode<span class="sh_symbol">);</span></li></ol></pre></div><div style="padding-bottom:1em;"></div>等价于
+<div class="sh_rand01 snippet-wrap"><pre class="source true c sh_c sh_sourceCode"><ol class="snippet-num"><li><span class="sh_function">creat</span><span class="sh_symbol">(</span><span class="sh_keyword">const</span> <span class="sh_type">char</span> <span class="sh_symbol">*</span>pathname<span class="sh_symbol">,</span> <span class="sh_usertype">mode_t</span><span class="sh_normal"> </span>mode<span class="sh_symbol">);</span></li></ol></pre></div>
+是不同的。
+                  <div class="col-rec-con clearfix">
+                    
+
+
+
+
+
+
+
+<div class="rec-sec">
+
+    <span class="rec">
+
+<a href="https://www.douban.com/accounts/register?reason=collect" class="j a_show_login lnk-sharing lnk-douban-sharing">推荐</a>
+</span>
+</div>
+
+                      <a href="javascript:;" id="n-27834849" class="j a_show_login colbutt ll add-col"><span>收藏</span></a>
+                      &nbsp;&nbsp;1人收藏
+                  </div>
+                <div class="pl col-time">
+                  <a href="https://book.douban.com/annotation/27834849/#comments">回应</a>&nbsp;&nbsp;
+                  2013-07-29 15:11
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li class="ctsh clearfix" data-cid="15935740">
+        <div class="ilst">
+          <a href="https://www.douban.com/people/tanso/"><img src="./UNIX环境高级编程 (豆瓣)_files/u1773949-62.jpg" alt="liuh" class=""></a>
+        </div>
+        <div class="con">
+          <div class="nlst">
+            <h3>
+              <div class="note-toggle rr">
+                <a href="https://book.douban.com/annotation/15935740/" class="note-unfolder">展开</a>
+                <a href="javascript:void(0);" class="note-folder">收起</a>
+              </div>
+              <a href="https://book.douban.com/annotation/15935740/" class="">第577页</a></h3>
+          </div>
+          <div class="clst">
+            <p class="user"><a href="https://www.douban.com/people/tanso/" class=" " title="liuh">liuh</a>
+                (平常心，不要急，不要等)
+              
+                <span class="allstar50" title="力荐"></span>
+            </p>
+            <div class="reading-note" data-cid="15935740">
+              <div class="short">
+                
+                  <span class="">DB这个全局结构看着真闹心，后边各种函数对里边的变量各种改。函数调用还有顺序要求，后调用的函数还依赖先调用函数对这个结构中某个变量的赋值！！</span>
+                <p class="pl">
+                  <span class="">2011-12-23 12:40</span>
+                </p>
+              </div>
+              <div class="all hidden" style="display:none">
+                DB这个全局结构看着真闹心，后边各种函数对里边的变量各种改。函数调用还有顺序要求，后调用的函数还依赖先调用函数对这个结构中某个变量的赋值！！
+                  <div class="col-rec-con clearfix">
+                    
+
+
+
+
+
+
+
+<div class="rec-sec">
+
+    <span class="rec">
+
+<a href="https://www.douban.com/accounts/register?reason=collect" class="j a_show_login lnk-sharing lnk-douban-sharing">推荐</a>
+</span>
+</div>
+
+                      <a href="javascript:;" id="n-15935740" class="j a_show_login colbutt ll add-col"><span>收藏</span></a>
+                  </div>
+                <div class="pl col-time">
+                  <a href="https://book.douban.com/annotation/15935740/#comments">回应</a>&nbsp;&nbsp;
+                  2011-12-23 12:40
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+  </ul>
+  
+
+      
+  <ul class="comments by_page" style="display: none">
+      
+      <li class="ctsh clearfix" data-cid="14550085">
+        <div class="ilst">
+          <a href="https://www.douban.com/people/imay/"><img src="./UNIX环境高级编程 (豆瓣)_files/u2427904-43.jpg" alt="懒猫" class=""></a>
+        </div>
+        <div class="con">
+          <div class="nlst">
+            <h3>
+              <div class="note-toggle rr">
+                <a href="https://book.douban.com/annotation/14550085/" class="note-unfolder">展开</a>
+                <a href="javascript:void(0);" class="note-folder">收起</a>
+              </div>
+              <a href="https://book.douban.com/annotation/14550085/" class="">第1页</a></h3>
+          </div>
+          <div class="clst">
+            <p class="user"><a href="https://www.douban.com/people/imay/" class=" " title="懒猫">懒猫</a>
+              
+                <span class="allstar40" title="推荐"></span>
+            </p>
+            <div class="reading-note" data-cid="14550085">
+              <div class="short">
+                
+                  <span class="">在信号一章，许多的语句需要字句斟酌，一字一字研读，如果某部分有疑问，翻看英文版，多半都能得到解决。这本书的前部分，译者做得很不错，但是，中文毕竟还是翻译过来的，用词的准确性比不上英文原版。
+在信号量一章存在着许多的技术细节，中文的翻译，仅仅是语序稍微做调整，或者字面的意思已经完全被翻译出来，但依旧无法准确地表达，翻看原文，便会恍然大悟，再看中文翻译版，你也不会觉得这样的翻译存在瑕疵，翻译不存在问题...</span>
+                <p class="pl">
+                  <span class="">2011-09-17 23:06</span>
+                </p>
+              </div>
+              <div class="all hidden" style="display:none">
+                在信号一章，许多的语句需要字句斟酌，一字一字研读，如果某部分有疑问，翻看英文版，多半都能得到解决。这本书的前部分，译者做得很不错，但是，中文毕竟还是翻译过来的，用词的准确性比不上英文原版。<div style="padding-bottom:1em;"></div>在信号量一章存在着许多的技术细节，中文的翻译，仅仅是语序稍微做调整，或者字面的意思已经完全被翻译出来，但依旧无法准确地表达，翻看原文，便会恍然大悟，再看中文翻译版，你也不会觉得这样的翻译存在瑕疵，翻译不存在问题，但就是不如英文原版明了。从一种语言到另外一种语言的转换，仅仅是语序的改变，也可能会造成对某个意思强调的丢失，从而造成影响。
+                  <div class="col-rec-con clearfix">
+                    
+
+
+
+
+
+
+
+<div class="rec-sec">
+
+    <span class="rec">
+
+<a href="https://www.douban.com/accounts/register?reason=collect" class="j a_show_login lnk-sharing lnk-douban-sharing">推荐</a>
+</span>
+</div>
+
+                      <a href="javascript:;" id="n-14550085" class="j a_show_login colbutt ll add-col"><span>收藏</span></a>
+                  </div>
+                <div class="pl col-time">
+                  <a href="https://book.douban.com/annotation/14550085/#comments">回应</a>&nbsp;&nbsp;
+                  2011-09-17 23:06
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li class="ctsh clearfix" data-cid="18463181">
+        <div class="ilst">
+          <a href="https://www.douban.com/people/50074906/"><img src="./UNIX环境高级编程 (豆瓣)_files/u50074906-4.jpg" alt="wusoule" class=""></a>
+        </div>
+        <div class="con">
+          <div class="nlst">
+            <h3>
+              <div class="note-toggle rr">
+                <a href="https://book.douban.com/annotation/18463181/" class="note-unfolder">展开</a>
+                <a href="javascript:void(0);" class="note-folder">收起</a>
+              </div>
+              <a href="https://book.douban.com/annotation/18463181/" class="">第1页</a></h3>
+          </div>
+          <div class="clst">
+            <p class="user"><a href="https://www.douban.com/people/50074906/" class=" " title="wusoule">wusoule</a>
+                (技术实现·电影回归·音乐释放)
+              
+            </p>
+            <div class="reading-note" data-cid="18463181">
+              <div class="short">
+                
+                  <span class="">昨日在给朋友讲
+有狗：1
+有猫：2
+有人：4
+都有的话就是：7
+
+用一句话来说就是：对于某个bit位，我们赋予了它意义。这样才可以没有歧义的bit位的组合，即：意义的组合。</span>
+                <p class="pl">
+                  <span class="">2012-05-23 17:24</span>
+                </p>
+              </div>
+              <div class="all hidden" style="display:none">
+                昨日在给朋友讲<div style="padding-bottom:1em;"></div>有狗：1<div style="padding-bottom:1em;"></div>有猫：2<div style="padding-bottom:1em;"></div>有人：4<div style="padding-bottom:1em;"></div>都有的话就是：7<div style="padding-bottom:1em;"></div>用一句话来说就是：对于某个bit位，我们赋予了它意义。这样才可以没有歧义的bit位的组合，即：意义的组合。
+                  <div class="col-rec-con clearfix">
+                    
+
+
+
+
+
+
+
+<div class="rec-sec">
+
+    <span class="rec">
+
+<a href="https://www.douban.com/accounts/register?reason=collect" class="j a_show_login lnk-sharing lnk-douban-sharing">推荐</a>
+</span>
+</div>
+
+                      <a href="javascript:;" id="n-18463181" class="j a_show_login colbutt ll add-col"><span>收藏</span></a>
+                  </div>
+                <div class="pl col-time">
+                  <a href="https://book.douban.com/annotation/18463181/#comments">回应</a>&nbsp;&nbsp;
+                  2012-05-23 17:24
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li class="ctsh clearfix" data-cid="24396134">
+        <div class="ilst">
+          <a href="https://www.douban.com/people/67931534/"><img src="./UNIX环境高级编程 (豆瓣)_files/u67931534-5.jpg" alt="天天都有鱼摆摆" class=""></a>
+        </div>
+        <div class="con">
+          <div class="nlst">
+            <h3>
+              <div class="note-toggle rr">
+                <a href="https://book.douban.com/annotation/24396134/" class="note-unfolder">展开</a>
+                <a href="javascript:void(0);" class="note-folder">收起</a>
+              </div>
+              <a href="https://book.douban.com/annotation/24396134/" class="">第1页</a></h3>
+          </div>
+          <div class="clst">
+            <p class="user"><a href="https://www.douban.com/people/67931534/" class=" " title="天天都有鱼摆摆">天天都有鱼摆摆</a>
+                (事业、爱情、毅力！)
+              
+            </p>
+            <div class="reading-note" data-cid="24396134">
+              <div class="short">
+                
+                  <div class="ll">
+                    <a href="https://book.douban.com/annotation/24396134/"><img src="./UNIX环境高级编程 (豆瓣)_files/p24396134-1.jpg"></a>
+                  </div>
+                  <span class=""> 
+1.文件系统
+dir文件不存放属性
+创建目录的时候会自动创建两个文件[.][..]
+
+2.设置下载aupe.h，并将其复制到$path中：
+wget http://www.apuebook.com/src.tar.gz
+解压，进入文件夹
+编辑/usr/include/apue.h，在#endif前加#include “error.c”
+复制/include/apue.h和/lib/error.c到/usr/include/
+复制/lib/libapue.a到/usr/lib/
+
+3.第一段代码【ls】的实现：
+dirent.h：struct dirent，opendir()，readdir(),closedi...</span>
+                <p class="pl">
+                  <span class="">2013-02-04 15:57</span>
+                </p>
+              </div>
+              <div class="all hidden" style="display:none">
+                <div class="middle"><img src="./UNIX环境高级编程 (豆瓣)_files/p24396134-1(1).jpg" alt=""><br><span class="pic-title"></span></div>
+1.文件系统<div style="padding-bottom:1em;"></div>dir文件不存放属性<div style="padding-bottom:1em;"></div>创建目录的时候会自动创建两个文件[.][..]<div style="padding-bottom:1em;"></div>2.设置下载aupe.h，并将其复制到$path中：<div style="padding-bottom:1em;"></div>wget <a rel="nofollow" href="http://www.apuebook.com/src.tar.gz" target="_blank">http://www.apuebook.com/src.tar.gz</a>
+解压，进入文件夹<div style="padding-bottom:1em;"></div>编辑/usr/include/apue.h，在#endif前加#include “error.c”<div style="padding-bottom:1em;"></div>复制/include/apue.h和/lib/error.c到/usr/include/<div style="padding-bottom:1em;"></div>复制/lib/libapue.a到/usr/lib/<div style="padding-bottom:1em;"></div>3.第一段代码【ls】的实现：<div style="padding-bottom:1em;"></div>dirent.h：struct dirent，opendir()，readdir(),closedir();<div style="padding-bottom:1em;"></div>err_sys("")<div style="padding-bottom:1em;"></div>err_quit("")<div style="padding-bottom:1em;"></div>exit(0)——1～255是异常退出<div style="padding-bottom:1em;"></div>
+                  <div class="col-rec-con clearfix">
+                    
+
+
+
+
+
+
+
+<div class="rec-sec">
+
+    <span class="rec">
+
+<a href="https://www.douban.com/accounts/register?reason=collect" class="j a_show_login lnk-sharing lnk-douban-sharing">推荐</a>
+</span>
+</div>
+
+                      <a href="javascript:;" id="n-24396134" class="j a_show_login colbutt ll add-col"><span>收藏</span></a>
+                  </div>
+                <div class="pl col-time">
+                  <a href="https://book.douban.com/annotation/24396134/#comments">回应</a>&nbsp;&nbsp;
+                  2013-02-04 15:57
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li class="ctsh clearfix" data-cid="32150031">
+        <div class="ilst">
+          <a href="https://www.douban.com/people/2900337/"><img src="./UNIX环境高级编程 (豆瓣)_files/u2900337-1.jpg" alt="QY" class=""></a>
+        </div>
+        <div class="con">
+          <div class="nlst">
+            <h3>
+              <div class="note-toggle rr">
+                <a href="https://book.douban.com/annotation/32150031/" class="note-unfolder">展开</a>
+                <a href="javascript:void(0);" class="note-folder">收起</a>
+              </div>
+              <a href="https://book.douban.com/annotation/32150031/" class="">第1页</a></h3>
+          </div>
+          <div class="clst">
+            <p class="user"><a href="https://www.douban.com/people/2900337/" class=" " title="QY">QY</a>
+              
+                <span class="allstar50" title="力荐"></span>
+            </p>
+            <div class="reading-note" data-cid="32150031">
+              <div class="short">
+                
+                  <span class="">【电子书】本书是被誉为UNIX编程“圣经”的Advanced Programming in the UNIX Environment一书的第2版。书中除了介绍UNIX文件和目录、标准I/O库、系统数据文件和信息、进程环境、进程控制、进程 关系、信号、线程、线程控制、守护进程、各种I/O、进程间通信、网络IPC、伪终端等方面的内容，还在 此基础上介绍了多个应用实例，包括如何创建数据库函数库以及如何与网络打印机通信等。此外，还在附 录中给出了函数原型和部分习题的答..</span>
+                <p class="pl">
+                  <span class="">2014-07-08 19:40</span>
+                </p>
+              </div>
+              <div class="all hidden" style="display:none">
+                【电子书】本书是被誉为UNIX编程“圣经”的Advanced Programming in the UNIX Environment一书的第2版。书中除了介绍UNIX文件和目录、标准I/O库、系统数据文件和信息、进程环境、进程控制、进程 关系、信号、线程、线程控制、守护进程、各种I/O、进程间通信、网络IPC、伪终端等方面的内容，还在 此基础上介绍了多个应用实例，包括如何创建数据库函数库以及如何与网络打印机通信等。此外，还在附 录中给出了函数原型和部分习题的答案。 本书内容权威，概念清晰，阐述精辟，对于所有层次UNIX/Linux程序员都是一本不可或缺的参考书。
+                  <div class="col-rec-con clearfix">
+                    
+
+
+
+
+
+
+
+<div class="rec-sec">
+
+    <span class="rec">
+
+<a href="https://www.douban.com/accounts/register?reason=collect" class="j a_show_login lnk-sharing lnk-douban-sharing">推荐</a>
+</span>
+</div>
+
+                      <a href="javascript:;" id="n-32150031" class="j a_show_login colbutt ll add-col"><span>收藏</span></a>
+                  </div>
+                <div class="pl col-time">
+                  <a href="https://book.douban.com/annotation/32150031/#comments">回应</a>&nbsp;&nbsp;
+                  2014-07-08 19:40
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+  </ul>
+  
+
+      
+  <ul class="comments by_time" style="display: none">
+      
+      <li class="ctsh clearfix" data-cid="34600493">
+        <div class="ilst">
+          <a href="https://www.douban.com/people/47114425/"><img src="./UNIX环境高级编程 (豆瓣)_files/u47114425-2.jpg" alt="撕裂嘴唇" class=""></a>
+        </div>
+        <div class="con">
+          <div class="nlst">
+            <h3>
+              <div class="note-toggle rr">
+                <a href="https://book.douban.com/annotation/34600493/" class="note-unfolder">展开</a>
+                <a href="javascript:void(0);" class="note-folder">收起</a>
+              </div>
+              <a href="https://book.douban.com/annotation/34600493/" class="">第42页</a></h3>
+          </div>
+          <div class="clst">
+            <p class="user"><a href="https://www.douban.com/people/47114425/" class=" " title="撕裂嘴唇">撕裂嘴唇</a>
+              
+            </p>
+            <div class="reading-note" data-cid="34600493">
+              <div class="short">
+                
+                  <span class="">对于多个进程/线程读写同一个文件一直都存在疑惑，它们是如何做的，读到这里总算找到了线索。图3-1 打开文件的内核数据 直观的展示出文件共享是怎样做到的。</span>
+                <p class="pl">
+                  <span class="">2015-03-19 16:59</span>
+                </p>
+              </div>
+              <div class="all hidden" style="display:none">
+                对于多个进程/线程读写同一个文件一直都存在疑惑，它们是如何做的，读到这里总算找到了线索。图3-1 打开文件的内核数据 直观的展示出文件共享是怎样做到的。
+                  <div class="col-rec-con clearfix">
+                    
+
+
+
+
+
+
+
+<div class="rec-sec">
+
+    <span class="rec">
+
+<a href="https://www.douban.com/accounts/register?reason=collect" class="j a_show_login lnk-sharing lnk-douban-sharing">推荐</a>
+</span>
+</div>
+
+                      <a href="javascript:;" id="n-34600493" class="j a_show_login colbutt ll add-col"><span>收藏</span></a>
+                  </div>
+                <div class="pl col-time">
+                  <a href="https://book.douban.com/annotation/34600493/#comments">回应</a>&nbsp;&nbsp;
+                  2015-03-19 16:59
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li class="ctsh clearfix" data-cid="33088288">
+        <div class="ilst">
+          <a href="https://www.douban.com/people/47939505/"><img src="./UNIX环境高级编程 (豆瓣)_files/u47939505-2.jpg" alt="孙雷®诺城" class=""></a>
+        </div>
+        <div class="con">
+          <div class="nlst">
+            <h3>
+              <div class="note-toggle rr">
+                <a href="https://book.douban.com/annotation/33088288/" class="note-unfolder">展开</a>
+                <a href="javascript:void(0);" class="note-folder">收起</a>
+              </div>
+              <a href="https://book.douban.com/annotation/33088288/" class="">第34页</a></h3>
+          </div>
+          <div class="clst">
+            <p class="user"><a href="https://www.douban.com/people/47939505/" class=" " title="孙雷®诺城">孙雷®诺城</a>
+              
+            </p>
+            <div class="reading-note" data-cid="33088288">
+              <div class="short">
+                
+                  <span class="">第一次见到用awk写c程序……</span>
+                <p class="pl">
+                  <span class="">2014-10-09 22:34</span>
+                </p>
+              </div>
+              <div class="all hidden" style="display:none">
+                第一次见到用awk写c程序……
+                  <div class="col-rec-con clearfix">
+                    
+
+
+
+
+
+
+
+<div class="rec-sec">
+
+    <span class="rec">
+
+<a href="https://www.douban.com/accounts/register?reason=collect" class="j a_show_login lnk-sharing lnk-douban-sharing">推荐</a>
+</span>
+</div>
+
+                      <a href="javascript:;" id="n-33088288" class="j a_show_login colbutt ll add-col"><span>收藏</span></a>
+                  </div>
+                <div class="pl col-time">
+                  <a href="https://book.douban.com/annotation/33088288/#comments">回应</a>&nbsp;&nbsp;
+                  2014-10-09 22:34
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li class="ctsh clearfix" data-cid="32150031">
+        <div class="ilst">
+          <a href="https://www.douban.com/people/2900337/"><img src="./UNIX环境高级编程 (豆瓣)_files/u2900337-1.jpg" alt="QY" class=""></a>
+        </div>
+        <div class="con">
+          <div class="nlst">
+            <h3>
+              <div class="note-toggle rr">
+                <a href="https://book.douban.com/annotation/32150031/" class="note-unfolder">展开</a>
+                <a href="javascript:void(0);" class="note-folder">收起</a>
+              </div>
+              <a href="https://book.douban.com/annotation/32150031/" class="">第1页</a></h3>
+          </div>
+          <div class="clst">
+            <p class="user"><a href="https://www.douban.com/people/2900337/" class=" " title="QY">QY</a>
+              
+                <span class="allstar50" title="力荐"></span>
+            </p>
+            <div class="reading-note" data-cid="32150031">
+              <div class="short">
+                
+                  <span class="">【电子书】本书是被誉为UNIX编程“圣经”的Advanced Programming in the UNIX Environment一书的第2版。书中除了介绍UNIX文件和目录、标准I/O库、系统数据文件和信息、进程环境、进程控制、进程 关系、信号、线程、线程控制、守护进程、各种I/O、进程间通信、网络IPC、伪终端等方面的内容，还在 此基础上介绍了多个应用实例，包括如何创建数据库函数库以及如何与网络打印机通信等。此外，还在附 录中给出了函数原型和部分习题的答..</span>
+                <p class="pl">
+                  <span class="">2014-07-08 19:40</span>
+                </p>
+              </div>
+              <div class="all hidden" style="display:none">
+                【电子书】本书是被誉为UNIX编程“圣经”的Advanced Programming in the UNIX Environment一书的第2版。书中除了介绍UNIX文件和目录、标准I/O库、系统数据文件和信息、进程环境、进程控制、进程 关系、信号、线程、线程控制、守护进程、各种I/O、进程间通信、网络IPC、伪终端等方面的内容，还在 此基础上介绍了多个应用实例，包括如何创建数据库函数库以及如何与网络打印机通信等。此外，还在附 录中给出了函数原型和部分习题的答案。 本书内容权威，概念清晰，阐述精辟，对于所有层次UNIX/Linux程序员都是一本不可或缺的参考书。
+                  <div class="col-rec-con clearfix">
+                    
+
+
+
+
+
+
+
+<div class="rec-sec">
+
+    <span class="rec">
+
+<a href="https://www.douban.com/accounts/register?reason=collect" class="j a_show_login lnk-sharing lnk-douban-sharing">推荐</a>
+</span>
+</div>
+
+                      <a href="javascript:;" id="n-32150031" class="j a_show_login colbutt ll add-col"><span>收藏</span></a>
+                  </div>
+                <div class="pl col-time">
+                  <a href="https://book.douban.com/annotation/32150031/#comments">回应</a>&nbsp;&nbsp;
+                  2014-07-08 19:40
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li class="ctsh clearfix" data-cid="31357877">
+        <div class="ilst">
+          <a href="https://www.douban.com/people/shonenada/"><img src="./UNIX环境高级编程 (豆瓣)_files/u58022352-2.jpg" alt="shonenada" class=""></a>
+        </div>
+        <div class="con">
+          <div class="nlst">
+            <h3>
+              <div class="note-toggle rr">
+                <a href="https://book.douban.com/annotation/31357877/" class="note-unfolder">展开</a>
+                <a href="javascript:void(0);" class="note-folder">收起</a>
+              </div>
+              <a href="https://book.douban.com/annotation/31357877/" class="">第3页</a></h3>
+          </div>
+          <div class="clst">
+            <p class="user"><a href="https://www.douban.com/people/shonenada/" class=" " title="shonenada">shonenada</a>
+              
+            </p>
+            <div class="reading-note" data-cid="31357877">
+              <div class="short">
+                
+                  <span class="">不能出现的文件名中的字符只有：
+   /  和  空操作符  （null ） 两个。
+
+/ 分隔文件目录
+null 用于终止一个路径名
+
+但好的机制是，一般使用印刷字符的子集来作为文件名符号。
+如果文件名中使用了某些 shell 特殊字符，则必须使用 shell 的引号机制引用文件名。
+</span>
+                <p class="pl">
+                  <span class="">2014-04-24 13:21</span>
+                </p>
+              </div>
+              <div class="all hidden" style="display:none">
+                不能出现的文件名中的字符只有：<div style="padding-bottom:1em;"></div>   /  和  空操作符  （null ） 两个。<div style="padding-bottom:1em;"></div>/ 分隔文件目录<div style="padding-bottom:1em;"></div>null 用于终止一个路径名<div style="padding-bottom:1em;"></div>但好的机制是，一般使用印刷字符的子集来作为文件名符号。<div style="padding-bottom:1em;"></div>如果文件名中使用了某些 shell 特殊字符，则必须使用 shell 的引号机制引用文件名。
+
+                  <div class="col-rec-con clearfix">
+                    
+
+
+
+
+
+
+
+<div class="rec-sec">
+
+    <span class="rec">
+
+<a href="https://www.douban.com/accounts/register?reason=collect" class="j a_show_login lnk-sharing lnk-douban-sharing">推荐</a>
+</span>
+</div>
+
+                      <a href="javascript:;" id="n-31357877" class="j a_show_login colbutt ll add-col"><span>收藏</span></a>
+                  </div>
+                <div class="pl col-time">
+                  <a href="https://book.douban.com/annotation/31357877/#comments">回应</a>&nbsp;&nbsp;
+                  2014-04-24 13:21
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+  </ul>
+  
+
+    </div>
+      <div class="ft">
+        <p class="trr">&gt; <a href="https://book.douban.com/subject/1788421/annotation">更多读书笔记（共87篇）</a></p>
+      </div>
+
+</div>
+
+
+
+<script type="text/javascript">
+  $(document).ready(function(){
+    var TEMPL_ADD_COL = '<a href="" id="n-{NOTE_ID}" class="colbutt ll add-col"><span>收藏</span></a>',
+      TEMPL_DEL_COL = '<span class="pl">已收藏 &gt;<a href="" id="n-{NOTE_ID}" class="del-col">取消收藏</a></span>';
+
+    $('body').delegate('.add-col', 'click', function(e){
+      e.preventDefault();
+      var nnid = $(this).attr('id').split('-')[1],
+        bn_add = $(this);
+      $.post_withck("/j/book/annotation_collect",{nid:nnid},function(){
+        var a = $(TEMPL_DEL_COL.replace('{NOTE_ID}', nnid));
+        bn_add.before(a);
+        bn_add.remove();
+      })
+    });
+
+    $('body').delegate('.del-col', 'click', function(e){
+      e.preventDefault();
+      var nnid = $(this).attr('id').split('-')[1],
+        bn_del = $(this).parent();
+      $.post_withck("/j/book/annotation_uncollect", {nid: nnid}, function() {
+        var a = $(TEMPL_ADD_COL.replace('{NOTE_ID}', nnid));
+        bn_del.before(a);
+        bn_del.remove();
+      })
+    });
+
+    $("pre.source").each(function(){
+      var cn = $(this).attr('class').split(' ');
+      l = cn[1];
+      s = 'rand01';
+      n = cn[2];
+      $(this).snippet(n,{style: s, showNum: l});
+    });
+
+    var annotationMod = $('.reading-notes .bd')
+      , annotationTabs = annotationMod.find('.inline-tabs li')
+      , annotationTabLinks = annotationTabs.find('a')
+      , annotationTabContents = annotationMod.find('ul.comments');
+
+    annotationTabLinks.click(function(e){
+      e.preventDefault();
+      var el = $(this)
+        , kind = el.attr('id');
+
+      annotationTabs.removeClass('on');
+      el.parent().addClass('on');
+      annotationTabContents.hide();
+      annotationTabContents.filter('.' + kind).show();
+    });
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+	jax: ["input/TeX", "output/HTML-CSS"],
+    extensions: ["tex2jax.js","TeX/AMSmath.js","TeX/AMSsymbols.js","TeX/noUndefined.js"],
+    tex2jax: {
+		inlineMath: [ ["($", "$)"], ['\\(','\\)'] ],
+		displayMath: [ ["($$","$$)"], ['\\[','\\]']],
+		skipTags: ["script","noscript","style","textarea"],
+		processEscapes: true,
+		processEnvironments: true,
+		preview: "TeX"
+	},
+	showProcessingMessages: false
+  });
+</script>
+
+
+  
+
+
+
+
+
+
+<div id="db-discussion-section" class="indent ugc-mod">
+
+
+
+
+        
+  
+
+  <h2>
+    <span class="">论坛</span>
+      &nbsp;·&nbsp;·&nbsp;·&nbsp;·&nbsp;·&nbsp;·
+
+  </h2>
+
+
+
+        
+<table class="olt"><tbody><tr><td></td><td></td><td></td><td></td></tr>
+        
+        <tr class="">
+            <td class="pl"><a href="https://book.douban.com/subject/1788421/discussion/27317011/" title="UNIX环境高级编程-(第2版）  样张试读" class="">UNIX环境高级编程-(第2版）  样张试读</a></td>
+            <td class="pl"><span class="">来自</span><a class="" href="https://www.douban.com/people/chinapub/">互动出版网</a></td>
+            <td class="pl"><span class=""></span></td>
+            <td class="pl"><span class="">2010-09-14</span></td>
+        </tr>
+        
+        <tr class="">
+            <td class="pl"><a href="https://book.douban.com/subject/1788421/discussion/26227466/" title="买书送T-Shirt" class="">买书送T-Shirt</a></td>
+            <td class="pl"><span class="">来自</span><a class="" href="https://www.douban.com/people/doutadie/">豆他爹</a></td>
+            <td class="pl"><span class="">1 回应</span></td>
+            <td class="pl"><span class="">2010-09-15</span></td>
+        </tr>
+        
+        <tr class="">
+            <td class="pl"><a href="https://book.douban.com/subject/1788421/discussion/1075085/" title="再版一次贵了n倍， 还好我大学毕业的时候就买了" class="">再版一次贵了n倍， 还好我大学毕业的时候就买了</a></td>
+            <td class="pl"><span class="">来自</span><a class="" href="https://www.douban.com/people/number5/">number5</a></td>
+            <td class="pl"><span class=""></span></td>
+            <td class="pl"><span class="">2007-06-30</span></td>
+        </tr>
+        
+        <tr class="">
+            <td class="pl"><a href="https://book.douban.com/subject/1788421/discussion/27317255/" title="购买UNIX环境高级编程-(第2版)   即随单赠送精品图书一本" class="">购买UNIX环境高级编程-(第2版)   即随单赠送精品图...</a></td>
+            <td class="pl"><span class="">来自</span><a class="" href="https://www.douban.com/people/chinapub/">互动出版网</a></td>
+            <td class="pl"><span class=""></span></td>
+            <td class="pl"><span class="">2010-09-14</span></td>
+        </tr>
+        
+        <tr class="">
+            <td class="pl"><a href="https://book.douban.com/subject/1788421/discussion/35605195/" title="书不离手" class="">书不离手</a></td>
+            <td class="pl"><span class="">来自</span><a class="" href="https://www.douban.com/people/47156901/">逆跑~~</a></td>
+            <td class="pl"><span class=""></span></td>
+            <td class="pl"><span class="">2010-11-26</span></td>
+        </tr>
+</tbody></table>
+
+
+            <p class="pl" align="right">&gt;
+                <a href="https://book.douban.com/subject/1788421/discussion/">浏览更多话题</a>
+            </p>
+
+
+</div>
+
+
+</div>
+<script type="text/javascript">
+$(function(){if($.browser.msie && $.browser.version == 6.0){
+    var maxWidth = parseInt($('#info').css('max-width'));
+    if($('#info').width() > maxWidth)
+        $('#info').width(maxWidth)
+}});
+</script>
+</div>
+      <div class="aside" style="position: static; left: 876.5px;">
+        
+  
+  
+
+
+
+
+
+
+  
+    <div class="get_douban_app">
+        
+
+        <h2 class="discuss-title">在豆瓣App讨论这本书  · · · · · ·</h2>
+
+        <div class="bd">
+            <img src="./UNIX环境高级编程 (豆瓣)_files/1788421.png" alt="扫码下载豆瓣App">
+            <div class="info">
+                <div class="avatars">
+                </div>
+                <div class="text">用豆瓣App扫码，找人聊聊这本书。<br>没有豆瓣App？
+                    <a href="https://www.douban.com/doubanapp/app?channel=subject_promotion_qr">去下载</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+
+
+  <div id="dale_book_subject_top_right" data-id=""><div style="position: relative; margin: 0px 0px 20px; display: inline-block; width: 300px; height: 250px;"><iframe id="dale_book_subject_top_right_frame" frameborder="0" scrolling="no" width="300" height="250" src="javascript:document.write(&#39;&lt;head&gt;&lt;script&gt;window.domain=&quot;douban.com&quot;;&lt;/script&gt;&lt;/head&gt;&lt;body&gt;&lt;/body&gt;&#39;);" name="CPM" style="overflow: hidden; display: block;" src="./UNIX环境高级编程 (豆瓣)_files/saved_resource.html"></iframe><div style="line-height: 1; text-align: center; background-color: rgba(0, 0, 0, 0.298039); color: rgb(255, 255, 255); font-size: 12px; position: absolute; padding: 4px; right: 0px; bottom: 0px;">广告</div></div></div>
+  
+
+
+
+
+
+  
+
+<style type="text/css" media="screen">
+  .add2cartContainer{height:25px;overflow:hidden;vertical-align:bottom}.add2cartContainer .add2cart{margin-right:0;display:inline-block}#buyinfo h2{margin-bottom:6px}#buyinfo .bs{margin:0}#buyinfo li{position:relative;line-height:1;border-bottom:1px dashed #ddd}#buyinfo li a{display:block;padding:6px;border-radius:3px}#buyinfo li a:hover{color:#fff;background-color:#f7b779;background-image:url(https://img3.doubanio.com/f/book/d7070f1a394aad9198a517a97c4ab0255e4f618e/pics/book/cart/icon-brown.png);background-repeat:no-repeat;background-position:265px center}#buyinfo li a:hover .comment,#buyinfo li a:hover .buyinfo-promotion{color:#ab7947}#buyinfo li a:hover .buylink-price{color:#fff}#buyinfo li a:hover .saved-price{display:inline}#buyinfo li a:hover.other-edition{background-image:none}#buyinfo li .buylink-price{position:absolute;left:100px;color:#8fadc6}#buyinfo .more-info{color:#aaa;margin:6px 0 -2px 0}#buyinfo .price-page{text-align:center;border-bottom:1px solid #e4e4e4}#buyinfo .saved-price{display:none;margin-left:5px}#buyinfo .cart-tip{float:right;padding-right:5px;line-height:25px}#buyinfo #buyinfo-ebook{margin-bottom:15px}#buyinfo #buyinfo-ebook .buylink-price{left:auto;right:30px}#buyinfo-printed{margin-bottom:8px}#buyinfo-printed.no-border{border-bottom:0}#buyinfo-report{display:none}#buyinfo-report .lnk-close-report{float:right;margin-top:-30px;line-height:14px}#buyinfo-report .item{margin-bottom:10px}#buyinfo-report .item input{vertical-align:text-bottom;*vertical-align:middle}#buyinfo-report .item label{margin:0 5px 0 2px}#buyinfo-report .item-submit .bn-flat{margin-right:10px}#buyinfo-report .item-price input{width:220px;border:1px solid #ccc;padding:4px}#buyinfo-report form{margin:5px 0 10px}#bi-report-btn{float:right;margin:2px 0;line-height:14px;display:none}.bi-vendor-report{color:#aaa}.bi-vendor-report-form{display:none;color:#111;margin:0 5px;line-height:25px}.gray_ad .ebook-tag{margin-left:8px;padding:0 6px;line-height:20px;font-size:11px;border:1px solid #e6e6e2;background:#f1f1ed;display:inline-block;*display:inline;*zoom:1;vertical-align:top}@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi){#buyinfo li a:hover{background-image:url(https://img3.doubanio.com/f/book/fc4ff7f0a3a7f452f06d586540284b9738f2fe87/pics/book/cart/icon-brown@2x.png);background-size:16px 12px}}#intervenor-buyinfo h2{margin-bottom:6px}#intervenor-buyinfo .bs{margin:0}#intervenor-buyinfo li{position:relative;line-height:1;border-bottom:1px dashed #ddd}#intervenor-buyinfo li .basic-info{color:#494949;font-size:14px;line-height:18px}#intervenor-buyinfo li a{display:block;padding:10px 4px;border-radius:3px}#intervenor-buyinfo li a:hover{color:#000;background-color:#FFF;background-repeat:no-repeat;background-position:265px center}#intervenor-buyinfo li a:hover .comment{color:#e97e7e}#intervenor-buyinfo li a:hover .buy-btn{background:#fff;border:1px solid #e97e7e;border-radius:2px;color:#e97e7e}#intervenor-buyinfo li .buylink-price{position:absolute;left:140px;color:#9c9c9c}#intervenor-buyinfo .jd-buy-icon{float:left;margin-right:3px}#intervenor-buyinfo .buy-btn{float:right;position:absolute;right:10px;bottom:10px;color:#9c9c9c;padding:6px 12px;border:1px solid transparent}#intervenor-buyinfo .comment{color:#e97e7e;margin:6px 0 -2px 0}#intervenor-buyinfo .price-page a:hover{background-color:#f7b779;color:#FFF}#intervenor-buyinfo .price-page{text-align:center;border-bottom:1px solid #e4e4e4}#intervenor-buyinfo .saved-price{display:none;margin-left:5px}#intervenor-buyinfo .cart-tip{float:right;padding-right:5px;line-height:25px}#intervenor-buyinfo #buyinfo-ebook{margin-bottom:15px}#intervenor-buyinfo #buyinfo-ebook .buylink-price{left:auto;right:30px}
+
+</style>
+
+  <div class="gray_ad" id="buyinfo">
+      <div id="buyinfo-printed">
+        <h2 class="">
+          在哪儿买这本书?
+        </h2>
+        <ul class="bs noline more-after ">
+          
+                
+                <li class="">
+                    <a target="_blank" href="https://book.douban.com/link2/?lowest=8620&amp;pre=0&amp;vendor=dangdang&amp;srcpage=subject&amp;price=8620&amp;pos=1&amp;url=http%3A%2F%2Funion.dangdang.com%2Ftransfer.php%3Ffrom%3DP-306226-0-s1788421%26backurl%3Dhttp%3A%2F%2Fproduct.dangdang.com%2Fproduct.aspx%3Fproduct_id%3D9171119&amp;cntvendor=2&amp;srcsubj=1788421&amp;type=bkbuy&amp;subject=1788421" class="">
+                      <div class="basic-info">
+                        <span class="">当当网</span>
+                        <span class="buylink-price">
+                          <span class="">
+                            86.20 元
+                          </span>
+                            <span class="saved-price">
+                              节省 12.8
+                            </span>
+                        </span>
+                      </div>
+                      
+                        <div class="more-info">
+                            <span class="buyinfo-promotion">
+                              图书加价换购
+                            </span>
+                        </div>
+                    </a>
+                </li>
+                
+                <li class="">
+                    <a target="_blank" href="https://book.douban.com/link2/?lowest=8620&amp;pre=0&amp;vendor=lanquan&amp;srcpage=subject&amp;price=13700&amp;pos=2&amp;url=http%3A%2F%2Fproduct.51eng.com%2F9787115147318%2FAdvanced-Programming-in-the-UNIX-Environment--%28The-2nd-Edition%29-%28Chinese-Edition%29.html&amp;cntvendor=2&amp;link2key=6f1e178d4c&amp;srcsubj=1788421&amp;type=bkbuy&amp;subject=1788421" class="">
+                      <div class="basic-info">
+                        <span class="">蓝泉外文书城</span>
+                        <span class="buylink-price">
+                          <span class="">
+                            137.00 元
+                          </span>
+                            <span class="saved-price">
+                              节省 -38.0
+                            </span>
+                        </span>
+                      </div>
+                      
+                    </a>
+                </li>
+          <li class="price-page">
+            <a href="https://book.douban.com/subject/1788421/buylinks">
+              查看 2 家网店价格
+                （86.20 元起）
+            </a>
+          </li>
+
+        </ul>
+      </div>
+      
+  <div class="add2cartContainer ft
+      no-border
+    ">
+    
+  <span class="add2cartWidget ll">
+      <a class="j colbutt add2cart a_show_login" href="https://www.douban.com/register?reason=addbook2cart" rel="nofollow">
+        <span>加入购书单</span></a>
+  </span>
+  
+
+    <span class="pl cart-tip">多本比价，批量购买</span>
+  </div>
+
+  </div>
+
+<style class="text/css">
+  .presale-indicator {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  width: 24px;
+  height: 15px;
+  line-height: 15px;
+  background: url(https://img3.doubanio.com/f/book/1679c65572eac1371f9872807199dea6e55a7f06/pics/book/cart/presale_text.gif) no-repeat;
+  text-indent: -9999px;
+  vertical-align: middle;
+  *vertical-align: 0px;
+  _vertical-align: 2px;
+  margin-left: 0.5em;
+}
+
+</style>
+
+
+
+  
+
+
+
+
+
+<div class="gray_ad" id="borrowinfo">
+  <h2>在哪儿借这本书?</h2>
+  <ul class="bs more-after">
+      
+      <li style="border: none">
+        <a href="https://www.douban.com/link2/?url=http%3A%2F%2Fipac.library.sh.cn%2Fipac20%2Fipac.jsp%3Faspect%3Dbasic_search%26profile%3Dsl%26index%3DISBN%26term%3D7115147310&amp;subject=7115147310&amp;type=borrow&amp;library=10001&amp;link2key=6f1e178d4c" target="_blank">上海图书馆(1)</a>
+      </li>
+      
+      <li style="border: none">
+        <a href="https://www.douban.com/link2/?url=http%3A%2F%2Fopac.gzlib.gov.cn%2Fopac%2Fsearch%3Frows%3D10%26curlibcode%3DGT%26hasholding%3D1%26searchWay0%3Dmarc%26q0%3D%26logical0%3DAND%26q%3D9787115147318%26searchWay%3Disbn%26scWay%3Ddim%26searchSource%3Dreader&amp;subject=7115147310&amp;type=borrow&amp;library=10022&amp;link2key=6f1e178d4c" target="_blank">广州图书馆(1)</a>
+      </li>
+      
+      <li style="border: none">
+        <a href="https://www.douban.com/link2/?url=http%3A%2F%2Fourex.lib.sjtu.edu.cn%2Fprimo_library%2Flibweb%2Faction%2Fsearch.do%3Ffn%3Dsearch%26vl%28freeText0%29%3D7-115-14731-0&amp;subject=7115147310&amp;type=borrow&amp;library=10006&amp;link2key=6f1e178d4c" target="_blank">上海交通大学图书馆</a>
+      </li>
+      
+      <li style="border: none">
+        <a href="https://www.douban.com/link2/?url=http%3A%2F%2Fopac3.wzlib.cn%2Fopac%2Fsearch%3FsearchWay%3Disbn%26q%3D978-7-115-14731-8%26booktype%3D%26marcformat%3D%26sortWay%3Dscore%26sortOrder%3Ddesc%26startPubdate%3D%26endPubdate%3D%26rows%3D10&amp;subject=7115147310&amp;type=borrow&amp;library=10020&amp;link2key=6f1e178d4c" target="_blank">温州市图书馆</a>
+      </li>
+      
+      <li style="border: none">
+        <a href="https://www.douban.com/link2/?url=http%3A%2F%2F222.177.237.197%3A8080%2FInDigLib%2Ffront%2FComplexSearch.action%3FcurrentPage%3D1%26select1%3Disbn%26select2%3D%26select3%3D%26text1%3D7115147310%26text2%3D%26text3%3D%26pageSize%3D20%26condition%3D%26table%3Di_biblios%26type%3D%26videoType%3Dcomplex&amp;subject=7115147310&amp;type=borrow&amp;library=10021&amp;link2key=6f1e178d4c" target="_blank">重庆图书馆</a>
+      </li>
+  </ul>
+  <div class="clearfix"></div>
+  <div class="ft pl">
+    <a class="rr" href="https://book.douban.com/library_invitation">&gt; 图书馆合作</a>
+    找不到你需要的图书馆？
+  </div>
+</div>
+
+  <div id="dale_book_subject_top_middle" data-id=""></div>
+  
+
+
+
+
+
+  
+
+  
+  
+
+  <h2>
+    <span class="">这本书的其他版本 </span>
+      &nbsp;·&nbsp;·&nbsp;·&nbsp;·&nbsp;·&nbsp;·
+      <span class="pl">&nbsp;(
+          <a href="https://book.douban.com/works/1015984">全部9</a>
+        ) </span>
+
+  </h2>
+
+
+  <div class="indent">
+    <ul>
+        <li class="mb8 pl">
+          <a href="https://book.douban.com/subject/1439495/">Addison-Wesley Professional版</a>
+          2005-06-17 / 104人读过 / 有售
+        </li>
+        <li class="mb8 pl">
+          <a href="https://book.douban.com/subject/1092099/">机械工业出版社版</a>
+          2000-2-1 / 482人读过
+        </li>
+        <li class="mb8 pl">
+          <a href="https://book.douban.com/subject/1692629/">人民邮电出版社版</a>
+          2006-2 / 254人读过 / 有售
+        </li>
+        <li class="mb8 pl">
+          <a href="https://book.douban.com/subject/1099251/">机械工业出版社版</a>
+          2002-1-1 / 125人读过
+        </li>
+    </ul>
+  </div>
+
+
+  
+
+
+
+      
+  
+
+  <h2>
+    <span class="">以下豆列推荐</span>
+      &nbsp;·&nbsp;·&nbsp;·&nbsp;·&nbsp;·&nbsp;·
+      <span class="pl">&nbsp;(
+          <a href="https://book.douban.com/subject/1788421/doulists">全部</a>
+        ) </span>
+
+  </h2>
+
+
+    <div id="db-doulist-section" class="indent">
+      <ul class="bs">
+          <li class=""><a class="" href="https://www.douban.com/doulist/242077/" target="_blank">豆瓣评分&gt;9的书（100人以上）</a>
+                <span class="pl">(阿獠)</span>
+            </li>
+          <li class=""><a class="" href="https://www.douban.com/doulist/43430373/" target="_blank">豆瓣高分书2500本：千人打分不低于8分</a>
+                <span class="pl">(偶就是那个鬼)</span>
+            </li>
+          <li class=""><a class="" href="https://www.douban.com/doulist/38391562/" target="_blank">1000+条豆瓣评价9.0以上的书</a>
+                <span class="pl">(Sheryl)</span>
+            </li>
+          <li class=""><a class="" href="https://www.douban.com/doulist/157032/" target="_blank">那年的教科书</a>
+                <span class="pl">(陈永仁)</span>
+            </li>
+          <li class=""><a class="" href="https://www.douban.com/doulist/1199363/" target="_blank">豆瓣评分&gt;9的计算机图书</a>
+                <span class="pl">(whg)</span>
+            </li>
+      </ul>
+    </div>
+
+  
+
+
+
+
+
+
+  <h2>谁读这本书?</h2>
+  <div class="indent" id="collector">
+
+    
+
+<div class="">
+    
+    <div class="ll"><a href="https://www.douban.com/people/70665231/"><img src="./UNIX环境高级编程 (豆瓣)_files/u70665231-2.jpg" class="pil" alt="耀眼的太阳"></a></div>
+    <div style="padding-left:60px"><a class="" href="https://www.douban.com/people/70665231/">耀眼的太阳</a><br>
+      <div class="pl ll">          昨天          读过      </div>
+
+      <br>
+
+
+    </div>
+    <div class="clear"></div><br>
+    <div class="ul" style="margin-bottom:12px;"></div>
+</div>
+<div class="">
+    
+    <div class="ll"><a href="https://www.douban.com/people/137520814/"><img src="./UNIX环境高级编程 (豆瓣)_files/u137520814-1.jpg" class="pil" alt="静听"></a></div>
+    <div style="padding-left:60px"><a class="" href="https://www.douban.com/people/137520814/">静听</a><br>
+      <div class="pl ll">          11月5日          想读      </div>
+
+      <br>
+
+      <span class="pl">tags:Linux/Unix 经典</span><br>
+
+    </div>
+    <div class="clear"></div><br>
+    <div class="ul" style="margin-bottom:12px;"></div>
+</div>
+<div class="">
+    
+    <div class="ll"><a href="https://www.douban.com/people/1572284/"><img src="./UNIX环境高级编程 (豆瓣)_files/u1572284-1.jpg" class="pil" alt="伍佰"></a></div>
+    <div style="padding-left:60px"><a class="" href="https://www.douban.com/people/1572284/">伍佰</a><br>
+      <div class="pl ll">          11月4日          想读      </div>
+
+      <br>
+
+      <span class="pl">tags:programming 程序设计 计算...</span><br>
+
+    </div>
+    <div class="clear"></div><br>
+    <div class="ul" style="margin-bottom:12px;"></div>
+</div>
+
+
+        <p class="pl">&gt; <a href="https://book.douban.com/subject/1788421/doings">1359人在读</a></p>
+        <p class="pl">&gt; <a href="https://book.douban.com/subject/1788421/collections">2024人读过</a></p>
+        <p class="pl">&gt; <a href="https://book.douban.com/subject/1788421/wishes">4024人想读</a></p>
+
+  </div>
+
+
+
+
+
+  
+<!-- douban ad begin -->
+<div id="dale_book_subject_middle_right" data-id=""><div style="position: relative; margin: 0px 0px 20px; display: inline-block; width: 300px; height: 250px;"><iframe id="dale_book_subject_middle_right_frame" frameborder="0" scrolling="no" width="300" height="250" src="javascript:document.write(&#39;&lt;head&gt;&lt;script&gt;window.domain=&quot;douban.com&quot;;&lt;/script&gt;&lt;/head&gt;&lt;body&gt;&lt;/body&gt;&#39;);" name="CPM" style="overflow: hidden; display: block;" src="./UNIX环境高级编程 (豆瓣)_files/saved_resource(3).html"></iframe><div style="line-height: 1; text-align: center; background-color: rgba(0, 0, 0, 0.298039); color: rgb(255, 255, 255); font-size: 12px; position: absolute; padding: 4px; right: 0px; bottom: 0px;">广告</div></div></div>
+<script type="text/javascript">
+    (function (global) {
+        if(!document.getElementsByClassName) {
+            document.getElementsByClassName = function(className) {
+                return this.querySelectorAll("." + className);
+            };
+            Element.prototype.getElementsByClassName = document.getElementsByClassName;
+
+        }
+        var articles = global.document.getElementsByClassName('article'),
+            asides = global.document.getElementsByClassName('aside');
+
+        if (articles.length > 0 && asides.length > 0 && articles[0].offsetHeight >= asides[0].offsetHeight) {
+            (global.DoubanAdSlots = global.DoubanAdSlots || []).push('dale_book_subject_middle_right');
+        }
+    })(this);
+</script>
+<!-- douban ad end -->
+
+  
+
+
+
+
+
+  
+
+  <h2>二手市场</h2>
+  <div class="indent">
+    <ul class="bs">
+    <li class="">
+        <a class=" " href="https://book.douban.com/subject/1788421/offers">38本二手书欲转让</a>
+          <span class="">
+            (1.00
+                至 500元以上)
+          </span>
+      </li>
+      <li>
+          <a class="rr j a_show_login" href="https://www.douban.com/register?reason=secondhand-offer&amp;cat=book"><span>&gt; 点这儿转让</span></a>
+
+        有4024人想读,手里有一本闲着?
+      </li>
+    </ul>
+  </div>
+
+  
+<p class="pl">订阅关于UNIX环境高级编程的评论: <br><span class="feed">
+    <a href="https://book.douban.com/feed/subject/1788421/reviews"> feed: rss 2.0</a></span></p>
+
+
+      </div>
+      <div class="extra">
+        
+  
+<!-- douban ad begin -->
+<div id="dale_book_subject_bottom_super_banner" data-id=""><div style="position: relative; margin: 40px 0px 0px; display: inline-block; width: 950px; height: 90px;"><iframe id="dale_book_subject_bottom_super_banner_frame" frameborder="0" scrolling="no" width="950" height="90" src="javascript:document.write(&#39;&lt;head&gt;&lt;script&gt;window.domain=&quot;douban.com&quot;;&lt;/script&gt;&lt;/head&gt;&lt;body&gt;&lt;/body&gt;&#39;);" name="CPM" style="overflow: hidden; display: block;" src="./UNIX环境高级编程 (豆瓣)_files/saved_resource(4).html"></iframe><div style="line-height: 1; text-align: center; background-color: rgba(0, 0, 0, 0.298039); color: rgb(255, 255, 255); font-size: 12px; position: absolute; padding: 4px; right: 0px; bottom: 0px;">广告</div></div></div>
+<script type="text/javascript">
+    (function (global) {
+        var body = global.document.body,
+            html = global.document.documentElement;
+
+        var height = Math.max(body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight);
+        if (height >= 2000) {
+            (global.DoubanAdSlots = global.DoubanAdSlots || []).push('dale_book_subject_bottom_super_banner');
+        }
+    })(this);
+</script>
+<!-- douban ad end -->
+
+
+      </div>
+    </div>
+  </div>
+
+        
+<div id="footer">
+
+<span id="icp" class="fleft gray-link">
+    © 2005－2016 douban.com, all rights reserved 北京豆网科技有限公司
+</span>
+
+<a href="https://www.douban.com/hnypt/variformcyst.py" style="display: none;"></a>
+
+<span class="fright">
+    <a href="https://www.douban.com/about">关于豆瓣</a>
+    · <a href="https://www.douban.com/jobs">在豆瓣工作</a>
+    · <a href="https://www.douban.com/about?topic=contactus">联系我们</a>
+    · <a href="https://www.douban.com/about?policy=disclaimer">免责声明</a>
+    
+    · <a href="https://help.douban.com/?app=book" target="_blank">帮助中心</a>
+    · <a href="https://book.douban.com/library_invitation">图书馆合作</a>
+    · <a href="https://www.douban.com/doubanapp/">移动应用</a>
+    · <a href="https://www.douban.com/partner/">豆瓣广告</a>
+</span>
+
+</div>
+
+    </div>
+    <script type="text/javascript" src="./UNIX环境高级编程 (豆瓣)_files/631525cbbefc87af.js.下载"></script>
+    <!-- mako -->
+    
+  
+
+
+
+
+
+
+
+
+    
+<script type="text/javascript">
+    (function (global) {
+        var newNode = global.document.createElement('script'),
+            existingNode = global.document.getElementsByTagName('script')[0],
+            adSource = '//erebor.douban.com/',
+            userId = '',
+            browserId = 'ci016PzwMKQ',
+            criteria = '7:unix|7:编程|7:Linux|7:计算机|7:经典|7:programming|7:程序设计|7:C|7:apue|7:stevens|3:/subject/1788421/',
+            preview = '',
+            debug = false,
+            adSlots = ['dale_book_subject_top_icon', 'dale_book_subject_top_right', 'dale_book_subject_top_middle'];
+
+        global.DoubanAdRequest = {src: adSource, uid: userId, bid: browserId, crtr: criteria, prv: preview, debug: debug};
+        global.DoubanAdSlots = (global.DoubanAdSlots || []).concat(adSlots);
+
+        newNode.setAttribute('type', 'text/javascript');
+        newNode.setAttribute('src', 'https://img3.doubanio.com/f/shire/99a1c905fb5a6d46d8e742d60199e3a99414a580/js/ad.js');
+        newNode.setAttribute('async', true);
+        existingNode.parentNode.insertBefore(newNode, existingNode);
+    })(this);
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+    
+  
+
+<script type="text/javascript">
+  var _paq = _paq || [];
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var p=(('https:' == document.location.protocol) ? 'https' : 'http'), u=p+'://fundin.douban.com/';
+    _paq.push(['setTrackerUrl', u+'piwik']);
+    _paq.push(['setSiteId', '100001']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; 
+    g.type='text/javascript';
+    g.defer=true; 
+    g.async=true; 
+    g.src=p+'://s.doubanio.com/dae/fundin/piwik.js';
+    s.parentNode.insertBefore(g,s);
+  })();
+</script>
+
+<script type="text/javascript">
+var setMethodWithNs = function(namespace) {
+  var ns = namespace ? namespace + '.' : ''
+    , fn = function(string) {
+        if(!ns) {return string}
+        return ns + string
+      }
+  return fn
+}
+
+var gaWithNamespace = function(fn, namespace) {
+  var method = setMethodWithNs(namespace)
+  fn.call(this, method)
+}
+
+var _gaq = _gaq || []
+  , accounts = [
+      { id: 'UA-7019765-1', namespace: 'douban' }
+    , { id: 'UA-7019765-16', namespace: '' }
+    ]
+  , gaInit = function(account) {
+      gaWithNamespace(function(method) {
+        gaInitFn.call(this, method, account)
+      }, account.namespace)
+    }
+  , gaInitFn = function(method, account) {
+      _gaq.push([method('_setAccount'), account.id])
+
+      
+  _gaq.push([method('_addOrganic'), 'google', 'q'])
+  _gaq.push([method('_addOrganic'), 'baidu', 'wd'])
+  _gaq.push([method('_addOrganic'), 'soso', 'w'])
+  _gaq.push([method('_addOrganic'), 'youdao', 'q'])
+  _gaq.push([method('_addOrganic'), 'so.360.cn', 'q'])
+  _gaq.push([method('_addOrganic'), 'sogou', 'query'])
+  if (account.namespace) {
+    _gaq.push([method('_addIgnoredOrganic'), '豆瓣'])
+    _gaq.push([method('_addIgnoredOrganic'), 'douban'])
+    _gaq.push([method('_addIgnoredOrganic'), '豆瓣网'])
+    _gaq.push([method('_addIgnoredOrganic'), 'www.douban.com'])
+  }
+
+      if (account.namespace === 'douban') {
+        _gaq.push([method('_setDomainName'), '.douban.com'])
+      }
+
+        _gaq.push([method('_setCustomVar'), 1, 'responsive_view_mode', 'desktop', 3])
+
+        _gaq.push([method('_setCustomVar'), 2, 'login_status', '0', 2]);
+
+      _gaq.push([method('_trackPageview')])
+    }
+
+for(var i = 0, l = accounts.length; i < l; i++) {
+  var account = accounts[i]
+  gaInit(account)
+}
+
+
+;(function() {
+    var ga = document.createElement('script');
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    ga.setAttribute('async', 'true');
+    document.documentElement.firstChild.appendChild(ga);
+})()
+</script>
+
+
+
+
+
+
+
+
+    <!-- sindar7c-docker-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body></html>

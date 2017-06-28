@@ -1,0 +1,127 @@
+
+Do(function(){
+  var cookieCfg={key:"ap",cookie:"1"},$doubanTip=$("#doubanapp-tip"),data={};function hideDoubanTip(){if(!$doubanTip.length){return}$doubanTip.hide();data[cookieCfg.key]=cookieCfg.cookie;set_cookie(data)}$doubanTip.delegate("a","click",hideDoubanTip);if(!get_cookie(cookieCfg.key)){$doubanTip.show()}var popup;var nav=$("#db-global-nav");var more=nav.find(".bn-more");function handleShowMoreActive(c){var a=$(c.currentTarget);var b=a.parent();hideDoubanTip();if(popup){popup.parent().removeClass("more-active");if($.contains(b[0],popup[0])){popup=null;return}}b.addClass("more-active");popup=b.find(".more-items");popup.trigger("moreitem:show")}nav.delegate(".bn-more, .top-nav-reminder .lnk-remind","click",function(a){a.preventDefault();handleShowMoreActive(a);return}).delegate(".lnk-doubanapp","mouseenter",function(b){var a=$(this);if(!a.parent().hasClass("more-active")){handleShowMoreActive(b)}}).delegate(".top-nav-doubanapp","mouseleave",function(){var b=$(this);var a=b.find(".lnk-doubanapp");if(popup){b.removeClass("more-active");if($.contains(b[0],popup[0])){popup=null}}});$(document).click(function(a){if($(a.target).closest(".more-items").length||$(a.target).closest(".more-active").length){return}if(popup){popup.parent().removeClass("more-active");popup=null}});
+});
+
+  Do(function(){
+    var nav = $('#db-nav-book');
+    var inp=$("#inp-query"),label=inp.closest(".nav-search").find("label");"placeholder"in inp[0]?(label.hide(),inp.attr("placeholder",label.text())):(""!==inp.val()&&label.hide(),inp.parent().click(function(){inp.focus(),label.hide()}).end().focusin(function(){label.hide()}).focusout(function(){""===$.trim(this.value)?label.show():label.hide()}).keydown(function(){label.hide()})),inp.parents("form").submit(function(){if(!$.trim(inp.val()).length)return!1}),nav.find(".lnk-more, .lnk-account").click(function(n){n.preventDefault();var i,e=$(this),t=e.hasClass("lnk-more")?$("#db-productions"):$("#db-usr-setting");t.data("init")||(i=e.offset(),t.css({"margin-left":i.left-$(window).width()/2-t.width()+e.width()+parseInt(e.css("padding-right"),10)+"px",left:"50%",top:i.top+e.height()+"px"}),t.data("init",1),t.hide(),$("body").click(function(n){var i=$(n.target);i.hasClass("lnk-more")||i.hasClass("lnk-account")||i.closest("#db-usr-setting").length||i.closest("#db-productions").length||t.hide()})),"none"===t.css("display")?($(".dropdown").hide(),t.show()):$(".dropdown").hide()});
+
+  });
+
+    var staticUrl = {
+      'widget/suggest': 'https://img3.doubanio.com/f/book/fb39a7db3f0efd385d84ed1af0b03afafc38a4ef/js/book/widget/suggest.js'
+    , 'mod/template' :'https://img3.doubanio.com/f/book/1081346cb62d4c087781196351608229705e8115/js/book/mod/template.js'
+    }
+
+    var setupSearchSuggest = function() {
+      var navSearchForm=$(".nav-srh form[name=ssform]");if(!navSearchForm.length)var navSearchForm=$(".nav-search form");var navSearch=navSearchForm.find("input[name=search_text]");navSearch.searchSuggest({preventSearch:function(r){return""===r||"书名、作者、ISBN"===r},parse:function(r){if(r.r&&1===r.r)return null;var e=r.suggests;return e.length?e.length>8?e.slice(0,8):e:null},tmplEngine:_.template,tmplPanel:'<ul id="nav-srh-suggest"></ul>',tmplItem:$("#suggest-item").html(),url:"/j/suggest_text",form:navSearchForm,queryArg:"q"});
+    }
+
+    if(!Do.ready){
+      !function(n){var t=function(t,e){return e=n.extend(e||{},{dataType:"script",cache:!0,url:t}),n.ajax(e)},e=function(n,c){t(n.shift()).done(function(){n.length?e(n,c):c()})};n.getScripts=e}(jQuery);
+
+      $.getScripts([staticUrl['widget/suggest']
+        , staticUrl['mod/template']], setupSearchSuggest)
+    }else{
+      Do.add('widget/suggest', {
+        path: staticUrl['widget/suggest']
+      , type: 'js'
+      })
+      Do.add('mod/template', {
+        path: staticUrl['mod/template']
+      , type: 'js'
+      })
+      Do.ready('widget/suggest', 'mod/template', setupSearchSuggest)
+    }
+  
+  !function(t,i){t.fn.fixSide=function(e,n){var o=/ipod|iphone|ipad|android|blackberry|mobile|webos|windows phone/i.test(navigator.userAgent),s="",c="",d="",l="",a="",f="",r="";t.browser.ie&&t.browser.version|!0||o||(s=t(i).height(),c=t("#content .aside"),d=c[0],l=d.clientHeight,a=t("#content")[0],f=t("#content .article"),r=d.clientHeight>s,i.addEventListener("load",function(){l=d.clientHeight,a=t("#content")[0],r=d.clientHeight>=s}),t(i).bind("scroll",function(){var t=f.offset().left+(a.clientWidth-d.clientWidth),i=a.getBoundingClientRect().top;r?i<0&&Math.abs(i)+s-e>l?c.css({position:"fixed",left:t+"px",bottom:e+"px"}):Math.abs(i)+s-e<l&&c.css({position:"static"}):i<0?c.css({position:"fixed",left:t+"px",top:n+"px"}):c.css({position:"static"})}),t(i).bind("resize",function(t){var i=f.offset().left+(a.clientWidth-d.clientWidth);c.css({left:i+"px"})}))}}(jQuery,window);
+;
+  $().fixSide(200, 52);
+
+        !function(e,t,i){function r(e,n){this.config=i.extend(!0,{},a,e);var o=r.serializeOpenGraph();this.pageInfo=i.extend({title:o.title||t.title,url:o.url||t.location.href,pic:("array"===i.type(o.image)?o.image[0]:o.image)||"",desc:o.description||"",site:o.site_name||""},n)}var a={weibo:{appkey:""},douban:{},qq:{},qzone:{}};r.serializeOpenGraph=function(){var e={};i('meta[property^="og:"]').each(function(t,r){r=i(r);var a=r.attr("property").replace(/^og\:/,"");e[a]=r.attr("content")});var t=i('meta[property="og:image"]');return t.length>1&&(e.image=t.map(function(e,t){return i(t).attr("content")}).toArray()),e},r.prototype={constructor:r,set:function(e,t){var r={};r[e]=t,i.extend(this.config,r)},get:function(e){var t=i.extend({},this.pageInfo,this.config[e]);return{douban:{url:"https://www.douban.com/share/service/?"+i.param({href:t.url,name:t.title,image:t.pic,text:t.desc})},weibo:{url:"http://v.t.sina.com.cn/share/share.php?"+i.param({appkey:t.appkey,url:t.url,title:t.title,pic:t.pic})},qq:{url:"http://connect.qq.com/widget/shareqq/index.html?"+i.param({url:t.url,desc:t.title,pics:t.pic,site:t.site})},qzone:{url:"http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?"+i.param({url:t.url,title:t.title,summary:t.desc,pics:t.pic})}}[e]},openInNewWindow:function(t,r){r=r||{};var a=r.width||500,n=r.height||360,o=i.extend({},{width:a,height:n,toolbar:0,location:0,resizable:1,scrollbars:"yes",left:r.left||(screen.width-a)/2,top:r.top||(screen.height-n)/2},r);e.open(t,"SocialSharing",i.param(o).replace(/&/g,","))}},window.SocialSharing=r}(window,document,jQuery);
+
+        ;(function() {
+            var doc = $(document)
+            var sharingConfig = {
+                weibo: {
+                    appkey: '3015934887'
+                }
+            }
+            var logVendors = {
+                'weibo': 'bshare_sina',
+                'qq': 'bshare_qqim',
+                'qzone': 'bshare_qzone'
+            }
+            var windowFeatures = {
+                qq: { width: 800, height: 600 },
+                qzone: { width: 800, height: 600 }
+            }
+            function getSocialSharing(elem) {
+                var pageInfo = $.parseJSON(elem.closest('.clst').find('.data-review-sharing').text())
+                return new SocialSharing(sharingConfig, pageInfo)
+            }
+            doc.delegate('.sharing-button', 'mouseover', function(e) {
+                var button = $(this),
+                    sharing = button.closest('.sharing'),
+                    sharingLayer = sharing.find('.sharing-layer'),
+                    socialSharing = getSocialSharing(sharing)
+                sharing.find('.sharing-wechat-qrcode').html('<img src="http://douban.com/qrgen/v?text=' + encodeURIComponent(socialSharing.pageInfo.url) + '" alt="扫描二维码" />')
+                sharingLayer.removeClass('is-hidden')
+            })
+            doc.delegate('.sharing-layer', 'mouseleave', function() {
+                $(this).addClass('is-hidden')
+            })
+            doc.delegate('[data-share]', 'click', function() {
+                var elem = $(this),
+                    network = elem.data('share'),
+                    socialSharing = getSocialSharing(elem.closest('.sharing')),
+                    url = 'http://www.douban.com/link2?type=redir&vendor=' + logVendors[network] + '&url=' + encodeURIComponent(socialSharing.get(network).url)
+                socialSharing.openInNewWindow(url, windowFeatures[network])
+            })
+        })();
+    
+    $(document).ready(function(){
+      var annotationComments = $('.comments .con');
+
+      annotationComments.each(function() {
+        var el = $(this)
+          , note = el.find('.reading-note')
+          , shortNote = note.find('.short')
+          , fullNote = note.find('.all')
+          , unfolder = el.find('.note-unfolder')
+          , folder = el.find('.note-folder');
+
+        unfolder.click(function(e) {
+          e.preventDefault();
+          unfolder.hide();
+          folder.css('display', 'block');
+          fullNote.show();
+          shortNote.hide();
+        });
+        folder.click(function(e) {
+          e.preventDefault();
+          unfolder.css('display', 'block');
+          folder.hide();
+          fullNote.hide();
+          shortNote.show();
+        });
+      });
+    });
+  
+    $(function(){
+      $('.add2cartWidget').each(function() {
+        var add2CartBtn = $(this).find('.add2cart');
+        var inCartHint = $(this).find('.book-in-cart');
+        var deleteBtn = inCartHint.find('.delete-cart-item');
+
+        deleteBtn.click(function(e) {
+          e.preventDefault();
+          $.post_withck('/cart', {remove: this.rel}, function() {
+            add2CartBtn.show();
+            inCartHint.hide();
+          });
+        });
+      });
+    });
+  

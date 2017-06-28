@@ -1,0 +1,3773 @@
+<!DOCTYPE html>
+<!-- saved from url=(0040)https://book.douban.com/subject/1230413/ -->
+<html lang="zh-cmn-Hans" class="ua-windows ua-webkit book-new-nav"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script type="text/javascript" defer="" async="" src="./深入理解计算机系统 (豆瓣)_files/piwik.js.下载"></script><script type="text/javascript" src="./深入理解计算机系统 (豆瓣)_files/ad.js.下载" async="true"></script>
+  
+  <title>深入理解计算机系统 (豆瓣)</title>
+  
+<script type="text/javascript" async="" src="./深入理解计算机系统 (豆瓣)_files/vds.js.下载"></script><script>!function(e){var o=function(o,n,t){var c,i,r=new Date;n=n||30,t=t||"/",r.setTime(r.getTime()+24*n*60*60*1e3),c="; expires="+r.toGMTString();for(i in o)e.cookie=i+"="+o[i]+c+"; path="+t},n=function(o){var n,t,c,i=o+"=",r=e.cookie.split(";");for(t=0,c=r.length;t<c;t++)if(n=r[t].replace(/^\s+|\s+$/g,""),0==n.indexOf(i))return n.substring(i.length,n.length).replace(/\"/g,"");return null},t=e.write,c={"douban.com":1,"douban.fm":1,"google.com":1,"google.cn":1,"googleapis.com":1,"gmaptiles.co.kr":1,"gstatic.com":1,"gstatic.cn":1,"google-analytics.com":1,"googleadservices.com":1},i=function(e,o){var n=new Image;n.onload=function(){},n.src="https://www.douban.com/j/except_report?kind=ra022&reason="+encodeURIComponent(e)+"&environment="+encodeURIComponent(o)},r=function(o){try{t.call(e,o)}catch(e){t(o)}},a=/<script.*?src\=["']?([^"'\s>]+)/gi,g=/http:\/\/(.+?)\.([^\/]+).+/i;e.writeln=e.write=function(e){var t,l=a.exec(e);return l&&(t=g.exec(l[1]))?c[t[2]]?void r(e):void("tqs"!==n("hj")&&(i(l[1],location.href),o({hj:"tqs"},1),setTimeout(function(){location.replace(location.href)},50))):void r(e)}}(document);
+</script>
+
+  
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="Sun, 6 Mar 2005 01:00:00 GMT">
+  
+<meta http-equiv="mobile-agent" content="format=html5; url=https://m.douban.com/book/subject/1230413/">
+<meta name="keywords" content="深入理解计算机系统,Randal E.Bryant,David O&#39;Hallaron,中国电力出版社,2004-5-1,简介,作者,书评,论坛,推荐,二手">
+<meta name="description" content="图书深入理解计算机系统 介绍、书评、论坛及推荐 ">
+
+  <script>var _head_start = new Date();</script>
+  
+  <link href="./深入理解计算机系统 (豆瓣)_files/master.css" rel="stylesheet" type="text/css">
+
+  <style type="text/css"></style>
+  <script src="./深入理解计算机系统 (豆瓣)_files/jquery.js.下载"></script>
+  <script src="./深入理解计算机系统 (豆瓣)_files/master.js.下载"></script>
+  
+
+  
+  <link rel="stylesheet" href="./深入理解计算机系统 (豆瓣)_files/subject.css">
+  <script src="./深入理解计算机系统 (豆瓣)_files/jquery.snippet.js.下载"></script>
+  <script src="./深入理解计算机系统 (豆瓣)_files/dialog.js.下载"></script>
+    <link rel="alternate" href="https://book.douban.com/feed/subject/1230413/reviews" type="application/rss+xml" title="RSS">
+  <style type="text/css"> h2 {color: #007722;} </style>
+  <script type="text/javascript">
+    var _vds = _vds || [];
+    (function(){ _vds.push(['setAccountId', '22c937bbd8ebd703f2d8e9445f7dfd03']);
+        _vds.push(['setCS1','user_id','0']);
+            (function() {var vds = document.createElement('script');
+                vds.type='text/javascript';
+                vds.async = true;
+                vds.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'dn-growing.qbox.me/vds.js';
+                var s = document.getElementsByTagName('script')[0];
+                s.parentNode.insertBefore(vds, s);
+            })();
+    })();
+</script>
+
+  
+  <script type="text/javascript">
+    var _vwo_code=(function(){
+      var account_id=249272,
+          settings_tolerance=2000,
+          library_tolerance=2500,
+          use_existing_jquery=false,
+          // DO NOT EDIT BELOW THIS LINE
+          f=false,d=document;return{use_existing_jquery:function(){return use_existing_jquery;},library_tolerance:function(){return library_tolerance;},finish:function(){if(!f){f=true;var a=d.getElementById('_vis_opt_path_hides');if(a)a.parentNode.removeChild(a);}},finished:function(){return f;},load:function(a){var b=d.createElement('script');b.src=a;b.type='text/javascript';b.innerText;b.onerror=function(){_vwo_code.finish();};d.getElementsByTagName('head')[0].appendChild(b);},init:function(){settings_timer=setTimeout('_vwo_code.finish()',settings_tolerance);var a=d.createElement('style'),b='body{opacity:0 !important;filter:alpha(opacity=0) !important;background:none !important;}',h=d.getElementsByTagName('head')[0];a.setAttribute('id','_vis_opt_path_hides');a.setAttribute('type','text/css');if(a.styleSheet)a.styleSheet.cssText=b;else a.appendChild(d.createTextNode(b));h.appendChild(a);this.load('//dev.visualwebsiteoptimizer.com/j.php?a='+account_id+'&u='+encodeURIComponent(d.URL)+'&r='+Math.random());return settings_timer;}};}());_vwo_settings_timer=_vwo_code.init();
+  </script><script src="./深入理解计算机系统 (豆瓣)_files/j.php" type="text/javascript"></script>
+
+
+  <script>  </script>
+  <link rel="stylesheet" href="./深入理解计算机系统 (豆瓣)_files/417fd20d295ec794.css">
+
+  <link rel="shortcut icon" href="https://img3.doubanio.com/favicon.ico" type="image/x-icon">
+<style type="text/css" id="css-share-button">      .bn-sharing {padding-right:10px;background-image: url(//img3.doubanio.com/pics/a1.png) !important; background-repeat: no-repeat !important; background-position: 100% -19px !important;*display:inline-block;}      a.bn-sharing:hover {text-decoration:underline;}      .bn-sharing-on {background-position:100% 4px !important;position:relative !important;z-index:1 !important;}      #db-div-sharing {position:absolute;width:100px;*margin-top:-2px;}      #db-div-sharing .bd {border:1px solid #aaa;background:#fff;padding:10px 0 0 10px;}      #db-div-sharing .bd li {line-height:17px;margin-bottom:10px;}      #db-div-sharing .hd {position:absolute;height:24px;*line-height:21px;overflow:hidden;right:0;top:-24px;padding:0 5px;border:1px solid #aaa;border-bottom:none;background:#fff;}      .rec-sin,      .rec-qzone,      .rec-tx,      .rec-wx,      .rec-qqim {padding-left:20px;background:url(https://img3.doubanio.com/f/shire/d15ffd71f3f10a7210448fec5a68eaec66e7f7d0/pics/ic_shares.png) no-repeat 0 0;}      .rec-qzone {background-position:0 -32px;}      .rec-qqim {background-position:0 -64px;}      .rec-tx {background-position:0 -96px;}      .rec-wx {background-position:0 -128px;}   </style><script src="./深入理解计算机系统 (豆瓣)_files/ga.js.下载" async="true"></script></head>
+<body>
+  
+    <script>var _body_start = new Date();</script>
+    
+  
+  
+  
+
+
+
+
+
+
+<div id="db-global-nav" class="global-nav">
+  <div class="bd">
+    
+
+
+
+
+
+<div class="top-nav-info">
+      
+      <a href="https://www.douban.com/accounts/login?source=book" class="nav-login" rel="nofollow">登录</a>
+      <a href="https://www.douban.com/accounts/register?source=book" class="nav-register" rel="nofollow">注册</a>
+</div>
+
+
+    <div class="top-nav-doubanapp">
+        
+        <a href="https://www.douban.com/doubanapp/app?channel=top-nav" class="lnk-doubanapp">下载豆瓣客户端</a>
+        <div id="top-nav-appintro" class="more-items">
+            <p class="appintro-title">豆瓣</p>
+            <p class="slogan">我们的精神角落</p>
+            <p class="qrcode">
+                扫码直接下载
+            </p>
+            <div class="download">
+                <a href="https://www.douban.com/doubanapp/redirect?channel=top-nav&amp;direct_dl=1&amp;download=iOS">iPhone</a>
+                <span>·</span>
+                <a href="https://www.douban.com/doubanapp/redirect?channel=top-nav&amp;direct_dl=1&amp;download=Android" class="download-android">Android</a>
+            </div>
+        </div>
+        <div id="doubanapp-tip" style="display: block;">
+            <a href="https://www.douban.com/doubanapp/app?channel=qipao" class="tip-link">豆瓣 4.0 全新发布</a>
+            <a href="javascript: void 0;" class="tip-close">×</a>
+        </div>
+    </div>
+
+    <div class="global-nav-items">
+      <ul>
+          
+            
+            <li class="">
+            <a href="https://www.douban.com/" target="_blank" data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-main&quot;,&quot;uid&quot;:&quot;0&quot;}">
+              豆瓣
+            </a>
+            </li>
+          
+            
+            <li class="on">
+            <a href="https://book.douban.com/" data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-book&quot;,&quot;uid&quot;:&quot;0&quot;}">
+              读书
+            </a>
+            </li>
+          
+            
+            <li class="">
+            <a href="https://movie.douban.com/" target="_blank" data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-movie&quot;,&quot;uid&quot;:&quot;0&quot;}">
+              电影
+            </a>
+            </li>
+          
+            
+            <li class="">
+            <a href="https://music.douban.com/" target="_blank" data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-music&quot;,&quot;uid&quot;:&quot;0&quot;}">
+              音乐
+            </a>
+            </li>
+          
+            
+            <li class="">
+            <a href="https://www.douban.com/location/" target="_blank" data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-location&quot;,&quot;uid&quot;:&quot;0&quot;}">
+              同城
+            </a>
+            </li>
+          
+            
+            <li class="">
+            <a href="https://www.douban.com/group/" target="_blank" data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-group&quot;,&quot;uid&quot;:&quot;0&quot;}">
+              小组
+            </a>
+            </li>
+          
+            
+            <li class="">
+            <a href="https://read.douban.com/?dcs=top-nav&amp;dcm=douban" target="_blank" data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-read&quot;,&quot;uid&quot;:&quot;0&quot;}">
+              阅读
+            </a>
+            </li>
+          
+            
+            <li class="">
+            <a href="https://douban.fm/?from_=shire_top_nav" target="_blank" data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-fm&quot;,&quot;uid&quot;:&quot;0&quot;}">
+              FM
+            </a>
+            </li>
+          
+            
+            <li class="">
+            <a href="https://dongxi.douban.com/?dcs=top-nav&amp;dcm=douban" target="_blank" data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-commodity&quot;,&quot;uid&quot;:&quot;0&quot;}">
+              东西
+            </a>
+            </li>
+          
+            
+            <li class=" market-tip">
+            <a href="https://market.douban.com/?utm_campaign=douban_top_nav&amp;utm_source=douban&amp;utm_medium=pc_web" target="_blank" data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-market&quot;,&quot;uid&quot;:&quot;0&quot;}">
+              <img src="./深入理解计算机系统 (豆瓣)_files/new-market-tip.png">
+              市集
+            </a>
+            </li>
+          
+            <li>
+              <a href="https://book.douban.com/subject/1230413/#more" class="bn-more"><span>更多</span></a>
+              <div class="more-items">
+                <table cellpadding="0" cellspacing="0">
+                    
+                    <tbody><tr><td><a href="https://moment.douban.com/" target="_blank" data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-moment&quot;,&quot;uid&quot;:&quot;0&quot;}">一刻</a></td></tr>
+                    
+                    <tr><td><a href="https://ypy.douban.com/" target="_blank" data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-ypy&quot;,&quot;uid&quot;:&quot;0&quot;}">豆瓣摄影</a></td></tr>
+                </tbody></table>
+              </div>
+            </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+  
+  
+
+
+
+
+
+
+
+
+<div id="db-nav-book" class="nav">
+  <div class="nav-wrap">
+    <div class="nav-primary">
+      <div class="nav-logo">
+        <a href="https://book.douban.com/">豆瓣读书</a>
+      </div>
+      <div class="nav-search">
+        <form action="https://book.douban.com/subject_search" method="get">
+          <fieldset>
+            <legend>搜索：</legend>
+            <label for="inp-query" style="display: none;">书名、作者、ISBN</label>
+            <div class="inp">
+              <input id="inp-query" name="search_text" size="22" maxlength="60" value="" placeholder="书名、作者、ISBN" autocomplete="off" dir="ltr">
+            </div>
+            <div class="inp-btn">
+              <input type="submit" value="搜索">
+            </div>
+            <input type="hidden" name="cat" value="1001">
+          </fieldset>
+        </form>
+        <style>
+            .nav-search,
+            .nav .nav-primary {
+                overflow: visible !important;
+            }
+
+            .nav-search {
+                margin-left: 145px;
+            }
+        </style>
+      </div>
+    </div>
+  </div>
+  <div class="nav-secondary">
+    
+    <ul class="nav-items">
+      <li class="nav-item-first"><a href="https://book.douban.com/tag/">分类浏览</a></li>
+      
+      <li class="book-cart ">
+        <a href="https://book.douban.com/cart">购书单</a>
+      </li>
+      <li>
+        <a href="https://read.douban.com/ebooks/?dcs=book-nav&amp;dcm=douban" target="_blank">电子图书</a>
+      </li>
+      <li>
+        <a href="https://market.douban.com/book?platform=web&amp;channel=book_nav">纸书</a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+  
+  <script type="text/template" id="suggest-item">
+    <li class="item"><a href="#">{{= item}}</a></li>
+  </script>
+  
+  
+
+
+
+    <div id="wrapper">
+        
+    <div id="dale_book_subject_top_icon" data-id=""></div>
+<h1>
+    <span property="v:itemreviewed">深入理解计算机系统</span>
+    <div class="clear"></div>
+</h1>
+
+        
+  <div id="content">
+    
+    <div class="grid-16-8 clearfix">
+      
+      <div class="article">
+
+
+
+<div class="indent">
+  <div class="subjectwrap clearfix">
+    
+
+
+
+<div class="subject clearfix">
+<div id="mainpic" class="">
+
+  
+
+  <a class="nbg" href="./深入理解计算机系统 (豆瓣)_files/s1470003.jpg" title="深入理解计算机系统">
+    <img src="./深入理解计算机系统 (豆瓣)_files/s1470003.jpg" title="点击看大图" alt="深入理解计算机系统" rel="v:photo" style="width: 107px">
+  </a>
+
+
+
+</div>
+
+
+
+
+
+<div id="info" class="">
+
+
+    
+    
+  
+    <span>
+      <span class="pl"> 作者</span>:
+        
+        
+        <a class="" href="https://book.douban.com/search/Randal%20E.Bryant">Randal E.Bryant</a>
+        
+           /
+        
+        <a class="" href="https://book.douban.com/search/David%20O%27Hallaron">David O'Hallaron</a>
+    </span><br>
+
+    
+    
+  
+    <span class="pl">出版社:</span> 中国电力出版社<br>
+
+    
+    
+  
+
+    
+    
+  
+    <span class="pl">原作名:</span> Computer Systems: A Programmer's Perspective<br>
+
+    
+    
+  
+    <span>
+      <span class="pl"> 译者</span>:
+        
+        
+        <a class="" href="https://book.douban.com/search/%E9%BE%9A%E5%A5%95%E5%88%A9">龚奕利</a>
+        
+           /
+        
+        <a class="" href="https://book.douban.com/search/%E9%9B%B7%E8%BF%8E%E6%98%A5">雷迎春</a>
+    </span><br>
+
+    
+    
+  
+    <span class="pl">出版年:</span> 2004-5-1<br>
+
+    
+    
+  
+    <span class="pl">页数:</span> 873<br>
+
+    
+    
+  
+    <span class="pl">定价:</span> 85.00元<br>
+
+    
+    
+  
+    <span class="pl">装帧:</span> 平装<br>
+
+    
+    
+  
+    <span class="pl">丛书:</span>&nbsp;<a href="https://book.douban.com/series/6628">传世经典书丛</a><br>
+
+    
+    
+  
+    
+      
+      <span class="pl">ISBN:</span> 9787508321752<br>
+
+
+</div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+<div id="interest_sectl" class="">
+  <div class="rating_wrap clearbox" rel="v:rating">
+    <div class="rating_logo">豆瓣评分</div>
+    <div class="rating_self clearfix" typeof="v:Rating">
+      <strong class="ll rating_num " property="v:average"> 9.5 </strong>
+      <span property="v:best" content="10.0"></span>
+      <div class="rating_right ">
+          <div class="ll bigstar50"></div>
+            <div class="rating_sum">
+                <span class="">
+                <a href="https://book.douban.com/subject/1230413/collections" class="rating_people"><span property="v:votes">2423</span>人评价</a>
+                </span>
+            </div>
+
+
+      </div>
+    </div>
+            
+            
+<span class="stars5 starstop" title="力荐">
+    5星
+</span>
+
+            
+<div class="power" style="width:63px"></div>
+
+            <span class="rating_per">79.2%</span>
+            <br>
+            
+            
+<span class="stars4 starstop" title="推荐">
+    4星
+</span>
+
+            
+<div class="power" style="width:14px"></div>
+
+            <span class="rating_per">17.8%</span>
+            <br>
+            
+            
+<span class="stars3 starstop" title="还行">
+    3星
+</span>
+
+            
+<div class="power" style="width:2px"></div>
+
+            <span class="rating_per">2.7%</span>
+            <br>
+            
+            
+<span class="stars2 starstop" title="较差">
+    2星
+</span>
+
+            
+<div class="power" style="width:0px"></div>
+
+            <span class="rating_per">0.2%</span>
+            <br>
+            
+            
+<span class="stars1 starstop" title="很差">
+    1星
+</span>
+
+            
+<div class="power" style="width:0px"></div>
+
+            <span class="rating_per">0.1%</span>
+            <br>
+    </div>
+</div>
+
+  </div>
+  
+
+
+
+
+
+  
+    
+    <div id="interest_sect_level" class="clearfix">
+        <a href="https://book.douban.com/subject/1230413/#" rel="nofollow" class="j a_show_login colbutt ll" name="pbtn-1230413-wish">
+          <span>
+            
+<form method="POST" action="https://www.douban.com/register?reason=collectwish" class="miniform">
+    <input type="submit" class="minisubmit j " value="想读" title="">
+</form>
+
+          </span>
+        </a>
+        <a href="https://book.douban.com/subject/1230413/#" rel="nofollow" class="j a_show_login colbutt ll" name="pbtn-1230413-do">
+          <span>
+            
+<form method="POST" action="https://www.douban.com/register?reason=collectdo" class="miniform">
+    <input type="submit" class="minisubmit j " value="在读" title="">
+</form>
+
+          </span>
+        </a>
+        <a href="https://book.douban.com/subject/1230413/#" rel="nofollow" class="j a_show_login colbutt ll" name="pbtn-1230413-collect">
+          <span>
+            
+<form method="POST" action="https://www.douban.com/register?reason=collectcollect" class="miniform">
+    <input type="submit" class="minisubmit j " value="读过" title="">
+</form>
+
+          </span>
+        </a>
+      <div class="ll j a_stars">
+        
+    
+    评价:
+    <span id="rating"> <span id="stars" data-solid="https://img3.doubanio.com/f/shire/5a2327c04c0c231bced131ddf3f4467eb80c1c86/pics/rating_icons/star_onmouseover.png" data-hollow="https://img3.doubanio.com/f/shire/2520c01967207a1735171056ec588c8c1257e5f8/pics/rating_icons/star_hollow_hover.png" data-solid-2x="https://img3.doubanio.com/f/shire/7258904022439076d57303c3b06ad195bf1dc41a/pics/rating_icons/star_onmouseover@2x.png" data-hollow-2x="https://img3.doubanio.com/f/shire/95cc2fa733221bb8edd28ad56a7145a5ad33383e/pics/rating_icons/star_hollow_hover@2x.png">
+
+            <a href="https://www.douban.com/register?reason=rate" class="j a_show_login" name="pbtn-1230413-1">
+        <img src="./深入理解计算机系统 (豆瓣)_files/star_hollow_hover.png" id="star1" width="16" height="16"></a>
+            <a href="https://www.douban.com/register?reason=rate" class="j a_show_login" name="pbtn-1230413-2">
+        <img src="./深入理解计算机系统 (豆瓣)_files/star_hollow_hover.png" id="star2" width="16" height="16"></a>
+            <a href="https://www.douban.com/register?reason=rate" class="j a_show_login" name="pbtn-1230413-3">
+        <img src="./深入理解计算机系统 (豆瓣)_files/star_hollow_hover.png" id="star3" width="16" height="16"></a>
+            <a href="https://www.douban.com/register?reason=rate" class="j a_show_login" name="pbtn-1230413-4">
+        <img src="./深入理解计算机系统 (豆瓣)_files/star_hollow_hover.png" id="star4" width="16" height="16"></a>
+            <a href="https://www.douban.com/register?reason=rate" class="j a_show_login" name="pbtn-1230413-5">
+        <img src="./深入理解计算机系统 (豆瓣)_files/star_hollow_hover.png" id="star5" width="16" height="16"></a>
+    </span><span id="rateword" class="pl"></span>
+    <input id="n_rating" type="hidden" value="">
+    </span>
+
+      </div>
+      
+
+    </div>
+
+
+
+  
+  <div class="gtleft">
+    <ul class="ul_subject_menu bicelink color_gray pt6 clearfix">
+        <li>
+          <img src="./深入理解计算机系统 (豆瓣)_files/add-review.gif">&nbsp;<a href="https://www.douban.com/register?reason=annotate" class="j a_show_login" rel="nofollow">写笔记</a>
+        </li>
+
+          <li>
+            <img src="./深入理解计算机系统 (豆瓣)_files/add-review.gif">&nbsp;<a class="j a_show_login" href="https://www.douban.com/register?reason=review" rel="nofollow">写书评</a>
+          </li>
+
+      <li>
+
+  <span class="rr">
+  
+
+    <img src="./深入理解计算机系统 (豆瓣)_files/add-cart.gif">
+      <a class="j a_show_login" href="http://http//www.douban.com/register?reason=addbook2cart" rel="nofollow">加入购书单</a>
+  <span class="hidden">已在<a href="https://book.douban.com/cart">购书单</a></span>
+</span><br class="clearfix">
+</li>
+
+
+        
+        
+    
+    <li class="rec" id="C-1230413">
+        <a href="https://book.douban.com/subject/1230413/#" data-url="https://book.douban.com/subject/1230413/" data-desc="" data-title="书籍《深入理解计算机系统》 (来自豆瓣) " data-pic="https://img3.doubanio.com/lpic/s1470003.jpg" class="bn-sharing ">分享到</a> &nbsp;&nbsp;
+    </li>
+    <link type="text/css" rel="stylesheet" href="./深入理解计算机系统 (豆瓣)_files/dialog.css"><script type="text/javascript" src="./深入理解计算机系统 (豆瓣)_files/dialog.js.下载" async="true"></script><script>
+    var __cache_url = __cache_url || {};
+    (function(u){
+        if(__cache_url[u]) return;
+        __cache_url[u] = true;
+        window.DoubanShareIcons = 'https://img3.doubanio.com/f/shire/d15ffd71f3f10a7210448fec5a68eaec66e7f7d0/pics/ic_shares.png';
+        var initShareButton = function() {
+          $.ajax({url:u,dataType:'script',cache:true});
+        };
+        if (typeof Do == 'function' && 'ready' in Do) {
+          Do('https://img3.doubanio.com/f/shire/8377b9498330a2e6f056d863987cc7a37eb4d486/css/ui/dialog.css',
+            'https://img3.doubanio.com/f/shire/3d185ca912c999ee7f464749201139ebf8eb6972/js/ui/dialog.js',
+            initShareButton);
+        } else if(typeof Douban == 'object' && 'loader' in Douban) {
+          Douban.loader.batch(
+            'https://img3.doubanio.com/f/shire/8377b9498330a2e6f056d863987cc7a37eb4d486/css/ui/dialog.css',
+            'https://img3.doubanio.com/f/shire/3d185ca912c999ee7f464749201139ebf8eb6972/js/ui/dialog.js'
+          ).done(initShareButton);
+        }
+    })('https://img3.doubanio.com/f/shire/6e6a5f21daeec19bbb41bf48c07fccaa4dad4d98/js/lib/sharebutton.js');
+    </script>
+
+    </ul>
+  </div>
+
+
+    
+
+
+
+
+
+
+
+<div class="rec-sec">
+
+    <span class="rec">
+
+<a href="https://www.douban.com/accounts/register?reason=collect" class="j a_show_login lnk-sharing lnk-douban-sharing">推荐</a>
+</span>
+</div>
+
+
+<script>
+  //bind events for collection button.
+  $('.collect_btn', '#interest_sect_level').each(function(){
+      Douban.init_collect_btn(this);
+  });
+</script>
+
+
+
+
+
+
+
+
+</div>
+
+<br clear="all">
+<div id="collect_form_1230413"></div>
+<div class="related_info">
+  
+  
+  
+  
+  
+
+
+
+
+
+
+  
+
+  <h2>
+    <span class="">内容简介</span>
+      &nbsp;·&nbsp;·&nbsp;·&nbsp;·&nbsp;·&nbsp;·
+
+  </h2>
+
+
+
+<div class="indent" id="link-report">
+    
+      <span class="short">
+        <style type="text/css" media="screen">
+.intro p{text-indent:2em;}
+</style>
+<div class="intro">
+    <p>从程序员的视角，看计算机系统！</p>    <p>本书适用于那些想要写出更快、更可靠程序的程序员。通过掌握程序是如何映射到系统上，以及程序是如何执行的，读者能够更好的理解程序的行为为什么是这样的，以及效率低下是如何造成的。粗略来看，计算机系统包括处理器和存储器硬件、编译器、操作系统和网络互连环境。而通过程序员的视角，读者可以清晰地明白学习计算机系统的内部工作原理会对他们今后作为计算机科学研究者和工程师的工作有进一步的帮助。它还有助于为进一步学习计算机体系结构、操作系统、编译器和网络互连做好准备。</p>    <p>本书的主要论题包括：数据表示、C程序的机器级表示、处理器结构，程序优化、存储器层次结构、链接、异常控制流、虚拟存储器和存储器管理、系统级I/O、网络编程和并发编程。书中所覆盖的内容主要是这些方面是如何影响应用和系统程序员的。例如，在讲述数据表示时，本书说明了用来表示数字的表示...</p><p><a href="javascript:void(0)" class="j a_show_full">(展开全部)</a></p></div>
+       </span>
+      <span class="all hidden">
+        <div class="">
+          <style type="text/css" media="screen">
+.intro p{text-indent:2em;}
+</style>
+<div class="intro">
+    <p>从程序员的视角，看计算机系统！</p>    <p>本书适用于那些想要写出更快、更可靠程序的程序员。通过掌握程序是如何映射到系统上，以及程序是如何执行的，读者能够更好的理解程序的行为为什么是这样的，以及效率低下是如何造成的。粗略来看，计算机系统包括处理器和存储器硬件、编译器、操作系统和网络互连环境。而通过程序员的视角，读者可以清晰地明白学习计算机系统的内部工作原理会对他们今后作为计算机科学研究者和工程师的工作有进一步的帮助。它还有助于为进一步学习计算机体系结构、操作系统、编译器和网络互连做好准备。</p>    <p>本书的主要论题包括：数据表示、C程序的机器级表示、处理器结构，程序优化、存储器层次结构、链接、异常控制流、虚拟存储器和存储器管理、系统级I/O、网络编程和并发编程。书中所覆盖的内容主要是这些方面是如何影响应用和系统程序员的。例如，在讲述数据表示时，本书说明了用来表示数字的表示方法是有限的，它能够近似地表示整数和实数，但是这种表示方法是有限制的，程序员必须了解。在讲述高速缓存时，本书讨论了矩阵代码中的循环变量的顺序是如何影响程序的性能的。在讨论网络互连时，本书描述了并发服务器如何能有效地处理来自多个客户端的请求。</p>    <p>本书基于Intel兼容（IA32）机器，在Unix或者相关的操作系统（例如，Linux）上执行C程序。虽然书中包括了一些帮助读者将Java转化成C的提示，但是还是要求读者对C或者C++有一定的了解。</p>    <p>您可以通过本书的Web网站www.csapp.cs.cmu.edu获得完整的资料，包括实验和作业，授课笔记和代码示例。</p>    <p>本书英文版久负盛名，被众多专业人士称为“最伟大的计算机教材”之一，著名的美国卡内基梅隆大学计算机科学系一直将本书作为教材使用，程序员眼中的透彻讲述计算机系统的扛鼎之作。作者Randal E. Bryant是卡耐基梅隆大学的计算机科学系主任，ACM和IEEE双院士（Fellow），其研究成果多次获得ACM和IEEE颁发的大奖。</p>    <p>本书共分十三章，分别介绍了信息的表示和处理、程序的机器级表示、处理器体系结构、存储器层次结构、静态和动态链接、虚拟存储器、系统级I/O、网络编程和并发编程等精彩内容。其目的是解释计算机系统的所有本质概念，并向读者展示这些概念是如何实际地影响应用程序的正确性、性能和实用性。与其他主要针对系统构造人员的系统类书籍不同，这本书是写给程序员的，是从程序员的角度来描述的。本书为软件和硬件之间搭起了一个桥梁，它给出了一种帮助读者分别从硬件和软件的角度去理解一个程序及其行为的途径，这也填补了国内计算机系统教学中的一个空白。本书的最大优点是帮助读者理解概念，让读者很清楚地在脑海中构造一个层次型的计算机系统，从最低层数据在内存中的表示（如我们一直陌生的浮点数表示），到流水线指令的构成，到虚拟存储器，到编译系统，到动态加载库，到最后的用户应用。</p>    <p>本书提供了大量的例子和练习及部分答案。尤其值得一提的是，对于每一个基本概念都有相应的笔头或程序试验，加深读者的理解。</p></div>
+
+        </div>
+      </span>
+    
+<style>
+    #link-report .report { text-align: right; font-size: 12px; visibility: hidden; }
+    #link-report .report a { color: #BBB; }
+    #link-report .report a:hover { color: #FFF; background-color: #BBB; }
+</style>
+<script>
+    Do = (typeof Do === 'undefined')? $ : Do;
+    Do(function(){
+    $("body").delegate("#link-report", 'mouseenter mouseleave', function(e){
+      switch (e.type) {
+        case "mouseenter":
+          $(this).find(".report").css('visibility', 'visible');
+          break;
+        case "mouseleave":
+          $(this).find(".report").css('visibility', 'hidden');
+          break;
+      }
+    });
+    $("#link-report").delegate(".report a", 'click', function(e){
+        e.preventDefault();
+        var auditUrl = "https://www.douban.com/misc/audit_report?url=",
+        opt = "";
+        var obj = $(e.target).closest('#link-report');
+        var id = obj.length != 0 ? obj.data("id") : undefined;
+        var params = (opt&&id) ? '?'.concat(opt, '=', id) : '';
+        var url = auditUrl.concat("https://book.douban.com/subject/1230413/", params);
+        window.location.href = url;
+    });
+
+    $("#link-report").append('<div class="report"><a rel="nofollow" href="#">举报</a></div>');
+  });
+</script>
+
+<div class="report" style="visibility: hidden;"><a rel="nofollow" href="https://book.douban.com/subject/1230413/#">举报</a></div></div>
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+  
+
+  <h2>
+    <span class="">作者简介</span>
+      &nbsp;·&nbsp;·&nbsp;·&nbsp;·&nbsp;·&nbsp;·
+
+  </h2>
+
+
+
+      <div class="indent ">
+          
+            <span class="short">
+                <style type="text/css" media="screen">
+.intro p{text-indent:2em;}
+</style>
+<div class="intro">
+    <p>Randal E. Bryant 1973年获得密歇根大学（University of Michigan）学士学位，随即就读麻省理工学院（Massachusetts Institute of Technology）的研究生院，并在1981年获计算机博士学位。他在加州理工学院（California Institute of Technology）做了三年助教，从1984年至今一直是卡内基梅隆大学（Carnegie Mellon）的教师。他现在是计算机科学的主任级教授和计算机科学系的系主任。他同时还受邀于电子和计算机工程系。 他从事本科和研究生计算机系统方面课程的教学超过20年。在讲授计算机体系结构课程多年后，他开始把关注点从如何设计计算机转移到程序员如何在更好地了解系统的情况下编写出更有效和更可靠的程序。他和O’Hallaron教授一起在卡内基梅隆大学...</p><p><a href="javascript:void(0)" class="j a_show_full">(展开全部)</a></p></div>
+
+            </span>
+            <span class="all hidden ">
+                <style type="text/css" media="screen">
+.intro p{text-indent:2em;}
+</style>
+<div class="intro">
+    <p>Randal E. Bryant 1973年获得密歇根大学（University of Michigan）学士学位，随即就读麻省理工学院（Massachusetts Institute of Technology）的研究生院，并在1981年获计算机博士学位。他在加州理工学院（California Institute of Technology）做了三年助教，从1984年至今一直是卡内基梅隆大学（Carnegie Mellon）的教师。他现在是计算机科学的主任级教授和计算机科学系的系主任。他同时还受邀于电子和计算机工程系。 他从事本科和研究生计算机系统方面课程的教学超过20年。在讲授计算机体系结构课程多年后，他开始把关注点从如何设计计算机转移到程序员如何在更好地了解系统的情况下编写出更有效和更可靠的程序。他和O’Hallaron教授一起在卡内基梅隆大学开设了“计算机系统导论”课程，那便是此书的基础。他还教授一些算法和编程方面的课程。 Bryant教授的研究涉及帮助硬件设计者验证其系统正确性的软件工具的设计。其中，包括几种类型的模拟器，以及用数学方法来证明设计正确性的形式化验证工具。他发表了100多篇技术论文。包括Intel、Motorola、IBM和Fujitsu在内的主要计算机制造商都使用他的研究成果。他还因他的研究获得过数项大奖。其中包括Semiconductor Research Corporation颁发的两个发明荣誉奖和一个技术成就奖，美国计算机学会（Association for Computer Machinery，ACM）颁发的Kanellakis理论与实践奖，还有电气和电子工程师协会（Institute of Electrical and Electronics Engineers，IEEE）授予的W. R. G. Baker奖和50年金质奖章（a Golden Jubilee Medal）。他同时是ACM和IEEE的院士。</p>    <p>David R. O’Hallaron 1986年在维吉尼亚大学（University of Virginia）获得计算机科学的博士学位。在通用电气工作一段时间后，于1989年作为系统科学家成为卡内基梅隆大学的教员。他目前是计算机科学系和电子及计算机工程系的副教授。 他教授一些本科生和研究生的计算机系统方面的课程，例如计算机体系结构、计算机系统绪论、并行处理器设计和Internet服务。和Bryant教授一起，他开设了“计算机系统导论”课程，那便是此书的基础。 O’Hallaron教授和他的学生从事计算机系统领域的研究。特别的，他们开发了一些软件系统，帮助科学家和工程师在计算机上模拟自然界。其中最著名的是Quake项目，一群计算机科学家、土木工程师和地震学家致力于在强烈地震中预测大地运动的能力，这些强烈地震包括南加洲、古巴、日本、墨西哥和新西兰的大地震。同Quake项目中其它人员一起，他获得了CMU计算机科学院颁发的Allen Newell优秀研究奖章。他为Quake项目创立的基准程序，183.equake，被SPEC（Standards Performance Evaluation Corporation）选入非常有影响的SPEC CPU和OMP（Open Mp）基准程序包中。</p></div>
+
+            </span>
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+    
+
+
+
+
+  
+
+  <h2>
+    <span class="">目录</span>
+      &nbsp;·&nbsp;·&nbsp;·&nbsp;·&nbsp;·&nbsp;·
+
+  </h2>
+
+
+
+<div class="indent" id="dir_1230413_short">
+        出版说明<br>
+        关于第二次印刷的几点说明<br>
+        译 序<br>
+        关于术语的翻译<br>
+        在第二次印刷中一些重要术语的修订<br>
+        前 言<br>
+    · · · · · ·
+    (<a href="javascript:$(&#39;#dir_1230413_short&#39;).hide();$(&#39;#dir_1230413_full&#39;).show();$.get(&#39;/j/subject/j_dir_count&#39;,{id:1230413});void(0);">更多</a>)
+</div>
+
+<div class="indent" id="dir_1230413_full" style="display:none">
+        出版说明<br>
+        关于第二次印刷的几点说明<br>
+        译 序<br>
+        关于术语的翻译<br>
+        在第二次印刷中一些重要术语的修订<br>
+        前 言<br>
+        关于作者<br>
+        第1章 计算机系统漫游<br>
+        1．1 信息就是位十上下文<br>
+        1．2 程序被其他程序翻译成不同的格式<br>
+        1．3 了解编译系统如何工作是大有益处的<br>
+        1．4 处理器读并解释储存在存储器中的指令<br>
+        1．5 高速缓存<br>
+        1．6 形成层次结构的存储设备<br>
+        1．7 操作系统管理硬件<br>
+        1．8 利用网络系统和其他系统通信<br>
+        1．9 下一步<br>
+        1．10 小结<br>
+        第1部分 程序结构和执行<br>
+        第2章 信息的表示和处理<br>
+        .2．1 信息存储<br>
+        2．2 整数表示<br>
+        2．3 整数运算<br>
+        2．4 浮点<br>
+        2．5 小结<br>
+        第3章 程序的机器级表示<br>
+        3．1 历史观点<br>
+        3．2 程序编码<br>
+        3．3 数据格式<br>
+        3．4 访问信息<br>
+        3．5 算术和逻辑操作<br>
+        3．6 控制<br>
+        3．7 过程<br>
+        3．8 数组分配和访问<br>
+        3．9 异类的数据结构<br>
+        3．10 对齐(alignment)<br>
+        3．11 综合：理解指针<br>
+        3．12 现实生活：使用gdb调试器<br>
+        3．13 存储器的越界引用和缓冲区溢出<br>
+        3．14 *浮点代码<br>
+        3．15 *在c程序中嵌入汇编代码<br>
+        3．16 小结<br>
+        第4章 处理器体系结构<br>
+        4．1 y86指令集体系结构<br>
+        4．2 逻辑设计和硬件控制语言hcl<br>
+        4．3 y86的顺序(sequential)实现<br>
+        4．4 流水线的通用原理<br>
+        4．5 y86的流水线实现<br>
+        4．6 小结<br>
+        第5章 优化程序性能<br>
+        5．1 优化编译器的能力和局限性<br>
+        5．2 表示程序性能<br>
+        5．3 程序示例<br>
+        5．4 消除循环的低效率<br>
+        5．5 减少过程调用<br>
+        5．6 消除不必要的存储器引用<br>
+        5．7 理解现代处理器<br>
+        5．8 降低循环开销<br>
+        5．9 转换到指针代码<br>
+        5．10 提高并行性<br>
+        5．11 综合：优化合并(combing)代码的效果小结<br>
+        5．12 转移预测和预测错误处罚<br>
+        5．13 解存储器性能<br>
+        5．14 现实生活：性能提高技术<br>
+        5．15 确认和消除性能瓶颈<br>
+        5．16 小结<br>
+        第6章 存储器层次结构<br>
+        6．1 存储技术<br>
+        6．2 局部性<br>
+        6．3 存储器层次结构<br>
+        6．4 高速缓存存储器<br>
+        6．5 编写高速缓存友好的代码<br>
+        6．6 综合：高速缓存对程序性能的影响<br>
+        6．7 综合：利用程序中的局部性<br>
+        6．8 小结<br>
+        第2部分 在系统上运行程序<br>
+        第7章 链接<br>
+        7．1 编译器驱动程序<br>
+        7．2 静态链接<br>
+        7．3 标文件<br>
+        7．4 可重定位目标文件<br>
+        7．5 符号和符号表<br>
+        7．6 符号解析<br>
+        7．7 重定位<br>
+        7．8 可执行目标文件<br>
+        7．9 加载可执行目标文件<br>
+        7．10 动态链接共享库<br>
+        7．11 从应用程序中加载和链接共享库<br>
+        7．12 *与位置无关的代码(pic)<br>
+        7．13 处理目标文件的工具<br>
+        7．14 小结<br>
+        第8章 异常控制流<br>
+        8．1 异常<br>
+        8．2 进程<br>
+        8．3 系统调用和错误处理<br>
+        8．4 进程控制<br>
+        8．5 信号<br>
+        8．6 非本地跳转<br>
+        8．7 操作进程的工具<br>
+        8．8 小结<br>
+        第9章 测量程序执行时间<br>
+        9．1 计算机系统上的时间流<br>
+        9．2 通过间隔计数(interval counting)来测量时间<br>
+        9．3 周期计数器<br>
+        9．4 用周期计数器来测量程序执行时间<br>
+        9．5 基于gettimeofday函数的测量<br>
+        9．6 综合：一个实验协议<br>
+        9．7 展望未来<br>
+        9．8 现实生活：k次最优测量方法<br>
+        9．9 得到的经验教训<br>
+        9．10 小结<br>
+        第10章 虚拟存储器<br>
+        10．1 物理和虚拟寻址<br>
+        10．2 地址空间<br>
+        10．3 虚拟存储器作为缓存的工具<br>
+        10．4 虚拟存储器作为存储器管理的工具<br>
+        10．5 虚拟存储器作为存储器保护的工具<br>
+        10．6 地址翻译<br>
+        10．7 案例研究：pentium／linux存储器系统，<br>
+        10．8 存储器映射<br>
+        10．9 动态存储器分配<br>
+        10．10 垃圾收集<br>
+        10．11 c程序中常见的与存储器有关的错误<br>
+        10．12 扼要重述一些有关虚拟存储器的关键概念<br>
+        10．13 小结<br>
+        第3部分 程序间的交互和通信<br>
+        第11章 系统级i／o<br>
+        11．1 unix i／o<br>
+        11．2 打开和关闭文件<br>
+        11．3 读和写文件<br>
+        11．4 用rio包进行健壮地读和写<br>
+        11．5 读取文件元数据<br>
+        11．6 共享文件<br>
+        11．7 i／o重定向<br>
+        11．8 标准i／o<br>
+        11．9 综合：我该使用哪些i／o函数?<br>
+        11．10 小结<br>
+        第12章 网络编程<br>
+        12．1 客户端-服务器编程模型<br>
+        12．2 网络<br>
+        12．3 全球ip因特网<br>
+        12．4 套接字接口<br>
+        12．5 web服务器<br>
+        12．6 综合：tinyweb服务器<br>
+        12．7 小结<br>
+        第13章 并发编程<br>
+        13．1 基于进程的并发编程<br>
+        13．2 基于i／o多路复用的并发编程<br>
+        13．3 基于线程的并发编程<br>
+        13．4 多线程程序中的共享变量<br>
+        13．5 用信号量同步线程<br>
+        13．6 综合：基于预线程化的并发服务器<br>
+        13．7 其他并发性问题<br>
+        13．8 小结<br>
+        附录a 处理器控制逻辑的hcl描述<br>
+        a．1 hcl参考手册<br>
+        a．2 seq<br>
+        a．3 seq+<br>
+        a．4 pipe<br>
+        附录b 错误处理<br>
+        b．1 unix系统中的错误处理<br>
+        b．2 错误处理封装函数<br>
+        b．3 csapp．h头文件<br>
+        b．4 csapp．c源文件<br>
+        参考文献<br>
+        索 引<br>
+     · · · · · ·     (<a href="javascript:$(&#39;#dir_1230413_full&#39;).hide();$(&#39;#dir_1230413_short&#39;).show();void(0);">收起</a>)
+</div>
+
+
+
+  
+
+
+
+
+
+
+<div id="db-tags-section" class="blank20">
+  
+  
+
+  <h2>
+    <span class="">豆瓣成员常用的标签(共528个)</span>
+      &nbsp;·&nbsp;·&nbsp;·&nbsp;·&nbsp;·&nbsp;·
+
+  </h2>
+
+
+  <div class="indent">    <span class="">
+        <a class="  tag" href="https://book.douban.com/tag/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F">计算机系统</a> &nbsp;    </span>
+    <span class="">
+        <a class="  tag" href="https://book.douban.com/tag/%E8%AE%A1%E7%AE%97%E6%9C%BA">计算机</a> &nbsp;    </span>
+    <span class="">
+        <a class="  tag" href="https://book.douban.com/tag/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6">计算机科学</a> &nbsp;    </span>
+    <span class="">
+        <a class="  tag" href="https://book.douban.com/tag/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F">操作系统</a> &nbsp;    </span>
+    <span class="">
+        <a class="  tag" href="https://book.douban.com/tag/%E7%BC%96%E7%A8%8B">编程</a> &nbsp;    </span>
+    <span class="">
+        <a class="  tag" href="https://book.douban.com/tag/programming">programming</a> &nbsp;    </span>
+    <span class="">
+        <a class="  tag" href="https://book.douban.com/tag/%E7%A8%8B%E5%BA%8F%E5%91%98">程序员</a> &nbsp;    </span>
+    <span class="">
+        <a class="  tag" href="https://book.douban.com/tag/OS">OS</a> &nbsp;    </span>
+  </div>
+</div>
+
+
+
+  
+
+
+<div class="subject_show block5">
+<h2>丛书信息</h2>
+<div>
+　　<a href="https://book.douban.com/series/6628">传世经典书丛 (共17册)</a>,
+这套丛书还有
+《Effective C++》,《More Effective C++（中文版）》,《More Exceptional C++（中文版）》,《程序员思维修炼（修订版）》,《Effective STL中文版》    等。</div>
+</div>
+<script>
+$(function(){$(".knnlike a").click(function(){return moreurl(this,{'from':'knnlike'})})})
+</script>
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="rec-ebook-section" class="block5 subject_show">
+  
+
+  
+  
+
+  <h2>
+    <span class="">喜欢读"深入理解计算机系统"的人也喜欢的电子书</span>
+      &nbsp;·&nbsp;·&nbsp;·&nbsp;·&nbsp;·&nbsp;·
+
+  </h2>
+
+
+  <div class="tips-mod">
+    支持 Web、iPhone、iPad、Android 阅读器
+  </div>
+  <div class="content clearfix">
+      
+      <dl>
+        <dt>
+          <a href="https://read.douban.com/ebook/1637944/?dcs=subject-rec&amp;dcm=douban&amp;dct=1230413" target="_blank">
+            <span class="cover-outer">
+              <img width="67px" height="100px" src="./深入理解计算机系统 (豆瓣)_files/1637944.jpg">
+            </span>
+          </a>
+        </dt>
+        <dd>
+          <div class="title">
+              <a href="https://read.douban.com/ebook/1637944/" target="_blank">程序员的自我修养</a>
+          </div>
+          <div class="price">
+              18.00元
+          </div>
+        </dd>
+      </dl>
+      
+      <dl>
+        <dt>
+          <a href="https://read.douban.com/ebook/198648/?dcs=subject-rec&amp;dcm=douban&amp;dct=1230413" target="_blank">
+            <span class="cover-outer">
+              <img width="67px" height="100px" src="./深入理解计算机系统 (豆瓣)_files/198648.jpg">
+            </span>
+          </a>
+        </dt>
+        <dd>
+          <div class="title">
+              <a href="https://read.douban.com/ebook/198648/" target="_blank">CoffeeScript小书</a>
+          </div>
+          <div class="price">
+              1.99元
+          </div>
+        </dd>
+      </dl>
+      
+      <dl>
+        <dt>
+          <a href="https://read.douban.com/ebook/1499455/?dcs=subject-rec&amp;dcm=douban&amp;dct=1230413" target="_blank">
+            <span class="cover-outer">
+              <img width="67px" height="100px" src="./深入理解计算机系统 (豆瓣)_files/1499455.jpg">
+            </span>
+          </a>
+        </dt>
+        <dd>
+          <div class="title">
+              <a href="https://read.douban.com/ebook/1499455/" target="_blank">Python源码剖析</a>
+          </div>
+          <div class="price">
+              19.20元
+          </div>
+        </dd>
+      </dl>
+      
+      <dl>
+        <dt>
+          <a href="https://read.douban.com/ebook/500486/?dcs=subject-rec&amp;dcm=douban&amp;dct=1230413" target="_blank">
+            <span class="cover-outer">
+              <img width="67px" height="100px" src="./深入理解计算机系统 (豆瓣)_files/500486.jpg">
+            </span>
+          </a>
+        </dt>
+        <dd>
+          <div class="title">
+              <a href="https://read.douban.com/ebook/500486/" target="_blank">打造Facebook</a>
+          </div>
+          <div class="price">
+              15.00元
+          </div>
+        </dd>
+      </dl>
+      
+      <dl>
+        <dt>
+          <a href="https://read.douban.com/ebook/237278/?dcs=subject-rec&amp;dcm=douban&amp;dct=1230413" target="_blank">
+            <span class="cover-outer">
+              <img width="67px" height="100px" src="./深入理解计算机系统 (豆瓣)_files/237278.jpg">
+            </span>
+          </a>
+        </dt>
+        <dd>
+          <div class="title">
+              <a href="https://read.douban.com/ebook/237278/" target="_blank">思考的乐趣</a>
+          </div>
+          <div class="price">
+              10.80元
+          </div>
+        </dd>
+      </dl>
+  </div>
+</div>
+
+<div id="db-rec-section" class="block5 subject_show knnlike">
+  
+  
+  
+
+  <h2>
+    <span class="">喜欢读"深入理解计算机系统"的人也喜欢</span>
+      &nbsp;·&nbsp;·&nbsp;·&nbsp;·&nbsp;·&nbsp;·
+
+  </h2>
+
+
+  <div class="content clearfix">
+      
+      <dl class="">
+        <dt>
+            <a href="https://book.douban.com/subject/1477390/" onclick="moreurl(this, {&#39;total&#39;: 10, &#39;clicked&#39;: &#39;1477390&#39;, &#39;pos&#39;: 0, &#39;identifier&#39;: &#39;book-rec-books&#39;})"><img class="m_sub_img" src="./深入理解计算机系统 (豆瓣)_files/s1495029.jpg"></a>
+        </dt>
+        <dd>
+          <a href="https://book.douban.com/subject/1477390/" onclick="moreurl(this, {&#39;total&#39;: 10, &#39;clicked&#39;: &#39;1477390&#39;, &#39;pos&#39;: 0, &#39;identifier&#39;: &#39;book-rec-books&#39;})" class="">
+            代码大全（第2版）
+          </a>
+        </dd>
+      </dl>
+      
+      <dl class="">
+        <dt>
+            <a href="https://book.douban.com/subject/1885170/" onclick="moreurl(this, {&#39;total&#39;: 10, &#39;clicked&#39;: &#39;1885170&#39;, &#39;pos&#39;: 1, &#39;identifier&#39;: &#39;book-rec-books&#39;})"><img class="m_sub_img" src="./深入理解计算机系统 (豆瓣)_files/s1959967.jpg"></a>
+        </dt>
+        <dd>
+          <a href="https://book.douban.com/subject/1885170/" onclick="moreurl(this, {&#39;total&#39;: 10, &#39;clicked&#39;: &#39;1885170&#39;, &#39;pos&#39;: 1, &#39;identifier&#39;: &#39;book-rec-books&#39;})" class="">
+            算法导论（原书第2版）
+          </a>
+        </dd>
+      </dl>
+      
+      <dl class="">
+        <dt>
+            <a href="https://book.douban.com/subject/1788421/" onclick="moreurl(this, {&#39;total&#39;: 10, &#39;clicked&#39;: &#39;1788421&#39;, &#39;pos&#39;: 2, &#39;identifier&#39;: &#39;book-rec-books&#39;})"><img class="m_sub_img" src="./深入理解计算机系统 (豆瓣)_files/s4436543.jpg"></a>
+        </dt>
+        <dd>
+          <a href="https://book.douban.com/subject/1788421/" onclick="moreurl(this, {&#39;total&#39;: 10, &#39;clicked&#39;: &#39;1788421&#39;, &#39;pos&#39;: 2, &#39;identifier&#39;: &#39;book-rec-books&#39;})" class="">
+            UNIX环境高级编程
+          </a>
+        </dd>
+      </dl>
+      
+      <dl class="">
+        <dt>
+            <a href="https://book.douban.com/subject/1148282/" onclick="moreurl(this, {&#39;total&#39;: 10, &#39;clicked&#39;: &#39;1148282&#39;, &#39;pos&#39;: 3, &#39;identifier&#39;: &#39;book-rec-books&#39;})"><img class="m_sub_img" src="./深入理解计算机系统 (豆瓣)_files/s1113106.jpg"></a>
+        </dt>
+        <dd>
+          <a href="https://book.douban.com/subject/1148282/" onclick="moreurl(this, {&#39;total&#39;: 10, &#39;clicked&#39;: &#39;1148282&#39;, &#39;pos&#39;: 3, &#39;identifier&#39;: &#39;book-rec-books&#39;})" class="">
+            计算机程序的构造和解释
+          </a>
+        </dd>
+      </dl>
+      
+      <dl class="">
+        <dt>
+            <a href="https://book.douban.com/subject/1139336/" onclick="moreurl(this, {&#39;total&#39;: 10, &#39;clicked&#39;: &#39;1139336&#39;, &#39;pos&#39;: 4, &#39;identifier&#39;: &#39;book-rec-books&#39;})"><img class="m_sub_img" src="./深入理解计算机系统 (豆瓣)_files/s1106934.jpg"></a>
+        </dt>
+        <dd>
+          <a href="https://book.douban.com/subject/1139336/" onclick="moreurl(this, {&#39;total&#39;: 10, &#39;clicked&#39;: &#39;1139336&#39;, &#39;pos&#39;: 4, &#39;identifier&#39;: &#39;book-rec-books&#39;})" class="">
+            C程序设计语言
+          </a>
+        </dd>
+      </dl>
+        <dl class="clear"></dl>
+      
+      <dl class="">
+        <dt>
+            <a href="https://book.douban.com/subject/1467587/" onclick="moreurl(this, {&#39;total&#39;: 10, &#39;clicked&#39;: &#39;1467587&#39;, &#39;pos&#39;: 5, &#39;identifier&#39;: &#39;book-rec-books&#39;})"><img class="m_sub_img" src="./深入理解计算机系统 (豆瓣)_files/s1631790.jpg"></a>
+        </dt>
+        <dd>
+          <a href="https://book.douban.com/subject/1467587/" onclick="moreurl(this, {&#39;total&#39;: 10, &#39;clicked&#39;: &#39;1467587&#39;, &#39;pos&#39;: 5, &#39;identifier&#39;: &#39;book-rec-books&#39;})" class="">
+            UNIX编程艺术
+          </a>
+        </dd>
+      </dl>
+      
+      <dl class="">
+        <dt>
+            <a href="https://book.douban.com/subject/2377310/" onclick="moreurl(this, {&#39;total&#39;: 10, &#39;clicked&#39;: &#39;2377310&#39;, &#39;pos&#39;: 6, &#39;identifier&#39;: &#39;book-rec-books&#39;})"><img class="m_sub_img" src="./深入理解计算机系统 (豆瓣)_files/s5886086.jpg"></a>
+        </dt>
+        <dd>
+          <a href="https://book.douban.com/subject/2377310/" onclick="moreurl(this, {&#39;total&#39;: 10, &#39;clicked&#39;: &#39;2377310&#39;, &#39;pos&#39;: 6, &#39;identifier&#39;: &#39;book-rec-books&#39;})" class="">
+            C专家编程
+          </a>
+        </dd>
+      </dl>
+      
+      <dl class="">
+        <dt>
+            <a href="https://book.douban.com/subject/1052241/" onclick="moreurl(this, {&#39;total&#39;: 10, &#39;clicked&#39;: &#39;1052241&#39;, &#39;pos&#39;: 7, &#39;identifier&#39;: &#39;book-rec-books&#39;})"><img class="m_sub_img" src="./深入理解计算机系统 (豆瓣)_files/s1074361.jpg"></a>
+        </dt>
+        <dd>
+          <a href="https://book.douban.com/subject/1052241/" onclick="moreurl(this, {&#39;total&#39;: 10, &#39;clicked&#39;: &#39;1052241&#39;, &#39;pos&#39;: 7, &#39;identifier&#39;: &#39;book-rec-books&#39;})" class="">
+            设计模式
+          </a>
+        </dd>
+      </dl>
+      
+      <dl class="">
+        <dt>
+            <a href="https://book.douban.com/subject/1088054/" onclick="moreurl(this, {&#39;total&#39;: 10, &#39;clicked&#39;: &#39;1088054&#39;, &#39;pos&#39;: 8, &#39;identifier&#39;: &#39;book-rec-books&#39;})"><img class="m_sub_img" src="./深入理解计算机系统 (豆瓣)_files/s1543906.jpg"></a>
+        </dt>
+        <dd>
+          <a href="https://book.douban.com/subject/1088054/" onclick="moreurl(this, {&#39;total&#39;: 10, &#39;clicked&#39;: &#39;1088054&#39;, &#39;pos&#39;: 8, &#39;identifier&#39;: &#39;book-rec-books&#39;})" class="">
+            TCP/IP详解 卷1：协议
+          </a>
+        </dd>
+      </dl>
+      
+      <dl class="">
+        <dt>
+            <a href="https://book.douban.com/subject/1091086/" onclick="moreurl(this, {&#39;total&#39;: 10, &#39;clicked&#39;: &#39;1091086&#39;, &#39;pos&#39;: 9, &#39;identifier&#39;: &#39;book-rec-books&#39;})"><img class="m_sub_img" src="./深入理解计算机系统 (豆瓣)_files/s3301634.jpg"></a>
+        </dt>
+        <dd>
+          <a href="https://book.douban.com/subject/1091086/" onclick="moreurl(this, {&#39;total&#39;: 10, &#39;clicked&#39;: &#39;1091086&#39;, &#39;pos&#39;: 9, &#39;identifier&#39;: &#39;book-rec-books&#39;})" class="">
+            深度探索C++对象模型
+          </a>
+        </dd>
+      </dl>
+        <dl class="clear"></dl>
+  </div>
+</div>
+
+  
+
+
+
+
+
+
+    <link rel="stylesheet" href="./深入理解计算机系统 (豆瓣)_files/comment.css">
+    <div class="mod-hd">
+        
+
+        <a class="redbutt j a_show_login rr" href="https://www.douban.com/register?reason=review" rel="nofollow">
+            <span> 我来说两句 </span>
+        </a>
+
+            
+  
+
+  <h2>
+    <span class="">短评</span>
+      &nbsp;·&nbsp;·&nbsp;·&nbsp;·&nbsp;·&nbsp;·
+      <span class="pl">&nbsp;(
+          <a href="https://book.douban.com/subject/1230413/comments/">全部 429 条</a>
+        ) </span>
+
+  </h2>
+
+
+    </div>
+    <div class="nav-tab">
+        
+    <div class="tabs-wrapper  line">
+        <a class="short-comment-tabs on-tab" href="https://book.douban.com/subject/1230413/hot" data-tab="hot">热门</a>
+        <span>/</span>
+        <a class="short-comment-tabs " href="https://book.douban.com/subject/1230413/new" data-tab="new">最新</a>
+        <span>/</span>
+        <a class="j a_show_login " href="https://book.douban.com/subject/1230413/follows" data-tab="follows">好友</a>
+    </div>
+
+    </div>
+    <div id="comment-list-wrapper" class="indent">
+        
+
+<div class="comment-list hot show">
+        <ul>
+                
+    <li class="comment-item">
+        <h3>
+            <span class="comment-vote">
+                <span id="c-482352837" class="vote-count">2</span>
+                    <a href="javascript:;" id="btn-482352837" class="j a_show_login" data-cid="482352837">有用</a>
+            </span>
+            <span class="comment-info">
+                <a href="https://www.douban.com/people/32995959/">夏天的风</a>
+                    <span class="user-stars allstar50 rating" title="力荐"></span>
+                <span>2012-01-14</span>
+            </span>
+        </h3>
+        <p class="comment-content">做软件工程师，对计算机科学的真正理解是至关重要的，学习《30天精通JAVA》和学习《地址无关代码编程》的从业者，境界是不一样的</p>
+    </li>
+
+                
+    <li class="comment-item">
+        <h3>
+            <span class="comment-vote">
+                <span id="c-37132349" class="vote-count">0</span>
+                    <a href="javascript:;" id="btn-37132349" class="j a_show_login" data-cid="37132349">有用</a>
+            </span>
+            <span class="comment-info">
+                <a href="https://www.douban.com/people/rzhu/">Z</a>
+                    <span class="user-stars allstar50 rating" title="力荐"></span>
+                <span>2008-04-15</span>
+            </span>
+        </h3>
+        <p class="comment-content">顾名思义，帮助软件工程师了解硬件，并发挥它。</p>
+    </li>
+
+                
+    <li class="comment-item">
+        <h3>
+            <span class="comment-vote">
+                <span id="c-173929997" class="vote-count">0</span>
+                    <a href="javascript:;" id="btn-173929997" class="j a_show_login" data-cid="173929997">有用</a>
+            </span>
+            <span class="comment-info">
+                <a href="https://www.douban.com/people/nwwfewx/">伊卡洛斯</a>
+                    <span class="user-stars allstar50 rating" title="力荐"></span>
+                <span>2011-08-01</span>
+            </span>
+        </h3>
+        <p class="comment-content">系统不仅仅只是硬件。系统是互相交织的硬件和系统软件的集合体，它们必须共同协作以达到运行应用程序的最终目的。</p>
+    </li>
+
+                
+    <li class="comment-item">
+        <h3>
+            <span class="comment-vote">
+                <span id="c-723703037" class="vote-count">3</span>
+                    <a href="javascript:;" id="btn-723703037" class="j a_show_login" data-cid="723703037">有用</a>
+            </span>
+            <span class="comment-info">
+                <a href="https://www.douban.com/people/51242421/">豌豆黄</a>
+                    <span class="user-stars allstar50 rating" title="力荐"></span>
+                <span>2013-09-06</span>
+            </span>
+        </h3>
+        <p class="comment-content">和SICP一样，剔除掉所有杂质以后，如钻石一样的原理书。要了解所谓的system是什么，计算机如何组成，这是基础。不厚道的说，当年学习计算机组成原理时的教材和它一比，也许跟废纸还不如。</p>
+    </li>
+
+                
+    <li class="comment-item">
+        <h3>
+            <span class="comment-vote">
+                <span id="c-631102501" class="vote-count">0</span>
+                    <a href="javascript:;" id="btn-631102501" class="j a_show_login" data-cid="631102501">有用</a>
+            </span>
+            <span class="comment-info">
+                <a href="https://www.douban.com/people/49442858/">越越你妹</a>
+                    <span class="user-stars allstar50 rating" title="力荐"></span>
+                <span>2013-06-15</span>
+            </span>
+        </h3>
+        <p class="comment-content">很给力，但有些时候需要了解这么深入吗？</p>
+    </li>
+
+        </ul>
+</div>
+
+        
+
+<div class="comment-list new noshow">
+        <ul>
+                
+    <li class="comment-item">
+        <h3>
+            <span class="comment-vote">
+                <span id="c-1105917021" class="vote-count">0</span>
+                    <a href="javascript:;" id="btn-1105917021" class="j a_show_login" data-cid="1105917021">有用</a>
+            </span>
+            <span class="comment-info">
+                <a href="https://www.douban.com/people/85130701/">hzy</a>
+                    <span class="user-stars allstar50 rating" title="力荐"></span>
+                <span>2016-11-05</span>
+            </span>
+        </h3>
+        <p class="comment-content">本科用的教材，当时没觉得很重要，工作之后才发现和有用</p>
+    </li>
+
+                
+    <li class="comment-item">
+        <h3>
+            <span class="comment-vote">
+                <span id="c-1091123878" class="vote-count">0</span>
+                    <a href="javascript:;" id="btn-1091123878" class="j a_show_login" data-cid="1091123878">有用</a>
+            </span>
+            <span class="comment-info">
+                <a href="https://www.douban.com/people/151818922/">lemon</a>
+                <span>2016-09-30</span>
+            </span>
+        </h3>
+        <p class="comment-content">这个怎么打开啊</p>
+    </li>
+
+                
+    <li class="comment-item">
+        <h3>
+            <span class="comment-vote">
+                <span id="c-1087717281" class="vote-count">0</span>
+                    <a href="javascript:;" id="btn-1087717281" class="j a_show_login" data-cid="1087717281">有用</a>
+            </span>
+            <span class="comment-info">
+                <a href="https://www.douban.com/people/fogsail/">秋千月凉</a>
+                    <span class="user-stars allstar50 rating" title="力荐"></span>
+                <span>2016-09-21</span>
+            </span>
+        </h3>
+        <p class="comment-content">至少读三遍</p>
+    </li>
+
+                
+    <li class="comment-item">
+        <h3>
+            <span class="comment-vote">
+                <span id="c-1084276036" class="vote-count">0</span>
+                    <a href="javascript:;" id="btn-1084276036" class="j a_show_login" data-cid="1084276036">有用</a>
+            </span>
+            <span class="comment-info">
+                <a href="https://www.douban.com/people/Razorro/">Mr.Belmont</a>
+                    <span class="user-stars allstar50 rating" title="力荐"></span>
+                <span>2016-09-13</span>
+            </span>
+        </h3>
+        <p class="comment-content">对于我这个小白来说，计算机是如何运行的基本上毫无概念。这本书也不算读完了，硬件方面的章节由于实在是无法理解就跳过去了，但是软件方面还是受益良多。信息的表示与处理，程序的机器级表示，程序优化以及编译都是我非常感兴趣的章节；之后的程序的通信其实也是大概的说了一下，并不是非常详细，如需要详细深入点，可以看unix方面的经典书籍APUE还有UNP。
+习题还是要做下的，加深理解，当然一遍估计也就是有个很模糊的概念，以后对各个方面有更深的了解的时候或许再挑些章节看看会有新的收获。</p>
+    </li>
+
+                
+    <li class="comment-item">
+        <h3>
+            <span class="comment-vote">
+                <span id="c-1082036328" class="vote-count">0</span>
+                    <a href="javascript:;" id="btn-1082036328" class="j a_show_login" data-cid="1082036328">有用</a>
+            </span>
+            <span class="comment-info">
+                <a href="https://www.douban.com/people/Paranoidc/">Paranoid</a>
+                    <span class="user-stars allstar50 rating" title="力荐"></span>
+                <span>2016-09-07</span>
+            </span>
+        </h3>
+        <p class="comment-content">看完汇编, 还需回头细致看一遍. 互联网泡沫浪潮褪去之后, 就知道哪些人在打屁裸泳 !!!!!!!!!</p>
+    </li>
+
+        </ul>
+</div>
+
+    </div>
+    <script src="./深入理解计算机系统 (豆瓣)_files/short_comment_vote.js.下载"></script>
+    <script src="./深入理解计算机系统 (豆瓣)_files/short_comment_nav.js.下载"></script>
+    <script>
+        (function(){
+            $('.comment-list').delegate('.vote-comment', 'click', function(e) {
+                vote_comment(e);
+            }).delegate('.delete-comment', 'click', function(e) {
+                if (confirm('确定删除吗？')) {
+                    delete_comment(e);
+                }
+            });
+        })();
+    </script>
+
+  
+
+
+
+
+
+
+
+  <div id="reviews" class="ugc-mod">
+      <h2 class="clearfix">
+        书评&nbsp;&nbsp;· · · · · ·&nbsp;    <span class="pl">(<a href="https://book.douban.com/subject/1230413/reviews">共<span property="v:count">101</span>条</a>)</span>
+      </h2>
+      
+      <a class="redbutt rr j a_show_login" href="https://www.douban.com/register?reason=review" rel="nofollow"><span>我来评论这本书</span></a>
+
+
+      <ul id="comment_tab" class="inline-tabs">
+        <li id="t_0" class="on">
+          <a href="javascript:void(0)" onclick="return switch_tab(&#39;t_0&#39;)">热门评论</a>
+        </li>
+        <li id="t_1">
+          <a href="javascript:void(0)" onclick="return switch_tab(&#39;t_1&#39;)">最新评论</a>
+        </li>
+      </ul>
+
+      
+
+      <div id="wt_0" class="">
+          
+    
+      <div class="ctsh main" id="3150951">
+    <div class="tlst">
+        <div class="ilst">
+                
+    <a href="https://www.douban.com/people/figure9/" title="figure9"><img class="pil" src="./深入理解计算机系统 (豆瓣)_files/u3707498-8.jpg" alt="figure9"></a>
+
+        </div>
+        <div class="nlst"><h3>
+            <div id="tb-3150951" class="rr"><a id="af-3150951" href="https://book.douban.com/review/3150951/" class="j a_unfolder" style="background:none;">
+            <img src="./深入理解计算机系统 (豆瓣)_files/blank.gif" class="bn-arrow" width="48" height="19" alt="&gt;" title="展开全文"></a>
+            <a id="au-3150951" href="javascript:void(0);" class="j a_folder" style="background:none;display:none">
+            <img src="./深入理解计算机系统 (豆瓣)_files/blank.gif" class="bn-arrow" width="48" height="19" alt="&lt;" title="缩进全文"></a>
+            </div>
+            <a title="NB学校的NB课程的NB教材——CSAPP" class="" href="https://book.douban.com/review/3150951/">NB学校的NB课程的NB教材——CSAPP</a>
+        </h3></div>
+        <div class="clst">
+            <span class="ll user">
+                <span class="starb">                    <a href="https://www.douban.com/people/figure9/" class=" ">figure9</a>                    &nbsp;                </span>
+                <span class="allstar50" title="力荐"></span>
+            </span>
+            <br><br>
+            <div id="review_3150951_short" class="review-short">
+                    <span class="">　　CMU是全美以至全球公认的CS最猛的大学之一，没办法，作为CS的发源地，再加上三位神一样的人先后在此任教：Alan Perlis（CS它祖宗+第一届Turing奖获得者）、Allen Newell（AI缔造者+Turing奖获得者）和Herbert.........</span>
+
+                    <a class="pl" href="https://book.douban.com/review/3150951/">(<span class="">41回应</span>)</a>
+                    <br><br><div class="pl clearfix">
+                    <span class="fleft">
+                        <span class="">2010-04-09 22:03</span> &nbsp; &nbsp;
+                        <span class="">617/627有用</span>
+                    </span>
+
+                    </div>
+            </div>
+            <div id="review_3150951_full" class="hidden">
+              <div id="review_3150951_full_content"></div>
+            </div>
+            
+            <script type="text/json" class="data-review-sharing">
+                {"url": "https://book.douban.com/review/3150951/", "text": "\u3000\u3000CMU\u662f\u5168\u7f8e\u4ee5\u81f3\u5168\u7403\u516c\u8ba4\u7684CS\u6700\u731b\u7684\u5927\u5b66\u4e4b\u4e00\uff0c\u6ca1\u529e\u6cd5\uff0c\u4f5c\u4e3aCS\u7684\u53d1\u6e90\u5730\uff0c\u518d\u52a0\u4e0a\u4e09\u4f4d\u795e\u4e00\u6837\u7684\u4eba\u5148\u540e\u5728\u6b64\u4efb\u6559\uff1aAlan Perlis\uff08CS\u5b83\u7956\u5b97+\u7b2c\u4e00\u5c4aTuring\u5956\u83b7\u5f97\u8005\uff09\u3001Allen Newell\uff08AI\u7f14\u9020\u8005+Turing\u5956\u83b7\u5f97\u8005\uff09\u548cHerbert.........", "site": "\u8c46\u74e3", "title": "NB\u5b66\u6821\u7684NB\u8bfe\u7a0b\u7684NB\u6559\u6750\u2014\u2014CSAPP"}
+            </script>
+        </div>
+    </div>
+        </div>
+    <div class="clear"></div>
+    
+    
+
+    
+
+          
+    
+      <div class="ctsh main" id="6093947">
+    <div class="tlst">
+        <div class="ilst">
+                
+    <a href="https://www.douban.com/people/lichenbo/" title="Y君"><img class="pil" src="./深入理解计算机系统 (豆瓣)_files/u57393558-10.jpg" alt="Y君"></a>
+
+        </div>
+        <div class="nlst"><h3>
+            <div id="tb-6093947" class="rr"><a id="af-6093947" href="https://book.douban.com/review/6093947/" class="j a_unfolder" style="background:none;">
+            <img src="./深入理解计算机系统 (豆瓣)_files/blank.gif" class="bn-arrow" width="48" height="19" alt="&gt;" title="展开全文"></a>
+            <a id="au-6093947" href="javascript:void(0);" class="j a_folder" style="background:none;display:none">
+            <img src="./深入理解计算机系统 (豆瓣)_files/blank.gif" class="bn-arrow" width="48" height="19" alt="&lt;" title="缩进全文"></a>
+            </div>
+            <a title="强烈推荐Coursera的《Hardware/Software Interface》" class="" href="https://book.douban.com/review/6093947/">强烈推荐Coursera的《Hardware/Software Interface》</a>
+        </h3></div>
+        <div class="clst">
+            <span class="ll user">
+                <span class="starb">                    <a href="https://www.douban.com/people/lichenbo/" class=" ">Y君</a>                    &nbsp;                </span>
+                <span class="allstar50" title="力荐"></span>
+            </span>
+            <br><br>
+            <div id="review_6093947_short" class="review-short">
+                    <span class="">最新课程：2014年6月30日这门课在Coursera开始第二季，地址https://www.coursera.org/course/hwswinterface，请大家及时关注  如果你觉得这本书过于厚重担心看不下来的话，不妨跟着coursera的Hardware/Software I.........</span>
+
+                    <a class="pl" href="https://book.douban.com/review/6093947/">(<span class="">36回应</span>)</a>
+                    <br><br><div class="pl clearfix">
+                    <span class="fleft">
+                        <span class="">2013-06-16 13:15</span> &nbsp; &nbsp;
+                        <span class="">227/228有用</span>
+                    </span>
+                    
+                    <span class="works-link">来自&nbsp;<a onclick="moreurl(this, {from:&#39;works&#39;})" href="https://book.douban.com/subject/5333562/">机械工业出版社2011版</a></span>
+
+                    </div>
+            </div>
+            <div id="review_6093947_full" class="hidden">
+              <div id="review_6093947_full_content"></div>
+            </div>
+            
+            <script type="text/json" class="data-review-sharing">
+                {"url": "https://book.douban.com/review/6093947/", "text": "\u6700\u65b0\u8bfe\u7a0b\uff1a2014\u5e746\u670830\u65e5\u8fd9\u95e8\u8bfe\u5728Coursera\u5f00\u59cb\u7b2c\u4e8c\u5b63\uff0c\u5730\u5740https://www.coursera.org/course/hwswinterface\uff0c\u8bf7\u5927\u5bb6\u53ca\u65f6\u5173\u6ce8  \u5982\u679c\u4f60\u89c9\u5f97\u8fd9\u672c\u4e66\u8fc7\u4e8e\u539a\u91cd\u62c5\u5fc3\u770b\u4e0d\u4e0b\u6765\u7684\u8bdd\uff0c\u4e0d\u59a8\u8ddf\u7740coursera\u7684Hardware/Software I.........", "site": "\u8c46\u74e3", "title": "\u5f3a\u70c8\u63a8\u8350Coursera\u7684\u300aHardware/Software Interface\u300b"}
+            </script>
+        </div>
+    </div>
+        </div>
+    <div class="clear"></div>
+    
+    
+
+    
+
+          
+    
+      <div class="ctsh main" id="1103952">
+    <div class="tlst">
+        <div class="ilst">
+                
+    <a href="https://www.douban.com/people/yasker/" title="yasker"><img class="pil" src="./深入理解计算机系统 (豆瓣)_files/u1066266-1.jpg" alt="yasker"></a>
+
+        </div>
+        <div class="nlst"><h3>
+            <div id="tb-1103952" class="rr"><a id="af-1103952" href="https://book.douban.com/review/1103952/" class="j a_unfolder" style="background:none;">
+            <img src="./深入理解计算机系统 (豆瓣)_files/blank.gif" class="bn-arrow" width="48" height="19" alt="&gt;" title="展开全文"></a>
+            <a id="au-1103952" href="javascript:void(0);" class="j a_folder" style="background:none;display:none">
+            <img src="./深入理解计算机系统 (豆瓣)_files/blank.gif" class="bn-arrow" width="48" height="19" alt="&lt;" title="缩进全文"></a>
+            </div>
+            <a title="目前这就是计算机系统结构类最优秀的导论型作品" class="" href="https://book.douban.com/review/1103952/">目前这就是计算机系统结构类最优秀的导论型作品</a>
+        </h3></div>
+        <div class="clst">
+            <span class="ll user">
+                <span class="starb">                    <a href="https://www.douban.com/people/yasker/" class=" ">yasker</a>                    &nbsp;                </span>
+                <span class="allstar50" title="力荐"></span>
+            </span>
+            <br><br>
+            <div id="review_1103952_short" class="review-short">
+                    <span class="">上个星期终于把csapp看完了。 我买的是中文版的，因为除了貌似评价不错以外，由于涉及到些自己不了解的底层东西，怕是看英文会云里雾里。现在看来，大概不能算是个优点，但是的确能够加快我的看书速度，否则一星.........</span>
+
+                    <a class="pl" href="https://book.douban.com/review/1103952/">(<span class="">68回应</span>)</a>
+                    <br><br><div class="pl clearfix">
+                    <span class="fleft">
+                        <span class="">2006-12-25 12:50</span> &nbsp; &nbsp;
+                        <span class="">156/160有用</span>
+                    </span>
+
+                    </div>
+            </div>
+            <div id="review_1103952_full" class="hidden">
+              <div id="review_1103952_full_content"></div>
+            </div>
+            
+            <script type="text/json" class="data-review-sharing">
+                {"url": "https://book.douban.com/review/1103952/", "text": "\u4e0a\u4e2a\u661f\u671f\u7ec8\u4e8e\u628acsapp\u770b\u5b8c\u4e86\u3002 \u6211\u4e70\u7684\u662f\u4e2d\u6587\u7248\u7684\uff0c\u56e0\u4e3a\u9664\u4e86\u8c8c\u4f3c\u8bc4\u4ef7\u4e0d\u9519\u4ee5\u5916\uff0c\u7531\u4e8e\u6d89\u53ca\u5230\u4e9b\u81ea\u5df1\u4e0d\u4e86\u89e3\u7684\u5e95\u5c42\u4e1c\u897f\uff0c\u6015\u662f\u770b\u82f1\u6587\u4f1a\u4e91\u91cc\u96fe\u91cc\u3002\u73b0\u5728\u770b\u6765\uff0c\u5927\u6982\u4e0d\u80fd\u7b97\u662f\u4e2a\u4f18\u70b9\uff0c\u4f46\u662f\u7684\u786e\u80fd\u591f\u52a0\u5feb\u6211\u7684\u770b\u4e66\u901f\u5ea6\uff0c\u5426\u5219\u4e00\u661f.........", "site": "\u8c46\u74e3", "title": "\u76ee\u524d\u8fd9\u5c31\u662f\u8ba1\u7b97\u673a\u7cfb\u7edf\u7ed3\u6784\u7c7b\u6700\u4f18\u79c0\u7684\u5bfc\u8bba\u578b\u4f5c\u54c1"}
+            </script>
+        </div>
+    </div>
+        </div>
+    <div class="clear"></div>
+    
+    
+
+    
+
+          
+    
+      <div class="ctsh main" id="5627139">
+    <div class="tlst">
+        <div class="ilst">
+                
+    <a href="https://www.douban.com/people/Octaw/" title="远東君"><img class="pil" src="./深入理解计算机系统 (豆瓣)_files/u48071340-71.jpg" alt="远東君"></a>
+
+        </div>
+        <div class="nlst"><h3>
+            <div id="tb-5627139" class="rr"><a id="af-5627139" href="https://book.douban.com/review/5627139/" class="j a_unfolder" style="background:none;">
+            <img src="./深入理解计算机系统 (豆瓣)_files/blank.gif" class="bn-arrow" width="48" height="19" alt="&gt;" title="展开全文"></a>
+            <a id="au-5627139" href="javascript:void(0);" class="j a_folder" style="background:none;display:none">
+            <img src="./深入理解计算机系统 (豆瓣)_files/blank.gif" class="bn-arrow" width="48" height="19" alt="&lt;" title="缩进全文"></a>
+            </div>
+            <a title="本书的使用指南" class="" href="https://book.douban.com/review/5627139/">本书的使用指南</a>
+        </h3></div>
+        <div class="clst">
+            <span class="ll user">
+                <span class="starb">                    <a href="https://www.douban.com/people/Octaw/" class=" ">远東君</a>                    (由戒生定 因定生慧)&nbsp;                </span>
+                <span class="allstar50" title="力荐"></span>
+            </span>
+            <br><br>
+            <div id="review_5627139_short" class="review-short">
+                    <span class="">Chapter 1 A Tour of Computer System 一个对计算机系统总体的介绍，简单明了。  应试 ★★★：可能在笔试中会有一些整体上的概念题。 修炼 ★: 属于计算机最基本的概念。 - - - - - - - - - - - - - - - - - - -.........</span>
+
+                    <a class="pl" href="https://book.douban.com/review/5627139/">(<span class="">15回应</span>)</a>
+                    <br><br><div class="pl clearfix">
+                    <span class="fleft">
+                        <span class="">2012-10-23 09:53</span> &nbsp; &nbsp;
+                        <span class="">93/95有用</span>
+                    </span>
+                    
+                    <span class="works-link">来自&nbsp;<a onclick="moreurl(this, {from:&#39;works&#39;})" href="https://book.douban.com/subject/5333562/">机械工业出版社2011版</a></span>
+
+                    </div>
+            </div>
+            <div id="review_5627139_full" class="hidden">
+              <div id="review_5627139_full_content"></div>
+            </div>
+            
+            <script type="text/json" class="data-review-sharing">
+                {"url": "https://book.douban.com/review/5627139/", "text": "Chapter 1 A Tour of Computer System \u4e00\u4e2a\u5bf9\u8ba1\u7b97\u673a\u7cfb\u7edf\u603b\u4f53\u7684\u4ecb\u7ecd\uff0c\u7b80\u5355\u660e\u4e86\u3002  \u5e94\u8bd5 \u2605\u2605\u2605\uff1a\u53ef\u80fd\u5728\u7b14\u8bd5\u4e2d\u4f1a\u6709\u4e00\u4e9b\u6574\u4f53\u4e0a\u7684\u6982\u5ff5\u9898\u3002 \u4fee\u70bc \u2605: \u5c5e\u4e8e\u8ba1\u7b97\u673a\u6700\u57fa\u672c\u7684\u6982\u5ff5\u3002 - - - - - - - - - - - - - - - - - - -.........", "site": "\u8c46\u74e3", "title": "\u672c\u4e66\u7684\u4f7f\u7528\u6307\u5357"}
+            </script>
+        </div>
+    </div>
+        </div>
+    <div class="clear"></div>
+    
+    
+
+    
+
+          
+    
+      <div class="ctsh main" id="2713911">
+    <div class="tlst">
+        <div class="ilst">
+                
+    <a href="https://www.douban.com/people/dragonlancer/" title="DragonLancer"><img class="pil" src="./深入理解计算机系统 (豆瓣)_files/u2937334-2.jpg" alt="DragonLancer"></a>
+
+        </div>
+        <div class="nlst"><h3>
+            <div id="tb-2713911" class="rr"><a id="af-2713911" href="https://book.douban.com/review/2713911/" class="j a_unfolder" style="background:none;">
+            <img src="./深入理解计算机系统 (豆瓣)_files/blank.gif" class="bn-arrow" width="48" height="19" alt="&gt;" title="展开全文"></a>
+            <a id="au-2713911" href="javascript:void(0);" class="j a_folder" style="background:none;display:none">
+            <img src="./深入理解计算机系统 (豆瓣)_files/blank.gif" class="bn-arrow" width="48" height="19" alt="&lt;" title="缩进全文"></a>
+            </div>
+            <a title="CSAPP：Bomblab —— 原来习题还可以这么做" class="" href="https://book.douban.com/review/2713911/">CSAPP：Bomblab —— 原来习题还可以这么做</a>
+        </h3></div>
+        <div class="clst">
+            <span class="ll user">
+                <span class="starb">                    <a href="https://www.douban.com/people/dragonlancer/" class=" ">DragonLancer</a>                    (I, Magus)&nbsp;                </span>
+                <span class="allstar50" title="力荐"></span>
+            </span>
+            <br><br>
+            <div id="review_2713911_short" class="review-short">
+                    <span class="">第一次在豆瓣上发东西，呵呵～  本学期选了汇编程序设计，实际上就是用这本CSAPP当教材了。作者是CMU计算机系主任，该门课的经典地位应该和MIT的SICP差不多吧（也在这学期选了～）。  最初只是想混学分，结果上了.........</span>
+
+                    <a class="pl" href="https://book.douban.com/review/2713911/">(<span class="">60回应</span>)</a>
+                    <br><br><div class="pl clearfix">
+                    <span class="fleft">
+                        <span class="">2009-11-06 18:55</span> &nbsp; &nbsp;
+                        <span class="">70/73有用</span>
+                    </span>
+
+                    </div>
+            </div>
+            <div id="review_2713911_full" class="hidden">
+              <div id="review_2713911_full_content"></div>
+            </div>
+            
+            <script type="text/json" class="data-review-sharing">
+                {"url": "https://book.douban.com/review/2713911/", "text": "\u7b2c\u4e00\u6b21\u5728\u8c46\u74e3\u4e0a\u53d1\u4e1c\u897f\uff0c\u5475\u5475\uff5e  \u672c\u5b66\u671f\u9009\u4e86\u6c47\u7f16\u7a0b\u5e8f\u8bbe\u8ba1\uff0c\u5b9e\u9645\u4e0a\u5c31\u662f\u7528\u8fd9\u672cCSAPP\u5f53\u6559\u6750\u4e86\u3002\u4f5c\u8005\u662fCMU\u8ba1\u7b97\u673a\u7cfb\u4e3b\u4efb\uff0c\u8be5\u95e8\u8bfe\u7684\u7ecf\u5178\u5730\u4f4d\u5e94\u8be5\u548cMIT\u7684SICP\u5dee\u4e0d\u591a\u5427\uff08\u4e5f\u5728\u8fd9\u5b66\u671f\u9009\u4e86\uff5e\uff09\u3002  \u6700\u521d\u53ea\u662f\u60f3\u6df7\u5b66\u5206\uff0c\u7ed3\u679c\u4e0a\u4e86.........", "site": "\u8c46\u74e3", "title": "CSAPP\uff1aBomblab \u2014\u2014 \u539f\u6765\u4e60\u9898\u8fd8\u53ef\u4ee5\u8fd9\u4e48\u505a"}
+            </script>
+        </div>
+    </div>
+        </div>
+    <div class="clear"></div>
+    
+    
+
+    
+
+          
+    
+      <div class="ctsh main" id="2174134">
+    <div class="tlst">
+        <div class="ilst">
+                
+    <a href="https://www.douban.com/people/imay/" title="懒猫"><img class="pil" src="./深入理解计算机系统 (豆瓣)_files/u2427904-43.jpg" alt="懒猫"></a>
+
+        </div>
+        <div class="nlst"><h3>
+            <div id="tb-2174134" class="rr"><a id="af-2174134" href="https://book.douban.com/review/2174134/" class="j a_unfolder" style="background:none;">
+            <img src="./深入理解计算机系统 (豆瓣)_files/blank.gif" class="bn-arrow" width="48" height="19" alt="&gt;" title="展开全文"></a>
+            <a id="au-2174134" href="javascript:void(0);" class="j a_folder" style="background:none;display:none">
+            <img src="./深入理解计算机系统 (豆瓣)_files/blank.gif" class="bn-arrow" width="48" height="19" alt="&lt;" title="缩进全文"></a>
+            </div>
+            <a title="很喜欢这本书" class="" href="https://book.douban.com/review/2174134/">很喜欢这本书</a>
+        </h3></div>
+        <div class="clst">
+            <span class="ll user">
+                <span class="starb">                    <a href="https://www.douban.com/people/imay/" class=" ">懒猫</a>                    &nbsp;                </span>
+                <span class="allstar50" title="力荐"></span>
+            </span>
+            <br><br>
+            <div id="review_2174134_short" class="review-short">
+                    <span class="">如果大学只能带走一本书的话，我选择这本。 这是本很有趣的书，了解计算机底层技术是件极富挑战同趣味的事情。大二以后基本没再阅读过哲学历史文学方面的书籍，因为这样的书籍足以给人带来极大乐趣。个人认为这样.........</span>
+
+                    <a class="pl" href="https://book.douban.com/review/2174134/">(<span class="">8回应</span>)</a>
+                    <br><br><div class="pl clearfix">
+                    <span class="fleft">
+                        <span class="">2009-07-29 00:12</span> &nbsp; &nbsp;
+                        <span class="">31/36有用</span>
+                    </span>
+
+                    </div>
+            </div>
+            <div id="review_2174134_full" class="hidden">
+              <div id="review_2174134_full_content"></div>
+            </div>
+            
+            <script type="text/json" class="data-review-sharing">
+                {"url": "https://book.douban.com/review/2174134/", "text": "\u5982\u679c\u5927\u5b66\u53ea\u80fd\u5e26\u8d70\u4e00\u672c\u4e66\u7684\u8bdd\uff0c\u6211\u9009\u62e9\u8fd9\u672c\u3002 \u8fd9\u662f\u672c\u5f88\u6709\u8da3\u7684\u4e66\uff0c\u4e86\u89e3\u8ba1\u7b97\u673a\u5e95\u5c42\u6280\u672f\u662f\u4ef6\u6781\u5bcc\u6311\u6218\u540c\u8da3\u5473\u7684\u4e8b\u60c5\u3002\u5927\u4e8c\u4ee5\u540e\u57fa\u672c\u6ca1\u518d\u9605\u8bfb\u8fc7\u54f2\u5b66\u5386\u53f2\u6587\u5b66\u65b9\u9762\u7684\u4e66\u7c4d\uff0c\u56e0\u4e3a\u8fd9\u6837\u7684\u4e66\u7c4d\u8db3\u4ee5\u7ed9\u4eba\u5e26\u6765\u6781\u5927\u4e50\u8da3\u3002\u4e2a\u4eba\u8ba4\u4e3a\u8fd9\u6837.........", "site": "\u8c46\u74e3", "title": "\u5f88\u559c\u6b22\u8fd9\u672c\u4e66"}
+            </script>
+        </div>
+    </div>
+        </div>
+    <div class="clear"></div>
+    
+    
+
+    
+
+
+          <p class="pl" align="right">&gt; <a href="https://book.douban.com/subject/1230413/reviews">更多书评(共101条)</a></p>
+      </div>
+
+      <div id="wt_1" class="hidden">
+          
+    
+      <div class="ctsh main" id="8017745">
+    <div class="tlst">
+        <div class="ilst">
+                
+    <a href="https://www.douban.com/people/143399848/" title="白如冰"><img class="pil" src="./深入理解计算机系统 (豆瓣)_files/u143399848-1.jpg" alt="白如冰"></a>
+
+        </div>
+        <div class="nlst"><h3>
+            <div id="tb-8017745" class="rr"><a id="af-8017745" href="https://book.douban.com/review/8017745/" class="j a_unfolder" style="background:none;">
+            <img src="./深入理解计算机系统 (豆瓣)_files/blank.gif" class="bn-arrow" width="48" height="19" alt="&gt;" title="展开全文"></a>
+            <a id="au-8017745" href="javascript:void(0);" class="j a_folder" style="background:none;display:none">
+            <img src="./深入理解计算机系统 (豆瓣)_files/blank.gif" class="bn-arrow" width="48" height="19" alt="&lt;" title="缩进全文"></a>
+            </div>
+            <a title="书是好书，但是希望大家注意版本问题" class="" href="https://book.douban.com/review/8017745/">书是好书，但是希望大家注意版本问题</a>
+        </h3></div>
+        <div class="clst">
+            <span class="ll user">
+                <span class="starb">                    <a href="https://www.douban.com/people/143399848/" class=" ">白如冰</a>                    (诗酒趁年华)&nbsp;                </span>
+                <span class="allstar40" title="推荐"></span>
+            </span>
+            <br><br>
+            <div id="review_8017745_short" class="review-short">
+                    <span class="">这本书的中文版是从原书第二版翻译的，第二版是2001年出版的。  这本书是基于IA32架构的，而目前大部分的计算机都是基于x86_64的，如果你已经身经百战见得多了可能并不在意这些区别，但是要是初学的话发现自己电.........</span>
+
+                    <a class="pl" href="https://book.douban.com/review/8017745/">(<span class="">6回应</span>)</a>
+                    <br><br><div class="pl clearfix">
+                    <span class="fleft">
+                        <span class="">2016-08-01 14:28</span> &nbsp; &nbsp;
+                        <span class="">3/3有用</span>
+                    </span>
+                    
+                    <span class="works-link">来自&nbsp;<a onclick="moreurl(this, {from:&#39;works&#39;})" href="https://book.douban.com/subject/5333562/">机械工业出版社2011版</a></span>
+
+                    </div>
+            </div>
+            <div id="review_8017745_full" class="hidden">
+              <div id="review_8017745_full_content"></div>
+            </div>
+            
+            <script type="text/json" class="data-review-sharing">
+                {"url": "https://book.douban.com/review/8017745/", "text": "\u8fd9\u672c\u4e66\u7684\u4e2d\u6587\u7248\u662f\u4ece\u539f\u4e66\u7b2c\u4e8c\u7248\u7ffb\u8bd1\u7684\uff0c\u7b2c\u4e8c\u7248\u662f2001\u5e74\u51fa\u7248\u7684\u3002  \u8fd9\u672c\u4e66\u662f\u57fa\u4e8eIA32\u67b6\u6784\u7684\uff0c\u800c\u76ee\u524d\u5927\u90e8\u5206\u7684\u8ba1\u7b97\u673a\u90fd\u662f\u57fa\u4e8ex86_64\u7684\uff0c\u5982\u679c\u4f60\u5df2\u7ecf\u8eab\u7ecf\u767e\u6218\u89c1\u5f97\u591a\u4e86\u53ef\u80fd\u5e76\u4e0d\u5728\u610f\u8fd9\u4e9b\u533a\u522b\uff0c\u4f46\u662f\u8981\u662f\u521d\u5b66\u7684\u8bdd\u53d1\u73b0\u81ea\u5df1\u7535.........", "site": "\u8c46\u74e3", "title": "\u4e66\u662f\u597d\u4e66\uff0c\u4f46\u662f\u5e0c\u671b\u5927\u5bb6\u6ce8\u610f\u7248\u672c\u95ee\u9898"}
+            </script>
+        </div>
+    </div>
+        </div>
+    <div class="clear"></div>
+    
+    
+
+    
+
+          
+    
+      <div class="ctsh main" id="7948227">
+    <div class="tlst">
+        <div class="ilst">
+                
+    <a href="https://www.douban.com/people/lyeec/" title="lechain"><img class="pil" src="./深入理解计算机系统 (豆瓣)_files/u145390644-2.jpg" alt="lechain"></a>
+
+        </div>
+        <div class="nlst"><h3>
+            <div id="tb-7948227" class="rr"><a id="af-7948227" href="https://book.douban.com/review/7948227/" class="j a_unfolder" style="background:none;">
+            <img src="./深入理解计算机系统 (豆瓣)_files/blank.gif" class="bn-arrow" width="48" height="19" alt="&gt;" title="展开全文"></a>
+            <a id="au-7948227" href="javascript:void(0);" class="j a_folder" style="background:none;display:none">
+            <img src="./深入理解计算机系统 (豆瓣)_files/blank.gif" class="bn-arrow" width="48" height="19" alt="&lt;" title="缩进全文"></a>
+            </div>
+            <a title="一个自学者的个人感受" class="" href="https://book.douban.com/review/7948227/">一个自学者的个人感受</a>
+        </h3></div>
+        <div class="clst">
+            <span class="ll user">
+                <span class="starb">                    <a href="https://www.douban.com/people/lyeec/" class=" ">lechain</a>                    &nbsp;                </span>
+                <span class="allstar40" title="推荐"></span>
+            </span>
+            <br><br>
+            <div id="review_7948227_short" class="review-short">
+                    <span class="">我于今年5.11日拿到这本书，开始了我的自学之旅。 PS:我想这是一本技术类书，买这本书的人大概都跟我一样是为了学习，而不是当科普书或者什么的。 对于前三个章节，我的学习体验都是很好的，以我的水平来看，算是.........</span>
+
+                    <br><br><div class="pl clearfix">
+                    <span class="fleft">
+                        <span class="">2016-06-23 07:32</span> &nbsp; &nbsp;
+                    </span>
+                    
+                    <span class="works-link">来自&nbsp;<a onclick="moreurl(this, {from:&#39;works&#39;})" href="https://book.douban.com/subject/5333562/">机械工业出版社2011版</a></span>
+
+                    </div>
+            </div>
+            <div id="review_7948227_full" class="hidden">
+              <div id="review_7948227_full_content"></div>
+            </div>
+            
+            <script type="text/json" class="data-review-sharing">
+                {"url": "https://book.douban.com/review/7948227/", "text": "\u6211\u4e8e\u4eca\u5e745.11\u65e5\u62ff\u5230\u8fd9\u672c\u4e66\uff0c\u5f00\u59cb\u4e86\u6211\u7684\u81ea\u5b66\u4e4b\u65c5\u3002 PS:\u6211\u60f3\u8fd9\u662f\u4e00\u672c\u6280\u672f\u7c7b\u4e66\uff0c\u4e70\u8fd9\u672c\u4e66\u7684\u4eba\u5927\u6982\u90fd\u8ddf\u6211\u4e00\u6837\u662f\u4e3a\u4e86\u5b66\u4e60\uff0c\u800c\u4e0d\u662f\u5f53\u79d1\u666e\u4e66\u6216\u8005\u4ec0\u4e48\u7684\u3002 \u5bf9\u4e8e\u524d\u4e09\u4e2a\u7ae0\u8282\uff0c\u6211\u7684\u5b66\u4e60\u4f53\u9a8c\u90fd\u662f\u5f88\u597d\u7684\uff0c\u4ee5\u6211\u7684\u6c34\u5e73\u6765\u770b\uff0c\u7b97\u662f.........", "site": "\u8c46\u74e3", "title": "\u4e00\u4e2a\u81ea\u5b66\u8005\u7684\u4e2a\u4eba\u611f\u53d7"}
+            </script>
+        </div>
+    </div>
+        </div>
+    <div class="clear"></div>
+    
+    
+
+    
+
+          
+    
+      <div class="ctsh main" id="7915016">
+    <div class="tlst">
+        <div class="ilst">
+                
+    <a href="https://www.douban.com/people/scue/" title="scue"><img class="pil" src="./深入理解计算机系统 (豆瓣)_files/u128106862-1.jpg" alt="scue"></a>
+
+        </div>
+        <div class="nlst"><h3>
+            <div id="tb-7915016" class="rr"><a id="af-7915016" href="https://book.douban.com/review/7915016/" class="j a_unfolder" style="background:none;">
+            <img src="./深入理解计算机系统 (豆瓣)_files/blank.gif" class="bn-arrow" width="48" height="19" alt="&gt;" title="展开全文"></a>
+            <a id="au-7915016" href="javascript:void(0);" class="j a_folder" style="background:none;display:none">
+            <img src="./深入理解计算机系统 (豆瓣)_files/blank.gif" class="bn-arrow" width="48" height="19" alt="&lt;" title="缩进全文"></a>
+            </div>
+            <a title="干货满满" class="" href="https://book.douban.com/review/7915016/">干货满满</a>
+        </h3></div>
+        <div class="clst">
+            <span class="ll user">
+                <span class="starb">                    <a href="https://www.douban.com/people/scue/" class=" ">scue</a>                    &nbsp;                </span>
+                <span class="allstar50" title="力荐"></span>
+            </span>
+            <br><br>
+            <div id="review_7915016_short" class="review-short">
+                    <span class="">整本书籍很多干货，尤其是第三部分，程序间的交互和通信，一定要重点看，多看。......</span>
+
+                    <br><br><div class="pl clearfix">
+                    <span class="fleft">
+                        <span class="">2016-05-29 09:24</span> &nbsp; &nbsp;
+                        <span class="">1/1有用</span>
+                    </span>
+                    
+                    <span class="works-link">来自&nbsp;<a onclick="moreurl(this, {from:&#39;works&#39;})" href="https://book.douban.com/subject/5333562/">机械工业出版社2011版</a></span>
+
+                    </div>
+            </div>
+            <div id="review_7915016_full" class="hidden">
+              <div id="review_7915016_full_content"></div>
+            </div>
+            
+            <script type="text/json" class="data-review-sharing">
+                {"url": "https://book.douban.com/review/7915016/", "text": "\u6574\u672c\u4e66\u7c4d\u5f88\u591a\u5e72\u8d27\uff0c\u5c24\u5176\u662f\u7b2c\u4e09\u90e8\u5206\uff0c\u7a0b\u5e8f\u95f4\u7684\u4ea4\u4e92\u548c\u901a\u4fe1\uff0c\u4e00\u5b9a\u8981\u91cd\u70b9\u770b\uff0c\u591a\u770b\u3002......", "site": "\u8c46\u74e3", "title": "\u5e72\u8d27\u6ee1\u6ee1"}
+            </script>
+        </div>
+    </div>
+        </div>
+    <div class="clear"></div>
+    
+    
+
+    
+
+          
+    
+      <div class="ctsh main" id="7758288">
+    <div class="tlst">
+        <div class="ilst">
+                
+    <a href="https://www.douban.com/people/allzyoung/" title="AnthonyZY"><img class="pil" src="./深入理解计算机系统 (豆瓣)_files/u92256135-12.jpg" alt="AnthonyZY"></a>
+
+        </div>
+        <div class="nlst"><h3>
+            <div id="tb-7758288" class="rr"><a id="af-7758288" href="https://book.douban.com/review/7758288/" class="j a_unfolder" style="background:none;">
+            <img src="./深入理解计算机系统 (豆瓣)_files/blank.gif" class="bn-arrow" width="48" height="19" alt="&gt;" title="展开全文"></a>
+            <a id="au-7758288" href="javascript:void(0);" class="j a_folder" style="background:none;display:none">
+            <img src="./深入理解计算机系统 (豆瓣)_files/blank.gif" class="bn-arrow" width="48" height="19" alt="&lt;" title="缩进全文"></a>
+            </div>
+            <a title="经典教材，诚意之作，程序员必备的底层知识。" class="" href="https://book.douban.com/review/7758288/">经典教材，诚意之作，程序员必备的底层知识。</a>
+        </h3></div>
+        <div class="clst">
+            <span class="ll user">
+                <span class="starb">                    <a href="https://www.douban.com/people/allzyoung/" class=" ">AnthonyZY</a>                    &nbsp;                </span>
+                <span class="allstar50" title="力荐"></span>
+            </span>
+            <br><br>
+            <div id="review_7758288_short" class="review-short">
+                    <span class="">CMU出品，又是关于底层硬件方面的知识的，这样的好书不多。 应该是我上大学来上的最有料的一门专业课，墙裂推荐。 顺手放上自己写的英文版笔记（持续完善中）： https://github.com/AllenZYoung/CSAPP......</span>
+
+                    <br><br><div class="pl clearfix">
+                    <span class="fleft">
+                        <span class="">2016-02-02 12:19</span> &nbsp; &nbsp;
+                        <span class="">1/1有用</span>
+                    </span>
+                    
+                    <span class="works-link">来自&nbsp;<a onclick="moreurl(this, {from:&#39;works&#39;})" href="https://book.douban.com/subject/5333562/">机械工业出版社2011版</a></span>
+
+                    </div>
+            </div>
+            <div id="review_7758288_full" class="hidden">
+              <div id="review_7758288_full_content"></div>
+            </div>
+            
+            <script type="text/json" class="data-review-sharing">
+                {"url": "https://book.douban.com/review/7758288/", "text": "CMU\u51fa\u54c1\uff0c\u53c8\u662f\u5173\u4e8e\u5e95\u5c42\u786c\u4ef6\u65b9\u9762\u7684\u77e5\u8bc6\u7684\uff0c\u8fd9\u6837\u7684\u597d\u4e66\u4e0d\u591a\u3002 \u5e94\u8be5\u662f\u6211\u4e0a\u5927\u5b66\u6765\u4e0a\u7684\u6700\u6709\u6599\u7684\u4e00\u95e8\u4e13\u4e1a\u8bfe\uff0c\u5899\u88c2\u63a8\u8350\u3002 \u987a\u624b\u653e\u4e0a\u81ea\u5df1\u5199\u7684\u82f1\u6587\u7248\u7b14\u8bb0\uff08\u6301\u7eed\u5b8c\u5584\u4e2d\uff09\uff1a https://github.com/AllenZYoung/CSAPP......", "site": "\u8c46\u74e3", "title": "\u7ecf\u5178\u6559\u6750\uff0c\u8bda\u610f\u4e4b\u4f5c\uff0c\u7a0b\u5e8f\u5458\u5fc5\u5907\u7684\u5e95\u5c42\u77e5\u8bc6\u3002"}
+            </script>
+        </div>
+    </div>
+        </div>
+    <div class="clear"></div>
+    
+    
+
+    
+
+          
+    
+      <div class="ctsh main" id="7630552">
+    <div class="tlst">
+        <div class="ilst">
+                
+    <a href="https://www.douban.com/people/37750002/" title="violin"><img class="pil" src="./深入理解计算机系统 (豆瓣)_files/u37750002-2.jpg" alt="violin"></a>
+
+        </div>
+        <div class="nlst"><h3>
+            <div id="tb-7630552" class="rr"><a id="af-7630552" href="https://book.douban.com/review/7630552/" class="j a_unfolder" style="background:none;">
+            <img src="./深入理解计算机系统 (豆瓣)_files/blank.gif" class="bn-arrow" width="48" height="19" alt="&gt;" title="展开全文"></a>
+            <a id="au-7630552" href="javascript:void(0);" class="j a_folder" style="background:none;display:none">
+            <img src="./深入理解计算机系统 (豆瓣)_files/blank.gif" class="bn-arrow" width="48" height="19" alt="&lt;" title="缩进全文"></a>
+            </div>
+            <a title="今年读到最好的一本书" class="" href="https://book.douban.com/review/7630552/">今年读到最好的一本书</a>
+        </h3></div>
+        <div class="clst">
+            <span class="ll user">
+                <span class="starb">                    <a href="https://www.douban.com/people/37750002/" class=" ">violin</a>                    &nbsp;                </span>
+                <span class="allstar50" title="力荐"></span>
+            </span>
+            <br><br>
+            <div id="review_7630552_short" class="review-short">
+                    <span class="">相比其他的操作系统、编译器等，最大的感受就是读完真的明白、记住 学习到了。相比Adnrew S. Tanenbaum的《现代操作系统》，这本书的每个章节的内聚性、关联度和深度好很多。每一章，甚至每一节给你一个完整（闭.........</span>
+
+                    <br><br><div class="pl clearfix">
+                    <span class="fleft">
+                        <span class="">2015-10-18 14:30</span> &nbsp; &nbsp;
+                        <span class="">1/1有用</span>
+                    </span>
+                    
+                    <span class="works-link">来自&nbsp;<a onclick="moreurl(this, {from:&#39;works&#39;})" href="https://book.douban.com/subject/5333562/">机械工业出版社2011版</a></span>
+
+                    </div>
+            </div>
+            <div id="review_7630552_full" class="hidden">
+              <div id="review_7630552_full_content"></div>
+            </div>
+            
+            <script type="text/json" class="data-review-sharing">
+                {"url": "https://book.douban.com/review/7630552/", "text": "\u76f8\u6bd4\u5176\u4ed6\u7684\u64cd\u4f5c\u7cfb\u7edf\u3001\u7f16\u8bd1\u5668\u7b49\uff0c\u6700\u5927\u7684\u611f\u53d7\u5c31\u662f\u8bfb\u5b8c\u771f\u7684\u660e\u767d\u3001\u8bb0\u4f4f \u5b66\u4e60\u5230\u4e86\u3002\u76f8\u6bd4Adnrew S. Tanenbaum\u7684\u300a\u73b0\u4ee3\u64cd\u4f5c\u7cfb\u7edf\u300b\uff0c\u8fd9\u672c\u4e66\u7684\u6bcf\u4e2a\u7ae0\u8282\u7684\u5185\u805a\u6027\u3001\u5173\u8054\u5ea6\u548c\u6df1\u5ea6\u597d\u5f88\u591a\u3002\u6bcf\u4e00\u7ae0\uff0c\u751a\u81f3\u6bcf\u4e00\u8282\u7ed9\u4f60\u4e00\u4e2a\u5b8c\u6574\uff08\u95ed.........", "site": "\u8c46\u74e3", "title": "\u4eca\u5e74\u8bfb\u5230\u6700\u597d\u7684\u4e00\u672c\u4e66"}
+            </script>
+        </div>
+    </div>
+        </div>
+    <div class="clear"></div>
+    
+    
+
+    
+
+          
+    
+      <div class="ctsh main" id="7593955">
+    <div class="tlst">
+        <div class="ilst">
+                
+    <a href="https://www.douban.com/people/43414600/" title="Xeal"><img class="pil" src="./深入理解计算机系统 (豆瓣)_files/u43414600-3.jpg" alt="Xeal"></a>
+
+        </div>
+        <div class="nlst"><h3>
+            <div id="tb-7593955" class="rr"><a id="af-7593955" href="https://book.douban.com/review/7593955/" class="j a_unfolder" style="background:none;">
+            <img src="./深入理解计算机系统 (豆瓣)_files/blank.gif" class="bn-arrow" width="48" height="19" alt="&gt;" title="展开全文"></a>
+            <a id="au-7593955" href="javascript:void(0);" class="j a_folder" style="background:none;display:none">
+            <img src="./深入理解计算机系统 (豆瓣)_files/blank.gif" class="bn-arrow" width="48" height="19" alt="&lt;" title="缩进全文"></a>
+            </div>
+            <a title="这是一本非常全面带领你进入计算机世界的书" class="" href="https://book.douban.com/review/7593955/">这是一本非常全面带领你进入计算机世界的书</a>
+        </h3></div>
+        <div class="clst">
+            <span class="ll user">
+                <span class="starb">                    <a href="https://www.douban.com/people/43414600/" class=" ">Xeal</a>                    &nbsp;                </span>
+                <span class="allstar50" title="力荐"></span>
+            </span>
+            <br><br>
+            <div id="review_7593955_short" class="review-short">
+                    <span class="">今年因为找工作的缘故，在知乎上找到了这本书，刚开始看的时候也是一头雾水，在看这本书之前看过 唐朔飞的《计算机组成原理》这本书，与csapp相比，唐的书在很多时候是直接给出结论的，比如dram要分两次选一块，.........</span>
+
+                    <br><br><div class="pl clearfix">
+                    <span class="fleft">
+                        <span class="">2015-09-07 19:56</span> &nbsp; &nbsp;
+                    </span>
+                    
+                    <span class="works-link">来自&nbsp;<a onclick="moreurl(this, {from:&#39;works&#39;})" href="https://book.douban.com/subject/5333562/">机械工业出版社2011版</a></span>
+
+                    </div>
+            </div>
+            <div id="review_7593955_full" class="hidden">
+              <div id="review_7593955_full_content"></div>
+            </div>
+            
+            <script type="text/json" class="data-review-sharing">
+                {"url": "https://book.douban.com/review/7593955/", "text": "\u4eca\u5e74\u56e0\u4e3a\u627e\u5de5\u4f5c\u7684\u7f18\u6545\uff0c\u5728\u77e5\u4e4e\u4e0a\u627e\u5230\u4e86\u8fd9\u672c\u4e66\uff0c\u521a\u5f00\u59cb\u770b\u7684\u65f6\u5019\u4e5f\u662f\u4e00\u5934\u96fe\u6c34\uff0c\u5728\u770b\u8fd9\u672c\u4e66\u4e4b\u524d\u770b\u8fc7 \u5510\u6714\u98de\u7684\u300a\u8ba1\u7b97\u673a\u7ec4\u6210\u539f\u7406\u300b\u8fd9\u672c\u4e66\uff0c\u4e0ecsapp\u76f8\u6bd4\uff0c\u5510\u7684\u4e66\u5728\u5f88\u591a\u65f6\u5019\u662f\u76f4\u63a5\u7ed9\u51fa\u7ed3\u8bba\u7684\uff0c\u6bd4\u5982dram\u8981\u5206\u4e24\u6b21\u9009\u4e00\u5757\uff0c.........", "site": "\u8c46\u74e3", "title": "\u8fd9\u662f\u4e00\u672c\u975e\u5e38\u5168\u9762\u5e26\u9886\u4f60\u8fdb\u5165\u8ba1\u7b97\u673a\u4e16\u754c\u7684\u4e66"}
+            </script>
+        </div>
+    </div>
+        </div>
+    <div class="clear"></div>
+    
+    
+
+    
+
+
+          <p class="pl trr">&gt; <a href="https://book.douban.com/subject/1230413/reviews?sort=time">更多书评(共101条)</a></p>
+      </div>
+
+      <script type="text/javascript">
+          function switch_tab(tab_id){
+              hide_tab_id = $("#comment_tab .on")[0].id;
+              if (hide_tab_id==tab_id) {
+                  return false;
+              }
+              $("#"+tab_id).addClass("on");
+              $("#"+hide_tab_id).removeClass("on");
+              $("#w"+hide_tab_id).hide();
+              $("#w"+tab_id).show();
+          }
+
+        $('.ctsh').delegate('.clst', 'hover', function(e) {
+          $(this).find('.report')[e.type === 'mouseenter' ? 'show' : 'hide']()
+        })
+      </script>
+  </div>
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+<div class="ugc-mod reading-notes">
+  <div class="hd">
+    <h2>
+      读书笔记&nbsp;&nbsp;· · · · · ·&nbsp;
+          <span class="pl">(<a href="https://book.douban.com/subject/1230413/annotation">共<span property="v:count">74</span>篇</a>)</span>
+
+    </h2>
+
+      <a class="redbutt rr j a_show_login" href="https://www.douban.com/register?reason=annotate" rel="nofollow"><span>我来写笔记</span></a>
+  </div>
+  
+
+    <div class="bd">
+      <ul class="inline-tabs">
+        <li class="on"><a href="https://book.douban.com/subject/1230413/#rank" id="by_rank">按有用程度</a></li>
+        <li><a href="https://book.douban.com/subject/1230413/#page" id="by_page">按页码先后</a></li>
+        <li><a href="https://book.douban.com/subject/1230413/#time" id="by_time">最新笔记</a></li>
+      </ul>
+      
+  <ul class="comments by_rank">
+      
+      <li class="ctsh clearfix" data-cid="24380888">
+        <div class="ilst">
+          <a href="https://www.douban.com/people/tanso/"><img src="./深入理解计算机系统 (豆瓣)_files/u1773949-62.jpg" alt="liuh" class=""></a>
+        </div>
+        <div class="con">
+          <div class="nlst">
+            <h3>
+              <div class="note-toggle rr">
+                <a href="https://book.douban.com/annotation/24380888/" class="note-unfolder">展开</a>
+                <a href="javascript:void(0);" class="note-folder">收起</a>
+              </div>
+              <a href="https://book.douban.com/annotation/24380888/" class="">第321页</a></h3>
+          </div>
+          <div class="clst">
+            <p class="user"><a href="https://www.douban.com/people/tanso/" class=" " title="liuh">liuh</a>
+                (平常心，不要急，不要等)
+              
+                <span class="allstar50" title="力荐"></span>
+            </p>
+            <div class="reading-note" data-cid="24380888">
+              <div class="short">
+                
+                  <span class="">书中给了几种优化方法：
+5.4.消除循环的低效率；
+5.5.减少过程调用；
+5.6.消除不必要的存储器引用；
+循环展开；
+提高并行性；
+
+我理解这些原理可以用在编译器上。有个问题，有人见过或自己手写代码时，用过后四种优化方式（特别是后两种）吗？</span>
+                  &nbsp;&nbsp;<a href="https://book.douban.com/annotation/24380888/">(<span class="">15回应</span>)</a>
+                <p class="pl">
+                  <span class="">2013-02-03 22:14</span>
+                    &nbsp;&nbsp;<span class="">1人收藏</span>
+                </p>
+              </div>
+              <div class="all hidden" style="display:none">
+                书中给了几种优化方法：<div style="padding-bottom:1em;"></div>5.4.消除循环的低效率；<div style="padding-bottom:1em;"></div>5.5.减少过程调用；<div style="padding-bottom:1em;"></div>5.6.消除不必要的存储器引用；<div style="padding-bottom:1em;"></div>循环展开；<div style="padding-bottom:1em;"></div>提高并行性；<div style="padding-bottom:1em;"></div>我理解这些原理可以用在编译器上。有个问题，有人见过或自己手写代码时，用过后四种优化方式（特别是后两种）吗？
+                  <div class="col-rec-con clearfix">
+                    
+
+
+
+
+
+
+
+<div class="rec-sec">
+
+    <span class="rec">
+
+<a href="https://www.douban.com/accounts/register?reason=collect" class="j a_show_login lnk-sharing lnk-douban-sharing">推荐</a>
+</span>
+</div>
+
+                      <a href="javascript:;" id="n-24380888" class="j a_show_login colbutt ll add-col"><span>收藏</span></a>
+                      &nbsp;&nbsp;1人收藏
+                  </div>
+                <div class="pl col-time">
+                  <a href="https://book.douban.com/annotation/24380888/#comments">15回应</a>&nbsp;&nbsp;
+                  2013-02-03 22:14
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li class="ctsh clearfix" data-cid="20426381">
+        <div class="ilst">
+          <a href="https://www.douban.com/people/franklc/"><img src="./深入理解计算机系统 (豆瓣)_files/u2212876-1.jpg" alt="symbreak" class=""></a>
+        </div>
+        <div class="con">
+          <div class="nlst">
+            <h3>
+              <div class="note-toggle rr">
+                <a href="https://book.douban.com/annotation/20426381/" class="note-unfolder">展开</a>
+                <a href="javascript:void(0);" class="note-folder">收起</a>
+              </div>
+              <a href="https://book.douban.com/annotation/20426381/" class="">第203页</a></h3>
+          </div>
+          <div class="clst">
+            <p class="user"><a href="https://www.douban.com/people/franklc/" class=" " title="symbreak">symbreak</a>
+              
+            </p>
+            <div class="reading-note" data-cid="20426381">
+              <div class="short">
+                
+                  <span class=""><span class="code-holder">/代码内容已省略/</span>
+
+逆向之后的代码是
+<span class="code-holder">/代码内容已省略/</span></span>
+                  &nbsp;&nbsp;<a href="https://book.douban.com/annotation/20426381/">(<span class="">1回应</span>)</a>
+                <p class="pl">
+                  <span class="">2012-08-16 23:48</span>
+                    &nbsp;&nbsp;<span class="">2人收藏</span>
+                </p>
+              </div>
+              <div class="all hidden" style="display:none">
+                <div class="sh_rand01 snippet-wrap"><pre class="source true c sh_c sh_sourceCode"><ol class="snippet-num"><li>movl <span class="sh_number">8</span><span class="sh_symbol">(%</span>ebp<span class="sh_symbol">),</span> <span class="sh_symbol">%</span>esi  <span class="sh_symbol">;</span> x</li><li>movl <span class="sh_number">12</span><span class="sh_symbol">(%</span>ebp<span class="sh_symbol">),</span> <span class="sh_symbol">%</span>ebx  <span class="sh_symbol">;</span> n</li><li>movl $<span class="sh_number">1431655765</span><span class="sh_symbol">,</span> <span class="sh_symbol">%</span>edi  <span class="sh_symbol">;</span> result <span class="sh_symbol">=</span> <span class="sh_number">0x55555555</span></li><li>movl $<span class="sh_symbol">-</span><span class="sh_number">2147483648</span><span class="sh_symbol">,</span> <span class="sh_symbol">%</span>edx <span class="sh_symbol">;</span> mask</li><li><span class="sh_symbol">.</span>L2<span class="sh_symbol">:</span></li><li>movl <span class="sh_symbol">%</span>edx<span class="sh_symbol">,</span> <span class="sh_symbol">%</span>eax <span class="sh_symbol">;</span> t <span class="sh_symbol">=</span> mask</li><li>andl <span class="sh_symbol">%</span>esi<span class="sh_symbol">,</span> <span class="sh_symbol">%</span>eax <span class="sh_symbol">;</span> t <span class="sh_symbol">=</span> t <span class="sh_symbol">&amp;</span> x</li><li>xorl <span class="sh_symbol">%</span>eax<span class="sh_symbol">,</span> <span class="sh_symbol">%</span>edi  <span class="sh_symbol">;</span> result <span class="sh_symbol">^=</span> <span class="sh_symbol">(</span>mask <span class="sh_symbol">&amp;</span> x<span class="sh_symbol">)</span></li><li>movl <span class="sh_symbol">%</span>ebx<span class="sh_symbol">,</span> <span class="sh_symbol">%</span>ecx  </li><li>shrl <span class="sh_symbol">%</span>cl<span class="sh_symbol">,</span> $edx <span class="sh_symbol">;</span> mask 逻辑右移 n 位</li><li>testl <span class="sh_symbol">%</span>edx<span class="sh_symbol">,</span> <span class="sh_symbol">%</span>edx</li><li>jne <span class="sh_symbol">.</span>L2 <span class="sh_symbol">;</span> <span class="sh_keyword">if</span> <span class="sh_symbol">(</span>mask <span class="sh_symbol">!=</span> <span class="sh_number">0</span><span class="sh_symbol">)</span> <span class="sh_keyword">goto</span> L2</li><li>movl <span class="sh_symbol">%</span>edi<span class="sh_symbol">,</span> <span class="sh_symbol">%</span>eax <span class="sh_symbol">;</span> <span class="sh_keyword">return</span> result</li></ol></pre></div><div style="padding-bottom:1em;"></div>逆向之后的代码是
+<div class="sh_rand01 snippet-wrap"><pre class="source true c sh_c sh_sourceCode"><ol class="snippet-num"><li><span class="sh_type">int</span> <span class="sh_function">loop</span><span class="sh_symbol">(</span><span class="sh_type">int</span> x<span class="sh_symbol">,</span> <span class="sh_type">int</span> n<span class="sh_symbol">)</span></li><li><span class="sh_cbracket">{</span></li><li>    <span class="sh_type">int</span> result <span class="sh_symbol">=</span> <span class="sh_number">0x55555555</span><span class="sh_symbol">;</span></li><li>    <span class="sh_type">int</span> mask<span class="sh_symbol">;</span></li><li>    <span class="sh_keyword">for</span> <span class="sh_symbol">(</span>mask <span class="sh_symbol">=</span> <span class="sh_symbol">-</span><span class="sh_number">2147483648</span><span class="sh_symbol">;</span> mask <span class="sh_symbol">!=</span> <span class="sh_number">0</span><span class="sh_symbol">;</span> mask <span class="sh_symbol">=</span> <span class="sh_symbol">(</span><span class="sh_type">unsigned</span><span class="sh_symbol">)</span>mask <span class="sh_symbol">&gt;&gt;</span> n<span class="sh_symbol">)</span> <span class="sh_cbracket">{</span></li><li>        result <span class="sh_symbol">^=</span> <span class="sh_symbol">(</span>x <span class="sh_symbol">&amp;</span> mask<span class="sh_symbol">);</span></li><li>    <span class="sh_cbracket">}</span></li><li>    <span class="sh_keyword">return</span> result<span class="sh_symbol">;</span></li><li><span class="sh_cbracket">}</span></li></ol></pre></div>
+                  <div class="col-rec-con clearfix">
+                    
+
+
+
+
+
+
+
+<div class="rec-sec">
+
+    <span class="rec">
+
+<a href="https://www.douban.com/accounts/register?reason=collect" class="j a_show_login lnk-sharing lnk-douban-sharing">推荐</a>
+</span>
+</div>
+
+                      <a href="javascript:;" id="n-20426381" class="j a_show_login colbutt ll add-col"><span>收藏</span></a>
+                      &nbsp;&nbsp;2人收藏
+                  </div>
+                <div class="pl col-time">
+                  <a href="https://book.douban.com/annotation/20426381/#comments">1回应</a>&nbsp;&nbsp;
+                  2012-08-16 23:48
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li class="ctsh clearfix" data-cid="20424350">
+        <div class="ilst">
+          <a href="https://www.douban.com/people/franklc/"><img src="./深入理解计算机系统 (豆瓣)_files/u2212876-1.jpg" alt="symbreak" class=""></a>
+        </div>
+        <div class="con">
+          <div class="nlst">
+            <h3>
+              <div class="note-toggle rr">
+                <a href="https://book.douban.com/annotation/20424350/" class="note-unfolder">展开</a>
+                <a href="javascript:void(0);" class="note-folder">收起</a>
+              </div>
+              <a href="https://book.douban.com/annotation/20424350/" class="">第203页</a></h3>
+          </div>
+          <div class="clst">
+            <p class="user"><a href="https://www.douban.com/people/franklc/" class=" " title="symbreak">symbreak</a>
+              
+            </p>
+            <div class="reading-note" data-cid="20424350">
+              <div class="short">
+                
+                  <span class="">习题试解 3.55
+
+对于两个 64 位整数之间的乘法，计算如下
+product = y *{signed} x =
+(y_high * 2^32 + y_low) *{signed} (x_high * 2^32 + x_low) =
+y_high *{signed} x_high * 2^64 +
+y_high *{signed} x_low * 2^32 +
+y_low *{signed} x_high * 2^32 +
+y_low *{signed} x_low
+两个数的最高 32 位之间的乘积不用计算，因为我们只需要 64 位的积。
+
+令 x = a * 2^32 + b
+
+<span class="code-holder">/代码内容已省略...</span></span>
+                <p class="pl">
+                  <span class="">2012-08-16 22:48</span>
+                    &nbsp;&nbsp;<span class="">1人收藏</span>
+                </p>
+              </div>
+              <div class="all hidden" style="display:none">
+                习题试解 3.55<div style="padding-bottom:1em;"></div>对于两个 64 位整数之间的乘法，计算如下<div style="padding-bottom:1em;"></div>product = y *{signed} x =<div style="padding-bottom:1em;"></div>(y_high * 2^32 + y_low) *{signed} (x_high * 2^32 + x_low) =<div style="padding-bottom:1em;"></div>y_high *{signed} x_high * 2^64 +<div style="padding-bottom:1em;"></div>y_high *{signed} x_low * 2^32 +<div style="padding-bottom:1em;"></div>y_low *{signed} x_high * 2^32 +<div style="padding-bottom:1em;"></div>y_low *{signed} x_low<div style="padding-bottom:1em;"></div>两个数的最高 32 位之间的乘积不用计算，因为我们只需要 64 位的积。<div style="padding-bottom:1em;"></div>令 x = a * 2^32 + b<div style="padding-bottom:1em;"></div><div class="sh_rand01 snippet-wrap"><pre class="source true c sh_c sh_sourceCode"><ol class="snippet-num"><li>movl <span class="sh_number">12</span><span class="sh_symbol">(%</span>ebp<span class="sh_symbol">),</span> <span class="sh_symbol">%</span>esi</li><li>movl <span class="sh_number">20</span><span class="sh_symbol">(%</span>ebp<span class="sh_symbol">),</span> <span class="sh_symbol">%</span>eax</li></ol></pre></div>
+以上即把 64 位的参数 x 的低 32 位载入到寄存器 esi，32 位的 y 载入到 eax 中。<div style="padding-bottom:1em;"></div>esi = b<div style="padding-bottom:1em;"></div>eax = y<div style="padding-bottom:1em;"></div><div class="sh_rand01 snippet-wrap"><pre class="source true c sh_c sh_sourceCode"><ol class="snippet-num"><li>movl <span class="sh_symbol">%</span>eax<span class="sh_symbol">,</span> <span class="sh_symbol">%</span>edx</li><li>sarl $<span class="sh_number">31</span><span class="sh_symbol">,</span> <span class="sh_symbol">%</span>edx</li><li>movl <span class="sh_symbol">%</span>edx<span class="sh_symbol">,</span> <span class="sh_symbol">%</span>ecx</li><li>imull <span class="sh_symbol">%</span>esi<span class="sh_symbol">,</span> <span class="sh_symbol">%</span>ecx</li></ol></pre></div>
+这里可以把 y 符号扩展为 64 位，高 32 位放在 edx 中<div style="padding-bottom:1em;"></div>把 x 的低 32 位乘以 y 的高 32 位存到 ecx 中<div style="padding-bottom:1em;"></div><div class="sh_rand01 snippet-wrap"><pre class="source true c sh_c sh_sourceCode"><ol class="snippet-num"><li>movl <span class="sh_number">16</span><span class="sh_symbol">(%</span>ebp<span class="sh_symbol">),</span> <span class="sh_symbol">%</span>ebx</li><li>imull <span class="sh_symbol">%</span>eax<span class="sh_symbol">,</span> <span class="sh_symbol">%</span>ebx</li><li>addl <span class="sh_symbol">%</span>ebx<span class="sh_symbol">,</span> <span class="sh_symbol">%</span>ecx</li></ol></pre></div>
+把 x 的高 32 位乘以 y 的低 32 位加到 ecx 中<div style="padding-bottom:1em;"></div>ecx += a * y<div style="padding-bottom:1em;"></div><div class="sh_rand01 snippet-wrap"><pre class="source true c sh_c sh_sourceCode"><ol class="snippet-num"><li>mull <span class="sh_symbol">%</span>esi</li><li><span class="sh_function">leal</span> <span class="sh_symbol">(%</span>ecx<span class="sh_symbol">,</span> <span class="sh_symbol">%</span>edx<span class="sh_symbol">),</span> <span class="sh_symbol">%</span>edx</li></ol></pre></div>
+把 x 的低 32 位乘以 y 的低 32 位，积的低位在 eax，高位在 edx。<div style="padding-bottom:1em;"></div>然后 edx 和 ecx 相加保存在 edx 中。<div style="padding-bottom:1em;"></div>到这里已经可以看出整个算法了。<div style="padding-bottom:1em;"></div><div class="sh_rand01 snippet-wrap"><pre class="source true c sh_c sh_sourceCode"><ol class="snippet-num"><li>movl <span class="sh_number">8</span><span class="sh_symbol">(%</span>ebp<span class="sh_symbol">),</span> <span class="sh_symbol">%</span>ecx</li><li>movl <span class="sh_symbol">%</span>eax<span class="sh_symbol">,</span> <span class="sh_symbol">(%</span>ecx<span class="sh_symbol">)</span></li><li>movl <span class="sh_symbol">%</span>edx<span class="sh_symbol">,</span> <span class="sh_number">4</span><span class="sh_symbol">(%</span>ecx<span class="sh_symbol">)</span></li></ol></pre></div><div style="padding-bottom:1em;"></div>最后把结果保存在 *dest 指向的位置。<div style="padding-bottom:1em;"></div>伟大的 stackoverflow 亦有贡献：<a rel="nofollow" href="http://stackoverflow.com/questions/11680720/implement-64-bit-arithmetic-on-a-32-bit-machine" target="_blank">http://stackoverflow.com/questions/11680720/implement-64-bit-arithmetic-on-a-32-bit-machine</a><div style="padding-bottom:1em;"></div>
+                  <div class="col-rec-con clearfix">
+                    
+
+
+
+
+
+
+
+<div class="rec-sec">
+
+    <span class="rec">
+
+<a href="https://www.douban.com/accounts/register?reason=collect" class="j a_show_login lnk-sharing lnk-douban-sharing">推荐</a>
+</span>
+</div>
+
+                      <a href="javascript:;" id="n-20424350" class="j a_show_login colbutt ll add-col"><span>收藏</span></a>
+                      &nbsp;&nbsp;1人收藏
+                  </div>
+                <div class="pl col-time">
+                  <a href="https://book.douban.com/annotation/20424350/#comments">回应</a>&nbsp;&nbsp;
+                  2012-08-16 22:48
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li class="ctsh clearfix" data-cid="20427682">
+        <div class="ilst">
+          <a href="https://www.douban.com/people/franklc/"><img src="./深入理解计算机系统 (豆瓣)_files/u2212876-1.jpg" alt="symbreak" class=""></a>
+        </div>
+        <div class="con">
+          <div class="nlst">
+            <h3>
+              <div class="note-toggle rr">
+                <a href="https://book.douban.com/annotation/20427682/" class="note-unfolder">展开</a>
+                <a href="javascript:void(0);" class="note-folder">收起</a>
+              </div>
+              <a href="https://book.douban.com/annotation/20427682/" class="">第204页</a></h3>
+          </div>
+          <div class="clst">
+            <p class="user"><a href="https://www.douban.com/people/franklc/" class=" " title="symbreak">symbreak</a>
+              
+            </p>
+            <div class="reading-note" data-cid="20427682">
+              <div class="short">
+                
+                  <span class=""><span class="code-holder">/代码内容已省略/</span>
+
+因此 C 代码如下
+
+<span class="code-holder">/代码内容已省略/</span></span>
+                  &nbsp;&nbsp;<a href="https://book.douban.com/annotation/20427682/">(<span class="">1回应</span>)</a>
+                <p class="pl">
+                  <span class="">2012-08-17 01:13</span>
+                    &nbsp;&nbsp;<span class="">1人收藏</span>
+                </p>
+              </div>
+              <div class="all hidden" style="display:none">
+                <div class="sh_rand01 snippet-wrap"><pre class="source true c sh_c sh_sourceCode"><ol class="snippet-num"><li><span class="sh_symbol">.</span>L17    <span class="sh_symbol">;</span> MODE_E</li><li>movl $<span class="sh_number">17</span><span class="sh_symbol">,</span> <span class="sh_symbol">%</span>edx   <span class="sh_symbol">;</span> result <span class="sh_symbol">=</span> <span class="sh_number">17</span></li><li>jmp <span class="sh_symbol">.</span>L19</li><li><span style="display:none;">&nbsp;</span></li><li><span class="sh_symbol">.</span>L13    <span class="sh_symbol">;</span> MODE_A</li><li>movl <span class="sh_number">8</span><span class="sh_symbol">(%</span>ebp<span class="sh_symbol">),</span> <span class="sh_symbol">%</span>eax</li><li><span class="sh_function">movl</span> <span class="sh_symbol">(%</span>eax<span class="sh_symbol">),</span> <span class="sh_symbol">%</span>edx    <span class="sh_symbol">;</span> result <span class="sh_symbol">=</span> <span class="sh_symbol">*</span>p1</li><li>movl <span class="sh_number">12</span><span class="sh_symbol">(%</span>ebp<span class="sh_symbol">),</span> <span class="sh_symbol">%</span>ecx</li><li><span class="sh_function">movl</span> <span class="sh_symbol">(%</span>ecx<span class="sh_symbol">),</span> <span class="sh_symbol">%</span>eax    <span class="sh_symbol">;</span> <span class="sh_symbol">*</span>p2</li><li>movl <span class="sh_number">8</span><span class="sh_symbol">(%</span>ebp<span class="sh_symbol">),</span> <span class="sh_symbol">%</span>ecx    <span class="sh_symbol">;</span> p1</li><li>movl <span class="sh_symbol">%</span>eax<span class="sh_symbol">,</span> <span class="sh_symbol">(%</span>ecx<span class="sh_symbol">)</span>     <span class="sh_symbol">;</span> <span class="sh_symbol">*</span>p1 <span class="sh_symbol">=</span> <span class="sh_symbol">*</span>p2</li><li>jmp <span class="sh_symbol">.</span>L19</li><li><span style="display:none;">&nbsp;</span></li><li><span class="sh_symbol">.</span>L14    <span class="sh_symbol">;</span> MODE_B</li><li>movl <span class="sh_number">12</span><span class="sh_symbol">(%</span>ebp<span class="sh_symbol">),</span> <span class="sh_symbol">%</span>edx    <span class="sh_symbol">;</span> p2</li><li><span class="sh_function">movl</span> <span class="sh_symbol">(%</span>edx<span class="sh_symbol">),</span> <span class="sh_symbol">%</span>eax    <span class="sh_symbol">;</span> <span class="sh_symbol">*</span>p2</li><li>movl <span class="sh_symbol">%</span>eax<span class="sh_symbol">,</span> <span class="sh_symbol">%</span>edx    <span class="sh_symbol">;</span> result <span class="sh_symbol">=</span> <span class="sh_symbol">*</span>p2</li><li>movl <span class="sh_number">8</span><span class="sh_symbol">(%</span>ebp<span class="sh_symbol">),</span> <span class="sh_symbol">%</span>ecx</li><li><span class="sh_function">addl</span> <span class="sh_symbol">(%</span>ecx<span class="sh_symbol">),</span> <span class="sh_symbol">%</span>edx    <span class="sh_symbol">;</span> result <span class="sh_symbol">=</span> <span class="sh_symbol">*</span>p2 <span class="sh_symbol">+</span> <span class="sh_symbol">*</span>p1</li><li>movl <span class="sh_number">12</span><span class="sh_symbol">(%</span>ebp<span class="sh_symbol">),</span> <span class="sh_symbol">%</span>eax    <span class="sh_symbol">;</span> p2</li><li>movl <span class="sh_symbol">%</span>edx<span class="sh_symbol">,</span> <span class="sh_symbol">(%</span>eax<span class="sh_symbol">)</span>    <span class="sh_symbol">;</span> <span class="sh_symbol">*</span>p2 <span class="sh_symbol">=</span> result</li><li>jmp <span class="sh_symbol">.</span>L19</li><li><span style="display:none;">&nbsp;</span></li><li><span class="sh_symbol">.</span>L15    <span class="sh_symbol">;</span> MODE_C</li><li>movl <span class="sh_number">12</span><span class="sh_symbol">(%</span>ebp<span class="sh_symbol">),</span> <span class="sh_symbol">%</span>edx    <span class="sh_symbol">;</span> p2</li><li>movl $<span class="sh_number">15</span><span class="sh_symbol">,</span> <span class="sh_symbol">(%</span>edx<span class="sh_symbol">)</span>    <span class="sh_symbol">;</span> <span class="sh_symbol">*</span>p2 <span class="sh_symbol">=</span> <span class="sh_number">15</span></li><li>movl <span class="sh_number">8</span><span class="sh_symbol">(%</span>ebp<span class="sh_symbol">),</span> <span class="sh_symbol">%</span>ecx    <span class="sh_symbol">;</span> p1</li><li><span class="sh_function">movl</span> <span class="sh_symbol">(%</span>ecx<span class="sh_symbol">),</span> <span class="sh_symbol">%</span>edx    <span class="sh_symbol">;</span> result <span class="sh_symbol">=</span> <span class="sh_symbol">*</span>p1</li><li>jmp <span class="sh_symbol">.</span>L19</li><li><span style="display:none;">&nbsp;</span></li><li><span class="sh_symbol">.</span>L16    <span class="sh_symbol">;</span> MODE_D</li><li>movl <span class="sh_number">8</span><span class="sh_symbol">(%</span>ebp<span class="sh_symbol">),</span> <span class="sh_symbol">%</span>edx</li><li><span class="sh_function">movl</span> <span class="sh_symbol">(%</span>edx<span class="sh_symbol">),</span> <span class="sh_symbol">%</span>eax    <span class="sh_symbol">;</span> <span class="sh_symbol">*</span>p1</li><li>movl <span class="sh_number">12</span><span class="sh_symbol">(%</span>ebp<span class="sh_symbol">),</span> <span class="sh_symbol">%</span>ecx</li><li>movl <span class="sh_symbol">%</span>eax<span class="sh_symbol">,</span> <span class="sh_symbol">(%</span>ecx<span class="sh_symbol">)</span>    <span class="sh_symbol">;</span> <span class="sh_symbol">*</span>p2 <span class="sh_symbol">=</span> <span class="sh_symbol">*</span>p1</li><li>movl $<span class="sh_number">17</span><span class="sh_symbol">,</span> <span class="sh_symbol">%</span>edx    <span class="sh_symbol">;</span> result <span class="sh_symbol">=</span> <span class="sh_number">17</span></li><li><span style="display:none;">&nbsp;</span></li><li><span class="sh_symbol">.</span>L19</li><li>movl <span class="sh_symbol">%</span>edx<span class="sh_symbol">,</span> <span class="sh_symbol">%</span>eax</li></ol></pre></div><div style="padding-bottom:1em;"></div>因此 C 代码如下<div style="padding-bottom:1em;"></div><div class="sh_rand01 snippet-wrap"><pre class="source true c sh_c sh_sourceCode"><ol class="snippet-num"><li><span class="sh_type">int</span> <span class="sh_function">switch3</span><span class="sh_symbol">(</span><span class="sh_type">int</span> <span class="sh_symbol">*</span>p1<span class="sh_symbol">,</span> <span class="sh_type">int</span> <span class="sh_symbol">*</span>p2<span class="sh_symbol">,</span> <span class="sh_usertype">mode_t</span><span class="sh_normal"> </span>action<span class="sh_symbol">)</span></li><li><span class="sh_cbracket">{</span></li><li>    <span class="sh_type">int</span> result <span class="sh_symbol">=</span> <span class="sh_number">0</span><span class="sh_symbol">;</span></li><li>    <span class="sh_keyword">switch</span><span class="sh_symbol">(</span>action<span class="sh_symbol">)</span> <span class="sh_cbracket">{</span></li><li>    <span class="sh_keyword">case</span> MODE_A<span class="sh_symbol">:</span></li><li>        result <span class="sh_symbol">=</span> <span class="sh_symbol">*</span>p1<span class="sh_symbol">;</span></li><li>        <span class="sh_symbol">*</span>p1 <span class="sh_symbol">=</span> <span class="sh_symbol">*</span>p2<span class="sh_symbol">;</span></li><li>        <span class="sh_keyword">break</span><span class="sh_symbol">;</span></li><li>    <span class="sh_keyword">case</span> MODE_B<span class="sh_symbol">:</span></li><li>        result <span class="sh_symbol">=</span> <span class="sh_symbol">*</span>p1 <span class="sh_symbol">+</span> <span class="sh_symbol">*</span>p2<span class="sh_symbol">;</span></li><li>        <span class="sh_symbol">*</span>p2 <span class="sh_symbol">=</span> result<span class="sh_symbol">;</span></li><li>        <span class="sh_keyword">break</span><span class="sh_symbol">;</span></li><li>    <span class="sh_keyword">case</span> MODE_C<span class="sh_symbol">:</span></li><li>        <span class="sh_symbol">*</span>p2 <span class="sh_symbol">=</span> <span class="sh_number">15</span><span class="sh_symbol">;</span></li><li>        result <span class="sh_symbol">=</span> <span class="sh_symbol">*</span>p1<span class="sh_symbol">;</span></li><li>        <span class="sh_keyword">break</span><span class="sh_symbol">;</span></li><li>    <span class="sh_keyword">case</span> MODE_D<span class="sh_symbol">:</span></li><li>        <span class="sh_symbol">*</span>p2 <span class="sh_symbol">=</span> <span class="sh_symbol">*</span>p1<span class="sh_symbol">;</span></li><li>    <span class="sh_keyword">case</span> MODE_E<span class="sh_symbol">:</span></li><li>        result <span class="sh_symbol">=</span> <span class="sh_number">17</span><span class="sh_symbol">;</span></li><li>        <span class="sh_keyword">break</span><span class="sh_symbol">;</span></li><li>    <span class="sh_keyword">default</span><span class="sh_symbol">:</span></li><li>        result <span class="sh_symbol">=</span> <span class="sh_symbol">-</span><span class="sh_number">1</span><span class="sh_symbol">;</span></li><li>    <span class="sh_cbracket">}</span></li><li>    <span class="sh_keyword">return</span> result<span class="sh_symbol">;</span></li><li><span class="sh_cbracket">}</span></li></ol></pre></div>
+                  <div class="col-rec-con clearfix">
+                    
+
+
+
+
+
+
+
+<div class="rec-sec">
+
+    <span class="rec">
+
+<a href="https://www.douban.com/accounts/register?reason=collect" class="j a_show_login lnk-sharing lnk-douban-sharing">推荐</a>
+</span>
+</div>
+
+                      <a href="javascript:;" id="n-20427682" class="j a_show_login colbutt ll add-col"><span>收藏</span></a>
+                      &nbsp;&nbsp;1人收藏
+                  </div>
+                <div class="pl col-time">
+                  <a href="https://book.douban.com/annotation/20427682/#comments">1回应</a>&nbsp;&nbsp;
+                  2012-08-17 01:13
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+  </ul>
+  
+
+      
+  <ul class="comments by_page" style="display: none">
+      
+      <li class="ctsh clearfix" data-cid="11042588">
+        <div class="ilst">
+          <a href="https://www.douban.com/people/zelor/"><img src="./深入理解计算机系统 (豆瓣)_files/u1055327-1.jpg" alt="虽不中不远矣" class=""></a>
+        </div>
+        <div class="con">
+          <div class="nlst">
+            <h3>
+              <div class="note-toggle rr">
+                <a href="https://book.douban.com/annotation/11042588/" class="note-unfolder">展开</a>
+                <a href="javascript:void(0);" class="note-folder">收起</a>
+              </div>
+              <a href="https://book.douban.com/annotation/11042588/" class="">第1页</a></h3>
+          </div>
+          <div class="clst">
+            <p class="user"><a href="https://www.douban.com/people/zelor/" class=" " title="虽不中不远矣">虽不中不远矣</a>
+                (春夏之交有所思)
+              
+                <span class="allstar50" title="力荐"></span>
+            </p>
+            <div class="reading-note" data-cid="11042588">
+              <div class="short">
+                
+                  <span class="">随便写写，性能优化那一章特别精彩。我个人也挺喜欢体系结构那一章，虽然很硬。
+
+另外，虚拟内存那章，最后对内存错误的总结也是非常精彩。</span>
+                <p class="pl">
+                  <span class="">2011-01-31 18:56</span>
+                </p>
+              </div>
+              <div class="all hidden" style="display:none">
+                随便写写，性能优化那一章特别精彩。我个人也挺喜欢体系结构那一章，虽然很硬。<div style="padding-bottom:1em;"></div>另外，虚拟内存那章，最后对内存错误的总结也是非常精彩。
+                  <div class="col-rec-con clearfix">
+                    
+
+
+
+
+
+
+
+<div class="rec-sec">
+
+    <span class="rec">
+
+<a href="https://www.douban.com/accounts/register?reason=collect" class="j a_show_login lnk-sharing lnk-douban-sharing">推荐</a>
+</span>
+</div>
+
+                      <a href="javascript:;" id="n-11042588" class="j a_show_login colbutt ll add-col"><span>收藏</span></a>
+                  </div>
+                <div class="pl col-time">
+                  <a href="https://book.douban.com/annotation/11042588/#comments">回应</a>&nbsp;&nbsp;
+                  2011-01-31 18:56
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li class="ctsh clearfix" data-cid="13370575">
+        <div class="ilst">
+          <a href="https://www.douban.com/people/52413736/"><img src="./深入理解计算机系统 (豆瓣)_files/u52413736-2.jpg" alt="颤抖无情" class=""></a>
+        </div>
+        <div class="con">
+          <div class="nlst">
+            <h3>
+              <div class="note-toggle rr">
+                <a href="https://book.douban.com/annotation/13370575/" class="note-unfolder">展开</a>
+                <a href="javascript:void(0);" class="note-folder">收起</a>
+              </div>
+              <a href="https://book.douban.com/annotation/13370575/" class="">第1页</a></h3>
+          </div>
+          <div class="clst">
+            <p class="user"><a href="https://www.douban.com/people/52413736/" class=" " title="颤抖无情">颤抖无情</a>
+              
+                <span class="allstar50" title="力荐"></span>
+            </p>
+            <div class="reading-note" data-cid="13370575">
+              <div class="short">
+                
+                  <span class="">个人觉得这本书更适合读而不是作参考资料</span>
+                <p class="pl">
+                  <span class="">2011-06-17 15:49</span>
+                </p>
+              </div>
+              <div class="all hidden" style="display:none">
+                个人觉得这本书更适合读而不是作参考资料
+                  <div class="col-rec-con clearfix">
+                    
+
+
+
+
+
+
+
+<div class="rec-sec">
+
+    <span class="rec">
+
+<a href="https://www.douban.com/accounts/register?reason=collect" class="j a_show_login lnk-sharing lnk-douban-sharing">推荐</a>
+</span>
+</div>
+
+                      <a href="javascript:;" id="n-13370575" class="j a_show_login colbutt ll add-col"><span>收藏</span></a>
+                  </div>
+                <div class="pl col-time">
+                  <a href="https://book.douban.com/annotation/13370575/#comments">回应</a>&nbsp;&nbsp;
+                  2011-06-17 15:49
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li class="ctsh clearfix" data-cid="23053652">
+        <div class="ilst">
+          <a href="https://www.douban.com/people/hnlq715/"><img src="./深入理解计算机系统 (豆瓣)_files/u3064488-5.jpg" alt="木子奇在浮世" class=""></a>
+        </div>
+        <div class="con">
+          <div class="nlst">
+            <h3>
+              <div class="note-toggle rr">
+                <a href="https://book.douban.com/annotation/23053652/" class="note-unfolder">展开</a>
+                <a href="javascript:void(0);" class="note-folder">收起</a>
+              </div>
+              <a href="https://book.douban.com/annotation/23053652/" class="">第1页</a></h3>
+          </div>
+          <div class="clst">
+            <p class="user"><a href="https://www.douban.com/people/hnlq715/" class=" " title="木子奇在浮世">木子奇在浮世</a>
+                (我信异想就有日会天开.)
+              
+                <span class="allstar50" title="力荐"></span>
+            </p>
+            <div class="reading-note" data-cid="23053652">
+              <div class="short">
+                
+                  <span class="">由于书中没有章节习题答案，故再次记下习题答案链接： http://ishare.iask.sina.com.cn/f/21860322.html?from=dl</span>
+                <p class="pl">
+                  <span class="">2012-12-09 20:35</span>
+                </p>
+              </div>
+              <div class="all hidden" style="display:none">
+                由于书中没有章节习题答案，故再次记下习题答案链接： <a rel="nofollow" href="http://ishare.iask.sina.com.cn/f/21860322.html?from=dl" target="_blank">http://ishare.iask.sina.com.cn/f/21860322.html?from=dl</a>
+                  <div class="col-rec-con clearfix">
+                    
+
+
+
+
+
+
+
+<div class="rec-sec">
+
+    <span class="rec">
+
+<a href="https://www.douban.com/accounts/register?reason=collect" class="j a_show_login lnk-sharing lnk-douban-sharing">推荐</a>
+</span>
+</div>
+
+                      <a href="javascript:;" id="n-23053652" class="j a_show_login colbutt ll add-col"><span>收藏</span></a>
+                  </div>
+                <div class="pl col-time">
+                  <a href="https://book.douban.com/annotation/23053652/#comments">回应</a>&nbsp;&nbsp;
+                  2012-12-09 20:35
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li class="ctsh clearfix" data-cid="23982837">
+        <div class="ilst">
+          <a href="https://www.douban.com/people/2726727/"><img src="./深入理解计算机系统 (豆瓣)_files/u2726727-2.jpg" alt="myisabella" class=""></a>
+        </div>
+        <div class="con">
+          <div class="nlst">
+            <h3>
+              <div class="note-toggle rr">
+                <a href="https://book.douban.com/annotation/23982837/" class="note-unfolder">展开</a>
+                <a href="javascript:void(0);" class="note-folder">收起</a>
+              </div>
+              <a href="https://book.douban.com/annotation/23982837/" class="">第3页</a></h3>
+          </div>
+          <div class="clst">
+            <p class="user"><a href="https://www.douban.com/people/2726727/" class=" " title="myisabella">myisabella</a>
+              
+                <span class="allstar50" title="力荐"></span>
+            </p>
+            <div class="reading-note" data-cid="23982837">
+              <div class="short">
+                
+                  <span class="">C语言是系统级编程的首选，同时它也非常适用于应用级程序的编写。然而，它也并非适用于所有的程序员和所有的情况。C的指针是造成困惑和程序错误的一个常见原因。同时，C还缺乏对一些有用抽象的显式支持，例如类、对象和异常。
+对C非常可观和有用的一段评价，总的来说，C在系统级方面的应用还是无法取代的，尤其是在unix/linux中。</span>
+                <p class="pl">
+                  <span class="">2013-01-18 06:14</span>
+                </p>
+              </div>
+              <div class="all hidden" style="display:none">
+                <blockquote><q>C语言是系统级编程的首选，同时它也非常适用于应用级程序的编写。然而，它也并非适用于所有的程序员和所有的情况。C的指针是造成困惑和程序错误的一个常见原因。同时，C还缺乏对一些有用抽象的显式支持，例如类、对象和异常。</q></blockquote>
+对C非常可观和有用的一段评价，总的来说，C在系统级方面的应用还是无法取代的，尤其是在unix/linux中。
+                  <div class="col-rec-con clearfix">
+                    
+
+
+
+
+
+
+
+<div class="rec-sec">
+
+    <span class="rec">
+
+<a href="https://www.douban.com/accounts/register?reason=collect" class="j a_show_login lnk-sharing lnk-douban-sharing">推荐</a>
+</span>
+</div>
+
+                      <a href="javascript:;" id="n-23982837" class="j a_show_login colbutt ll add-col"><span>收藏</span></a>
+                  </div>
+                <div class="pl col-time">
+                  <a href="https://book.douban.com/annotation/23982837/#comments">回应</a>&nbsp;&nbsp;
+                  2013-01-18 06:14
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+  </ul>
+  
+
+      
+  <ul class="comments by_time" style="display: none">
+      
+      <li class="ctsh clearfix" data-cid="39286573">
+        <div class="ilst">
+          <a href="https://www.douban.com/people/39439716/"><img src="./深入理解计算机系统 (豆瓣)_files/u39439716-2.jpg" alt="续意生" class=""></a>
+        </div>
+        <div class="con">
+          <div class="nlst">
+            <h3>
+              <div class="note-toggle rr">
+                <a href="https://book.douban.com/annotation/39286573/" class="note-unfolder">展开</a>
+                <a href="javascript:void(0);" class="note-folder">收起</a>
+              </div>
+              <a href="https://book.douban.com/annotation/39286573/" class="">第128页</a></h3>
+          </div>
+          <div class="clst">
+            <p class="user"><a href="https://www.douban.com/people/39439716/" class=" " title="续意生">续意生</a>
+              
+                <span class="allstar50" title="力荐"></span>
+            </p>
+            <div class="reading-note" data-cid="39286573">
+              <div class="short">
+                
+                  <span class="">先占坑，以后慢慢填。
+---------------------------
+很快的浏览了第二章，信息的表示和处理，感觉棒棒哒，细节问题以后再细看了。
+---------------------------
+</span>
+                <p class="pl">
+                  <span class="">2016-09-24 12:46</span>
+                </p>
+              </div>
+              <div class="all hidden" style="display:none">
+                先占坑，以后慢慢填。<div style="padding-bottom:1em;"></div>---------------------------<div style="padding-bottom:1em;"></div>很快的浏览了第二章，信息的表示和处理，感觉棒棒哒，细节问题以后再细看了。<div style="padding-bottom:1em;"></div>---------------------------
+
+                  <div class="col-rec-con clearfix">
+                    
+
+
+
+
+
+
+
+<div class="rec-sec">
+
+    <span class="rec">
+
+<a href="https://www.douban.com/accounts/register?reason=collect" class="j a_show_login lnk-sharing lnk-douban-sharing">推荐</a>
+</span>
+</div>
+
+                      <a href="javascript:;" id="n-39286573" class="j a_show_login colbutt ll add-col"><span>收藏</span></a>
+                  </div>
+                <div class="pl col-time">
+                  <a href="https://book.douban.com/annotation/39286573/#comments">回应</a>&nbsp;&nbsp;
+                  2016-09-24 12:46
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li class="ctsh clearfix" data-cid="38882263">
+        <div class="ilst">
+          <a href="https://www.douban.com/people/13737726/"><img src="./深入理解计算机系统 (豆瓣)_files/u13737726-4.jpg" alt="orpheus" class=""></a>
+        </div>
+        <div class="con">
+          <div class="nlst">
+            <h3>
+              <div class="note-toggle rr">
+                <a href="https://book.douban.com/annotation/38882263/" class="note-unfolder">展开</a>
+                <a href="javascript:void(0);" class="note-folder">收起</a>
+              </div>
+              <a href="https://book.douban.com/annotation/38882263/" class="">第82页</a></h3>
+          </div>
+          <div class="clst">
+            <p class="user"><a href="https://www.douban.com/people/13737726/" class=" " title="orpheus">orpheus</a>
+                (给我好暖一颗心去融化冷酷的真理)
+              
+            </p>
+            <div class="reading-note" data-cid="38882263">
+              <div class="short">
+                
+                  <span class="">完全翻译错了，第二版也没改过来
+A.x的任一位等于1
+B.x的任一位等于0
+C.x的最低有效字节中的任一位等于1
+D.x的最低有效字节中的任一位等于0</span>
+                <p class="pl">
+                  <span class="">2016-08-31 22:03</span>
+                </p>
+              </div>
+              <div class="all hidden" style="display:none">
+                完全翻译错了，第二版也没改过来<div style="padding-bottom:1em;"></div>A.x的任一位等于1<div style="padding-bottom:1em;"></div>B.x的任一位等于0<div style="padding-bottom:1em;"></div>C.x的最低有效字节中的任一位等于1<div style="padding-bottom:1em;"></div>D.x的最低有效字节中的任一位等于0
+                  <div class="col-rec-con clearfix">
+                    
+
+
+
+
+
+
+
+<div class="rec-sec">
+
+    <span class="rec">
+
+<a href="https://www.douban.com/accounts/register?reason=collect" class="j a_show_login lnk-sharing lnk-douban-sharing">推荐</a>
+</span>
+</div>
+
+                      <a href="javascript:;" id="n-38882263" class="j a_show_login colbutt ll add-col"><span>收藏</span></a>
+                  </div>
+                <div class="pl col-time">
+                  <a href="https://book.douban.com/annotation/38882263/#comments">回应</a>&nbsp;&nbsp;
+                  2016-08-31 22:03
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li class="ctsh clearfix" data-cid="34695184">
+        <div class="ilst">
+          <a href="https://www.douban.com/people/49796659/"><img src="./深入理解计算机系统 (豆瓣)_files/u49796659-8.jpg" alt="半点闲" class=""></a>
+        </div>
+        <div class="con">
+          <div class="nlst">
+            <h3>
+              <div class="note-toggle rr">
+                <a href="https://book.douban.com/annotation/34695184/" class="note-unfolder">展开</a>
+                <a href="javascript:void(0);" class="note-folder">收起</a>
+              </div>
+              <a href="https://book.douban.com/annotation/34695184/" class="">第25页</a></h3>
+          </div>
+          <div class="clst">
+            <p class="user"><a href="https://www.douban.com/people/49796659/" class=" " title="半点闲">半点闲</a>
+                (我是超人，我要拯救全世界！)
+              
+                <span class="allstar50" title="力荐"></span>
+            </p>
+            <div class="reading-note" data-cid="34695184">
+              <div class="short">
+                
+                  <span class="">当值x是2的幂时，也就是，对于某个n,x=2n，我们可以很容易地将x写成十六进制形式，只要记住x的二进制表示就是1后面跟n个零。十六进制数字0代表四个二进制0.所以，对于被写成i+4j形式的n来说，其中0&lt;=i&lt;=3，我们可以把x写成开头的十六进制数字为1(i=0)、2(i=1)、4(i=2)或者8(i=3)，后面跟随着j个十六进制的0。比如，x=2048=211，我们有n=11=3+4*2，从而得到十六进制表示0x800
+解惑贴：http://bbs.csdn.net/topics/350203881</span>
+                <p class="pl">
+                  <span class="">2015-03-30 16:16</span>
+                </p>
+              </div>
+              <div class="all hidden" style="display:none">
+                <blockquote><q>当值x是2的幂时，也就是，对于某个n,x=2n，我们可以很容易地将x写成十六进制形式，只要记住x的二进制表示就是1后面跟n个零。十六进制数字0代表四个二进制0.所以，对于被写成i+4j形式的n来说，其中0&lt;=i&lt;=3，我们可以把x写成开头的十六进制数字为1(i=0)、2(i=1)、4(i=2)或者8(i=3)，后面跟随着j个十六进制的0。比如，x=2048=211，我们有n=11=3+4*2，从而得到十六进制表示0x800</q></blockquote>
+解惑贴：<a rel="nofollow" href="http://bbs.csdn.net/topics/350203881" target="_blank">http://bbs.csdn.net/topics/350203881</a>
+                  <div class="col-rec-con clearfix">
+                    
+
+
+
+
+
+
+
+<div class="rec-sec">
+
+    <span class="rec">
+
+<a href="https://www.douban.com/accounts/register?reason=collect" class="j a_show_login lnk-sharing lnk-douban-sharing">推荐</a>
+</span>
+</div>
+
+                      <a href="javascript:;" id="n-34695184" class="j a_show_login colbutt ll add-col"><span>收藏</span></a>
+                  </div>
+                <div class="pl col-time">
+                  <a href="https://book.douban.com/annotation/34695184/#comments">回应</a>&nbsp;&nbsp;
+                  2015-03-30 16:16
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li class="ctsh clearfix" data-cid="25783168">
+        <div class="ilst">
+          <a href="https://www.douban.com/people/71160202/"><img src="./深入理解计算机系统 (豆瓣)_files/user_normal.jpg" alt="Steven8000" class=""></a>
+        </div>
+        <div class="con">
+          <div class="nlst">
+            <h3>
+              <div class="note-toggle rr">
+                <a href="https://book.douban.com/annotation/25783168/" class="note-unfolder">展开</a>
+                <a href="javascript:void(0);" class="note-folder">收起</a>
+              </div>
+              <a href="https://book.douban.com/annotation/25783168/" class="">第209页</a></h3>
+          </div>
+          <div class="clst">
+            <p class="user"><a href="https://www.douban.com/people/71160202/" class=" " title="Steven8000">Steven8000</a>
+              
+            </p>
+            <div class="reading-note" data-cid="25783168">
+              <div class="short">
+                
+                  <span class="">考虑对齐的因素：
+%eax + 8的位置应该是y-&gt;t 那么array数组应该占有8bytes. So B can be 5,6,7,8.  Similarly, when considering parameter u in str2, the address should be divided by 4. So short s[B] should take up 16 bytes. That's to say  12 &lt;= 2*B &lt;= 16, namely B is in the set [6,7,8].
+    In the above case str2 adds up to 32 bytes. On the other hand, from the assembly language it can be judg...</span>
+                <p class="pl">
+                  <span class="">2013-04-15 11:51</span>
+                </p>
+              </div>
+              <div class="all hidden" style="display:none">
+                考虑对齐的因素：<div style="padding-bottom:1em;"></div>%eax + 8的位置应该是y-&gt;t 那么array数组应该占有8bytes. So B can be 5,6,7,8.  Similarly, when considering parameter u in str2, the address should be divided by 4. So short s[B] should take up 16 bytes. That's to say  12 &lt;= 2*B &lt;= 16, namely B is in the set [6,7,8].<div style="padding-bottom:1em;"></div>    In the above case str2 adds up to 32 bytes. On the other hand, from the assembly language it can be judges that p-&gt;y stores in the 44th byte in respect to %eax. In another word, x[a][B] takes up a total 44-32=12 bytes, so 2*A*B &lt;=12. So one solution can be written as A = 1, B = 6;<div style="padding-bottom:1em;"></div>
+                  <div class="col-rec-con clearfix">
+                    
+
+
+
+
+
+
+
+<div class="rec-sec">
+
+    <span class="rec">
+
+<a href="https://www.douban.com/accounts/register?reason=collect" class="j a_show_login lnk-sharing lnk-douban-sharing">推荐</a>
+</span>
+</div>
+
+                      <a href="javascript:;" id="n-25783168" class="j a_show_login colbutt ll add-col"><span>收藏</span></a>
+                  </div>
+                <div class="pl col-time">
+                  <a href="https://book.douban.com/annotation/25783168/#comments">回应</a>&nbsp;&nbsp;
+                  2013-04-15 11:51
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+  </ul>
+  
+
+    </div>
+      <div class="ft">
+        <p class="trr">&gt; <a href="https://book.douban.com/subject/1230413/annotation">更多读书笔记（共74篇）</a></p>
+      </div>
+
+</div>
+
+
+
+<script type="text/javascript">
+  $(document).ready(function(){
+    var TEMPL_ADD_COL = '<a href="" id="n-{NOTE_ID}" class="colbutt ll add-col"><span>收藏</span></a>',
+      TEMPL_DEL_COL = '<span class="pl">已收藏 &gt;<a href="" id="n-{NOTE_ID}" class="del-col">取消收藏</a></span>';
+
+    $('body').delegate('.add-col', 'click', function(e){
+      e.preventDefault();
+      var nnid = $(this).attr('id').split('-')[1],
+        bn_add = $(this);
+      $.post_withck("/j/book/annotation_collect",{nid:nnid},function(){
+        var a = $(TEMPL_DEL_COL.replace('{NOTE_ID}', nnid));
+        bn_add.before(a);
+        bn_add.remove();
+      })
+    });
+
+    $('body').delegate('.del-col', 'click', function(e){
+      e.preventDefault();
+      var nnid = $(this).attr('id').split('-')[1],
+        bn_del = $(this).parent();
+      $.post_withck("/j/book/annotation_uncollect", {nid: nnid}, function() {
+        var a = $(TEMPL_ADD_COL.replace('{NOTE_ID}', nnid));
+        bn_del.before(a);
+        bn_del.remove();
+      })
+    });
+
+    $("pre.source").each(function(){
+      var cn = $(this).attr('class').split(' ');
+      l = cn[1];
+      s = 'rand01';
+      n = cn[2];
+      $(this).snippet(n,{style: s, showNum: l});
+    });
+
+    var annotationMod = $('.reading-notes .bd')
+      , annotationTabs = annotationMod.find('.inline-tabs li')
+      , annotationTabLinks = annotationTabs.find('a')
+      , annotationTabContents = annotationMod.find('ul.comments');
+
+    annotationTabLinks.click(function(e){
+      e.preventDefault();
+      var el = $(this)
+        , kind = el.attr('id');
+
+      annotationTabs.removeClass('on');
+      el.parent().addClass('on');
+      annotationTabContents.hide();
+      annotationTabContents.filter('.' + kind).show();
+    });
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+	jax: ["input/TeX", "output/HTML-CSS"],
+    extensions: ["tex2jax.js","TeX/AMSmath.js","TeX/AMSsymbols.js","TeX/noUndefined.js"],
+    tex2jax: {
+		inlineMath: [ ["($", "$)"], ['\\(','\\)'] ],
+		displayMath: [ ["($$","$$)"], ['\\[','\\]']],
+		skipTags: ["script","noscript","style","textarea"],
+		processEscapes: true,
+		processEnvironments: true,
+		preview: "TeX"
+	},
+	showProcessingMessages: false
+  });
+</script>
+
+
+  
+
+
+
+
+
+
+<div id="db-discussion-section" class="indent ugc-mod">
+
+
+
+
+        
+  
+
+  <h2>
+    <span class="">论坛</span>
+      &nbsp;·&nbsp;·&nbsp;·&nbsp;·&nbsp;·&nbsp;·
+
+  </h2>
+
+
+
+        
+<table class="olt"><tbody><tr><td></td><td></td><td></td><td></td></tr>
+        
+        <tr class="">
+            <td class="pl"><a href="https://book.douban.com/subject/1230413/discussion/1376043/" title="现在这本书当当网有货" class="">现在这本书当当网有货</a></td>
+            <td class="pl"><span class="">来自</span><a class="" href="https://www.douban.com/people/wmy/">卡博维</a></td>
+            <td class="pl"><span class="">7 回应</span></td>
+            <td class="pl"><span class="">2009-03-16</span></td>
+        </tr>
+        
+        <tr class="">
+            <td class="pl"><a href="https://book.douban.com/subject/1230413/discussion/26391496/" title="深入理解计算机系统（修订版） 样张试读" class="">深入理解计算机系统（修订版） 样张试读</a></td>
+            <td class="pl"><span class="">来自</span><a class="" href="https://www.douban.com/people/chinapub/">互动出版网</a></td>
+            <td class="pl"><span class="">2 回应</span></td>
+            <td class="pl"><span class="">2010-08-30</span></td>
+        </tr>
+        
+        <tr class="">
+            <td class="pl"><a href="https://book.douban.com/subject/1230413/discussion/19801394/" title="卖疯了卖疯了，卓越卖到6折51块，赶紧去买吧" class="">卖疯了卖疯了，卓越卖到6折51块，赶紧去买吧</a></td>
+            <td class="pl"><span class="">来自</span><a class="" href="https://www.douban.com/people/it..xiaobing/">[已注销]</a></td>
+            <td class="pl"><span class="">7 回应</span></td>
+            <td class="pl"><span class="">2010-01-14</span></td>
+        </tr>
+        
+        <tr class="">
+            <td class="pl"><a href="https://book.douban.com/subject/1230413/discussion/19738597/" title="看这本传说的csapp，需要什么样的基础？" class="">看这本传说的csapp，需要什么样的基础？</a></td>
+            <td class="pl"><span class="">来自</span><a class="" href="https://www.douban.com/people/it..xiaobing/">[已注销]</a></td>
+            <td class="pl"><span class="">3 回应</span></td>
+            <td class="pl"><span class="">2009-10-25</span></td>
+        </tr>
+        
+        <tr class="">
+            <td class="pl"><a href="https://book.douban.com/subject/1230413/discussion/26386613/" title="本书第2版翻译版预计出版时间：2010年10月份" class="">本书第2版翻译版预计出版时间：2010年10月份</a></td>
+            <td class="pl"><span class="">来自</span><a class="" href="https://www.douban.com/people/winnie_liujing/">冬天里的阳光</a></td>
+            <td class="pl"><span class="">7 回应</span></td>
+            <td class="pl"><span class="">2010-09-27</span></td>
+        </tr>
+</tbody></table>
+
+
+            <p class="pl" align="right">&gt;
+                <a href="https://book.douban.com/subject/1230413/discussion/">浏览更多话题</a>
+            </p>
+
+
+</div>
+
+
+</div>
+<script type="text/javascript">
+$(function(){if($.browser.msie && $.browser.version == 6.0){
+    var maxWidth = parseInt($('#info').css('max-width'));
+    if($('#info').width() > maxWidth)
+        $('#info').width(maxWidth)
+}});
+</script>
+</div>
+      <div class="aside">
+        
+  
+  
+
+
+
+
+
+
+  
+    <div class="get_douban_app">
+        
+
+        <h2 class="discuss-title">在豆瓣App讨论这本书  · · · · · ·</h2>
+
+        <div class="bd">
+            <img src="./深入理解计算机系统 (豆瓣)_files/1230413.png" alt="扫码下载豆瓣App">
+            <div class="info">
+                <div class="avatars">
+                    
+                    <img src="./深入理解计算机系统 (豆瓣)_files/u136650565-2.jpg" class="discuss-avator">
+                    
+                    <img src="./深入理解计算机系统 (豆瓣)_files/u128380488-2.jpg" class="discuss-avator">
+                    
+                    <img src="./深入理解计算机系统 (豆瓣)_files/user_normal.jpg" class="discuss-avator">
+                </div>
+                <div class="text">用豆瓣App扫码，找人聊聊这本书。<br>没有豆瓣App？
+                    <a href="https://www.douban.com/doubanapp/app?channel=subject_promotion_qr">去下载</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+
+
+  <div id="dale_book_subject_top_right" data-id=""><div style="position: relative; margin: 0px 0px 20px; display: inline-block; width: 300px; height: 250px;"><iframe id="dale_book_subject_top_right_frame" frameborder="0" scrolling="no" width="300" height="250" src="javascript:document.write(&#39;&lt;head&gt;&lt;script&gt;window.domain=&quot;douban.com&quot;;&lt;/script&gt;&lt;/head&gt;&lt;body&gt;&lt;/body&gt;&#39;);" name="CPM" style="overflow: hidden; display: block;" src="./深入理解计算机系统 (豆瓣)_files/saved_resource.html"></iframe><div style="line-height: 1; text-align: center; background-color: rgba(0, 0, 0, 0.298039); color: rgb(255, 255, 255); font-size: 12px; position: absolute; padding: 4px; right: 0px; bottom: 0px;">广告</div></div></div>
+  
+
+
+
+
+
+  
+
+<style type="text/css" media="screen">
+  .add2cartContainer{height:25px;overflow:hidden;vertical-align:bottom}.add2cartContainer .add2cart{margin-right:0;display:inline-block}#buyinfo h2{margin-bottom:6px}#buyinfo .bs{margin:0}#buyinfo li{position:relative;line-height:1;border-bottom:1px dashed #ddd}#buyinfo li a{display:block;padding:6px;border-radius:3px}#buyinfo li a:hover{color:#fff;background-color:#f7b779;background-image:url(https://img3.doubanio.com/f/book/d7070f1a394aad9198a517a97c4ab0255e4f618e/pics/book/cart/icon-brown.png);background-repeat:no-repeat;background-position:265px center}#buyinfo li a:hover .comment,#buyinfo li a:hover .buyinfo-promotion{color:#ab7947}#buyinfo li a:hover .buylink-price{color:#fff}#buyinfo li a:hover .saved-price{display:inline}#buyinfo li a:hover.other-edition{background-image:none}#buyinfo li .buylink-price{position:absolute;left:100px;color:#8fadc6}#buyinfo .more-info{color:#aaa;margin:6px 0 -2px 0}#buyinfo .price-page{text-align:center;border-bottom:1px solid #e4e4e4}#buyinfo .saved-price{display:none;margin-left:5px}#buyinfo .cart-tip{float:right;padding-right:5px;line-height:25px}#buyinfo #buyinfo-ebook{margin-bottom:15px}#buyinfo #buyinfo-ebook .buylink-price{left:auto;right:30px}#buyinfo-printed{margin-bottom:8px}#buyinfo-printed.no-border{border-bottom:0}#buyinfo-report{display:none}#buyinfo-report .lnk-close-report{float:right;margin-top:-30px;line-height:14px}#buyinfo-report .item{margin-bottom:10px}#buyinfo-report .item input{vertical-align:text-bottom;*vertical-align:middle}#buyinfo-report .item label{margin:0 5px 0 2px}#buyinfo-report .item-submit .bn-flat{margin-right:10px}#buyinfo-report .item-price input{width:220px;border:1px solid #ccc;padding:4px}#buyinfo-report form{margin:5px 0 10px}#bi-report-btn{float:right;margin:2px 0;line-height:14px;display:none}.bi-vendor-report{color:#aaa}.bi-vendor-report-form{display:none;color:#111;margin:0 5px;line-height:25px}.gray_ad .ebook-tag{margin-left:8px;padding:0 6px;line-height:20px;font-size:11px;border:1px solid #e6e6e2;background:#f1f1ed;display:inline-block;*display:inline;*zoom:1;vertical-align:top}@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi){#buyinfo li a:hover{background-image:url(https://img3.doubanio.com/f/book/fc4ff7f0a3a7f452f06d586540284b9738f2fe87/pics/book/cart/icon-brown@2x.png);background-size:16px 12px}}#intervenor-buyinfo h2{margin-bottom:6px}#intervenor-buyinfo .bs{margin:0}#intervenor-buyinfo li{position:relative;line-height:1;border-bottom:1px dashed #ddd}#intervenor-buyinfo li .basic-info{color:#494949;font-size:14px;line-height:18px}#intervenor-buyinfo li a{display:block;padding:10px 4px;border-radius:3px}#intervenor-buyinfo li a:hover{color:#000;background-color:#FFF;background-repeat:no-repeat;background-position:265px center}#intervenor-buyinfo li a:hover .comment{color:#e97e7e}#intervenor-buyinfo li a:hover .buy-btn{background:#fff;border:1px solid #e97e7e;border-radius:2px;color:#e97e7e}#intervenor-buyinfo li .buylink-price{position:absolute;left:140px;color:#9c9c9c}#intervenor-buyinfo .jd-buy-icon{float:left;margin-right:3px}#intervenor-buyinfo .buy-btn{float:right;position:absolute;right:10px;bottom:10px;color:#9c9c9c;padding:6px 12px;border:1px solid transparent}#intervenor-buyinfo .comment{color:#e97e7e;margin:6px 0 -2px 0}#intervenor-buyinfo .price-page a:hover{background-color:#f7b779;color:#FFF}#intervenor-buyinfo .price-page{text-align:center;border-bottom:1px solid #e4e4e4}#intervenor-buyinfo .saved-price{display:none;margin-left:5px}#intervenor-buyinfo .cart-tip{float:right;padding-right:5px;line-height:25px}#intervenor-buyinfo #buyinfo-ebook{margin-bottom:15px}#intervenor-buyinfo #buyinfo-ebook .buylink-price{left:auto;right:30px}
+
+</style>
+
+  <div class="gray_ad" id="buyinfo">
+      <div id="buyinfo-printed" class="no-border">
+        <h2 class="">
+          其他版本有售
+        </h2>
+        <ul class="bs noline">
+            
+            <li class="">
+              <a href="https://book.douban.com/subject/5333562/" onclick="moreurl(this,{buylink:&#39;other&#39;})" class="other-edition  ">机械工业出版社版</a>
+              <a target="_blank" href="https://book.douban.com/link2/?pre=0&amp;vendor=taoshu&amp;srcpage=subject&amp;price=6730&amp;pos=1&amp;url=http%3A%2F%2Fwww.taoshu.com%2Funion%2Ftransfer.aspx%3Ffrom%3D2112%26url%3Dhttp%3A%2F%2Fwww.taoshu.com%2F809650.html&amp;link2key=6f1e178d4c&amp;srcsubj=1230413&amp;type=bkbuy&amp;subject=5333562">
+                淘书网
+                <span class="buylink-price">
+                  <span class="">RMB 67.30</span>
+                </span>
+              </a>
+            </li>
+            
+            <li class="">
+              <a href="https://book.douban.com/subject/1896753/" onclick="moreurl(this,{buylink:&#39;other&#39;})" class="other-edition  ">电子工业出版社版</a>
+              <a target="_blank" href="https://book.douban.com/link2/?pre=0&amp;vendor=chinapub&amp;srcpage=subject&amp;price=8009&amp;pos=2&amp;url=http%3A%2F%2Fu.china-pub.com%2Fcps%2FWelcome.asp%3Fljid%3D175%26cps%3D%26VType%3D1%26URL%3Dhttp%3A%2F%2Fproduct.china-pub.com%2F31491&amp;link2key=6f1e178d4c&amp;srcsubj=1230413&amp;type=bkbuy&amp;subject=1896753">
+                China-pub
+                <span class="buylink-price">
+                  <span class="">RMB 80.10</span>
+                </span>
+              </a>
+            </li>
+        </ul>
+      </div>
+      
+  <div class="add2cartContainer ft
+      no-border
+    ">
+    
+  <span class="add2cartWidget ll">
+      <a class="j colbutt add2cart a_show_login" href="https://www.douban.com/register?reason=addbook2cart" rel="nofollow">
+        <span>加入购书单</span></a>
+  </span>
+  
+
+    <span class="pl cart-tip">多本比价，批量购买</span>
+  </div>
+
+  </div>
+
+<style class="text/css">
+  .presale-indicator {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  width: 24px;
+  height: 15px;
+  line-height: 15px;
+  background: url(https://img3.doubanio.com/f/book/1679c65572eac1371f9872807199dea6e55a7f06/pics/book/cart/presale_text.gif) no-repeat;
+  text-indent: -9999px;
+  vertical-align: middle;
+  *vertical-align: 0px;
+  _vertical-align: 2px;
+  margin-left: 0.5em;
+}
+
+</style>
+
+
+
+  
+
+
+
+
+
+<div class="gray_ad" id="borrowinfo">
+  <h2>在哪儿借这本书?</h2>
+  <ul class="bs more-after">
+      
+      <li style="border: none">
+        <a href="https://www.douban.com/link2/?url=http%3A%2F%2Fwww.bplisn.net.cn%2FBookSearch.aspx%3FISBN%3D7-5083-2175-8&amp;subject=7508321758&amp;type=borrow&amp;library=10007&amp;link2key=6f1e178d4c" target="_blank">北京市公共图书馆(1)</a>
+      </li>
+      
+      <li style="border: none">
+        <a href="https://www.douban.com/link2/?url=http%3A%2F%2Fipac.library.sh.cn%2Fipac20%2Fipac.jsp%3Faspect%3Dbasic_search%26profile%3Dsl%26index%3DISBN%26term%3D7508321758&amp;subject=7508321758&amp;type=borrow&amp;library=10012&amp;link2key=6f1e178d4c" target="_blank">上海市中心图书馆(2)</a>
+      </li>
+      
+      <li style="border: none">
+        <a href="https://www.douban.com/link2/?url=http%3A%2F%2Fourex.lib.sjtu.edu.cn%2Fprimo_library%2Flibweb%2Faction%2Fsearch.do%3Ffn%3Dsearch%26vl%28freeText0%29%3D7-5083-2175-8&amp;subject=7508321758&amp;type=borrow&amp;library=10006&amp;link2key=6f1e178d4c" target="_blank">上海交通大学图书馆</a>
+      </li>
+      
+      <li style="border: none">
+        <a href="https://www.douban.com/link2/?url=http%3A%2F%2Fopac3.wzlib.cn%2Fopac%2Fsearch%3FsearchWay%3Disbn%26q%3D7-5083-2175-8%26booktype%3D%26marcformat%3D%26sortWay%3Dscore%26sortOrder%3Ddesc%26startPubdate%3D%26endPubdate%3D%26rows%3D10&amp;subject=7508321758&amp;type=borrow&amp;library=10020&amp;link2key=6f1e178d4c" target="_blank">温州市图书馆</a>
+      </li>
+      
+      <li style="border: none">
+        <a href="https://www.douban.com/link2/?url=http%3A%2F%2F222.177.237.197%3A8080%2FInDigLib%2Ffront%2FComplexSearch.action%3FcurrentPage%3D1%26select1%3Disbn%26select2%3D%26select3%3D%26text1%3D7-5083-2175-8%26text2%3D%26text3%3D%26pageSize%3D20%26condition%3D%26table%3Di_biblios%26type%3D%26videoType%3Dcomplex&amp;subject=7508321758&amp;type=borrow&amp;library=10021&amp;link2key=6f1e178d4c" target="_blank">重庆图书馆</a>
+      </li>
+  </ul>
+  <div class="clearfix"></div>
+  <div class="ft pl">
+    <a class="rr" href="https://book.douban.com/library_invitation">&gt; 图书馆合作</a>
+    找不到你需要的图书馆？
+  </div>
+</div>
+
+  <div id="dale_book_subject_top_middle" data-id=""></div>
+  
+
+
+
+
+
+  
+
+  
+  
+
+  <h2>
+    <span class="">这本书的其他版本 </span>
+      &nbsp;·&nbsp;·&nbsp;·&nbsp;·&nbsp;·&nbsp;·
+      <span class="pl">&nbsp;(
+          <a href="https://book.douban.com/works/1013815">全部9</a>
+        ) </span>
+
+  </h2>
+
+
+  <div class="indent">
+    <ul>
+        <li class="mb8 pl">
+          <a href="https://book.douban.com/subject/5333562/">机械工业出版社版</a>
+          2011-1-1 / 1277人读过 / 有售
+        </li>
+        <li class="mb8 pl">
+          <a href="https://book.douban.com/subject/3023631/">Prentice Hall版</a>
+          2008-3 / 156人读过
+        </li>
+        <li class="mb8 pl">
+          <a href="https://book.douban.com/subject/1896753/">电子工业出版社版</a>
+          2006-7 / 249人读过 / 有售
+        </li>
+        <li class="mb8 pl">
+          <a href="https://book.douban.com/subject/5407246/">机械工业出版社版</a>
+          2011-1 / 162人读过 / 有售
+        </li>
+    </ul>
+  </div>
+
+
+  
+
+
+
+      
+  
+
+  <h2>
+    <span class="">以下豆列推荐</span>
+      &nbsp;·&nbsp;·&nbsp;·&nbsp;·&nbsp;·&nbsp;·
+      <span class="pl">&nbsp;(
+          <a href="https://book.douban.com/subject/1230413/doulists">全部</a>
+        ) </span>
+
+  </h2>
+
+
+    <div id="db-doulist-section" class="indent">
+      <ul class="bs">
+          <li class=""><a class="" href="https://www.douban.com/doulist/242077/" target="_blank">豆瓣评分&gt;9的书（100人以上）</a>
+                <span class="pl">(阿獠)</span>
+            </li>
+          <li class=""><a class="" href="https://www.douban.com/doulist/43430373/" target="_blank">豆瓣高分书2500本：千人打分不低于8分</a>
+                <span class="pl">(偶就是那个鬼)</span>
+            </li>
+          <li class=""><a class="" href="https://www.douban.com/doulist/30836/" target="_blank">运行时系统</a>
+                <span class="pl">(baozii)</span>
+            </li>
+          <li class=""><a class="" href="https://www.douban.com/doulist/31441/" target="_blank">我的编程之路</a>
+                <span class="pl">(风中纸页)</span>
+            </li>
+          <li class=""><a class="" href="https://www.douban.com/doulist/1264675/" target="_blank">豆瓣读书评分9分以上榜单</a>
+                <span class="pl">(无人的冬夜)</span>
+            </li>
+      </ul>
+    </div>
+
+  
+
+
+
+
+
+
+  <h2>谁读这本书?</h2>
+  <div class="indent" id="collector">
+
+    
+
+<div class="">
+    
+    <div class="ll"><a href="https://www.douban.com/people/52495112/"><img src="./深入理解计算机系统 (豆瓣)_files/u52495112-1.jpg" class="pil" alt="望月杨"></a></div>
+    <div style="padding-left:60px"><a class="" href="https://www.douban.com/people/52495112/">望月杨</a><br>
+      <div class="pl ll">          今天下午          想读      </div>
+
+      <br>
+
+      <span class="pl">tags:计算机</span><br>
+
+    </div>
+    <div class="clear"></div><br>
+    <div class="ul" style="margin-bottom:12px;"></div>
+</div>
+<div class="">
+    
+    <div class="ll"><a href="https://www.douban.com/people/timenull/"><img src="./深入理解计算机系统 (豆瓣)_files/u45107697-17.jpg" class="pil" alt="titus"></a></div>
+    <div style="padding-left:60px"><a class="" href="https://www.douban.com/people/timenull/">titus</a><br>
+      <div class="pl ll">          今天上午          想读      </div>
+
+      <br>
+
+
+    </div>
+    <div class="clear"></div><br>
+    <div class="ul" style="margin-bottom:12px;"></div>
+</div>
+<div class="">
+    
+    <div class="ll"><a href="https://www.douban.com/people/153506560/"><img src="./深入理解计算机系统 (豆瓣)_files/u153506560-1.jpg" class="pil" alt="魑魅00"></a></div>
+    <div style="padding-left:60px"><a class="" href="https://www.douban.com/people/153506560/">魑魅00</a><br>
+      <div class="pl ll">          今天凌晨          想读      </div>
+
+      <br>
+
+
+    </div>
+    <div class="clear"></div><br>
+    <div class="ul" style="margin-bottom:12px;"></div>
+</div>
+<div class="">
+    
+    <div class="ll"><a href="https://www.douban.com/people/130245015/"><img src="./深入理解计算机系统 (豆瓣)_files/u130245015-2.jpg" class="pil" alt="AdonisCX"></a></div>
+    <div style="padding-left:60px"><a class="" href="https://www.douban.com/people/130245015/">AdonisCX</a><br>
+      <div class="pl ll">          昨天          想读      </div>
+
+      <br>
+
+
+    </div>
+    <div class="clear"></div><br>
+    <div class="ul" style="margin-bottom:12px;"></div>
+</div>
+
+
+        <p class="pl">&gt; <a href="https://book.douban.com/subject/1230413/doings">1623人在读</a></p>
+        <p class="pl">&gt; <a href="https://book.douban.com/subject/1230413/collections">2514人读过</a></p>
+        <p class="pl">&gt; <a href="https://book.douban.com/subject/1230413/wishes">8798人想读</a></p>
+
+  </div>
+
+
+
+
+
+  
+<!-- douban ad begin -->
+<div id="dale_book_subject_middle_right" data-id=""><div style="position: relative; margin: 0px 0px 20px; display: inline-block; width: 300px; height: 250px;"><iframe id="dale_book_subject_middle_right_frame" frameborder="0" scrolling="no" width="300" height="250" src="javascript:document.write(&#39;&lt;head&gt;&lt;script&gt;window.domain=&quot;douban.com&quot;;&lt;/script&gt;&lt;/head&gt;&lt;body&gt;&lt;/body&gt;&#39;);" name="CPM" style="overflow: hidden; display: block;" src="./深入理解计算机系统 (豆瓣)_files/saved_resource(3).html"></iframe><div style="line-height: 1; text-align: center; background-color: rgba(0, 0, 0, 0.298039); color: rgb(255, 255, 255); font-size: 12px; position: absolute; padding: 4px; right: 0px; bottom: 0px;">广告</div></div></div>
+<script type="text/javascript">
+    (function (global) {
+        if(!document.getElementsByClassName) {
+            document.getElementsByClassName = function(className) {
+                return this.querySelectorAll("." + className);
+            };
+            Element.prototype.getElementsByClassName = document.getElementsByClassName;
+
+        }
+        var articles = global.document.getElementsByClassName('article'),
+            asides = global.document.getElementsByClassName('aside');
+
+        if (articles.length > 0 && asides.length > 0 && articles[0].offsetHeight >= asides[0].offsetHeight) {
+            (global.DoubanAdSlots = global.DoubanAdSlots || []).push('dale_book_subject_middle_right');
+        }
+    })(this);
+</script>
+<!-- douban ad end -->
+
+  
+
+
+
+
+
+  
+
+  <h2>二手市场</h2>
+  <div class="indent">
+    <ul class="bs">
+    <li class="">
+        <a class=" " href="https://book.douban.com/subject/1230413/offers">42本二手书欲转让</a>
+          <span class="">
+            (1.00
+                至 178.00元)
+          </span>
+      </li>
+      <li>
+          <a class="rr j a_show_login" href="https://www.douban.com/register?reason=secondhand-offer&amp;cat=book"><span>&gt; 点这儿转让</span></a>
+
+        有8798人想读,手里有一本闲着?
+      </li>
+    </ul>
+  </div>
+
+  
+<p class="pl">订阅关于深入理解计算机系统的评论: <br><span class="feed">
+    <a href="https://book.douban.com/feed/subject/1230413/reviews"> feed: rss 2.0</a></span></p>
+
+
+      </div>
+      <div class="extra">
+        
+  
+<!-- douban ad begin -->
+<div id="dale_book_subject_bottom_super_banner" data-id=""><div style="position: relative; margin: 40px 0px 0px; display: inline-block; width: 950px; height: 90px;"><iframe id="dale_book_subject_bottom_super_banner_frame" frameborder="0" scrolling="no" width="950" height="90" src="javascript:document.write(&#39;&lt;head&gt;&lt;script&gt;window.domain=&quot;douban.com&quot;;&lt;/script&gt;&lt;/head&gt;&lt;body&gt;&lt;/body&gt;&#39;);" name="CPM" style="overflow: hidden; display: block;" src="./深入理解计算机系统 (豆瓣)_files/saved_resource(4).html"></iframe><div style="line-height: 1; text-align: center; background-color: rgba(0, 0, 0, 0.298039); color: rgb(255, 255, 255); font-size: 12px; position: absolute; padding: 4px; right: 0px; bottom: 0px;">广告</div></div></div>
+<script type="text/javascript">
+    (function (global) {
+        var body = global.document.body,
+            html = global.document.documentElement;
+
+        var height = Math.max(body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight);
+        if (height >= 2000) {
+            (global.DoubanAdSlots = global.DoubanAdSlots || []).push('dale_book_subject_bottom_super_banner');
+        }
+    })(this);
+</script>
+<!-- douban ad end -->
+
+
+      </div>
+    </div>
+  </div>
+
+        
+<div id="footer">
+
+<span id="icp" class="fleft gray-link">
+    © 2005－2016 douban.com, all rights reserved 北京豆网科技有限公司
+</span>
+
+<a href="https://www.douban.com/hnypt/variformcyst.py" style="display: none;"></a>
+
+<span class="fright">
+    <a href="https://www.douban.com/about">关于豆瓣</a>
+    · <a href="https://www.douban.com/jobs">在豆瓣工作</a>
+    · <a href="https://www.douban.com/about?topic=contactus">联系我们</a>
+    · <a href="https://www.douban.com/about?policy=disclaimer">免责声明</a>
+    
+    · <a href="https://help.douban.com/?app=book" target="_blank">帮助中心</a>
+    · <a href="https://book.douban.com/library_invitation">图书馆合作</a>
+    · <a href="https://www.douban.com/doubanapp/">移动应用</a>
+    · <a href="https://www.douban.com/partner/">豆瓣广告</a>
+</span>
+
+</div>
+
+    </div>
+    <script type="text/javascript" src="./深入理解计算机系统 (豆瓣)_files/631525cbbefc87af.js.下载"></script>
+    <!-- mako -->
+    
+  
+
+
+
+
+
+
+
+
+    
+<script type="text/javascript">
+    (function (global) {
+        var newNode = global.document.createElement('script'),
+            existingNode = global.document.getElementsByTagName('script')[0],
+            adSource = '//erebor.douban.com/',
+            userId = '',
+            browserId = 'ci016PzwMKQ',
+            criteria = '7:计算机系统|7:计算机|7:计算机科学|7:操作系统|7:编程|7:programming|7:程序员|7:OS|7:系统|7:computer|3:/subject/1230413/',
+            preview = '',
+            debug = false,
+            adSlots = ['dale_book_subject_top_icon', 'dale_book_subject_top_right', 'dale_book_subject_top_middle'];
+
+        global.DoubanAdRequest = {src: adSource, uid: userId, bid: browserId, crtr: criteria, prv: preview, debug: debug};
+        global.DoubanAdSlots = (global.DoubanAdSlots || []).concat(adSlots);
+
+        newNode.setAttribute('type', 'text/javascript');
+        newNode.setAttribute('src', 'https://img3.doubanio.com/f/shire/99a1c905fb5a6d46d8e742d60199e3a99414a580/js/ad.js');
+        newNode.setAttribute('async', true);
+        existingNode.parentNode.insertBefore(newNode, existingNode);
+    })(this);
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+    
+  
+
+<script type="text/javascript">
+  var _paq = _paq || [];
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var p=(('https:' == document.location.protocol) ? 'https' : 'http'), u=p+'://fundin.douban.com/';
+    _paq.push(['setTrackerUrl', u+'piwik']);
+    _paq.push(['setSiteId', '100001']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; 
+    g.type='text/javascript';
+    g.defer=true; 
+    g.async=true; 
+    g.src=p+'://s.doubanio.com/dae/fundin/piwik.js';
+    s.parentNode.insertBefore(g,s);
+  })();
+</script>
+
+<script type="text/javascript">
+var setMethodWithNs = function(namespace) {
+  var ns = namespace ? namespace + '.' : ''
+    , fn = function(string) {
+        if(!ns) {return string}
+        return ns + string
+      }
+  return fn
+}
+
+var gaWithNamespace = function(fn, namespace) {
+  var method = setMethodWithNs(namespace)
+  fn.call(this, method)
+}
+
+var _gaq = _gaq || []
+  , accounts = [
+      { id: 'UA-7019765-1', namespace: 'douban' }
+    , { id: 'UA-7019765-16', namespace: '' }
+    ]
+  , gaInit = function(account) {
+      gaWithNamespace(function(method) {
+        gaInitFn.call(this, method, account)
+      }, account.namespace)
+    }
+  , gaInitFn = function(method, account) {
+      _gaq.push([method('_setAccount'), account.id])
+
+      
+  _gaq.push([method('_addOrganic'), 'google', 'q'])
+  _gaq.push([method('_addOrganic'), 'baidu', 'wd'])
+  _gaq.push([method('_addOrganic'), 'soso', 'w'])
+  _gaq.push([method('_addOrganic'), 'youdao', 'q'])
+  _gaq.push([method('_addOrganic'), 'so.360.cn', 'q'])
+  _gaq.push([method('_addOrganic'), 'sogou', 'query'])
+  if (account.namespace) {
+    _gaq.push([method('_addIgnoredOrganic'), '豆瓣'])
+    _gaq.push([method('_addIgnoredOrganic'), 'douban'])
+    _gaq.push([method('_addIgnoredOrganic'), '豆瓣网'])
+    _gaq.push([method('_addIgnoredOrganic'), 'www.douban.com'])
+  }
+
+      if (account.namespace === 'douban') {
+        _gaq.push([method('_setDomainName'), '.douban.com'])
+      }
+
+        _gaq.push([method('_setCustomVar'), 1, 'responsive_view_mode', 'desktop', 3])
+
+        _gaq.push([method('_setCustomVar'), 2, 'login_status', '0', 2]);
+
+      _gaq.push([method('_trackPageview')])
+    }
+
+for(var i = 0, l = accounts.length; i < l; i++) {
+  var account = accounts[i]
+  gaInit(account)
+}
+
+
+;(function() {
+    var ga = document.createElement('script');
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    ga.setAttribute('async', 'true');
+    document.documentElement.firstChild.appendChild(ga);
+})()
+</script>
+
+
+
+
+
+
+
+
+    <!-- dis16-docker-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body></html>
