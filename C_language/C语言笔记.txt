@@ -10,6 +10,43 @@ int c= ADD(a,b);
 宏的作用域是在定义了宏以后的区域
 条件编译
 
+typedef可以给数据类型起别名
+typedef int tni；
+typedef int *p；//int *的别名是p
+typedef在预处理时不会被替换
+typedef的作用域和变量的作用范围一样，定义在局部只能在局部使用。
+
+typedef结合结构体可以简化结构体的使用；
+typedef struct student
+{
+char name[20];
+}stu_t;
+
+两种定义结构体变量xxx的方法：
+stu_t xxx;
+struct student xxx;
+定义结构体指针yyy
+struct student *yyy;
+（*yyy）.name=stu_name;//等价于yyy->name;
+struct student stus[2];
+yyy = &stus;
+yyy++//这yyy自加之后指向stus[1]
+structure stu{
+int a;
+char b;
+int c;
+}
+结构体的大小为12不是9；因为c变量相对于结构体首地址偏移了5，不是自身大小4的整数倍，所以要在b与c之间填充3个字节使得c相对于首地址的偏移量是自身大小的整数倍。填充之后结构体大小为12，结构体中最长的数据类型为4个字节，12也是4的整数倍，不用在c变量后填充了。
+
+共用体指的是共同使用一块内存的结构
+union data{
+int a;
+char b;
+int c;
+}
+在一个时间中只能存储一个数值。
+链表可以动态存储数据
+
 对于一个大的工程，不可能将所有的代码放在一起，需要将不变的代码汇编成.o文件，然后将所需要的.o文件和main函数文件链接起来做成可执行文件
 main.c文件中有
   #include <stdio.h>
