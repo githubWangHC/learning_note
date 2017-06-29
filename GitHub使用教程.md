@@ -101,6 +101,5 @@ $ git push origin master
 
 将远程库内容复制到本地
 $ git clone git@github.com:githubWangHC/learning.git
-
-
-http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000
+图解Git http://marklodato.github.io/visual-git-guide/index-zh-cn.html
+教程 http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000
