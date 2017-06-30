@@ -1,6 +1,7 @@
 .c文件====>.i文件==>.s文件==>.o文件==>可执行文件
      预处理     编译      汇编    链接
 
+
 #define ADD(a,b) a+b
 int c= ADD(a,b);
 /*通过宏来传递参数
@@ -9,43 +10,6 @@ int c= ADD(a,b);
 预处理时宏已经被替换了；
 宏的作用域是在定义了宏以后的区域
 条件编译
-
-typedef可以给数据类型起别名
-typedef int tni；
-typedef int *p；//int *的别名是p
-typedef在预处理时不会被替换
-typedef的作用域和变量的作用范围一样，定义在局部只能在局部使用。
-
-typedef结合结构体可以简化结构体的使用；
-typedef struct student
-{
-char name[20];
-}stu_t;
-
-两种定义结构体变量xxx的方法：
-stu_t xxx;
-struct student xxx;
-定义结构体指针yyy
-struct student *yyy;
-（*yyy）.name=stu_name;//等价于yyy->name;
-struct student stus[2];
-yyy = &stus;
-yyy++//这yyy自加之后指向stus[1]
-structure stu{
-int a;
-char b;
-int c;
-}
-结构体的大小为12不是9；因为c变量相对于结构体首地址偏移了5，不是自身大小4的整数倍，所以要在b与c之间填充3个字节使得c相对于首地址的偏移量是自身大小的整数倍。填充之后结构体大小为12，结构体中最长的数据类型为4个字节，12也是4的整数倍，不用在c变量后填充了。
-
-共用体指的是共同使用一块内存的结构
-union data{
-int a;
-char b;
-int c;
-}
-在一个时间中只能存储一个数值。
-链表可以动态存储数据
 
 对于一个大的工程，不可能将所有的代码放在一起，需要将不变的代码汇编成.o文件，然后将所需要的.o文件和main函数文件链接起来做成可执行文件
 main.c文件中有
@@ -94,6 +58,44 @@ min.o:min.c
 以下内容类似，但需要将最终得到的main.out文件放在最前面，类似于第递归。
 gcc的-c表示编译的意思，-o表示目标文件的意思。
 ==============
+
+
+typedef可以给数据类型起别名
+typedef int tni；
+typedef int *p；//int *的别名是p
+typedef在预处理时不会被替换
+typedef的作用域和变量的作用范围一样，定义在局部只能在局部使用。
+
+typedef结合结构体可以简化结构体的使用；
+typedef struct student
+{
+char name[20];
+}stu_t;
+
+两种定义结构体变量xxx的方法：
+stu_t xxx;
+struct student xxx;
+定义结构体指针yyy
+struct student *yyy;
+（*yyy）.name=stu_name;//等价于yyy->name;
+struct student stus[2];
+yyy = &stus;
+yyy++//这yyy自加之后指向stus[1]
+structure stu{
+int a;
+char b;
+int c;
+}
+结构体的大小为12不是9；因为c变量相对于结构体首地址偏移了5，不是自身大小4的整数倍，所以要在b与c之间填充3个字节使得c相对于首地址的偏移量是自身大小的整数倍。填充之后结构体大小为12，结构体中最长的数据类型为4个字节，12也是4的整数倍，不用在c变量后填充了。
+
+共用体指的是共同使用一块内存的结构
+union data{
+int a;
+char b;
+int c;
+}
+在一个时间中只能存储一个数值。
+链表可以动态存储数据
 想同时执行两条命令则可以使用&&，表示如果前一条指令执行成功则继续执行ls命令
 ./main.out && ls
 想要查看上一条命令的返回值可以echo $?
@@ -145,6 +147,15 @@ int c;
 ===gdb调试工具===
 ================
 1，gcc -g main.c -o main.out来产生可以调试的文件
+如果是在makefile中编写则需要注意在编译.o文件时也要加上-g，否则能够进入main函数，但是不能进入子函数。
+# this is a makefile
+main.out:max.o min.o main.c
+	gcc -g max.o min.o main.c -o main.out
+max.o:max.c
+	gcc -g -c max.c -o max.o
+min.o:min.c
+	gcc -g -c min.c -o min.o
+
 2，gdb ./main.out开始进入编译文件中
 3，l(或者list)可以显示编译文件
 4，start开始调试
