@@ -47,16 +47,16 @@ make命令可以将上述编译过程批处理
 首先用vim编辑一个名叫Makefile的文件文件内容可以如下：
 # this is a makefile
 main.out:max.o min.o main.c
-        gcc max.o min.o main.c -o main.out
+        gcc -g max.o min.o main.c -o main.out
 max.o:max.c
-        gcc -c max.c -o max.o
+        gcc -c -g max.c -o max.o
 min.o:min.c
-        gcc -c min.c -o min.o
+        gcc -c -g min.c -o min.o
 第一行以#开头，是注释
 第二行意思是说如果要得到main.out文件则需要哪些文件，有三个
 第三行是要得到main.out文件要用什么命令
 以下内容类似，但需要将最终得到的main.out文件放在最前面，类似于第递归。
-gcc的-c表示编译的意思，-o表示目标文件的意思。
+gcc的-c表示编译的意思，-o表示目标文件的意思，-g表示用gdb工具来调试，如果某一个文件不在makefile的文件夹中则可以直接写路径即可。./main/main.c。
 ==============
 
 
