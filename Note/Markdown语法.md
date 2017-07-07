@@ -114,6 +114,7 @@ Markdown 支持两种形式的链接语法： 行内式和参考式两种形式�
 3. 有序列表项 三  
 
 # 流程图
+```
     flow
     st=>start: Start:>https://www.zybuluo.com
     io=>inputoutput: verification
@@ -124,6 +125,19 @@ Markdown 支持两种形式的链接语法： 行内式和参考式两种形式�
     st->io->op->cond
     cond(yes)->e
     cond(no)->sub->io
+```
+显示
+flow
+st=>start: Start:>https://www.zybuluo.com
+io=>inputoutput: verification
+op=>operation: Your Operation
+cond=>condition: Yes or No?
+sub=>subroutine: Your Subroutine
+e=>end
+st->io->op->cond
+cond(yes)->e
+cond(no)->sub->io
+
 # 表格
 
 语法说明：
@@ -135,20 +149,18 @@ Markdown 支持两种形式的链接语法： 行内式和参考式两种形式�
 代码：
 
 简单方式写表格：
-
+代码：
     学号|姓名|分数
     -|-|-
     小明|男|75
     小红|女|79
     小陆|男|92
-
-原生方式写表格：
-
-    |学号|姓名|分数|
-    |-|-|-|
-    |小明|男|75|
-    |小红|女|79|
-    |小陆|男|92|
+显示  
+学号|姓名|分数
+-|-|-
+小明|男|75
+小红|女|79
+小陆|男|92
 
 # 分隔线
 
@@ -160,7 +172,11 @@ Markdown 支持两种形式的链接语法： 行内式和参考式两种形式�
     ***
     *****
     - - -
-    ---------------------------------------
+显示：
+* * *
+***
+*****
+- - -
 
 显示效果都一样：
 # 代码
