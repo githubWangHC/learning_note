@@ -69,21 +69,19 @@ This is an H2
 ***加粗斜体***
 ~~删除线~~
 # 超链接
-3. 超链接
-
 Markdown 支持两种形式的链接语法： 行内式和参考式两种形式，行内式一般使用较多。
-
 
 []里写链接文字，()里写链接地址, ()中的”“中可以为链接指定title属性，title属性可加可不加。title属性的效果是鼠标悬停在链接上会出现指定的 title文字。[链接文字](链接地址 “链接标题”)’这样的形式。链接地址与链接标题前有一个空格。
 
 代码：
 
-    欢迎来到[梵居闹市](http://blog.leanote.com/freewalk)
     欢迎来到[梵居闹市](http://blog.leanote.com/freewalk "梵居闹市")
+    欢迎来到[梵居闹市](http://blog.leanote.com/freewalk)
+显示
+欢迎来到[梵居闹市](http://blog.leanote.com/freewalk "梵居闹市")
+欢迎来到[梵居闹市](http://blog.leanote.com/freewalk)
 
 # 列表
-5. 列表
-5.1. 无序列表
 
 使用 *，+，- 表示无序列表。
 
