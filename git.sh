@@ -3,5 +3,5 @@
 git add ~/githubWangHC/
 date_now = $(date +%Y%m%d%H%M%S)
 message = $date_now
-git commit -m "add file in $date_now"
+git commit -m "add file in "
 git push origin master
