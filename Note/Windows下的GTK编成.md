@@ -142,31 +142,29 @@ gtk_widget_set_sensitive(btnInstall,checked);
 ```
 增加定时器，每隔interval毫秒执行一次function指向的函数。 GSourceFunc 函数指针的定义： gboolean (*onTimer)(gpointer user_data);如果return TRUE则下次再执行，返回FALSE则停止定时器。  
 2、获得当前时间小时、分钟、秒的函数：  
-	time_t sysTime;
-	time(&sysTime);
-	struct tm* bjtime = localtime(&sysTime);
-	int hour = bjtime->tm_hour;
-	int min = bjtime->tm_min;
-	int sec = bjtime->tm_sec;
+		time_t sysTime;
+		time(&sysTime);
+		struct tm* bjtime = localtime(&sysTime);
+		int hour = bjtime->tm_hour;
+		int min = bjtime->tm_min;
+		int sec = bjtime->tm_sec;
 **LED时钟**
-	char file_sege[60]={0};	//char* timenow 是不行的。
-	sprintf(file_sege,"LED_image\\%d.png",sec%10);//如果工程和文件在一个目录可以用这样的写法写路径
+		char file_sege[60]={0};	//char* timenow 是不行的。
+		sprintf(file_sege,"LED_image\\%d.png",sec%10);//如果工程和文件在一个目录可以用这样的写法写路径
 							sprintf函数的使用
-	gtk_image_set_from_file(secge,file_sege);	//文件名的引用
+		gtk_image_set_from_file(secge,file_sege);	//文件名的引用
+		1、int gtk_toolbar_new()创建工具栏容器
 
-	1、int gtk_toolbar_new()创建工具栏容器
-
-	2、void gtk_toolbar_insert (GtkToolbar *toolbar, GtkToolItem *item, gint pos)将工具栏项添加到工具栏，item：工具栏项，pos插入的位置
+		2、void gtk_toolbar_insert (GtkToolbar *toolbar, GtkToolItem *item, gint pos)将工具栏项添加到工具栏，item：工具栏项，pos插入的位置
 
 工具栏项有按钮、下拉菜单按钮、分隔栏、开关等复杂内容，这里不介绍，只介绍简单常用的GtkToolButton。  
 
-GtkToolItem *gtk_tool_button_new (GtkWidget *icon_widget, const gchar *label);创建GtkToolButton。icon_widget为显示的控件id，可以在按钮上显示其他控件，一般传0；label为标题。  
+		GtkToolItem *gtk_tool_button_new (GtkWidget *icon_widget, const gchar *label);
+创建GtkToolButton。icon_widget为显示的控件id，可以在按钮上显示其他控件，一般传0；label为标题。  
 
-void gtk_tool_button_set_stock_id (GtkToolButton *button, const gchar *stock_id);设置按钮上显示的图片。  
+		void gtk_tool_button_set_stock_id (GtkToolButton *button, const gchar *stock_id);设置按钮上显示的图片。  
 响应点击只要连接"clicked"信号即可。  
-	    GtkToolItem* btn1 = gtk_tool_button_new(NULL,"保存");
-	    gtk_tool_button_set_stock_id(btn1,GTK_STOCK_SAVE);
-	    gtk_toolbar_insert(toolbar,btn1,0);
-	    gtk_widget_show(btn1);
-
-
+		GtkToolItem* btn1 = gtk_tool_button_new(NULL,"保存");
+		gtk_tool_button_set_stock_id(btn1,GTK_STOCK_SAVE);
+		gtk_toolbar_insert(toolbar,btn1,0);
+		gtk_widget_show(btn1);
