@@ -127,6 +127,8 @@ Markdown 支持两种形式的链接语法： 行内式和参考式两种形式�
     cond(no)->sub->io
 ```
 显示
+
+
 flow
 st=>start: Start:>https://www.zybuluo.com
 io=>inputoutput: verification
@@ -134,6 +136,7 @@ op=>operation: Your Operation
 cond=>condition: Yes or No?
 sub=>subroutine: Your Subroutine
 e=>end
+
 st->io->op->cond
 cond(yes)->e
 cond(no)->sub->io
@@ -156,6 +159,8 @@ cond(no)->sub->io
     小红|女|79
     小陆|男|92
 显示  
+
+
 学号|姓名|分数
 -|-|-
 小明|男|75
