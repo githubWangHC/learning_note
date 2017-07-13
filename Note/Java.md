@@ -43,3 +43,71 @@ String类所在的包中有很多类，java会默认地帮我们引入: import j
 *
 *
 */
+##获得数组长度*length*#
+		int[] arr = new int[9];
+		final int len = arr.length;
+final关键字修饰的变量必须在创建时赋值，且赋值之后不允许改变。
+**多维数组的长度**
+		int[][] arr = new int[2][10];
+		arr.length为2；
+		arr[1].length为10；
+##clone##
+		int[] arr1 = new int[10];
+		int[] arr2 = arr1.clone();
+		int[][] arr3 = new int[2][10];
+		int[] arr4 = arr3[1].clone();
+一维数组调用clone后获得的是原一维数组的数值，改变arr1[1]中的数据不会对arr2[1]产生影响，同样改变arr3[1][1]中的数据不会对arr4[1]中的数据产生影响；
+		int[][] arr3 = new int[2][10];
+		int[][] arr4 = arr3.clone();
+二维或更高维数组获得指向原数组对象的引用，改变arr4[1][1]的数值会对arr3[1][1]数值产生影响。
+
+##String##
+**获得字符串长度**
+		String str = "ABC";
+		int len = str.length();		//字符串的length与数组的length方法不太一样？
+**获得字符串中第几个字符**
+		String str = "ABC";
+		char ch = str.charAt(0);	//获取str字符串的第一个字符
+**判断字符是否相等**
+		char a = 'a';
+		char b = 'a';
+		boolean isEqual = (a == b);
+**获取字符串的一部分**
+		String str = "ABCDEFG";
+		String subStr1 = str.subString(1,3);	//得到BC
+		String subStr2 = str.subString(1);	//得到BCDEFG
+**判断字符串是否相等**
+		String str1 = "ABC";
+		String str2 = "ABC";
+		boolean isEque12 = str1.equals(str2);
+**引用的相等**
+		String str1 = "ABC";
+		String str2 = "ABC";
+		String str3 = str1
+		boolean isEque12 = (str1 == str2);	//false
+		boolean isEque13 = (str1 == str3);	//true
+**判断字符串的开头和结尾**
+		String str1 = "ABCDEFGH";
+		String str2 = "ABC";
+		String str3 = "GH";
+		boolean started1 = str1.startsWith(str2);	//true
+		boolean end2 = str1.endsWith(str3);	//true
+**分割字符串**
+		String str = "ABCD*EFGH*IJK";
+		String[] pieces = str.split("*");
+		int length = pieces.length();
+		for(i = 0; i< length; i++){
+			System.out.println(pieces[i]);
+		}
+**查找字符串**
+		String str = "ABCD";
+		int index1 = str.indexOf('C');		//结果为2
+		int index2 = str.indexOf('F');		//结果为-1
+		int index3 = str.indexOf(“CD”);		//结果为2
+		int index2 = str.indexOf(”FG“);		//结果为-1
+**替换字符串中的内容**
+		String str = "ABCDEFGH";
+		String str1 = str.replace('C', 'a');
+		String str2 = str.replace("CD", "EF");
+*上述操作过程中原始的str内容都没有改变，String又重新创建了一个字符串*
+
