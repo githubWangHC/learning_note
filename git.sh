@@ -1,7 +1,5 @@
 #!/bin/bash
 #this progran is used to sync the direction ~/github/ wiht GitHub
-git add ~/githubWangHC/
-date_now = $(date +%Y%m%d%H%M%S)
-message = $date_now
+git add ~/githubWangHC/*
 git commit -m "add file in "
 git push origin master
