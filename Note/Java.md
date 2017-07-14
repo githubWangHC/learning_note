@@ -47,7 +47,7 @@ String类所在的包中有很多类，java会默认地帮我们引入: import j
 *
 */
 ```
-##获得数组长度*length*#
+## 获得数组长度*length*
 		int[] arr = new int[9];
 		final int len = arr.length;
 final关键字修饰的变量必须在创建时赋值，且赋值之后不允许改变。
@@ -55,7 +55,7 @@ final关键字修饰的变量必须在创建时赋值，且赋值之后不允许
 		int[][] arr = new int[2][10];
 		arr.length为2；
 		arr[1].length为10；
-##clone##
+## clone
 		int[] arr1 = new int[10];
 		int[] arr2 = arr1.clone();
 		int[][] arr3 = new int[2][10];
@@ -65,10 +65,7 @@ final关键字修饰的变量必须在创建时赋值，且赋值之后不允许
 		int[][] arr4 = arr3.clone();
 二维或更高维数组获得指向原数组对象的引用，改变arr4[1][1]的数值会对arr3[1][1]数值产生影响。
 
-
-## String##
-
-
+## String
 **获得字符串长度**
 
 
