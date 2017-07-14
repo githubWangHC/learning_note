@@ -150,16 +150,16 @@ final关键字修饰的变量必须在创建时赋值，且赋值之后不允许
 		String str = strBuffer.toString();	//将StringBuffer创建的字符串固定化
 		str = strbuf.toString();
 
-## 通过命令行可以为main方法传递参数##
+## 通过命令行可以为main方法传递参数
 
-## static##
+## static
 **static修饰变量**
 *. static修饰的变量称为类变量（属于类的变量，不是属于对象的变量），如果创建的时候没有赋值则自动赋值为0，类变量可以用类名直接访问，不必先创建引用，再创建对象，再用引用指向对象，再用引用访问。
 **static修饰方法**
 *. static修饰的方法位为类方法（属于类的方法，不是属于对象的方法）；类方法不能用this访问变量和普通方法，但可以先创建一个指向对象的引用，然后用引用访问；类方法可以使用其他类方法（使用属于同一个类中的类方法可以省略类名）和类变量；普通方法可以调用类方法。
 详细例子参考《JAV入门123》P234.
 
-### 继承和多态###
+### 继承和多态
 ```
 public class ParentClass{
 	public void pMethod(){
@@ -219,6 +219,7 @@ Class类无法用new来创建需要用getClass()方法来得到Class的对象
 	-|	-		|	-	|	-
 public	|	是		|	是	|	是
 默认	|	是		|	是	|	否
+
 
 ```
 public final class finalClass{	//final所修饰的类不能被继承
