@@ -67,11 +67,17 @@ final关键字修饰的变量必须在创建时赋值，且赋值之后不允许
 
 ##String##
 **获得字符串长度**
+
+
 		String str = "ABC";
 		int len = str.length();		//字符串的length与数组的length方法不太一样？
 **获得字符串中第几个字符**
+
+
 		String str = "ABC";
 		char ch = str.charAt(0);	//获取str字符串的第一个字符
+
+
 **判断字符是否相等**
 		char a = 'a';
 		char b = 'a';
