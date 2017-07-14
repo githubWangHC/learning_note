@@ -301,6 +301,7 @@ public static int a = 9;	//static修饰的变量为静态变量，可以通过�
 final修饰的局部变量和final修饰的成员变量性质一样。  
 
 **final修饰引用**
+```
 public class cl1{
 	public final finalValue = 9;
 	public int commonValue = 10;
@@ -313,3 +314,4 @@ public class useCl1{
 	finalRef.commonValue = 1;	//正确，可以修改被final修饰的引用所指向对象的属性
 }
 }
+```
