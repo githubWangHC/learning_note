@@ -66,6 +66,7 @@ final关键字修饰的变量必须在创建时赋值，且赋值之后不允许
 二维或更高维数组获得指向原数组对象的引用，改变arr4[1][1]的数值会对arr3[1][1]数值产生影响。
 
 ##String##
+
 **获得字符串长度**
 
 
@@ -76,33 +77,43 @@ final关键字修饰的变量必须在创建时赋值，且赋值之后不允许
 
 		String str = "ABC";
 		char ch = str.charAt(0);	//获取str字符串的第一个字符
-
-
 **判断字符是否相等**
+
+
 		char a = 'a';
 		char b = 'a';
 		boolean isEqual = (a == b);
 **获取字符串的一部分**
+
+
 		String str = "ABCDEFG";
 		String subStr1 = str.subString(1,3);	//得到BC
 		String subStr2 = str.subString(1);	//得到BCDEFG
 **判断字符串是否相等**
+
+
 		String str1 = "ABC";
 		String str2 = "ABC";
 		boolean isEque12 = str1.equals(str2);
 **引用的相等**
+
+
 		String str1 = "ABC";
 		String str2 = "ABC";
 		String str3 = str1
 		boolean isEque12 = (str1 == str2);	//false
 		boolean isEque13 = (str1 == str3);	//true
 **判断字符串的开头和结尾**
+
+
 		String str1 = "ABCDEFGH";
 		String str2 = "ABC";
 		String str3 = "GH";
 		boolean started1 = str1.startsWith(str2);	//true
 		boolean end2 = str1.endsWith(str3);	//true
 **分割字符串**
+
+
 		String str = "ABCD*EFGH*IJK";
 		String[] pieces = str.split("*");
 		int length = pieces.length();
@@ -110,18 +121,24 @@ final关键字修饰的变量必须在创建时赋值，且赋值之后不允许
 			System.out.println(pieces[i]);
 		}
 **查找字符串**
+
+
 		String str = "ABCD";
 		int index1 = str.indexOf('C');		//结果为2
 		int index2 = str.indexOf('F');		//结果为-1
 		int index3 = str.indexOf(“CD”);		//结果为2
 		int index2 = str.indexOf(”FG“);		//结果为-1
 **替换字符串中的内容**
+
+
 		String str = "ABCDEFGH";
 		String str1 = str.replace('C', 'a');
 		String str2 = str.replace("CD", "EF");
 *上述操作过程中原始的str内容都没有改变，String又重新创建了一个字符串*
 
 ##StringBuffer#
+
+
 		StringBuffer strbuf = new StringBuffer();
 		strbuf.append(true);	//strbuf内容为"true";
 		strbuf.append("test");	//strbuf内容为"truetest";
