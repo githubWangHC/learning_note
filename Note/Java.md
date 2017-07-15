@@ -315,3 +315,91 @@ public class useCl1{
 }
 }
 ```
+
+## 接口（interface）
+**定义一个接口**
+public abstract interface InterfaceA{	//java规定一个类型（接口或者类）包含抽象方法则这个类型就是抽象的，必须用abstract修饰。
+	public static final int i = 0;	//接口中的变量只能用public static final同时修饰
+	public abstract int method1();	//抽象方法只能有方法签名和返回值，必须用public以及abstract修饰
+}
+接口中可以没有抽象方法，此时成为空接口，主要用于为为类增加新的数据类型，必要的时候对类进行区分。  
+由于接口中的abstract以及方法中的public abstract以及变量中的public static final都是必须要写的，所以可以都省略。  
+接口可以继承，继承的语法与类相同：  
+接口只能继承接口，不能继承类；  
+接口之能但继承；  
+继承后子接口也可以拥有父接口的抽象方法和变量；  
+*接口的继承是可以避免的，因为一个类可以实现多个接口*  
+抽象的意思就是一个元素存在没有完成的部分，如果一个类中包含抽象方法则这个类也是抽象的，不能用new来创建，但是可以定义抽象类型的引用：  
+
+InterfaceA interfaceA = null;
+
+public class ExtendsInterface implements InterfaceA{	//如果要实现两个接口则public class ExtendsInterface implements InterfaceA, InterfaceB
+	public int method1(){	//可以认为接口实现抽象方法就是子类方法覆盖父类方法的过程。方法签名要与抽象方法完全相同，如果抽象方法的返回值为基本数据类型则此处的返回值应该和抽象方法保持一致，如果抽象方法的返回值为自定义类型则类中的返回值类型的引用必须能够不经过强制类型转换直接赋值给抽象方法返回值类型的引用。
+	}
+	public int method2(){
+	}
+}
+
+public class MainClass{
+	public static void main(){
+		InterfaceA interfaceA = null;
+		ExtendsInterface eF = new ExtendsInterface();
+		interfaceA = eF;	//可以让接口的引用指向实现了接口的类的对象
+		interfaceA.method1();	//并调用接口中规定的方法。
+		//interfaceA.method2();	//错误，接口中没有这个方法。和之前的继承覆盖很像：类中的method1覆盖了接口中的抽象方法，编译时接口中由方法通过，执行时类中有方法执行引用所指对象中的方法；但接口中没有method2，所以编译不能通过。
+	}
+}
+public class ParentClass{
+	public parentMethod(){
+
+	}
+}
+
+public class ChildClass extends ParentClass{
+
+}
+
+public class MainClass{
+	ParentClass pClass = new ParentClass;
+	pClass.parentMethod();	//ParentClass类当然可以使用parentMethod方法
+	ChildClass cClass = new ChildClass;
+	cClass.parentMethod();	//ChildClass类继承了ParentClass类也可以使用parentMethod方法
+}
+
+现在有一个NormalClass，也想用ParentMethod方法，但是却不想继承ParentClass，就需要使用接口。接口定义为：
+
+public abstract interface InterfaceAB{
+	public abstract shareMethod();
+}
+```
+然后在ParentClass以及NormalClass中实现这个接口：
+```
+public class ParentClass implements InterfaceAB{
+	public shareMethod(){
+
+	}
+}
+
+public class NormalClass implements InterfaceAB{
+	public shareMethod(){
+
+	}
+}
+```
+ChildClass同样继承ParentClass
+```
+public class ChildClass extends ParentClass{
+
+}
+```
+这样在三个类中就可以无差别地使用shareMethod了。
+```
+public class MainClass{
+	ParentClass pClass = new ParentClass;
+	pClass.shareMethod();
+	ChildClass cClass = new ChildClass;
+	cClass.shareMethod();
+	NormalClass nClass = new NormalClass;
+	nClass.shareMethod();
+}
+```
