@@ -463,3 +463,32 @@ public class UseInnerClass{
 * 非静态方法通过类名访问静态方法，通过this访问其他非静态方法。
 
 方法\变量|静态变量
+
+### 匿名类（anonymous inner class）
+* 匿名类通常表示能够实现某一个接口或者某一个抽象类的没有名字的一个类
+```
+public interface AnInterface{	//定义一个接口
+	void method();
+}
+
+public abstract class AnAbstractClass{		//定义一个抽象类
+	public AnAbstractClass(int i){
+
+	}
+	public AnAbstractClass(){
+	}
+	public abstract void method();	//抽象方法
+	
+}
+
+public class UseAnonymous{
+	AnInterface intf = new AnInterface(){	//通过接口实现匿名类
+		public void method(){	//实现接口中的抽象方法
+		}
+	}；	//最后的分号表明大括号中表示一个类，这个类实现了接口。
+	
+	AnAbstractClass absCl = new AnAbstractClass(){	//通过抽象类使用匿名类
+		public void method(){
+		}
+	}
+}
