@@ -403,3 +403,63 @@ public class MainClass{
 	nClass.shareMethod();
 }
 ```
+### 抽象类与内部类
+**Abstract Class**
+```
+public abstract class abstractClass{		//抽象类不能用new来创建其对象
+	public abstract void abstractMethod();	//当一个类中有了抽象方法那么其所在的类就是抽象类，类需要用abstract修饰。但是抽象类中可以没有抽象方法。抽象方法可以使用除privit之外的任何一种访问控制符
+}
+```
+抽象类的作用是让子类强制实现父类中的抽象方法，否则就子类需要将自身定义为抽象类。
+**Inner Class**
+public class OutClass{
+	public int pubValue = 0;
+	private int value5 = 0;
+	private static int value4 = 0;
+	public class InnerClass{	//成员内部类与类中的其它成员处于同一级别
+		int innerValue = 0;
+		public int innerClassMethod(){
+		}
+		return pubValue + innerValue;	//内部类可以访问外部类中的所有属性，无论属性的访问控制符是什么。为什么可以访问pubValue呢，是因为java将其变成了OutClass.this.pubValue。当内部类中的变量与外部类中的变量相同时就不能再省略隐含的引用了。
+	}
+	public static class StaticInnerClass{	//静态内部类
+	
+	}
+	public method(){
+		InnerClass inner = new InnerClass();	//在方法中可以创建内部类的引用
+		inner. innerClassMethod();		//可以通过内部类的引用访问内部类中的方法
+		final int value3 = 0;
+		class LocalInnerClass{	//定义在方法中的局部内部类局部内部类只能在方法中使用，先定义后使用，不能使用访问控制符来修饰，不能用static来修饰，可以用final来修饰。
+			public int value2 = 0;
+			public void innerMethod(){		//在局部内部类中定义方法
+				int value1 = 0;
+				System.out.println(value1);	//使用局部内部类LocalInnerClass中innerMethod的局部变量value1
+				System.out.println(value2);	//使用局部内部类LocalInnerClass中的成员变量val2
+				System.out.println(value3）；	//与局部内部内类不同，使用外部类中method方法的变量value3（可以直接使用方法中被final修饰的，定义在方法之前的变量）
+				System.out.println(OutClass.value4）；	//使用外部类中的静态变量value4
+				System.out.println(OutClass.this.value5）；	//使用外部类中的变量成员value5**如果是局部内部类
+			}
+		}
+	}
+}
+* 内部类可以使用的访问控制符同样有四种：public 默认 protected private。希望哪个内部类只能在类中使用则使用private.
+* satatic：使用static修饰的内部类成为静态内部类，静态方法中是不能使用非静态内部类的。
+* abstract：内部类也可以抽象。
+* final内部类也可标记为不能被继承
+import com.*.OutClass
+import com.*.OutClass.InnerClass	//在使用内部类之前需要将内部类引入
+import com.*.OutClass.StaticInnerClass	//同样引入静态内部类
+public class UseInnerClass{
+	public static void main(String[] args){
+		OutClass out = new OutClass();
+		InnerClass inner = out.new InnerClass();	//创建内部类的应用要用到外部类的引用
+		StaticInnerClass sInner = new StaticInnerClass();	//可以直接创建内部静态类
+	}
+}
+**静态成员内部类**
+* 静态方法和非静态方法都是通过类名访问静态变量的；
+* 非静态方法通过this访问非静态变量，非静态方法不能使用非静态变量；
+* 静态方法不能访问非静态方法，能够通过类名访问另外的静态方法；
+* 非静态方法通过类名访问静态方法，通过this访问其他非静态方法。
+
+方法\变量|静态变量
