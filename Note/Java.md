@@ -468,7 +468,7 @@ public class UseInnerClass{
 * 匿名类通常表示能够实现某一个接口或者某一个抽象类的没有名字的一个类
 ```
 public interface AnInterface{	//定义一个接口
-	void method();
+	void InterfaceMethod();
 }
 
 public abstract class AnAbstractClass{		//定义一个抽象类
@@ -477,18 +477,18 @@ public abstract class AnAbstractClass{		//定义一个抽象类
 	}
 	public AnAbstractClass(){
 	}
-	public abstract void method();	//抽象方法
+	public abstract void ClassMethod();	//抽象方法
 	
 }
 
 public class UseAnonymous{
-	AnInterface intf = new AnInterface(){	//通过接口实现匿名类
-		public void method(){	//实现接口中的抽象方法
+	AnInterface intf = new AnInterface(){	//创建了一个实现了接口的匿名类的对象，并让接口的引用指向这个对象
+		public void InterfaceMethod(){	//实现接口中的抽象方法
 		}
 	}；	//最后的分号表明大括号中表示一个类，这个类实现了接口。
 	
-	AnAbstractClass absCl = new AnAbstractClass(){	//通过抽象类使用匿名类
-		public void method(){
+	AnAbstractClass absCl = new AnAbstractClass(){	//创建了一个实现了抽象类的匿名类的对象，并让抽象类的引用指向这个对象
+		public void Classmethod(){
 		}
 	}
 }
@@ -586,3 +586,134 @@ try{
 * Exception必须处理
 * Error不处理
 * RunningtimeException灵活应对
+
+### Thread
+* 线程就是执行一个方法，执行完之后线程就结束了
+* Thread是线程的代理，当操作Thread时，Thread类就会操作真正的线程，当创建一个Thread类的实例时，在java平台内部，一个真正的线程同时被创建爱你出来了。
+**使用继承和覆盖的方法创建线程**
+* Thread();是Thread类的一个构造方法；
+* void start();方法是线程类的核心方法，当调用这个方法时就会执行Thread类中的run();方法。
+* void run(); 是Thread类的一个普通方法，特之处在于statr()方法会将其作为线程的起点。
+*用继承覆盖的方法实现多线程*
+```
+public class MyThread extends Thread{	//创建一个类，并且继承Thread
+	public void run(){		//Thread类内部也有一个run方法，将发生覆盖
+		System.out.println("这是在另外一个线程");
+	}
+}
+```
+***
+```
+public class UseMyThread{
+	public static void main(String[] args){
+		MyThread td = new MyThread();	//创建一个对象
+		td.start();			//虽然MyThread类中没有start方法，但是其继承了Thread类，所以就执行Thread类中的方法，但是Thread类中的方法已经被覆盖，所以就执行我们创造的那个方法
+	}
+}
+```
+*用接口实现多线程*
+简单来讲继承的作用就是将我们需要执行的方法覆盖Thread中原来的方法。然后调用start方法。现在Thread类中的run方法提供了这样一种可能  
+public void run(){
+	if(target != null){
+		target.run();	//只用将target的值改为MyThread类的引用就好了，这样引用不为空，就可以执行引用中的run方法了怎么改呢？
+	}
+}
+利用Thread类中的另外一个构造方法来改：
+Thread(Runnable target){	//只用把引用传给这个构造方法就好了，但是这个引用不仅能像MyThread类的引用一样包含run方法，而且要 能够是Runnable类型的。
+	*
+	*
+}
+怎么获得Runnbale类型的引用呢？Runnable是一个接口，实现了这个接口就好了
+
+public class MyRunnable implements Runnable{	//MyRunnable类实现Runnable接口
+	public void run(){
+		System.out.println("在另外一个线程中了");
+	}
+}
+
+public class UseMyRunnable{
+	public static void main(String[] args){
+		MyRunnable myRun = new MyRunnable();
+		Thread useTh = new Thread(myRun);	//由于myRun是实现了Runnable接口的类的对象，所以可以作为参数传递给Thread类；并且MyRunnable类中包含run方法。
+		useTh.start();
+	}
+}
+*使用匿名内部类实现多线程*
+public class AnonymousRunnable{
+	public static void main(String[] args){
+		Thread thread = new Thread(new Runnable() {	//创建了一个实现了Runnable接口的匿名类的对象，并且把这个对象作为参数传递给Thread构造方法，而得到的thread引用就是一个target标签不是空，而且又是Thread类型的引用
+			public void run(){
+				System.out.println("在另外进程中了");
+			}
+		});
+		thread.start();
+	}
+}
+**显示线程的名字**
+```
+public class ShowNameClass extends Thread{
+	public ShowNameClass(){
+		super();			//调用Thread类中无参的构造方法来初始化
+	}
+	public ShowNameClass(String p_name){
+		super(p_name);			//调用由参的构造方法来初始化
+	}
+	public void showName(){
+		System.out.println("线程的名字是" + this.getName());	//由于ShowNameClass内部没有定义getName方法，所以调用父类的构造方法。
+	}
+}
+***
+public class MainShowName{
+	public static void main(String[] args){
+		ShowNameClass defaultName = new ShowNameClass();
+		ShowNameClass name = new ShowNameClass("你的名字");
+		defaultName.showName();
+		name.showName();
+	}
+}
+```
+**利用run方法以及start方法**
+```
+public class ShowNameClass extends Thread{
+	public ShowNameClass(){
+		super();			//调用Thread类中无参的构造方法来初始化
+	}
+	public ShowNameClass(String p_name){
+		super(p_name);			//调用由参的构造方法来初始化，将线程的名字设置为p_name
+	}
+	public void run(){
+		System.out.println("线程的名字是" + this.getName());	//由于ShowNameClass内部没有定义getName方法，所以调用父类的构造方法。
+	}
+}
+```
+***
+```
+public class MainShowName{
+	public static void main(String[] args){
+		ShowNameClass defaultName = new ShowNameClass();
+		ShowNameClass name = new ShowNameClass("你的名字");
+		defaultName.start();
+		name.start();
+	}
+}
+```
+程序执行的结果为
+线程的名字是Thread-0
+线程的名字是你的名字
+**获得当前线程的名字，并改变名字**
+
+public class PrintCurrentThreatName{
+	public static void main(String[] args){
+		Thread currentThreadMsg = Thread.currentThread();	//用Thread.currentThread()获取当前的线程对象，并让currentThreadMsg线程引用指向这个对象
+		System.out.println("当前线程的名字是："+ currentThreadMsg.getName());
+		currentThreadMsg.setName("改变线程名字");			//调用setName()方法设置线程的名字
+		System.out.println("当前线程的名字是："+ currentThreadMsg.getName());
+	}
+}
+***
+Thread类中的静态方法sleep可以让当前进程沉睡5秒钟，由于这个方法会抛出错误，所以要用try catch语句处理一下  
+try{
+	Thread.sleep(5000);
+}catch (Exception e){
+	
+}
