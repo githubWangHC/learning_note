@@ -11,7 +11,7 @@ byte,int, long, double,float, double
 实参为int则依次查询是否有long, double,float, double的形参。  
 当形参为一个类时形参与实参之间的参数传递是引用之间的赋值。  
 在一个类中方法外的变量为实例变量，方法内的变量为局部变量。二者重名时遵循先局部后实例的原则，要打破这种规则需要用this关键字。打破规则的意义是局部变量很难传递，而实例变量是类的属性很容易在方法结束后别的地方获得。  
-构造方法指的是与**类**同名，无返回值的方法。一个类至少要有一个构造方法，如果自己添加了一个带形参的构造方法则java不会再自动添加那个无形参的构造方法，如果new创建类的时候如果括号内没有参数则会报错。  
+构造方法指的是与**类**同名，无返回值(不能用void，方法体内可以有return语句)的方法。一个类至少要有一个构造方法，如果自己添加了一个带形参的构造方法则java不会再自动添加那个无形参的构造方法，如果new创建类的时候如果括号内没有参数则会报错。  
 一个构造方法可以条用另外一个构造方法或者普通方法；但是普通方法不能调用构造方法。  
 ### java中的package
 package的全路径名从源代码的根目录开始，专有名词为包的全限定名。  
@@ -492,3 +492,97 @@ public class UseAnonymous{
 		}
 	}
 }
+
+### Java异常
+**异常是什么**
+* 语法错误是由编译器发现的，异常是程序在执行过程中发生的错误；
+* 程序发生了一个异常通常称为“程序抛出了一个异常”
+* 每一种异常都是用一个类来表示，每一个抛出的异常都是某一个异常类所产生的实例。
+* java.lang.Throwable是所有异常类的父类；
+* 仅仅有两个类直接继承了Throwable，分别是java.lang.Error和java.lang.Exception；
+* 只有一个类继承了Throwable，才会被当作异常，才可以被抛出
+
+**一个使用异常的例子**
+public class TB extends Exception {	//一个类只有继承了Throwable才能被抛出
+	public TB(String msg){		//msg是想要显示的错误信息
+		super(msg);	//Exception类中最重要的构造方法是Exception(String msg)，其中的形参就是要显示出来的信息
+	}
+}
+
+public class TS extends Exception{
+	public TS(String msg){
+		super(msg);
+	}
+}
+
+public class Cup{
+	private static int cupCapacity;
+	public static void main(String[] args) throws TB,TS{	//告诉程序这一个方法可能要抛出这些类型的异常，
+		int capacity = Integer.valueOf(args[0]);
+		if(capacity > 1000){
+			TB big = new TB("太大了");
+			throw big;	//throw后必须要跟一个异常类的实例，也就是必须是Throwable类或者是其实例。
+		}else if(capacity < 0){
+			TS small = new TS("太小了");
+			throw small;
+		}
+		Cup.cupCapacity = capacity;
+	}				//一旦发生异常则下面的程序就不会再执行了
+}
+*程序运行的结果为*
+java Cup 5000
+Exception in thread "main" TB: 太大了	//可见抛出的由类的名字以及错误信息。
+	at Cup.main(Cup.java:6)
+**try catch语句**
+throw可以把异常抛出，但是也可以用try-catch处理  
+public class Cup{
+	private static int cupCapacity;
+	public static void main(String[] args) throws TS{//由于try catch处理了TB类的异常，所以不用抛出TB了，当然也可以写着TB异常类，这时同样是先匹配catch再尝试抛出异常。
+		int capacity = Integer.valueOf(args[0]);
+		try{
+			if(capacity > 1000){
+				TB big = new TB("太大了");
+				throw big;
+			}else if(capacity < 0){
+				TS small = new TS("太小了");
+				throw small;
+			}
+		} catch (TB bigg){
+			System.out.println("由try catch捕捉到的异常信息为：" + bigg.getMessage());
+		}
+		Cup.cupCapacity = capacity;
+	}
+}
+
+$ java Cup 1000000
+由try catch捕捉到的异常信息为：太大了
+
+try {
+	//try语句告诉程序本代码段可能会抛出异常，抛出前先去catch语句中查看是否有要抛出异常所对应的类型（是所对应异常本身或者是其子类型）
+} catch (){	//catch语句用来填写异常的类型，如果填写Exception则catch语句会处理所有的异常。
+
+}
+
+**try catch finally语句**
+try {
+	
+} catch (){	
+
+}finally{
+
+}
+* finally语句并不处理异常。一个异常没有匹配到catch语句中的任意类型时是要抛出的（throws 后要加上异常的类型），当然如果匹配到类型就执行catch语句，不用抛出。无论异常是否匹配了catch语句，亦或catch语句中有return返回语句，代码都是要尝试执行finally语句的。
+
+**try finally**
+try{
+
+}finally{
+
+}
+* try finally语句不是用来处理异常的，通常是用来保证程序无论在什么条件下一定会执行finally语句中的内容的。
+**异常的类型**
+* Throwable的意思是可以被抛出，是Exception和Error类的直接父类
+* RunntimeException的直接父类是Exception
+* Exception必须处理
+* Error不处理
+* RunningtimeException灵活应对
