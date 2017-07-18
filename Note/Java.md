@@ -701,7 +701,7 @@ public class MainShowName{
 线程的名字是Thread-0
 线程的名字是你的名字
 **获得当前线程的名字，并改变名字**
-
+```
 public class PrintCurrentThreatName{
 	public static void main(String[] args){
 		Thread currentThreadMsg = Thread.currentThread();	//用Thread.currentThread()获取当前的线程对象，并让currentThreadMsg线程引用指向这个对象
@@ -710,10 +710,56 @@ public class PrintCurrentThreatName{
 		System.out.println("当前线程的名字是："+ currentThreadMsg.getName());
 	}
 }
+```
 ***
 Thread类中的静态方法sleep可以让当前进程沉睡5秒钟，由于这个方法会抛出错误，所以要用try catch语句处理一下  
+```
 try{
 	Thread.sleep(5000);
 }catch (Exception e){
 	
 }
+```
+***多个线程的同步***
+```
+public class Copier{							//为什么要设置一个类，为了引用这个类中的方法
+	public synchronized void print(int p_page, String p_string){	//将复印的动作设定为同步
+		System.out.println(p_string + "开始工作");
+		int i;
+		for(i = 0; i< p_page; i++){
+			System.out.println(p_string + i);
+			try{
+				Thread.sleep(100);
+			}catch(Exception e){
+				System.out.println("出错信息是" + e.getMessage());
+			}
+		}
+		System.out.println(p_string + "结束工作");
+	}
+}
+
+public class PrintNumberThread extends Thread{		//为什么要使用这个类，是因为要实现run方法
+	Copier aCopier;
+	int page;
+	public PrintNumberThread(int p_times, Copier p_copier){
+		this.page = p_times;
+		this.aCopier = p_copier;
+	}
+	public void run(){
+		aCopier.print(page, this.getName());
+	}
+}
+public class UsePrintNumberThread{
+	public static void main(String[] args){		//要执行start方法，并且定义一个Copier引用。
+		Copier aCopier = new Copier();
+		PrintNumberThread threadOne = new PrintNumberThread(8, aCopier);
+		PrintNumberThread threadTwo = new PrintNumberThread(5, aCopier);
+		threadOne.setName("小张");
+		threadTwo.setName("小王");
+		threadOne.start();
+		threadTwo.start();
+		System.out.println("Main程序退出");
+	}
+}
+```
+
