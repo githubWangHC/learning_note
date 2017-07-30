@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">CountDown</string>
+
+    <string name="timer">倒计时</string>
+    <string name="timer_name">计时器</string>
+    <string name="timer_end">计时结束</string>
+    <string name="app_not_exists">应用程序不存在</string>
+</resources>

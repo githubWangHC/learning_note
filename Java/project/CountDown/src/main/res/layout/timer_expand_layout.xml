@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/timer_expand_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/timerBackgroundColor"
+    android:gravity="center">
+
+    <TextView
+        android:id="@id/timer_expand_minute_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8.0dip"
+        android:layout_marginRight="57.0dip"
+        android:textColor="@color/timerTextColor"
+        android:textSize="150.0sp"
+        android:textStyle="normal" />
+
+</LinearLayout>

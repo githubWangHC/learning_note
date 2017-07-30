@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="timer_expand_layout" type="id">false</item>
+    <item name="timer_expand_minute_textview" type="id">false</item>
+    <item name="timer_expand_point_imageview" type="id">false</item>
+    <item name="timer_expand_second_textview" type="id">false</item>
+    <item name="timer_end_tip_textview" type="id">false</item>
+    <item name="timer_narrow_point_imageview" type="id">false</item>
+    <item name="timer_narrow_minute_textview" type="id">false</item>
+    <item name="timer_narrow_second_textview" type="id">false</item>
+    <item name="timer_end_narrow_textview" type="id">false</item>
+    <item name="timer_narrow_layout" type="id">false</item>
+    <item name="timer_title_layout" type="id">false</item>
+    <item name="refresh_button" type="id">false</item>
+    <item name="play_button" type="id">false</item>
+    <item name="expand_button" type="id">false</item>
+    <item name="remove_standard_timer" type="id">false</item>
+    <item name="picker_standard_timer" type="id">false</item>
+    <item name="minute_pv_timer" type="id">false</item>
+    <item name="second_pv_timer" type="id">false</item>
+    <item name="show_standard_timer" type="id">false</item>
+    <item name="show_textview_timer" type="id">false</item>
+</resources>

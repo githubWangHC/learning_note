@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/standard_layout"
+    android:layout_width="@dimen/timer_standard_width"
+    android:layout_height="@dimen/timer_standard_height"
+    android:background="@mipmap/timer_standard_background"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@id/timer_title_layout"
+        android:layout_width="@dimen/timer_standard_width"
+        android:layout_height="40.0dip"
+        android:background="@drawable/timer_standard_bg"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="@string/timer"
+            android:textColor="@android:color/white"
+            android:textSize="24sp" />
+
+        <ImageView
+            android:id="@id/remove_standard_timer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="12dp"
+            android:background="@android:color/transparent"
+            android:src="@mipmap/close_normal" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@id/picker_standard_timer"
+        android:layout_width="@dimen/timer_standard_width"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:visibility="visible">
+
+        <com.caotong.windowmanager.timer.view.PickerViewM
+            android:id="@id/minute_pv_timer"
+            android:layout_width="90dp"
+            android:layout_height="160dp"
+            android:layout_marginRight="20dp" />
+
+        <TextView
+            android:id="@+id/minute_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_toRightOf="@id/minute_pv_timer"
+            android:text=":"
+            android:textColor="@color/black"
+            android:textSize="40sp"
+            android:textStyle="bold" />
+
+        <com.caotong.windowmanager.timer.view.PickerView
+            android:id="@id/second_pv_timer"
+            android:layout_width="90dp"
+            android:layout_height="160dp"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/minute_tv" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@id/show_standard_timer"
+        android:layout_width="@dimen/timer_standard_width"
+        android:layout_height="160dp"
+        android:layout_centerVertical="true"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@id/show_textview_timer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="80sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="@dimen/timer_standard_width"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@id/refresh_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|left"
+            android:background="@drawable/timer_reset_btn_selector"
+            android:scaleType="fitXY" />
+
+        <ImageButton
+            android:id="@id/play_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="30.0dip"
+            android:layout_marginRight="30.0dip"
+            android:background="@drawable/timer_play_btn_selector"
+            android:scaleType="fitXY" />
+
+        <ImageButton
+            android:id="@id/expand_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|right"
+            android:background="@mipmap/expand_unclickable"
+            android:scaleType="fitXY" />
+    </LinearLayout>
+
+</RelativeLayout>

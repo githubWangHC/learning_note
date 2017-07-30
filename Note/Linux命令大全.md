@@ -1,30 +1,35 @@
-
-===================
-==¹ÜµÀÓëÖØ¶¨ÏòµÄÇø±ð==
-===================
->>×·¼ÓÊä³öÖØ¶¨Ïò
->»òÕß1>Î»ÆÕÍ¨ÖØ¶¨Ïò
-2>Î»´íÎóÖØ¶¨Ïò
-<´íÎóÖØ¶¨Ïò
+## ¹ÜµÀÓëÖØ¶¨ÏòµÄÇø±ð
+**ÖØ¶¨Ïò**
+```
+>>	×·¼ÓÊä³öÖØ¶¨Ïò
+>	»òÕß1>Î»ÆÕÍ¨ÖØ¶¨Ïò
+2>	Î»´íÎóÖØ¶¨Ïò
+<	´íÎóÖØ¶¨Ïò
+```
 ÖØ¶¨ÏòµÄÒâÒåÔÚÓÚ½«±¾À´ÒªÓÉ¼üÅÌÊäÈë»òÕßÆÁÄ»Êä³öµÄÄÚÈÝÓÉÆäËûÎÄ¼þÊäÈë
+**¹ÜµÀ**
 ¹ÜµÀÁ¬½ÓÁ½¸öÃüÁî
+```
 ls /etc/ | grep ab
+```
 ¹ÜµÀ½«µÚÒ»¸öÃüÁîµÃµ½µÄ½á¹û×÷ÎªÊäÈëÊäÈëµ½µÚ¶þ¸öÃüÁîÖÐ¡£
 
-vim±à¼­Æ÷
-ÃüÁîÐÐÄ£Ê½ÏÂÊäÈë£ºset nu¿ÉÒÔÉèÖÃÐÐºÅ
-ÊäÈë:sp FileName.c¿ÉÒÔÁíÍâ´ò¿ªÒ»¸ö±à¼­Æ÷
-crtl+w+ÉÏÏÂ¼ýÍ·¿ÉÒÔÔÚÁ½¸ö±à¼­Æ÷Ö®¼äÇÐ»»
-iÔÚ¹â±êÇ°·½²åÈë£¬IÔÚÕûÐÐÇ°±ß²åÈë
-aÔÚ¹â±êºó·½²åÈë£¬AÔÚÕûÐÐºó±ß²åÈë
-°´ddÖ®ºóÔÙ°´p¿ÉÒÔÊµÏÖ¼ôÇÐÕ³Ìù
-
+## vim±à¼­Æ÷
+ÃüÁîÐÐÄ£Ê½ÏÂÊäÈë£ºset nu¿ÉÒÔÉèÖÃÐÐºÅ  
+ÊäÈë:sp FileName.c¿ÉÒÔÁíÍâ´ò¿ªÒ»¸öÎÄ¼þ  
+crtl+w+ÉÏÏÂ¼ýÍ·¿ÉÒÔÔÚÁ½¸ö±à¼­Æ÷Ö®¼äÇÐ»»  
+iÔÚ¹â±êÇ°·½²åÈë£¬IÔÚÕûÐÐÇ°±ß²åÈë  
+aÔÚ¹â±êºó·½²åÈë£¬AÔÚÕûÐÐºó±ß²åÈë  
+°´ddÖ®ºóÔÙ°´p¿ÉÒÔÊµÏÖ¼ôÇÐÕ³Ìù  
+## &&
 ÏëÍ¬Ê±Ö´ÐÐÁ½ÌõÃüÁîÔò¿ÉÒÔÊ¹ÓÃ&&£¬±íÊ¾Èç¹ûÇ°Ò»ÌõÖ¸ÁîÖ´ÐÐ³É¹¦Ôò¼ÌÐøÖ´ÐÐlsÃüÁî
+```
 ./main.out && ls
+```
 ÏëÒª²é¿´ÉÏÒ»ÌõÃüÁîµÄ·µ»ØÖµ¿ÉÒÔecho $?
-====================================
 
-ÏµÍ³ÐÅÏ¢
+## ÏµÍ³ÐÅÏ¢
+```
 arch		ÏÔÊ¾»úÆ÷µÄ´¦ÀíÆ÷¼Ü¹¹(1)
 uname -m	ÏÔÊ¾»úÆ÷µÄ´¦ÀíÆ÷¼Ü¹¹(2)
 uname -r	ÏÔÊ¾ÕýÔÚÊ¹ÓÃµÄÄÚºË°æ±¾
@@ -52,21 +57,23 @@ bc			+¼Ó¡¢-¼õ¡¢*³Ë¡¢/³ý¡¢^Ö¸Êý¡¢%ÓàÊý
 			quit¡¢scale=number£¬numberÊÇÐ¡ÊýµãÎ»Êý
 sync			½«Êý¾ÝÍ¬²½Ð´ÈëÓ²ÅÌÖÐµÄ’”Áî£º
 clock-w		½«Ê±¼äÐÞ¸Ä±£´æµ½BIOS
-
-¹Ø»ú(ÏµÍ³µÄ¹Ø»ú¡¢ÖØÆôÒÔ¼°µÇ³ö)
+```
+## ¹Ø»ú(ÏµÍ³µÄ¹Ø»ú¡¢ÖØÆôÒÔ¼°µÇ³ö)
+```
 shutdown -h now	¹Ø±ÕÏµÍ³(1)
 init 0			¹Ø±ÕÏµÍ³(2)
 ?			runlevel3£º´¿ÎÄ±¾Ä£Ê½
 ?			runlevel5£ºº¬ÓÐÍ¼ÐÎ½Ó¿ÚÄ£Ê½
 ?			runlevel6£ºÖØÐÂÆô¸Ä
-telinit0		¹Ø±ÕÏµÍ³(3)
-shutdown -h hours:minutes&°´Ô¤¶¨Ê±¼ä¹Ø±ÕÏµÍ³
+telinit 0		¹Ø±ÕÏµÍ³(3)
+shutdown -h hours:minutes	°´Ô¤¶¨Ê±¼ä¹Ø±ÕÏµÍ³
 shutdown -c		È¡Ïû°´Ô¤¶¨Ê±¼ä¹Ø±ÕÏµÍ³
-shutdown -r now	ÖØÆô(1)
+shutdown -r now		ÖØÆô(1)
 reboot£¬halt,powerof	ÖØÆô(2)
 logout			×¢Ïú
-
-ÎÄ¼þºÍÄ¿Â¼
+```
+## ÎÄ¼þºÍÄ¿Â¼
+```
 cd		½øÈë×Ô¼ºµÄ¼ÒÄ¿Â¼ChangeDirectory
 cd /home	½øÈë'/home'Ä¿Â¼'
 cd ..		·µ»ØÉÏÒ»¼¶Ä¿Â¼
@@ -83,9 +90,7 @@ ls -l		ÏÔÊ¾ÎÄ¼þºÍÄ¿Â¼µÄÏêÏ¸×ÊÁÏ
 ls -a		ÏÔÊ¾Òþ²ØÎÄ¼þ
 ls *[0-9]*	ÏÔÊ¾°üº¬Êý×ÖµÄÎÄ¼þÃûºÍÄ¿Â¼Ãû
 ls -h		ÏÔÊ¾È¨ÏÞ
-ls /tmp|pr-T5-W$COLUMNS½«ÖÕ¶Ë»®·Ö³É5À¸ÏÔÊ¾
-tree		ÏÔÊ¾ÎÄ¼þºÍÄ¿Â¼ÓÉ¸ùÄ¿Â¼¿ªÊ¼µÄÊ÷ÐÎ½á¹¹(1)
-lstree		ÏÔÊ¾ÎÄ¼þºÍÄ¿Â¼ÓÉ¸ùÄ¿Â¼¿ªÊ¼µÄÊ÷ÐÎ½á¹¹(2)
+tree		ÏÔÊ¾ÎÄ¼þºÍÄ¿Â¼ÓÉ¸ùÄ¿Â¼¿ªÊ¼µÄÊ÷ÐÎ½á¹¹
 
 mkdir dir1		ÔÚµ±Ç°Ä¿Â¼ÏÂ´´½¨Ò»¸ö½Ð×ö'./dir1'µÄÄ¿Â¼'£¬ÇÒµ±Ç°Ä¿Â¼ÖÐÃ»ÓÐÒÔdir1Õâ¸öÃû×ÖÃüÃûµÄÎÄµµ
 mkdir dir1 dir2		Í¬Ê±´´½¨Á½¸öÄ¿Â¼
@@ -98,8 +103,9 @@ rmdir -p /tmp/dir1/dir2	Í¬Ê±É¾³ý¿ÕÄ¿Â¼dir1Óëdir2£¬Èç¹ûÔÚ/tmpÖÐÖ´ÐÐ»áÏÔÊ¾/tmp bus
 mkdir -m 711 test2	´´½¨Ò»¸öÈ¨ÏÞÎª711µÄtest2Ä¿Â¼
 
 touch file1	ÔÚµ±Ç°Ä¿Â¼ÏÂ´´½¨Ò»¸öÃûÎªfile1µÄÎÄµµ
-ÎÄµµµÄÀàÐÍÓÐÄÄÐ©£º
-
+```
+## ÎÄµµµÄÀàÐÍÓÐÄÄÐ©£º
+```
 rm abc		É¾³ýµ±Ç°ÎÄ¼þ¼ÐÏÂÒ»¸ö½Ð×öabcµÄÎÄ¼þ»òÕßÄ¿Â¼£¬ÏµÍ³»áÑ¯ÎÊÈ·ÈÏÊÇ·ñÉ¾³ý¡£
 rm -f abc	É¾³ýµ±Ç°ÎÄ¼þ¼ÐÏÂÒ»¸ö½Ð×öabcµÄÎÄ¼þ»òÕßÄ¿Â¼£¬ÏµÍ³²»ÔÙÎÊÁË¡£
 rm -r dir1	É¾³ýdir1Ä¿Â¼ÏÂµÄ×ÓÄ¿Â¼ÒÔ¼°°üº¬µÄÎÄ¼þ
@@ -111,11 +117,10 @@ cp -a /tmp/dir1 .	½«ÎÄµµÔ­ÓÐÊôÐÔ¸´ÖÆ¹ýÀ´ºÍ-p½á¹ûÒ»Ñù
 cp -l file2 lnk_h	¸´ÖÆ³ÉÎª½øÐÐÓ²Ê½Á¬½á(hard link)µµ
 cp -s file1 lnk_s	¸´ÖÆ³ÉÎª·ûºÅÁ´½ÓÎÄ¼þ(symbolic link)£¬Òà³É¿ì½Ý·½Ê½µµ°¸
    -d			ÈôÔ´ÎÄ¼þÎªÁ´½ÓÎÄ¼þµÄÊôÐÔ(link file)£¬Ôò¸´ÖÆÁ´½ÓÎÄ¼þÊôÐÔ¶ø·Çµµ°¸±¾Éí£»
-¹ØÓÚhard linkÓësymbolic linkµÄËµÃ÷
-hard link£ºÓÅµã£¬Ô­ÎÄµµÉ¾³ýºó»¹¿ÉÒÔÍ¨¹ýhard linkÕÒµ½Ô­ÎÄµµÄÚÈÝ£»È±µã£¬Õ¼ÄÚ´æ£¬²»ÄÜÁ¬½Óµ½Ä¿Â¼£¬²»ÄÜÁ¬½Ó²»Í¬filesystemÀàÐÍµÄÎÄµµ¡£
-symbolic linkÖ¸µÄÊÇ¿ì½Ý·½Ê½£¬ÓÅµã£¬¿ÉÒÔÁ´½Óµ½Ä¿Â¼£¬²»Õ¼ÄÚ´æ£»È±µã£¬Ô­ÎÄµµÉ¾³ýºósoft link¾ÍÊ§Ð§ÁË¡£
-
-¾ÍÊÇ½«¶à¸öÎÄµµÃû(file,link_h)Ö¸ÏòÍ¬Ò»¸öinodeºÅÂë£¬Ê¹ÓÃls -i¹Û²ìÔ­ÎÄµµºÍÔ­ÎÄµµµÄÓ²Á´½Ó¿ÉÒÔ¿´µ½¶þÕß°üÀ¨inoodÔÚÄÚËùÓÐµÄ¶«Î÷¶¼ÏàÍ¬¡£
+```
+**¹ØÓÚhard linkÓësymbolic linkµÄËµÃ÷**
+hard link£ºÓÅµã£¬Ô­ÎÄµµÉ¾³ýºó»¹¿ÉÒÔÍ¨¹ýhard linkÕÒµ½Ô­ÎÄµµÄÚÈÝ£»È±µã£¬Õ¼ÄÚ´æ£¬²»ÄÜÁ¬½Óµ½Ä¿Â¼£¬²»ÄÜÁ¬½Ó²»Í¬filesystemÀàÐÍµÄÎÄµµ¡£  
+symbolic linkÖ¸µÄÊÇ¿ì½Ý·½Ê½£¬ÓÅµã£¬¿ÉÒÔÁ´½Óµ½Ä¿Â¼£¬²»Õ¼ÄÚ´æ£»È±µã£¬Ô­ÎÄµµÉ¾³ýºósoft link¾ÍÊ§Ð§ÁË¡£¾ÍÊÇ½«¶à¸öÎÄµµÃû(file,link_h)Ö¸ÏòÍ¬Ò»¸öinodeºÅÂë£¬Ê¹ÓÃls -i¹Û²ìÔ­ÎÄµµºÍÔ­ÎÄµµµÄÓ²Á´½Ó¿ÉÒÔ¿´µ½¶þÕß°üÀ¨inoodÔÚÄÚËùÓÐµÄ¶«Î÷¶¼ÏàÍ¬¡£
 
 link_hµÄblockÖÐ´æ·ÅµÄÊÇÄ¿Â¼µÄblock
 link_sµÄblockÖÐ´æ·ÅµÄÊÇÁ´½ÓµµµÄblock
@@ -129,7 +134,8 @@ eg.ÏÈÓÉ/µÄinodeºÅÂë2¶ÁÈ¡/¶ÔÓ¦µÄblock£¬´ÓÖÐ¶ÁÈ¡etc/µÄµÄindoe£¬ÓÉetc/µÄinodeÕÒµ½et
 touch -t 0712250000 file1ÐÞ¸ÄÒ»¸öÎÄ¼þ»òÄ¿Â¼µÄÊ±¼ä´Á-(YYMMDDhhmm)
 iconv -l		ÁÐ³öÒÑÖªµÄ±àÂë
 
-ÎÄ¼þËÑË÷
+## ÎÄ¼þËÑË÷##
+```
 find / -user user1	ËÑË÷ÊôÓÚÓÃ»§'user1'µÄÎÄ¼þºÍÄ¿Â¼
 find /home/user1 -name \*.bin	ÔÚÄ¿Â¼'/home/user1'ÖÐËÑË÷´øÓÐ'.bin'½áÎ²µÄÎÄ¼þ
 find /usr/bin -typef -atime +100	ËÑË÷ÔÚ¹ýÈ¥100ÌìÄÚÎ´±»·ÃÎÊµÄÎÄ¼þ-nÖ¸nÌìÒÔÄÚ£¬+nÖ¸nÌìÒÔÇ°
@@ -139,9 +145,9 @@ find / -xdev -name \*.rpm		ËÑË÷ÒÔ'.rpm'½áÎ²µÄÎÄ¼þ£¬ºöÂÔ¹âÇý¡¢½ÝÅÌµÈ¿ÉÒÆ¶¯Éè±¸
 locate \*.ps				Ñ°ÕÒÒÔ'.ps'½áÎ²µÄÎÄ¼þ-ÏÈÔËÐÐ'updatedb'ÃüÁî
 whereis halt				ÏÔÊ¾Ò»¸ö¶þ½øÖÆÎÄ¼þ¡¢Ô´Âë»òmanµÄÎ»ÖÃ
 which halt				ÏÔÊ¾Ò»¸ö¶þ½øÖÆÎÄ¼þ»ò¿ÉÖ´ÐÐÎÄ¼þµÄÍêÕûÂ·¾¶
-
-LinuxÎÄ¼þÓëÄ¿Â¼µÄÈýÖÖÊ±¼ä×´Ì¬
-modification time(mtime):
+```
+## LinuxÎÄ¼þÓëÄ¿Â¼µÄÈýÖÖÊ±¼ä×´Ì¬##
+modification time(mtime):  
 µ±ÐÞ¸ÄÎÄ¼þµÄÄÚÈÝÊý¾ÝµÄÊ±ºò£¬¾Í»á¸üÐÂÕâ¸öÊ±¼ä£¬¶ø¸ü¸ÄÈ¨ÏÞ»òÕßÊôÐÔ£¬mtime²»»á¸Ä±ä£¬Õâ¾ÍÊÇºÍctimeµÄÇø±ð
 status time(ctime)
 µ±ÐÞ¸ÄÎÄ¼þµÄÈ¨ÏÞ»òÕßÊôÐÔµÄÊ±ºò£¬¾Í»á¸üÐÂÕâ¸öÊ±¼ä£¬ctime²¢²»ÊÇcreate time£¬¸øÎÒµÄ¸Ð¾õ¸üÏñÊÇchange time£¬µ«ÕâÃ´ËµÒ²²»ÍêÈ«¶Ô£¬ÒòÎªÖ»ÓÐµ±¸üÐÂÎÄ¼þµÄÊôÐÔ»òÕßÈ¨ÏÞµÄÊ±ºò²Å»á¸üÐÂÕâ¸öÊ±¼ä£¬¸ü¸ÄÄÚÈÝµÄ»°ÊÇ²»»á¸üÐÂÕâ¸öÊ±¼äµÄ
@@ -159,7 +165,7 @@ vi±à¼­Æ÷»òÕßcat´ò¿ªÒ»¸öÎÄµµ£¬atime»á¸Ä±ä£»ÎÞÂÛviÊ±ÊÇ·ñÐ´ÈëÎÄ×Ö£¬ÍË³öÊ±Èç¹û£ºwÔòÈ
 ls -l /etc/man.config	Ä¬ÈÏ²é¿´µÄÊÇmtime
 ls -l --time=atime /etc/man.config
 ls -l --time=ctime /etc/man.config
-ÐÞ¸ÄÎÄµµµÄÊ±¼ä
+## ÐÞ¸ÄÎÄµµµÄÊ±¼ä##
 touch[-acdmt]µµ°¸
 Ñ¡Ïî²»²ÎÊý£º
 -a£º½öÐÞ¶©access time£»

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="black">#F000</color>
+    <color name="white">#FFFF</color>
+
+    <color name="timerBackgroundColor">#ff151515</color>
+    <color name="timerTextColor">#ffffffff</color>
+    <color name="timerTitleColor">#b3b3b3</color>
+    <color name="timerLineColor">#ff1a1a1a</color>
+    <color name="timerPickerNormalColor">#ff494949</color>
+    <color name="timer_color">#0068b7</color>
+</resources>
